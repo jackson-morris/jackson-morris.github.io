@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Hello!"
+title: "Jackson Morris"
 author_profile: true
 redirect_from: 
   - /about/
@@ -10,12 +10,17 @@ redirect_from:
 This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
 
 Hello! I am a fifth year mathematics PhD candidate at the University of Washington. My research interests are in motivic and chromatic homotopy theory, and my advisors are Kyle Ormsby and John Palmieri. Things that I am interested in include:
-Periodicity in the motivic/equivariant/classical stable stems
-Computations with the Adams spectral sequence
-Height shifting phenomena and the telescope conjecture
+* Periodicity in the motivic/equivariant/classical stable stems
+* Computations with the Adams spectral sequence
+* Height shifting phenomena and the telescope conjecture
 I am currently on the academic job market.
 I received my BS from the University of Kentucky in December 2020 and my Master's from UW in June 2023. Here is my CV (updated September 2025).
 I try to collect resources which I have found useful on various topics. Feel free to email me if you have anything to contribute!
+
+======
+
+Upcoming Travel:
+* January 4-7: JMM, Washington D.C.
 
 A data-driven personal website
 ======

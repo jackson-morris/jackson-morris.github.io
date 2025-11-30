@@ -21,7 +21,7 @@ repository               : "jackson-morris/jackson-morris.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile_photo_11_30.JPG"
+  avatar           : "profile_photo_11_30.jpg"
   name             : "Jackson Morris"
   pronouns         : "he/they"  
   bio              : "Math PhD student"

@@ -8,8 +8,8 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Jackson Morris"
-title_separator          : "-"
+title                    : 
+title_separator          : 
 name                     : &name "Jackson Morris"
 description              : &description "personal description"
 url                      : https://jackson-morris.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -21,14 +21,14 @@ repository               : "jackson-morris/jackson-morris.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  avatar           : "github_profile_11_30_25.JPG"
+  name             : "Jackson"
+  pronouns         : "he/they"  
+  bio              : "Math PhD student"
+  location         : "Seattle, WA"
+  employer         : "University of Washington"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "jackmann@uw.edu" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile

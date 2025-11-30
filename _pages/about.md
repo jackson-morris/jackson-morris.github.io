@@ -18,10 +18,14 @@ I am currently on the academic job market.
 I received my BS from the University of Kentucky in December 2020 and my Master's from UW in June 2023. Here is my CV (updated September 2025).
 I try to collect resources which I have found useful on various topics. Feel free to email me if you have anything to contribute!
 
-======
-
-Upcoming Travel:
+Upcoming Travel
+=====
 * January 4-7: JMM, Washington D.C.
+
+Can you guess what the chart at the bottom of this page is displaying? Send me an email if you think you know!
+![F5 kq charts](/images/f5_kq_charts.png)
+
+
 
 A data-driven personal website
 ======

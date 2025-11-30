@@ -1,5 +1,5 @@
 ---
-permalink: /
+permalink: /Jackson Morris/
 title: "Jackson Morris"
 author_profile: true
 redirect_from: 
@@ -13,6 +13,7 @@ Hello! I am a fifth year mathematics PhD candidate at the University of Washingt
 * Periodicity in the motivic/equivariant/classical stable stems
 * Computations with the Adams spectral sequence
 * Height shifting phenomena and the telescope conjecture
+
 I am currently on the academic job market.
 I received my BS from the University of Kentucky in December 2020 and my Master's from UW in June 2023. Here is my CV (updated September 2025).
 I try to collect resources which I have found useful on various topics. Feel free to email me if you have anything to contribute!

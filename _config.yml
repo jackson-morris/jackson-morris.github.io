@@ -21,8 +21,8 @@ repository               : "jackson-morris/jackson-morris.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "github_profile_11_30_25.JPG"
-  name             : "Jackson"
+  avatar           : "profile_photo_11_30.JPG"
+  name             : "Jackson Morris"
   pronouns         : "he/they"  
   bio              : "Math PhD student"
   location         : "Seattle, WA"
@@ -43,7 +43,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "Jackson Morris"
+  github           : #"Jackson Morris"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 

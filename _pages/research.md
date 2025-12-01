@@ -13,21 +13,21 @@ Preprints/Publications
     <details>
     <summary>Abstract</summary>
 
-    We construct spectrum-level splittings of $\text{BPGL}\langle 1\rangle\wedge \text{BPGL}\langle 1\rangle$ at all primes p, where BPGL⟨1⟩ is the first truncated motivic Brown--Peterson spectrum. Classically, BP⟨1⟩∧BP⟨1⟩ was first described by Kane and Mahowald in terms of Brown-Gitler spectra. This splitting was subsequently reinterpreted by Lellman and Davis-Gitler-Mahowald in terms of Adams covers. In this paper, we give motivic lifts of these splittings in terms of Adams covers, over the base fields ℂ,ℝ, and 𝔽q, where char(𝔽q≠p). As an application, we compute the E1-page of the BPGL⟨1⟩-based Adams spectral sequence as a module over BPGL⟨1⟩, both in homotopy and in terms of motivic spectra. We also record analogous splittings for BPGL⟨0⟩∧BPGL⟨0⟩.
+    We construct spectrum-level splittings of $\text{BPGL}\langle 1\rangle\wedge \text{BPGL}\langle 1\rangle$ at all primes p, where $\text{BPGL}\langle 1 \rangle$ is the first truncated motivic Brown-Peterson spectrum. Classically, $\text{BP}\langle 1 \rangle \wedge \text{BP}\langle 1\rangle$ was first described by Kane and Mahowald in terms of Brown-Gitler spectra. This splitting was subsequently reinterpreted by Lellman and Davis-Gitler-Mahowald in terms of Adams covers. In this paper, we give motivic lifts of these splittings in terms of Adams covers, over the base fields $\mathbb{C}$, $\mathbb{R}$, and $\mathbb{F}_q$, where $\text{char}(\mathbb{F}_q)\neq p$. As an application, we compute the $E_1$-page of the $\text{BPGL}\langle 1 \rangle$-based Adams spectral sequence as a module over $\text{BPGL}\langle 1 \rangle$, both in homotopy and in terms of motivic spectra. We also record analogous splittings for $\text{BPGL}\langle 0 \rangle \wedge \text{BPGL} \langle 0 \rangle$.
     </details>    
 
 * **Rings of cooperations for Hermitian K-theory over finite fields**, **M.** Submitted. [arxiv:2509.02786](https://arxiv.org/abs/2509.02786)
     <details>
     <summary>Abstract</summary>
 
-    We compute the ring of cooperations π𝔽q∗∗(kq⊗kq) for the very effective Hermitian K-theory over all finite fields 𝔽q where char(𝔽q)≠2. To do this, we use the motivic Adams spectral sequence and show that all differentials are determined by the integral motivic cohomology of 𝔽q. As an application, we compute the E1-page of the kq-resolution.
+    We compute the ring of cooperations $\pi_{**}^{\mathbb{F}_q}(\text{kq} \otimes \text{kq})$ for the very effective Hermitian K-theory over all finite fields $\mathbb{F}_q$ where $text{char}(\text{F}_q) \neq 2$. To do this, we use the motivic Adams spectral sequence and show that all differentials are determined by the integral motivic cohomology of $\mathbb{F}_q$. As an application, we compute the $E_1$-page of the kq-resolution.
     </details>
 
 * **On the ring of cooperations for real Hermitian K-theory**, **M.** Submitted. [arxiv:2506.16672](https://arxiv.org/abs/2506.16672)
     <details>
     <summary>Abstract</summary>
 
-    Let kq denote the very effective cover of the motivic Hermitian K-theory spectrum. We analyze the ring of cooperations πℝ∗∗(kq⊗kq) in the stable motivic homotopy category SH(ℝ), giving a full description in terms of Brown--Gitler comodules. To do this, we decompose the E2-page of the motivic Adams spectral sequence and show that it must collapse. The description of the E2-page is accomplished by a series of algebraic Atiyah--Hirzebruch spectral sequences which converge to the summands of the E2-page. Along the way, we prove a splitting result for the very effective symplectic K-theory ksp over any base field of characteristic not two.
+    Let kq denote the very effective cover of the motivic Hermitian K-theory spectrum. We analyze the ring of cooperations $\pi_{**}^{\mathbb{R}}(\text{kq} \otimes \text{kq})$ in the stable motivic homotopy category $\text{SH}(\mathbb{R})$, giving a full description in terms of Brown-Gitler comodules. To do this, we decompose the $E_2$-page of the motivic Adams spectral sequence and show that it must collapse. The description of the $E_2$-page is accomplished by a series of algebraic Atiyah-Hirzebruch spectral sequences which converge to the summands of the E2-page. Along the way, we prove a splitting result for the very effective symplectic K-theory ksp over any base field of characteristic not two.
     </details>
 
 * **Toric double determinantal varieties**, Alexander Blose, Patricia Klein, Owen McGrath, **M.** Published in **Communications in Algebra** 49 (2021), 7, 3085-3093. [arxiv:2006.04191](https://arxiv.org/abs/2006.04191)

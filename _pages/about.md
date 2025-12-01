@@ -1,5 +1,5 @@
 ---
-permalink: /
+permalink: /Jackson Morris/
 title: "Jackson Morris"
 author_profile: true
 redirect_from: 

@@ -31,11 +31,11 @@ Preprints/Publications
 </details>
 
 * **Toric double determinantal varieties**, Alexander Blose, Patricia Klein, Owen McGrath, **M.** Published in **Communications in Algebra** 49 (2021), 7, 3085-3093. [arxiv:2006.04191](https://arxiv.org/abs/2006.04191)
-<details>
+    <details>
     <summary>Abstract</summary>
     
     We examine Li's double determinantal varieties in the special case that they are toric. We recover from the general double determinantal varieties case, via a more elementary argument, that they are irreducible and show that toric double determinantal varieties are smooth. We use this framework to give a straighforward formula for their dimension. Finally, we use the smallest nontrivial toric double determinantal variety to provide some empirical evidence concerning an open problem in local algebra.
-</details>
+    </details>
 
 More detailed research interests.
 =====

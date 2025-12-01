@@ -9,7 +9,7 @@ My research interests are in homotopy theory, motivated from the chromatic persp
 
 Preprints/Publications
 =====
-* **Splittings of truncated motivic Brown-Peterson cooperations algebras**, **M.**, Sarah Petersen, and Liz Tatum. Submitted. [arxiv:2509.19542](https://arxiv.org/abs/2509.19542)
+* **Splittings of truncated motivic Brown-Peterson cooperations algebras**, **M.**, [Sarah Petersen](https://sites.google.com/view/sarahpetersen/home), and [Liz Tatum](https://www.sas.rochester.edu/mth/people/faculty/tatum-elizabeth/index.html). Submitted. [arxiv:2509.19542](https://arxiv.org/abs/2509.19542)
     <details>
     <summary>Abstract</summary>
 
@@ -30,7 +30,7 @@ Preprints/Publications
     Let kq denote the very effective cover of the motivic Hermitian K-theory spectrum. We analyze the ring of cooperations $\pi_{**}(\text{kq} \otimes \text{kq})$ in the stable motivic homotopy category $\text{SH}(\mathbb{R})$, giving a full description in terms of Brown-Gitler comodules. To do this, we decompose the $E_2$-page of the motivic Adams spectral sequence and show that it must collapse. The description of the $E_2$-page is accomplished by a series of algebraic Atiyah-Hirzebruch spectral sequences which converge to the summands of the $E_2$-page. Along the way, we prove a splitting result for the very effective symplectic K-theory ksp over any base field of characteristic not two.
     </details>
 
-* **Toric double determinantal varieties**, Alexander Blose, Patricia Klein, Owen McGrath, **M.** Published in **Communications in Algebra** 49 (2021), 7, 3085-3093. [arxiv:2006.04191](https://arxiv.org/abs/2006.04191)
+* **Toric double determinantal varieties**, Alexander Blose, [Patricia Klein](https://patriciajklein.github.io/), Owen McGrath, **M.** Published in **Communications in Algebra** 49 (2021), 7, 3085-3093. [arxiv:2006.04191](https://arxiv.org/abs/2006.04191)
     <details>
     <summary>Abstract</summary>
     
@@ -39,9 +39,9 @@ Preprints/Publications
 
 Writings
 =====
-* **Splittings and the algebraic Atiyah-Hirzebruch spectral sequence** [PDF](/files/Splittings_and_the_algebraic_Atiyah_Hirzebruch_spectral_sequence%20(2).pdf)
-* **Galois Descent and the Picard group of K-theory** [PDF](/files/Galois_descent_and_the_Picard_group_of_K_theory%20(2).pdf)
-* **The Adams Spectral Sequence and Hopf Algebroids** [PDF](/files/The_Adams_spectral_sequence_and_Hopf_algebroids%20(2).pdf)
+* **Splittings and the algebraic Atiyah-Hirzebruch spectral sequence** Expanded notes for a preseminar talk. [PDF](/files/Splittings_and_the_algebraic_Atiyah_Hirzebruch_spectral_sequence%20(2).pdf)
+* **Galois Descent and the Picard group of K-theory** Notes for a talk in the [UW Student AG Seminar](https://theprismatic.site/seminars/uwag/). [PDF](/files/Galois_descent_and_the_Picard_group_of_K_theory%20(2).pdf)
+* **The Adams Spectral Sequence and Hopf Algebroids** Notes for a talk in the [DUBTOP seminar](https://sites.google.com/view/jay-reiter/dubtop-fall-2025?authuser=0). [PDF](/files/The_Adams_spectral_sequence_and_Hopf_algebroids%20(2).pdf)
 
 
 More detailed research interests.

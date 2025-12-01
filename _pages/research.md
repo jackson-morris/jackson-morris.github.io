@@ -43,6 +43,7 @@ Writings
 * **Galois Descent and the Picard group of K-theory** Notes for a talk in the [UW Student AG Seminar](https://theprismatic.site/seminars/uwag/). [PDF](/files/Galois_descent_and_the_Picard_group_of_K_theory%20(2).pdf)
 * **The Adams Spectral Sequence and Hopf Algebroids** Notes for a talk in the [DUBTOP seminar](https://sites.google.com/view/jay-reiter/dubtop-fall-2025?authuser=0). [PDF](/files/The_Adams_spectral_sequence_and_Hopf_algebroids%20(2).pdf)
 
+![coolchart](/images/coolchart.png)
 
 More detailed research interests.
 =====

@@ -8,7 +8,7 @@ main:
   - title: "Jackson Morris"
     url: /Jackson Morris/
 
-  - title: "Research"
+  - title: "Research/Writings"
     url: /publications/
 
   - title: "Teaching"
@@ -16,9 +16,9 @@ main:
     
   - title: "CV"
     url: /cv/
-    
-  - title: "Seminars Organized"
-    url: /seminars/
 
-  - title: "Upcoming Homotopy Conferences"
-    url: /homotopyconferences 
+  - title: "Resources"
+    url: /resources/
+
+  - title: "Fun Stuff"
+    url: /fun stuff/

@@ -9,7 +9,13 @@ My research interests are in homotopy theory, motivated from the chromatic persp
 
 Preprints/Publications
 =====
-* **Splittings**
+* **Splittings of truncated motivic Brown-Peterson cooperations algebras**, **M.**, Sarah Petersen, and Liz Tatum. Submitted. [arxiv:2509.19542](https://arxiv.org/abs/2509.19542)
+
+* **Rings of cooperations for Hermitian K-theory over finite fields**, **M.** Submitted. [arxiv:2509.02786](https://arxiv.org/abs/2509.02786)
+
+* **On the ring of cooperations for real Hermitian K-theory**, **M.** Submitted. [arxiv:2506.16672](https://arxiv.org/abs/2506.16672)
+
+* **Toric double determinantal varieties**, Alexander Blose, Patricia Klein, Owen McGrath, **M.** Published in **Communications in Algebra** 49 (2021), 7, 3085-3093. [arxiv:2006.04191](https://arxiv.org/abs/2006.04191)
 
 More detailed research interests.
 =====
@@ -18,6 +24,7 @@ My research is oriented by chromatic homotopy theory. Roughly speaking, here is 
 * Freudenthal tells us that these groups stabilize, so let's focus on computing the stable homotopy groups of spheres; 
 * Serre tells us that the non-negative stable stems are finite abelian groups, so let's work one prime at a time;
 * Morava (or maybe God) tells us that at a fixed prime, the stable stems are organized into \(v_n\)-periodic families, so let's focus on computing one periodic family at a time.
+
 There is a lot of fun one can have now in \(v_n\)-periodic homotopy theory. For example, there are two localization functors which allow one to access these periodic families, one more algebraic and one more topological, and the telescope conjecture equates these two localizations. Famously, the telescope is false at all primes and all heights 2 and above. However, at the height 1, and say now at the prime 2, Mahowald (or maybe God) used like a zillion spectral sequences and computed the \(v_1\)-periodic stable stems entirely and showed that the two aforementioned localizations actually agree at height 1, proving the height 1 telescope conjecture. 
 This is the motivation behind most of my current research: to try to understand periodicity in other contexts by means of a zillion spectral sequences, and more generally to understand the telescope conjecture and other cool chromatic things in other contexts.
 
@@ -26,5 +33,6 @@ Most of my research has been housed in motivic homotopy theory, a variant of sta
 * determining exotic periodic elements in the motivic stable stems and, more generally, better understanding exotic periodicity;
 * understanding the correct motivic analogue of the telescope conjecture, one which captures classical and exotic periodicity;
 * moving towards a more integral class of base scheme.
+
 Most of my current work has used the Adams spectral sequence as a guiding principle (although recently, I have had an eye towards the slice spectral sequence...). I am particularly fond of comparing and contrasting these results as the base scheme varies and with classical stable homotopy theory, and I am eager to connect my work over the real numbers with \(C_2\)-equivariant homotopy theory.
 

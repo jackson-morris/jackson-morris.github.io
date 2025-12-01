@@ -37,6 +37,13 @@ Preprints/Publications
     We examine Li's double determinantal varieties in the special case that they are toric. We recover from the general double determinantal varieties case, via a more elementary argument, that they are irreducible and show that toric double determinantal varieties are smooth. We use this framework to give a straighforward formula for their dimension. Finally, we use the smallest nontrivial toric double determinantal variety to provide some empirical evidence concerning an open problem in local algebra.
     </details>
 
+Writings
+=====
+* **Splittings and the algebraic Atiyah-Hirzebruch spectral sequence** [PDF](/files/Splittings_and_the_algebraic_Atiyah_Hirzebruch_spectral_sequence%20(2).pdf)
+* **Galois Descent and the Picard group of K-theory** [PDF](/files/Galois_descent_and_the_Picard_group_of_K_theory%20(2).pdf)
+* **The Adams Spectral Sequence and Hopf Algebroids** [PDF](/files/The_Adams_spectral_sequence_and_Hopf_algebroids%20(2).pdf)
+
+
 More detailed research interests.
 =====
 

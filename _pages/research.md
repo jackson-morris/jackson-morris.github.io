@@ -20,14 +20,14 @@ Preprints/Publications
     <details>
     <summary>Abstract</summary>
 
-    We compute the ring of cooperations $\pi_{**}^{\mathbb{F}_q}(\text{kq} \otimes \text{kq})$ for the very effective Hermitian K-theory over all finite fields $\mathbb{F}_q$ where $text{char}(\text{F}_q) \neq 2$. To do this, we use the motivic Adams spectral sequence and show that all differentials are determined by the integral motivic cohomology of $\mathbb{F}_q$. As an application, we compute the $E_1$-page of the kq-resolution.
+    We compute the ring of cooperations $\pi_{**}(\text{kq} \otimes \text{kq})$ for the very effective Hermitian K-theory over all finite fields $\mathbb{F}_q$ where $\text{char}(\text{F}_q) \neq 2$. To do this, we use the motivic Adams spectral sequence and show that all differentials are determined by the integral motivic cohomology of $\mathbb{F}_q$. As an application, we compute the $E_1$-page of the kq-resolution.
     </details>
 
 * **On the ring of cooperations for real Hermitian K-theory**, **M.** Submitted. [arxiv:2506.16672](https://arxiv.org/abs/2506.16672)
     <details>
     <summary>Abstract</summary>
 
-    Let kq denote the very effective cover of the motivic Hermitian K-theory spectrum. We analyze the ring of cooperations $\pi_{**}^{\mathbb{R}}(\text{kq} \otimes \text{kq})$ in the stable motivic homotopy category $\text{SH}(\mathbb{R})$, giving a full description in terms of Brown-Gitler comodules. To do this, we decompose the $E_2$-page of the motivic Adams spectral sequence and show that it must collapse. The description of the $E_2$-page is accomplished by a series of algebraic Atiyah-Hirzebruch spectral sequences which converge to the summands of the E2-page. Along the way, we prove a splitting result for the very effective symplectic K-theory ksp over any base field of characteristic not two.
+    Let kq denote the very effective cover of the motivic Hermitian K-theory spectrum. We analyze the ring of cooperations $\pi_{**}(\text{kq} \otimes \text{kq})$ in the stable motivic homotopy category $\text{SH}(\mathbb{R})$, giving a full description in terms of Brown-Gitler comodules. To do this, we decompose the $E_2$-page of the motivic Adams spectral sequence and show that it must collapse. The description of the $E_2$-page is accomplished by a series of algebraic Atiyah-Hirzebruch spectral sequences which converge to the summands of the $E_2$-page. Along the way, we prove a splitting result for the very effective symplectic K-theory ksp over any base field of characteristic not two.
     </details>
 
 * **Toric double determinantal varieties**, Alexander Blose, Patricia Klein, Owen McGrath, **M.** Published in **Communications in Algebra** 49 (2021), 7, 3085-3093. [arxiv:2006.04191](https://arxiv.org/abs/2006.04191)

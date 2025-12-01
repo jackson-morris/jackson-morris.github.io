@@ -17,10 +17,10 @@ My research interests are in homotopy theory, motivated from the chromatic persp
   This is the motivation behind most of my current research: to try to understand periodicity in other contexts by means of a zillion spectral sequences, and more generally to understand the telescope conjecture and other cool chromatic things in other contexts.
 
 
-  Most of my research has been housed in motivic homotopy theory, a variant of stable homotopy theory which incorporates algebraic-geometry over a fixed base scheme. One can ask for a hands on approach to $v_1$-periodicity in motivic homotopy theory, and my current research studies this at all primes over the complex numbers, the real numbers, and finite fields. However, the motivic stable stems are much more interesting than the classical stable stems. I am interested in studying the following:
+  Most of my research has been housed in motivic homotopy theory, a variant of stable homotopy theory which incorporates algebraic-geometry over a fixed base scheme. One can ask for a hands on approach to \(v_1\)-periodicity in motivic homotopy theory, and my current research studies this at all primes over the complex numbers, the real numbers, and finite fields. However, the motivic stable stems are much more interesting than the classical stable stems. I am interested in studying the following:
 * determining exotic periodic elements in the motivic stable stems and, more generally, better understanding exotic periodicity;
 * understanding the correct motivic analogue of the telescope conjecture, one which captures classical and exotic periodicity;
 *moving towards a more integral class of base scheme.
-  Most of my current work has used the Adams spectral sequence as a guiding principle (although recently, I have had an eye towards the slice spectral sequence...). I am particularly fond of comparing and contrasting these results as the base scheme varies and with classical stable homotopy theory, and I am eager to connect my work over the real numbers with $C_2$-equivariant homotopy theory.
+  Most of my current work has used the Adams spectral sequence as a guiding principle (although recently, I have had an eye towards the slice spectral sequence...). I am particularly fond of comparing and contrasting these results as the base scheme varies and with classical stable homotopy theory, and I am eager to connect my work over the real numbers with \(C_2\)-equivariant homotopy theory.
   </details>
 

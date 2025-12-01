@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Research/Writings"
-permalink: /publicationsOLD/
+permalink: /publications/
 author_profile: true
 ---
 
@@ -22,7 +22,3 @@ My research interests are in homotopy theory, motivated from the chromatic persp
   *moving towards a more integral class of base scheme.
   Most of my current work has used the Adams spectral sequence as a guiding principle (although recently, I have had an eye towards the slice spectral sequence...). I am particularly fond of comparing and contrasting these results as the base scheme varies and with classical stable homotopy theory, and I am eager to connect my work over the real numbers with $C_2$-equivariant homotopy theory.
   </details>
-
-
-
-

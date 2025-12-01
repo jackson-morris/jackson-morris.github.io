@@ -14,11 +14,11 @@ main:
   - title: "Teaching"
     url: /teaching/    
     
-  - title: "CV"
-    url: /cv/
+  # - title: "CV"
+  #   url: /cv/
 
-  - title: "Resources"
-    url: /resources/
+  # - title: "Resources"
+  #   url: /resources/
 
-  - title: "Fun Stuff"
-    url: /fun stuff/
+  # - title: "Fun Stuff"
+  #   url: /fun stuff/

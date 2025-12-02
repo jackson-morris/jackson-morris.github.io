@@ -22,4 +22,7 @@ Upcoming Travel
 * January 4-7: JMM, Washington D.C.
 
 Can you guess what the chart at the bottom of this page is displaying? Send me an email if you think you know!
-![F5 kq charts](/images/f5_kq_charts.jpg)
+
+| ![F5 kq charts](/images/f5_kq_charts.jpg) |
+| :--: |
+| Send me an email if you know what these charts are displaying! |

@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Research/Writings"
-permalink: /publications/
+permalink: /research/
 author_profile: true
 ---
 
@@ -45,7 +45,7 @@ Writings
 
 | ![coolchart](/images/coolchart.png) |
 | :--: |
-| The ring of cooperations $\pi_{**}(\text{kq} \otimes \text{kq})$ in $\text{SH}(\mathbb{F}_3)$ |
+| The ring of cooperations for the very-effective Hermitian K-theory spectrum over the finite field with 3 elements. |
 
 More detailed research interests.
 =====

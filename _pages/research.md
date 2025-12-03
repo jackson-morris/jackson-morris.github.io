@@ -39,13 +39,25 @@ Preprints/Publications
 
 Writings
 =====
-* **Splittings and the algebraic Atiyah-Hirzebruch spectral sequence** Expanded notes for a preseminar talk. [PDF](/files/Splittings_and_the_algebraic_Atiyah_Hirzebruch_spectral_sequence%20(2).pdf)
+* **Splittings and the algebraic Atiyah-Hirzebruch spectral sequence** Expanded set of notes for  preseminar talk at UW. [PDF](/files/Splittings_and_the_algebraic_Atiyah_Hirzebruch_spectral_sequence%20(2).pdf)
 * **Galois descent and the Picard group of K-theory** Notes for a talk in the [UW Student AG Seminar](https://theprismatic.site/seminars/uwag/). [PDF](/files/Galois_descent_and_the_Picard_group_of_K_theory%20(2).pdf)
 * **The Adams spectral sequence and Hopf algebroids** Notes for a talk in the [DUBTOP seminar](https://sites.google.com/view/jay-reiter/dubtop-fall-2025?authuser=0). [PDF](/files/The_Adams_spectral_sequence_and_Hopf_algebroids%20(2).pdf)
 
 | ![coolchart](/images/coolchart.png) |
 | :--: |
 | The ring of cooperations for the very-effective Hermitian K-theory spectrum over the finite field with 3 elements. |
+
+Recent Talks
+=====
+* *Cooperations in motivic homotopy theory*, [JMM](https://meetings.ams.org/math/jmm2026/meetingapp.cgi/Session/13257), January 2026
+* *Splittings and cooperations in motivic homotopy theory*, University of Virginia Topology Seminar, November 2025
+* *Splittings and cooperations in motivic homotopy theory*, University of Kentucky Topology Seminar, November 2025
+* *Higher Adams differentials and hidden extensions*, [eCHT Secondary Steenrod Algebra Reading Seminar](https://s.wayne.edu/echt/echt-reading-seminars/echt-secondary-steenrod-algebra-reading-seminar-fall-2025/), November 2025
+* *Splittings and cooperations in motivic homotopy theory*, Duke University Geometry and Topology Seminar, October 2025
+* *Splittings of truncated motivic Brown-Peterson cooperations algebras*, University of Colorado Boulder Homotopy Theory Seminar, September 2025
+* *On the ring of cooperations for real Hermitian K-theory*, University of Michigan Geometry Seminar, September 2025
+* *Splittings and cooperations in motivic homotopy theory*, University of Notre Dame Topology Seminar, September 2025
+* *On the ring of cooperations for real Hermitian K-theory*, University of Washington Topology Seminar, June 2025
 
 More detailed research interests.
 =====

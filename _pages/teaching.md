@@ -31,3 +31,41 @@ author_profile: true
 * Spring 2022: MATH 126 - Multivariable Calculus TA
 * Winter 2022: MATH 124 - Differential Calculus TA
 * Fall 2021: MATH 124 - Differential Calculus TA
+
+Directed Reading Projects
+=====
+* Summer 2025: Homological algebra over the Steenrod algebra
+  <details> <summary>Details</summary>
+    Participant: 
+    Description:
+  </details>
+* Spring 2025: Homotopy theory
+  <details> <summary>Details</summary>
+    Participant: 
+    Description:
+  </details>
+* Fall 2024: Representation theory of finite groups
+  <details> <summary>Details</summary>
+    Participant: 
+    Description:
+  </details>
+* Spring 2024: Representation theory of finite groups
+  <details> <summary>Details</summary>
+    Participant: 
+    Description:
+  </details>
+* Winter 2023: Geometric group theory
+  <details> <summary>Details</summary>
+    Participant: 
+    Description:
+  </details>
+* Winter 2023: Algebraic topology
+  <details> <summary>Details</summary>
+    Participant: 
+    Description:
+  </details>
+* Fall 2022: Covering spaces
+  <details> <summary>Details</summary>
+    Participant: 
+    Description:
+  </details>

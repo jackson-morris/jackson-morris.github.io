@@ -1,7 +1,7 @@
 ---
-layout: page
-permalink: /resources/
+layout: archive
 title: "Resources"
+permalink: /resources/
 author_profile: true
 ---
 On this webpage, I have included things that I have read on particular topics in and related to homotopy theory. I have also included open problems that I have found throughout the literature. This is is motivated by various other webpages/documents:

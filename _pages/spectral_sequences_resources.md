@@ -2,7 +2,7 @@
 layout: archive
 title: "Spectral sequences"
 permalink: /sseq/
-author_profile: false
+author_profile: true
 ---
 
 fdsafdafda fjdksalfjka;lsjfdkals;

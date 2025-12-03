@@ -4,6 +4,7 @@ title: "Resources"
 permalink: /resources/
 author_profile: true
 ---
+
 On this webpage, I have included things that I have read on particular topics in and related to homotopy theory. I have also included open problems that I have found throughout the literature. This is is motivated by various other webpages/documents:
 * https://www.homotopytheory.info/ A great website with collected resources on category theory, spectra, infinite loop spaces, simplicial methods, spectral sequences, vector bundles and topological K-theory, algebraic K-theory, G-spectra, and chromatic homotopy theory.
 * [Voevodsky's Open Problems in Motivic Stable Homotopy Theory](https://www.math.ias.edu/Voevodsky/files/files-original/Dropbox/Published_papers/Motives/Open/Stage3/newopen.pdf)

@@ -3,9 +3,6 @@ layout: page
 permalink: /resources/
 title: "Resources"
 author_profile: true
-redirect_from: 
-  - /resources/
-  - /resources.html
 ---
 On this webpage, I have included things that I have read on particular topics in and related to homotopy theory. I have also included open problems that I have found throughout the literature. This is is motivated by various other webpages/documents:
 * https://www.homotopytheory.info/ A great website with collected resources on category theory, spectra, infinite loop spaces, simplicial methods, spectral sequences, vector bundles and topological K-theory, algebraic K-theory, G-spectra, and chromatic homotopy theory.

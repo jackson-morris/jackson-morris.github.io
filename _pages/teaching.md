@@ -35,44 +35,16 @@ author_profile: true
 Directed Reading Projects
 =====
 * **Summer 2025**: Homological algebra over the Steenrod algebra
-  <details> <summary>Details</summary>
-    Participant: Solden Stoll
-
-    Description: An exploration into homological algebra motivated by computing Ext over the Steenrod Algebra.
-  </details>
+  * An exploration into homological algebra motivated by computing Ext over the Steenrod algebra. Texts used were Weibel's [Homological Algebra](https://www.sas.rochester.edu/mth/sites/doug-ravenel/otherpapers/weibel-homv2.pdf) and Mike Hill's lecture notes on [Computational Methods in Algebraic Topology](https://www.math.ucla.edu/~mikehill/Teaching/Math885.html).
 * **Spring 2025**: Homotopy theory
-  <details> <summary>Details</summary>
-    Participant: Solden Stoll
-
-    Description: Higher homtoopy groups, Hurewicz isomorphism, Freudenthal suspension theorem, fibrations and cofibrations, long exact sequences in homotopy groups, stable homotopy groups.
-  </details>
+  * Topics included higher homotopy groups, Hurewicz isomorphism, Freudenthal suspension theorem, fibrations and cofibrations, long exact sequences in homotopy groups, stable homotopy groups. Text used was Chapter 4 of Hatcher's [Algebraic Topology](https://pi.math.cornell.edu/~hatcher/AT/AT.pdf).
 * **Fall 2024**: Representation theory of finite groups
-  <details> <summary>Details</summary>
-    Participants: Samuel Hsu and Jin Hu
-
-    Description: Finite groups and their representations over the complex numbers.
-  </details>
+  * Finite groups and their representations over the complex numbers. Text used was chapter 1 of Sagan's [The Symmetric Group: Representations, Combinatorial Algorithms, and Symmetric Functions](https://fardila.com/Clase/RepTh/sagan.pdf).
 * **Spring 2024**: Representation theory of finite groups
-  <details> <summary>Details</summary>
-    Participant: Dylan Rosenlind
-
-    Description: Finite groups and their representations over the complex numbers.
-  </details>
+  * Finite groups and their representations over the complex numbers. Text used was Chapter 1 of Sagan's [The Symmetric Group: Representations, Combinatorial Algorithms, and Symmetric Functions](https://fardila.com/Clase/RepTh/sagan.pdf).
 * **Winter 2023**: Geometric group theory
-  <details> <summary>Details</summary>
-    Participant: Jack Zhang
-
-    Description: An introduction to the geometry of finite groups.
-  </details>
+  * An introduction to the geometry of finite groups. Text used was Chapters 1,2 and 3 of Clay and Margalit's [Office Hours with a Geometric Group Theorist](https://cjhb.site/Files.php/HTML/C3.2%20Geometric%20Group%20Theory/Matt%20Clay%20(editor)%2C%20Dan%20Margalit%20(editor)%20-%20Office%20Hours%20with%20a%20Geometric%20Group%20Theorist-Princeton%20University%20Press%20(2017).pdf).
 * **Winter 2023**: Algebraic topology
-  <details> <summary>Details</summary>
-    Participant: Ansel Goh and Nathan Louie
-
-    Description: Homology and cohomology.
-  </details>
-* **Fall 2022**: Covering spaces
-  <details> <summary>Details</summary>
-    Participant: Ansel Goh and Nathan Louie
-
-    Description: The fundamental group, covering spaces, deck transformations, the universal cover.
-  </details>
+  * Topics included CW complexes, homology, and cohomology. Text used was Chapters 2, 3 of Hatcher's [Algebraic Topology](https://pi.math.cornell.edu/~hatcher/AT/AT.pdf).
+* **Fall 2022**: The fundamental group and covering spaces
+  * Topics included the fundamental group, Mayer-Vietoris, covering spaces, deck transformations, universal covers. Text used was Chapters 7-11 of Lee's Introduction to Topological Manifolds.

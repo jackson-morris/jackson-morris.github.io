@@ -30,6 +30,7 @@ Personal Favorites
     <summary>See more</summary>
     Hands on, infinity-categorical approach to the stable motivic homtoopy category. Does the slice spectral sequence. Low bar for entry!
 
+
 Topics
 =====
 In Progress

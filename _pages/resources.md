@@ -6,7 +6,8 @@ author_profile: true
 ---
 
 On this webpage,  have included things that I have read on particular topics in and related to homotopy theory. I have also included open problems that I have found throughout the literature. This is is motivated by various other webpages/documents:
-* https://www.homotopytheory.info/ A great website with collected resources on category theory, spectra, infinite loop spaces, simplicial methods, spectral sequences, vector bundles and topological K-theory, algebraic K-theory, G-spectra, and chromatic homotopy theory.
+* [This website](https://www.homotopytheory.info/) has collected resources on category theory, spectra, infinite loop spaces, simplicial methods, spectral sequences, vector bundles and topological K-theory, algebraic K-theory, G-spectra, and chromatic homotopy theory.
+* [Yuri Sulyma's Prismatic/THH reading list](https://ysulyma.github.io/prismatic) 
 * [Voevodsky's Open Problems in Motivic Stable Homotopy Theory](https://www.math.ias.edu/Voevodsky/files/files-original/Dropbox/Published_papers/Motives/Open/Stage3/newopen.pdf)
 * [Mark Hovey's algebraic topology problem list](https://www-users.cse.umn.edu/~tlawson/hovey/)
 * Someone's (not sure who used to own this site) [problems in homotopy theory](https://web.archive.org/web/20210305022827/http://topology-octopus.herokuapp.com/problemsinhomotopytheory/show/HomePage)

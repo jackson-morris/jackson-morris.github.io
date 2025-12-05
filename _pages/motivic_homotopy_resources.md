@@ -16,27 +16,31 @@ Here are some open problems in motivic homotopy theory. If you ahve one to contr
      <li> A nice discussion is given <a href="https://arxiv.org/abs/2506.05585">here</a> </li>
      </ul>
     </details>
-2. **(Hopkins-Morel) Show that the $H\mathbb{Z}$ is equivalent to the quotient of MGL by the generators of the Lazard ring.**
+2. **(Hopkins-Morel) Show that the $\text{H}\mathbb{Z}$ is equivalent to the quotient of $\text{MGL}$ by the generators of the Lazard ring.**
     <details>
     <summary>See more</summary>
-
-     * A nice discussion is given [here](https://arxiv.org/abs/2506.05585) 
-     * See Section 1.2 of [this paper](https://arxiv.org/abs/2111.02320) for some interesting consequences
+    <ul>
+     <li> A nice discussion is given <a href ="https://arxiv.org/abs/2506.05585">here</a>  </li>
+     <li> See Section 1.2 of <a href ="https://arxiv.org/abs/2111.02320">this paper</a> for some interesting consequences </li>
+     </ul>
     </details>
 3. **Better understand the relationship between cellular motivic spectra and synthetic spectra.**
     <details>
     <summary>See more</summary>
 
-     * [Bachmann-Burklund-Xu](https://arxiv.org/abs/2503.12060) do this for a large swath of base fields using Galois reconstruction
-     * [Recent work of Fabio Tanania](https://arxiv.org/abs/2511.22560) interprets F2-synthetic spectra as modules over a particular ring spectrum in $\mathbb{R}$-motivic spectra
+    <ul>
+     <li> <a href ="https://arxiv.org/abs/2503.12060">Bachmann-Burklund-Xu</a> do this for a large swath of base fields using Galois reconstruction </li>
+     <li> <a href ="https://arxiv.org/abs/2511.22560">Recent work of Fabio Tanania</a> offers an exciting and surprising new direction </li>
+     </ul>
     </details>
-4. **(Motivic Hopkins-Mahowald Theorem) Is the motivic Eilenberg-MacLane spectrum $H\mathbb{F}_p$ a Thom spectrum?**
+4. **(Motivic Hopkins-Mahowald Theorem) Is the motivic Eilenberg-MacLane spectrum $\text{H}\mathbb{F}_p$ a Thom spectrum?**
     <details>
     <summary>See more</summary>
-
-     * The classical and many equivariant analogues of this are true (for the state of the art equivariant version, see [Ishan Levy's paper](https://arxiv.org/abs/2103.04457))
-     * This would better our understanding of the motivic Dyer-Lashof algebra
-     * An interesting take is given on this is given in [Dundas-Hill-Ormsby-Østvær](https://arxiv.org/abs/2204.00441)
+    <ul>
+     <li> The classical and many equivariant analogues of this are true (for the state of the art equivariant version, see <a href="https://arxiv.org/abs/2103.04457">Ishan Levy's paper</a>)</li>
+     <li> This would better our understanding of the motivic Dyer-Lashof algebra </li>
+     <li> An interesting take is given on this is given in <a href ="https://arxiv.org/abs/2204.00441">Dundas-Hill-Ormsby-Østvær</a></li>
+     </ul>
     </details>
 
 Personal Favorite Resources

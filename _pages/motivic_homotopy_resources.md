@@ -12,7 +12,9 @@ Here are some open problems in motivic homotopy theory. If you ahve one to contr
     <details>
     <summary>See more</summary>
 
-     * A nice discussion is given [here](https://arxiv.org/abs/2506.05585) 
+     <ul>
+     <li> A nice discussion is given <a href="https://arxiv.org/abs/2506.05585">here</a> </li>
+     </ul>
     </details>
 2. **(Hopkins-Morel) Show that the $H\mathbb{Z}$ is equivalent to the quotient of MGL by the generators of the Lazard ring.**
     <details>

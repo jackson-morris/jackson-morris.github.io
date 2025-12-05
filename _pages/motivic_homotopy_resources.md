@@ -5,9 +5,11 @@ permalink: /motivic/
 author_profile: true
 ---
 
+On this page are open problems and resources in various topics in motivic homotopy theory.
+
 Open Problems
 =====
-Here are some open problems in motivic homotopy theory. If you ahve one to contribute, or no longer feel that one of these problems is open, let me know!
+Here are some open problems in motivic homotopy theory. If you have one to contribute, or no longer feel that one of these problems is open, let me know!
 1. **Show that Voevodsky's Steenrod algebra of power operations is indeed the algebra of all bistable operations in mod-p motivic cohomology over any base scheme.**
     <details>
     <summary>See more</summary>

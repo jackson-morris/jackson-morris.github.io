@@ -7,9 +7,37 @@ author_profile: true
 
 Open Problems
 =====
-In progress
+Here are some open problems in motivic homotopy theory. If you ahve one to contribute, or no longer feel that one of these problems is open, let me know!
+1. **Show that Voevodsky's Steenrod algebra of power operations is indeed the algebra of all bistable operations in mod-p motivic cohomology over any base scheme.**
+    <details>
+    <summary>See more</summary>
 
-Personal Favorites
+     * A nice discussion is given [here](https://arxiv.org/abs/2506.05585) 
+    </details>
+2. **(Hopkins-Morel) Show that the $H\mathbb{Z}$ is equivalent to the quotient of MGL by the generators of the Lazard ring.**
+    <details>
+    <summary>See more</summary>
+
+     * A nice discussion is given [here](https://arxiv.org/abs/2506.05585) 
+     * See Section 1.2 of [this paper](https://arxiv.org/abs/2111.02320) for some interesting consequences
+    </details>
+3. **Better understand the relationship between cellular motivic spectra and synthetic spectra.**
+    <details>
+    <summary>See more</summary>
+
+     * [Bachmann-Burklund-Xu](https://arxiv.org/abs/2503.12060) do this for a large swath of base fields using Galois reconstruction
+     * [Recent work of Fabio Tanania](https://arxiv.org/abs/2511.22560) interprets F2-synthetic spectra as modules over a particular ring spectrum in $\mathbb{R}$-motivic spectra
+    </details>
+4. **(Motivic Hopkins-Mahowald Theorem) Is the motivic Eilenberg-MacLane spectrum $H\mathbb{F}_p$ a Thom spectrum?**
+    <details>
+    <summary>See more</summary>
+
+     * The classical and many equivariant analogues of this are true (for the state of the art equivariant version, see [Ishan Levy's paper](https://arxiv.org/abs/2103.04457))
+     * This would better our understanding of the motivic Dyer-Lashof algebra
+     * An interesting take is given on this is given in [Dundas-Hill-Ormsby-Østvær](https://arxiv.org/abs/2204.00441)
+    </details>
+
+Personal Favorite Resources
 =====
 * **[Lecture notes from PCMI 2024](https://www.ias.edu/pcmi/pcmi-2024-gss-lecture-notes-and-problem-sets)**
     <details>

@@ -15,8 +15,8 @@ On this webpage,  have included things that I have read on particular topics in 
 
 I'm not trying to reinvent the wheel or anything. This primarily began as a place to compile those excellent write-ups that people find in the far corners of the internet, usually written by some random graduate student giving a talk in their local seminar.  find these documents very useful. I am also someone who learns by doing instead of by reading, meaning that I really enjoy papers that have applications of techniques instead of ones which are more "foundational". If you have anything you'd like to contribute, whether something you have written, something you have read that is particularly pleasing, a topic that isn't represented that should be represented, an open problem/conjecture that should be included , or whatever... please let me know. This is, and hopefully will always be, a work in progress! 
 
-<!-- [Spectral sequences](spectral_sequences_resources.md)
-===== -->
+[Spectral sequences](spectral_sequences_resources.md)
+=====
 
 [Motivic homotopy theory](motivic_homotopy_resources.md)
 =====

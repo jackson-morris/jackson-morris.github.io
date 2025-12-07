@@ -48,6 +48,10 @@ Topics
     </li>
     <li> <a href ="https://arxiv.org/abs/1908.09164">A Homological Approach to Chromatic Complexity of Algebraic K-theory</a>, Gabe Angelini-Knoll and J.D. Quigley. Computes THH of y(n) by the Bokstedt spectral sequence.
     </li>
+    <li> <a href="https://arxiv.org/abs/1906.03057">The Topological Hochschild Homology of the Algebraic K-theory of Finite Fields</a>, Eva Honing. Compute THH of the algebraic K-theory of the finite fields by the Boksted spectral sequence.
+    </li>
+    <li> <a href="https://www.davidmehrle.com/notes/references/bokstedt2.pdf">The Topological Hochschild Homology of Z and Z/p</a>, Marcel Bokstedt. Origin of the Bokstedt spectral sequence.
+    </li>
     </ul>
 
 <!-- * **Bousfield-Kan Spectral Sequence**

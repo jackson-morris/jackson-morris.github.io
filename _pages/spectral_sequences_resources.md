@@ -53,7 +53,7 @@ Topics
     <li> <a href="https://www.davidmehrle.com/notes/references/bokstedt2.pdf">The Topological Hochschild Homology of Z and Z/p</a>, Marcel Bokstedt. Origin of the Bokstedt spectral sequence.
     </li>
     </ul>
-
+    </details>
 <!-- * **Bousfield-Kan Spectral Sequence**
 
 * **Cartan-Eilenberg Spectral Sequence**
@@ -92,11 +92,19 @@ Topics
 
 * **Serre Spectral Sequence**
 
-* **Slice Spectral Sequence**
+* **Slice Spectral Sequence** -->
 
-* **tmf resolution**
+* **$\text{tmf}$-resolution**
+    <details>
+    <summary>See more</summary>
+    The tmf-resolution is the tmf-based Adams spectral sequence.
+    <ul>
+    <li> <a href = "https://arxiv.org/abs/1909.13379">The Telescope Conjecture at Height 2 and the tmf-resolution</a>, Agnes Beaudry, Mark Behrens, Prasit Bhattacharya, Dominic Culver, and Zhouli Xu. An attempt to lift Mahowald's use of the bo-resolution and his study of height 1 chromatic phenomena to the height 2 world.
+    </li>
+    </ul>
+    </details>
 
-* **Tate Spectral Sequence**
+<!-- * **Tate Spectral Sequence**
 
 * **Universal Coefficient Spectral Sequence**
 

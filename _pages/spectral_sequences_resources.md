@@ -70,6 +70,7 @@ Topics
     <li> <a href = "https://www.sas.rochester.edu/mth/sites/doug-ravenel/mypapers/mrw.pdf">Periodic phenomena in the Adams-Novikov Spectral Sequence</a>, Haynes Miller, Doug Ravenel, and W. Stephen Wilson. The origin story. </li>
     <li> <a href = "https://www.ams.org/journals/tran/1987-300-01/S0002-9947-1987-0871672-0/">Periodic phenomena in the classical Adams spectral sequence</a>, Mark Mahowald and Paul Schick. This paper asks and answers its title question. </li>
     <li> <a href ="https://www.ams.org/journals/tran/1987-300-01/S0002-9947-1987-0871672-0/">The homotopy groups \pi_*(L_2 S^0) at the prime 3</a>, Katsumi Shimomura and Xiangjunn Wang. An actual computation with the chromatic spectral sequence! </li>
+    </ul>
     </details>
 * **Descent Spectral Sequence**
 

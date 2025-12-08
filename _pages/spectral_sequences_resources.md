@@ -35,7 +35,8 @@ Topics
     </li>
     </ul>
     </details>
-<!-- * **Bockstein Spectral Sequence** -->
+
+* **Bockstein Spectral Sequence**
 
 * **Bokstedt Spectral Sequence**
     <details>
@@ -54,12 +55,22 @@ Topics
     </li>
     </ul>
     </details>
-<!-- * **Bousfield-Kan Spectral Sequence**
+
+* **Bousfield-Kan Spectral Sequence**
 
 * **Cartan-Eilenberg Spectral Sequence**
 
 * **Chromatic Spectral Sequence**
-
+    <details>
+    <summary>See more</summary>
+    The chromatic spectral sequence is a spectral sequence converging to the E2-term of the Adams-Novikov spectral sequence.
+    <ul>
+    <li> <a href = "https://math.mit.edu/events/talbot/2013/3-Rasekh-CSS.pdf">The chromatic spectral sequence</a>, Nima Rasekh. Short set of notes from 2013 Talbot. </li>
+    <li> <a href = "https://drive.google.com/file/d/14DIYf2v4zhEUuZSsZcbYBwjyoeyL21r4/view">Spectral Sequences from Sequences of Spectra: Towards the Spectrum of the Category of Spectra</a>, Dylan Wilson. Great set of notes, chapter 2 covering the chromatic spectral sequence. </li>
+    <li> <a href = "https://www.sas.rochester.edu/mth/sites/doug-ravenel/mypapers/mrw.pdf">Periodic phenomena in the Adams-Novikov Spectral Sequence</a>, Haynes Miller, Doug Ravenel, and W. Stephen Wilson. The origin story. </li>
+    <li> <a href = "https://www.ams.org/journals/tran/1987-300-01/S0002-9947-1987-0871672-0/">Periodic phenomena in the classical Adams spectral sequence</a>, Mark Mahowald and Paul Schick. This paper asks and answers its title question. </li>
+    <li> <a href ="https://www.ams.org/journals/tran/1987-300-01/S0002-9947-1987-0871672-0/">The homotopy groups \pi_*(L_2 S^0) at the prime 3</a>, Katsumi Shimomura and Xiangjunn Wang. An actual computation with the chromatic spectral sequence! </li>
+    </details>
 * **Descent Spectral Sequence**
 
 * **Double Complex Spectral Sequence**
@@ -76,7 +87,16 @@ Topics
 
 * **Homotopy Fixed Point Spectral Sequence**
 
-* **kq-resolutions**
+* **$\text{kq}$-resolution**
+    <details>
+    <summary>See more</summary>
+    The kq-resolution is the kq-based motivic Adams spectral sequence.
+    <ul>
+    <li> <a href = "https://arxiv.org/abs/1905.11952">kq-resolutions I</a>, Dominic Culver and J.D. Quigley. Computes the C-motivic kq resolution, determining the v1-periodic stable stems. </li>
+    <li> <a href ="https://arxiv.org/abs/2506.16672">On the Ring of Cooperations for Real Hermitian K-theory</a>, Jackson Morris. I determined the E1-page of the kq-resolution over the real numbers. </li>
+    <li> <a href ="https://arxiv.org/abs/2509.02786">Rings of Cooperations for Hermitian K-theory over Finite Fields</a>, Jackson Morris. I determined the E1-page of the kq-resolution over all finite fields of characteristic different from 2. </li>
+    </ul>
+    </details>
 
 * **Kunneth Spectral Sequence**
 
@@ -92,7 +112,7 @@ Topics
 
 * **Serre Spectral Sequence**
 
-* **Slice Spectral Sequence** -->
+* **Slice Spectral Sequence**
 
 * **$\text{tmf}$-resolution**
     <details>
@@ -104,8 +124,8 @@ Topics
     </ul>
     </details>
 
-<!-- * **Tate Spectral Sequence**
+* **Tate Spectral Sequence**
 
 * **Universal Coefficient Spectral Sequence**
 
-* **Unstable Adams Spectral Sequence** --> 
+* **Unstable Adams Spectral Sequence** 

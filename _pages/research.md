@@ -49,7 +49,7 @@ Writings
 
 Recent Talks
 =====
-* *Cooperations in motivic homotopy theory*, [JMM](https://meetings.ams.org/math/jmm2026/meetingapp.cgi/Session/13257), January 2026
+* *Cooperations in motivic homotopy theory*, [JMM](https://meetings.ams.org/math/jmm2026/meetingapp.cgi/Session/13257), January 2026. [Slides](/files/JMM%202025%20-%20cooperations%20in%20motivic%20homotopy%20theory%20SHORT.pdf)
 * *Splittings and cooperations in motivic homotopy theory*, University of Virginia Topology Seminar, November 2025
 * *Splittings and cooperations in motivic homotopy theory*, University of Kentucky Topology Seminar, November 2025
 * *Higher Adams differentials and hidden extensions*, [eCHT Secondary Steenrod Algebra Reading Seminar](https://s.wayne.edu/echt/echt-reading-seminars/echt-secondary-steenrod-algebra-reading-seminar-fall-2025/), November 2025

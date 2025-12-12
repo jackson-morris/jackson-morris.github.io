@@ -14,12 +14,13 @@ Hello! I am a fifth year mathematics PhD candidate at the University of Washingt
 
 **I am currently on the academic job market.**
 
-I received my BS from the University of Kentucky in December 2020 and my Master's from UW in June 2023. [Here is my CV](/files/CV.pdf) (updated November 2025).
+I received my BS from the University of Kentucky in December 2020 and my Master's from UW in June 2023. [Here is my CV](/files/CV.pdf) (updated December 2025).
 <!-- I try to collect resources which I have found useful on various topics. Feel free to email me if you have anything to contribute! -->
 
 Upcoming Travel
 =====
 * January 4-7: JMM, Washington D.C.
+* January 27: UIUC Homotopy Theory seminar
 
 Can you guess what the chart at the bottom of this page is displaying? Send me an email if you think you know!
 

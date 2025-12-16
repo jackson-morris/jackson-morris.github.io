@@ -9,6 +9,13 @@ My research interests are in homotopy theory, motivated from the chromatic persp
 
 Preprints/Publications
 =====
+* **A $\mathbb{C}$-motivic $w_1$-self-map of periodicity 1**, **M.** In preparation. 
+    <details>
+    <summary>Abstract</summary>
+
+    We construct a finite $\mathbb{C}$-motivic spectrum with a $w_1$-self-map of periodicity 1. The cohomology of the cofiber of this self-map has a module structure over the Steenrod algebra which we use to create splittings of many chromaticcaly interesting motivic spectra.
+    </details>    
+
 * **Splittings of truncated motivic Brown-Peterson cooperations algebras**, **M.**, [Sarah Petersen](https://sites.google.com/view/sarahpetersen/home), and [Liz Tatum](https://www.sas.rochester.edu/mth/people/faculty/tatum-elizabeth/index.html). Submitted. [arxiv:2509.19542](https://arxiv.org/abs/2509.19542)
     <details>
     <summary>Abstract</summary>

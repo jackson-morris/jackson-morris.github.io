@@ -5,6 +5,8 @@ permalink: /sseq/
 author_profile: true
 ---
 
+On this page are open problems and resources for spectral sequences. The resources that I find most useful on this topic tend to be examples in papers and write ups from random graduate students.
+
 Open Problems
 =====
 In progress
@@ -16,9 +18,29 @@ In Progress
 
 Topics
 =====
-<!-- <!-- * **Adams Spectral Sequence**
+* **Adams Spectral Sequence**
+    <details>
+    <summary>See more</summary>
+    The (mod-p) Adams spectral sequence is the grandaddy of them all.
+    <ul>
+    <li><a href ="https://www.ms.uky.edu/~guillou/S24/751Notes.pdf">Chromatic homotopy theory</a>, Bert Guillou. Chapters 6 and 7 of these lecture notes have some great charts and background, and at odd primes.
+    </li>
+    <li><a href ="https://www.mn.uio.no/math/personer/vit/rognes/kurs/mat9580v12/notes.050612.pdf">The Adams Spectral Sequence</a>, John Rognes. Almost overwhelming in how much is covered in these notes.
+    </li>
+    <li><a href ="https://www.mn.uio.no/math/personer/vit/rognes/kurs/mat9580v15/adams-sp-seq.010615.pdf">Introduction to the Adams Spectral Sequence</a>, John Rognes. Different from the above Rognes entry but also incredible.
+    </li>
+    <li><a href ="https://amathew.wordpress.com/tag/adams-spectral-sequence/">Climbing Mount Bourbaki</a>, Akhil Mathew. This feels like reading someone's personal notebook, and I found it very useful to get my hands dirty for the first time.
+    </li>
+    <li><a href ="https://www.sas.rochester.edu/mth/sites/doug-ravenel/otherpapers/Beaudry-Campbell.pdf">A guide for computing stable homotopy groups</a>, gnes Beaudry and Jonathan Campbell. Nice introduction, cool cell diagrams.
+    </li>
+    <li><a href="https://www.sas.rochester.edu/mth/sites/doug-ravenel/mybooks/ravenel.pdf">The Green Book</a>, Doug Ravenel. Chapter 3 has some classic Adams spectral sequence computations.
+    </li>
+    <li>[The Adams spectral sequence and Hopf algebroids](/files/The_Adams_spectral_sequence_and_Hopf_algebroids%20(2).pdf), Jackson Morris. This is a short write up I made which sets up the Adams spectral sequence from the point of view of affine groups schemes and Hopf algebroids.
+    </li>
+    </ul>
+    </details>
 
-* **Adams-Novikov Spectral Sequence**
+<!-- * **Adams-Novikov Spectral Sequence**
 
 * **Algebraic Novikov Spectral Sequence**
 
@@ -29,7 +51,7 @@ Topics
 * **$\text{bo}$-resolution**
     <details>
     <summary>See more</summary>
-    The bo-resolution is the bo-based Adams spectral       sequence.
+    The bo-resolution is the bo-based Adams spectral sequence.
     <ul>
     <li> <a href= "https://projecteuclid.org/journals/pacific-journal-of-mathematics/volume-92/issue-2/brm-o-resolutions/pjm/1102736799.full">bo-resolutions</a>, Mark Mahowald. Mahowald studies the bo-resolution for the first time in this paper. He uses the spectral sequence to compute the 2-primary v1-periodic stable homotopy groups of spheres. the results are later used, or suitably interpreted here, to prove the height 1 telescope conjecture at the prime 2.
     </li>

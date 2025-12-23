@@ -35,8 +35,6 @@ Topics
     </li>
     <li><a href="https://www.sas.rochester.edu/mth/sites/doug-ravenel/mybooks/ravenel.pdf">The Green Book</a>, Doug Ravenel. Chapter 3 has some classic Adams spectral sequence computations.
     </li>
-    <li>[The Adams spectral sequence and Hopf algebroids](/files/The_Adams_spectral_sequence_and_Hopf_algebroids%20(2).pdf), Jackson Morris. This is a short write up I made which sets up the Adams spectral sequence from the point of view of affine groups schemes and Hopf algebroids.
-    </li>
     </ul>
     </details>
 

@@ -156,8 +156,6 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmti8.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
 INPUT /usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcti0800.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc

@@ -45,9 +45,57 @@ Now comes a bit of choice: what field $F$ should one work over? From a computati
 
 What this paper does
 ===
+*The short of it*
+
+This paper begins the study of the $\text{kq}$-resolution in $\mathbb{R}$-motivic homotopy theory. This spectral sequence takes the form
+$$\text{E}_1^{s,f,w} = \pi_{s+f, w}^\mathbb{R}(\text{kq} \otimes \overline{\text{kq}}^{\otimes f}) \implies \pi_{s,w}^\mathbb{R}\mathbb{S}.$$
+The first step to studying this resolution is just computing and understanding the $\text{E}_1$-page, which is significantly harder than either the classical or $\mathbb{C}$-motivic analogue. This is the main content of my paper: I computed the $\text{E}_1$-page of the $\text{kq}$-resolution, modulo some irrelevant $v_1$-torsion.
+
+*The long of it*
+
+One of the main tools that Mahowald uses in his classical arguments are Brown-Gitler spectra. These are finite spectra $\text{H}\mathbb{Z}_k$ for $k \geq 0$ which give rise to a splitting of the cooperations algebra:
+$$\text{bo} \otimes \text{bo} \simeq \bigoplus_{k \geq 0}\Sigma^{4k}\text{bo} \otimes \text{H}\mathbb{Z}_k.$$
+This topological splitting makes a lot of arguments run really smoothly.
+
+There is currently no construction of motivic Brown-Gitler spectra. This is one of the biggest hurdles in this paper. To compute the homotopy ring of cooperations $\pi_{**}^\mathbb{R}(\text{kq} \otimes \text{kq})$, the bottom piece of the $\text{kq}$-resolution, we can use the mod-2 Adams spectral sequence:
+$$\text{E}_2^{s,f,w} = \text{Ext}^{s,f,w}_{\mathcal{A}^\vee}(\mathbb{M}_2, \text{H}_{**}(\text{kq} \otimes \text{kq})) \implies \pi_{**}^\mathbb{R}(\text{kq} \otimes \text{kq})$$
+where $\mathbb{M}_2 = \text{H}_{**}(\mathbb{S})$. One can show that there is a Kunneth isomorphism
+$$\text{H}_{**}(\text{kq} \otimes \text{kq}) \cong \text{H}_{**}(\text{kq}) \otimes_{\mathbb{M}_2}\text{H}_{**}(\text{kq}).$$
+Using the identification of $\mathcal{A}^\vee$-comodules $\text{H}_{**}(\text{kq}) \cong (\mathcal{A}//\mathcal{A}(1))^\vee$, we can use a change of rings isomorphism to rewrite the $\text{E}_2$-page of the above Adams spectral sequence as
+$$\text{Ext}_{\mathcal{A}(1)^\vee}^{s,f,w}(\mathbb{M}_2, \text{H}_{**}(\text{kq})).$$
+This is the point where having Brown-Gitler spectra would be useful. This would give us a way to rewrite this Ext group once again into smaller pieces that we can stitch together to give our final answer.
+
+What I do is produce an algebraic splitting. There are comodules over the dual Steenrod algebra known as the Brown-Gitler comodules $B_0(k)$ which give rise to a splitting of $\mathcal{A}(1)^\vee$-comodules
+$$\text{H}_{**}(\text{kq}) \cong \bigoplus \Sigma^{4k, 2k}B_0(k).$$
+So, we can once again rewrite the Ext group using this algebraic splitting. Our question is reduced to computing the Ext groups
+$$\text{Ext}_{\mathcal{A}(1)^\vee}^{s,f,w}(\mathbb{M}_2, B_0(k)).$$
+This is really where most of the work in this paper is. We can filter these finite comodules by degree, giving rise to algebraic Atiyah-Hirzebruch spectral sequences whose differentials are determined by the $\mathcal{A}(1)^\vee$-comodule structure on $B_0(k)$. It takes a long time, there are a lot of charts, and it is kinda annoying.
+
+The upshot is that once you have finally computed the $\text{E}_2$-page of the mod-2 Adams spectral sequence computing the cooperations, you've done so much work that you completely understand the $\text{E}_2$-page and can easily see that there is no room for differentials. What's nicer: this argument immediately extends to show that the mod-2 Adams spectral sequence
+$$\text{E}_2^{s,f,w} = \text{Ext}_{\mathcal{A}^\vee}^{s,f,w}(\mathbb{M}_2, \text{H}_{**}(\text{kq} \otimes \overline{\text{kq}}^{\otimes f})) \implies \pi_{s, w}^\mathbb{R}(\text{kq} \otimes \overline{\text{kq}}^{\otimes f}),$$
+which computes the $f$-line of the $\text{kq}$-resolution, is similarly decomposable and must also collapse at $\text{E}_2$. Thus, we have a full description of the $\text{E}_1$-page of the $\text{kq}$-resolution.
+
+The downside, or why this problem was realyl so difficult, was that the Adams charts for this project are monstrously large. Even displaying the homotopy groups $\pi_{**}^\mathbb{R}\text{kq}$ in any reasonable way requires hree simultaneous charts. This means that, for example, keeping track of all of the data through one of the algebraic Atiyah-Hirzebruch spectral sequences required a total of 12 different charts, 3 for each page. It was and is a mess!
+
+Something else I will add: there is a construction of the first motivic Brown-Gitler spectrum $\text{H}\mathbb{Z}_1$, and I also showed that there is an equivalence
+$$\text{ksp} \simeq \text{kq} \otimes \text{H}\mathbb{Z}_1$$
+where $\text{ksp}$ is the effective symplectic K-theory spectrum. This is a pretty neat argument involving the slice tower, and actually holds over any base scheme.
 
 How did this all come together?
 ===
+Sometime at the beginning of my third year of graduate school, my advisor, Kyle Ormsby, told me to think about $\text{kq} \otimes \text{kq}$. I didn't really know what he meant by this. Did he mean compute the homotopy groups of $\text{KQ} \otimes \text{KQ}$? Do something with slices? I had no real idea, and I didn't have any context for the question either. 
+
+It took me about a year of messing around and going down a bunch of different rabbit holes to get to where I felt confident enough to start working on the project.
+* I first tried to compute the homotopy groups of $\text{KQ} \otimes \text{KQ}$ using some type or arithmetic fracture square for the $C_2 \times C_2$-action on $\text{KGL} \otimes \text{KGL}$. I got nowhere. I then tried to imitate Adams-Harris-Switzer and how they computed the homotopy groups of $\text{KO} \otimes \text{KO}$. I got nowhere. I was really trying to use chromatic methods, as I was learning classical chromatic homotopy theory, and that machinery isn't really available or as straightforwards in the motivic case.
+* I next tried to compute the slices of $\text{KQ} \otimes \text{KQ}$, mimicing the techniques of Pelaez-Weibel for computing the slices of $\text{KGL} \otimes \dots \otimes \text{KGL}$. Their techniques really leverage the fact that $\text{KGL}$ is an oriented motivic spectrum, though, and is not immediately ammenable to the $\text{KQ}$-case. So, in another way, I got nowhere.
+* I then decided on computing $\pi_{**}(\text{kq}\otimes \text{kq})$. I didn't know much about this story. I looked at Behrens-Ormsby-Stapleton-Stojanoska's treatment of $\text{bo}_*\text{bo}$ for inspiration, and kinda got lost in the numerical polynomials nonsense, before deciding to push through with the Adams spectral sequence.
+
+I then found Culver-Quigley's "kq-resolutions I", which computes the $\text{kq}$-resolution over $\mathbb{C}$. I didn't read the fine print at first, though, and thought that they had made their computation over any base scheme and that I had no problem! Luckily, I was wrong, and Kyle suggested I compute $\pi_{**}^\mathbb{R}(\text{kq} \otimes \text{kq})$ as a first step towards real $\text{kq}$-resolutions.
+
+I began really thinking about this problem in my fourth year. Most of my third year was spent in this trial-and-error mode, which was actually a nice way to walk through the literature in homotopy theory. Once I started actually working on this problem, I was able to hone in on my literature searches. I read a ton of papers, a lot of them being from Mahowald or Behrens, and spent a lot of time confused. I had a lot of help from Kyle, John, and J.D., and from anyone in the UW mathematics department who would listen. I eventually got to a place where I needed to run some gnarly spectral sequences, and to have more space I bought a humongous book of graph paper. This big paper is the reason I finished this project!
+
+There are a lot of charts in the paper, something like 30 in total. These are my favorite part of the project: learning how these charts worked helped me to understand the problem, communicate my answer, and shaped how I view homotopy theory as a whole. 
 
 What's next?
 ===
+There are a lot places I want to take this project! I'd love to actually compute the $\text{kq}$-resolution over the real numbers, and solve the $v_1$-periodic telescope conjecture. I've since tackled this problem over $\mathbb{F}_q$, and would be interested in working over other base schemes. It's just a fun computation and, at least to me, a beautiful story.

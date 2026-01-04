@@ -5,7 +5,7 @@ permalink: /research/
 author_profile: true
 ---
 
-My research interests are in homotopy theory, motivated from the chromatic perspective, and the tools I use are often computational.  I have recently been interested in periodicity in motivic and equivariant stable homotopy theory, and I like to use the Adams spectral sequence to access periodic elements (although recently, I have had an eye towards the slice spectral sequence...).
+My research interests are in homotopy theory, motivated from the chromatic perspective, and the tools I use are often computational.  I have recently been interested in periodicity in motivic and equivariant stable homotopy theory, and I like to use the Adams spectral sequence to access periodic elements (although recently, I have had an eye towards the slice spectral sequence...). I have also written some user's guides to some of my papers that you can [check out here](usersguides.md).
 
 Preprints/Publications
 =====
@@ -37,7 +37,7 @@ Preprints/Publications
     We compute the ring of cooperations $\pi_{**}(\text{kq} \otimes \text{kq})$ for the very effective Hermitian K-theory over all finite fields $\mathbb{F}_q$ where $\text{char}(\text{F}_q) \neq 2$. To do this, we use the motivic Adams spectral sequence and show that all differentials are determined by the integral motivic cohomology of $\mathbb{F}_q$. As an application, we compute the $E_1$-page of the kq-resolution.
     </details>
 
-* **On the ring of cooperations for real Hermitian K-theory**. Submitted. [arxiv:2506.16672](https://arxiv.org/abs/2506.16672)
+* **On the ring of cooperations for real Hermitian K-theory**. Submitted. [arxiv:2506.16672](https://arxiv.org/abs/2506.16672), [User's Guide](guide_real_kq_coop.md)
     <details>
     <summary>Abstract</summary>
 

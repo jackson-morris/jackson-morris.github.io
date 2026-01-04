@@ -11,7 +11,7 @@ author_profile: true
 
 Background on the problem
 ===
-*Classical motivation: Mahowald knew everything*
+**Classical motivation: Mahowald knew everything**
 
 A central task in homotopy theory is to understand the stable homotopy groups of spheres $\pi_{*}(\mathbb{S})$. By understand, I mean to compute the groups $\pi_k\mathbb{S}$ for all $k \geq 0$ and to study the relationship that the elements of this group have with each other. Starting with the first point, work of Serre tells us that $\pi_k\mathbb{S}$ is a finite abelian group for all $k>0$. This allows us to work one prime at a time, computing only the $p$-typical component of each stable stem. The sphere spectrum is the monoidal unit for the smash product on spectra, which gives $\pi_*\mathbb{S}$ the structure of a graded ring. However, Nishida's theorem tells us that if $x \in \pi_k\mathbb{S}$ for any $k>0$, then $x$ is nilpotent. In other words, the ring structure on $\pi_*\mathbb{S}$ is garbage.
 

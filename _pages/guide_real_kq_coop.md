@@ -13,7 +13,7 @@ Background on the problem
 ===
 **Classical motivation: Mahowald knew everything**
 
-A central task in homotopy theory is to understand the stable homotopy groups of spheres $\pi_{*}(\mathbb{S})$. By understand, I mean to compute the groups $\pi_k\mathbb{S}$ for all $k \geq 0$ and to study the relationship that the elements of this group have with each other. Starting with the first point, work of Serre tells us that $\pi_k\mathbb{S}$ is a finite abelian group for all $k>0$. This allows us to work one prime at a time, computing only the $p$-typical component of each stable stem. The sphere spectrum is the monoidal unit for the smash product on spectra, which gives $\pi_*\mathbb{S}$ the structure of a graded ring. However, Nishida's theorem tells us that if $x \in \pi_k\mathbb{S}$ for any $k>0$, then $x$ is nilpotent. In other words, the ring structure on $\pi_*\mathbb{S}$ is garbage.
+A central task in homotopy theory is to understand the stable homotopy groups of spheres. By understand, I mean to compute the groups $\pi_k\mathbb{S}$ for all $k \geq 0$ and to study the relationship that the elements of this group have with each other. Starting with the first point, work of Serre tells us that $\pi_k\mathbb{S}$ is a finite abelian group for all $k>0$. This allows us to work one prime at a time, computing only the $p$-typical component of each stable stem. The sphere spectrum is the monoidal unit for the smash product on spectra, which gives $\pi_*\mathbb{S}$ the structure of a graded ring. However, Nishida's theorem tells us that if $x \in \pi_k\mathbb{S}$ for any $k>0$, then $x$ is nilpotent. In other words, the ring structure on $\pi_*\mathbb{S}$ is garbage.
 
 In the 60s, Adams constructed infinite families of elements in $\pi_*\mathbb{S}$. These families do not live in one particular degree, so they do not break Serre's finiteness result, nor are they direct multiples of each other, so they do not break Nishida's nilpotence theorem. This was the birth of chromatic homotopy theory, which extends Adams ideas and organizes the elements of $\pi_*\mathbb{S}$ into $v_n$-periodic families for $n \geq 0$. One should think of these $v_n$'s as "higher primes" which only become visible after killing the previous one. By pioneering work of Morava, Quillen, and many others, it was discovered that the periodic behavior of the stable stems are controlled by the moduli stack of formal groups, which allows one to study homotopy theory using tools from arithmetic geometry. It's really incredible, although I won't talk about this connection very much.
 
@@ -33,7 +33,7 @@ Different choices of $\text{E}$ have Adams spectral sequences which are good for
 
 This is true. This is the whole point: Mahowald's analysis of the $\text{bo}$-resolution allows one to completely identify the $v_1$-periodic part of the stable stems. His results were then shown to imply the height 1 telescope conjecture, which equates two rivaling methods to access $v_1$-periodic homotopy. I should remark that it is partially on the basis of this computation, as well as Haynes Miller's in the odd primary case, that lead to Ravenel even forming the telescope conjecture in the first place. Additionally, we now know that this is the only positive height at which the telescope conjecture is even true!
 
-*Motivic homotopy theory: from the perspective of homotopy theory*
+**Motivic homotopy theory: from the perspective of homotopy theory**
 
 Motivic homotopy theory, as pioneered by Morel-Voevodsky, gives a way to study algebro geometric objects using tools from homotopy theory. The broad strokes are as follows. Take the category $\text{Sm}_F$ of smooth schemes over a field $F$. These are the "algebro-geometric objects we want to do homotopy theory with". The problem is that $\text{Sm}_F$ is not well behaved categorically, for instance not admitting all colimits, and a major innovation of motivic homotopy theory is the development of a good category of motivic spaces $\text{Spc}_F$. For technical reasons, this category has a bigraded family of spheres $S^{s,w}$. I like to think of the $s$ degree as the "stem" degree and the $w$ degree as the motivic weight.
 
@@ -45,13 +45,13 @@ Now comes a bit of choice: what field $F$ should one work over? From a computati
 
 What this paper does
 ===
-*The short of it*
+**The short of it**
 
 This paper begins the study of the $\text{kq}$-resolution in $\mathbb{R}$-motivic homotopy theory. This spectral sequence takes the form
 $$\text{E}_1^{s,f,w} = \pi_{s+f, w}^\mathbb{R}(\text{kq} \otimes \overline{\text{kq}}^{\otimes f}) \implies \pi_{s,w}^\mathbb{R}\mathbb{S}.$$
 The first step to studying this resolution is just computing and understanding the $\text{E}_1$-page, which is significantly harder than either the classical or $\mathbb{C}$-motivic analogue. This is the main content of my paper: I computed the $\text{E}_1$-page of the $\text{kq}$-resolution, modulo some irrelevant $v_1$-torsion.
 
-*The long of it*
+**The long of it**
 
 One of the main tools that Mahowald uses in his classical arguments are Brown-Gitler spectra. These are finite spectra $\text{H}\mathbb{Z}_k$ for $k \geq 0$ which give rise to a splitting of the cooperations algebra:
 $$\text{bo} \otimes \text{bo} \simeq \bigoplus_{k \geq 0}\Sigma^{4k}\text{bo} \otimes \text{H}\mathbb{Z}_k.$$

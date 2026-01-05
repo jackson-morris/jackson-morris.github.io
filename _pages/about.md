@@ -19,7 +19,6 @@ I received my BS from the University of Kentucky in December 2020 and my Master'
 
 Upcoming Travel
 =====
-* January 4-7: JMM, Washington D.C.
 * January 27: UIUC Homotopy Theory seminar
 
 Can you guess what the chart at the bottom of this page is displaying? Send me an email if you think you know!

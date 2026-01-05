@@ -24,7 +24,9 @@ The $v_0$-periodic layer is just the rationalization. By Serre's finiteness, the
 The whole point to this introduction is that we actually know the answer to the above question, and it was all due to bunch of different ideas floating around with Mahowald. I'll streamline what he did in "bo-resolutions" - sorry if you wanted hear anything about the J-homomorphism!
 
 The best tool we have to compute homotopy groups is the Adams spectral sequence. For a spectrum $\text{E}$, this takes the form
+
 $$\text{E}_1^{s,f} = \pi_{s+f}(\text{E} \otimes \overline{\text{E}}^{\otimes f}) \implies \pi_s\mathbb{S}.$$
+
 The classical Adams spectral sequence, taking $\text{E}=\text{H}\mathbb{F}_2$ the Eilenberg-MacLane spectrum for $\mathbb{F}_2$-cohomology, actually starts at the $\text{E}_2$-page:
 $$\text{E}_2^{s,f} = \text{Ext}_{\mathcal{A}^\vee}^{s,f}(\mathbb{F}_2, \mathbb{F}_2) \implies \pi_s\mathbb{S},$$
 where $\mathcal{A}^\vee :=\pi_*(\text{H}\mathbb{F}_2 \otimes \text{H}\mathbb{F}_2)$ is the dual Steenrod algebra. In general, however, one actually needs to start with the $\text{E}_1$-page.

@@ -29,9 +29,9 @@ $$\text{E}_1^{s,f} = \pi_{s+f}(\text{E} \otimes \overline{\text{E}}^{\otimes f})
 
 The classical Adams spectral sequence, based on the Eilenberg-MacLane spectrum for $\mathbb{F}_2$-cohomology, actually starts at the $\text{E}_2$-page:
 
-$$\text{E}_2^{s,f} = \text{Ext}_{\mathcal{A}^\vee}^{s,f}(\mathbb{F}_2, \mathbb{F}_2) \implies \pi_s\mathbb{S},$$
+$$\text{E}_2^{s,f} = \text{Ext}_{A^\vee}^{s,f}(\mathbb{F}_2, \mathbb{F}_2) \implies \pi_s\mathbb{S},$$
 
-where $\mathcal{A}^\vee$ is the dual Steenrod algebra. In general, however, one actually needs to start with the $\text{E}_1$-page.
+where $A^\vee$ is the dual Steenrod algebra. In general, however, one actually needs to start with the $\text{E}_1$-page.
 
 Different choices of $\text{E}$ have Adams spectral sequences which are good for different purposes. The classical Adams spectral sequence is great for computing stem-by-stem, but not so good at quickly identifying periodic elements. Mahowald's realization was the following: the connective topological K-theory spectrum $\text{bo}$ has an element $v_1^4 \in \pi_8\text{bo}$ in its homotopy, which is useful in showing that Adams families of elements are nonzero. It ought to be the case that the $\text{bo}$-based Adams spectral sequence is good at isolating the $v_1$-periodic part of the stable stems!
 
@@ -52,21 +52,31 @@ What this paper does
 **The short of it**
 
 This paper begins the study of the $\text{kq}$-resolution in $\mathbb{R}$-motivic homotopy theory. This spectral sequence takes the form
+
 $$\text{E}_1^{s,f,w} = \pi_{s+f, w}^\mathbb{R}(\text{kq} \otimes \overline{\text{kq}}^{\otimes f}) \implies \pi_{s,w}^\mathbb{R}\mathbb{S}.$$
+
 The first step to studying this resolution is just computing and understanding the $\text{E}_1$-page, which is significantly harder than either the classical or $\mathbb{C}$-motivic analogue. This is the main content of my paper: I computed the $\text{E}_1$-page of the $\text{kq}$-resolution, modulo some irrelevant $v_1$-torsion.
 
 **The long of it**
 
 One of the main tools that Mahowald uses in his classical arguments are Brown-Gitler spectra. These are finite spectra $\text{H}\mathbb{Z}_k$ for $k \geq 0$ which give rise to a splitting of the cooperations algebra:
+
 $$\text{bo} \otimes \text{bo} \simeq \bigoplus_{k \geq 0}\Sigma^{4k}\text{bo} \otimes \text{H}\mathbb{Z}_k.$$
+
 This topological splitting makes a lot of arguments run really smoothly.
 
 There is currently no construction of motivic Brown-Gitler spectra. This is one of the biggest hurdles in this paper. To compute the homotopy ring of cooperations $\pi_{**}^\mathbb{R}(\text{kq} \otimes \text{kq})$, the bottom piece of the $\text{kq}$-resolution, we can use the mod-2 Adams spectral sequence:
-$$\text{E}_2^{s,f,w} = \text{Ext}^{s,f,w}_{\mathcal{A}^\vee}(\mathbb{M}_2, \text{H}_{**}(\text{kq} \otimes \text{kq})) \implies \pi_{**}^\mathbb{R}(\text{kq} \otimes \text{kq})$$
+
+$$\text{E}_2^{s,f,w} = \text{Ext}^{s,f,w}_{A^\vee}(\mathbb{M}_2, \text{H}_{**}(\text{kq} \otimes \text{kq})) \implies \pi_{**}^\mathbb{R}(\text{kq} \otimes \text{kq})$$
+
 where $\mathbb{M}_2 = \text{H}_{**}(\mathbb{S})$. One can show that there is a Kunneth isomorphism
+
 $$\text{H}_{**}(\text{kq} \otimes \text{kq}) \cong \text{H}_{**}(\text{kq}) \otimes_{\mathbb{M}_2}\text{H}_{**}(\text{kq}).$$
-Using the identification of $\mathcal{A}^\vee$-comodules $\text{H}_{**}(\text{kq}) \cong (\mathcal{A}//\mathcal{A}(1))^\vee$, we can use a change of rings isomorphism to rewrite the $\text{E}_2$-page of the above Adams spectral sequence as
-$$\text{Ext}_{\mathcal{A}(1)^\vee}^{s,f,w}(\mathbb{M}_2, \text{H}_{**}(\text{kq})).$$
+
+Using the identification of $A^\vee$-comodules $\text{H}_{**}(\text{kq}) \cong (A//A(1))^\vee$, we can use a change of rings isomorphism to rewrite the $\text{E}_2$-page of the above Adams spectral sequence as
+
+$$\text{Ext}_{A(1)^\vee}^{s,f,w}(\mathbb{M}_2, \text{H}_{**}(\text{kq})).$$
+
 This is the point where having Brown-Gitler spectra would be useful. This would give us a way to rewrite this Ext group once again into smaller pieces that we can stitch together to give our final answer.
 
 What I do is produce an algebraic splitting. There are comodules over the dual Steenrod algebra known as the Brown-Gitler comodules $B_0(k)$ which give rise to a splitting of $\mathcal{A}(1)^\vee$-comodules

@@ -27,11 +27,13 @@ The best tool we have to compute homotopy groups is the Adams spectral sequence.
 
 $$\text{E}_1^{s,f} = \pi_{s+f}(\text{E} \otimes \overline{\text{E}}^{\otimes f}) \implies \pi_s\mathbb{S}.$$
 
-The classical Adams spectral sequence, taking $\text{E}=\text{H}\mathbb{F}_2$ the Eilenberg-MacLane spectrum for $\mathbb{F}_2$-cohomology, actually starts at the $\text{E}_2$-page:
-$$\text{E}_2^{s,f} = \text{Ext}_{\mathcal{A}^\vee}^{s,f}(\mathbb{F}_2, \mathbb{F}_2) \implies \pi_s\mathbb{S},$$
-where $\mathcal{A}^\vee :=\pi_*(\text{H}\mathbb{F}_2 \otimes \text{H}\mathbb{F}_2)$ is the dual Steenrod algebra. In general, however, one actually needs to start with the $\text{E}_1$-page.
+The classical Adams spectral sequence, based on the Eilenberg-MacLane spectrum for $\mathbb{F}_2$-cohomology, actually starts at the $\text{E}_2$-page:
 
-Different choices of $\text{E}$ have Adams spectral sequences which are good for different purposes. The $\text{H}\mathbb{F}_2$-based Adams spectral sequence is great for computing $\pi_*\mathbb{S}$ stem-by-stem, but not so good at quickly identifying periodic elements. Mahowald's realization was the following: the connective topological K-theory spectrum $\text{bo}$ has an element $v_1^4 \in \pi_8\text{bo}$ in its homotopy, which is useful in showing that Adams families of elements are nonzero. It ought to be the case that the $\text{bo}$-based Adams spectral sequence is good at isolating the $v_1$-periodic part of $\pi_*\mathbb{S}$!
+$$\text{E}_2^{s,f} = \text{Ext}_{\mathcal{A}^\vee}^{s,f}(\mathbb{F}_2, \mathbb{F}_2) \implies \pi_s\mathbb{S},$$
+
+where $\mathcal{A}^\vee$ is the dual Steenrod algebra. In general, however, one actually needs to start with the $\text{E}_1$-page.
+
+Different choices of $\text{E}$ have Adams spectral sequences which are good for different purposes. The classical Adams spectral sequence is great for computing stem-by-stem, but not so good at quickly identifying periodic elements. Mahowald's realization was the following: the connective topological K-theory spectrum $\text{bo}$ has an element $v_1^4 \in \pi_8\text{bo}$ in its homotopy, which is useful in showing that Adams families of elements are nonzero. It ought to be the case that the $\text{bo}$-based Adams spectral sequence is good at isolating the $v_1$-periodic part of the stable stems!
 
 This is true. This is the whole point: Mahowald's analysis of the $\text{bo}$-resolution allows one to completely identify the $v_1$-periodic part of the stable stems. His results were then shown to imply the height 1 telescope conjecture, which equates two rivaling methods to access $v_1$-periodic homotopy. I should remark that it is partially on the basis of this computation, as well as Haynes Miller's in the odd primary case, that lead to Ravenel even forming the telescope conjecture in the first place. Additionally, we now know that this is the only positive height at which the telescope conjecture is even true!
 

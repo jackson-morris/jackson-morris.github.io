@@ -51,6 +51,10 @@ Preprints/Publications
     We examine Li's double determinantal varieties in the special case that they are toric. We recover from the general double determinantal varieties case, via a more elementary argument, that they are irreducible and show that toric double determinantal varieties are smooth. We use this framework to give a straighforward formula for their dimension. Finally, we use the smallest nontrivial toric double determinantal variety to provide some empirical evidence concerning an open problem in local algebra.
     </details>
 
+| ![coolchart](/images/DA1.jpg) |
+| :--: |
+| The double of $\mathcal{A}(1)$. |
+
 Writings
 =====
 * **Splittings and the algebraic Atiyah-Hirzebruch spectral sequence** Expanded set of notes for  preseminar talk at UW. [PDF](/files/Splittings_and_the_algebraic_Atiyah_Hirzebruch_spectral_sequence%20(2).pdf)

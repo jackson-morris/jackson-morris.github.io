@@ -11,3 +11,5 @@ Guides
 =====
 * [On the ring of cooperations for real Hermitian K-theory](guide_real_kq_coop.md)
 
+* [Rings of cooperations for Hermitian K-theory over finite fields](guide_finite_kq_coop.md)
+

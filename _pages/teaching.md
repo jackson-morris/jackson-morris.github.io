@@ -6,7 +6,7 @@ author_profile: true
 ---
 * **Winter 2026**: MATH 208 - Linear Algebra TA
 * **Fall 2025**: MATH 208 - Linear Algebra TA
-* **Fall 2025**: [eCHT Research Seminar](https://s.wayne.edu/echt/echt-research-seminar/) TA
+* **Fall 2025 - Spring 2026**: [eCHT Research Seminar](https://s.wayne.edu/echt/echt-research-seminar/) TA
   * Organized by [Dan Isaksen](https://s.wayne.edu/isaksen/) (Wayne State University), [Guchuan Li](https://guchuanli.github.io/) (Peking University), [David Mehrle](https://www.davidmehrle.com/) (University of Kentucky), and [J.D. Quigley](https://quigleyjd.github.io/) (University of Virginia)
 * **Summer 2025**: No teaching, awarded a departmental research assistantship.
 * **Spring 2025**: MATH 208 - Linear Algebra TA

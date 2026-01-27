@@ -14,15 +14,16 @@ Hello! I am a fifth year mathematics PhD candidate at the University of Washingt
 
 **I am currently on the academic job market.**
 
-I received my BS from the University of Kentucky in December 2020 and my Master's from UW in June 2023. [Here is my CV](/files/CV.pdf) (updated January 2026).
+I received my BS from the University of Kentucky in December 2020 and my Master's from UW in June 2023. [Here is my CV](/files/CV.pdf) (updated January 2026). I can be contacted at jackmann at uw dot edu.
+
+In Spring 2026, I am teaching an undergraduate topics course on homotopy theory. Send me an email if you are an interested student at UW!
+
 <!-- I try to collect resources which I have found useful on various topics. Feel free to email me if you have anything to contribute! -->
 
 
-Upcoming Travel
-=====
-* January 27: UIUC Homotopy Theory seminar
+<!-- Upcoming Travel
+===== -->
 
-Can you guess what the chart at the bottom of this page is displaying? Send me an email if you think you know!
 
 | ![F5 kq charts](/images/f5_kq_charts.jpg) |
 | :--: |

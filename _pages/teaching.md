@@ -4,6 +4,8 @@ title: "Teaching"
 permalink: /teaching/
 author_profile: true
 ---
+* **Spring 2026**: MATH 480 - Homotopy Theory Primary Instructor
+  * Undergraduate topics course in homotopy theory. Details to come!
 * **Winter 2026**: MATH 208 - Linear Algebra TA
 * **Fall 2025**: MATH 208 - Linear Algebra TA
 * **Fall 2025 - Spring 2026**: [eCHT Research Seminar](https://s.wayne.edu/echt/echt-research-seminar/) TA

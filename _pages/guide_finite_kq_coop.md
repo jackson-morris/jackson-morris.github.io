@@ -42,12 +42,14 @@ $$\Sigma^{1,1}\text{kq} \to \text{kq} \to \text{kgl}.$$
 
 And indeed, one way to interpret some of these computations is by starting at the $\text{H}\mathbb{Z}$-cooperations case, $v_1$-Bockstein-ing to the $\text{kgl}$ case, and then $\eta$-Bockstein-ing to the $\text{kq}$ case. This perspective illuminates where the differentials are coming from. The homotopy of $\text{H}\mathbb{Z}$ is determined by the integral motivic homology of the base field, which was determined by Suslin back in the 80s. One can calculate the $\text{E}_2$-page of the Adams spectral sequence computing the homotopy of $\text{H}\mathbb{Z}$, and knowing what we are converging to forces the differential pattern.
 
-It turns out that these differentials are the only differentials that lift to the Adams spectral sequence computing either the homotopy og $\text{kq}$ or the homotopy of the cooperations!
+It turns out that these differentials are the only differentials that lift to the Adams spectral sequence computing either the homotopy of $\text{kq}$ or the homotopy of the cooperations! Another fun consequence is that I was able recompute Friedlander's computation of the symplectic K-theory of finite fields using the Adams spectral sequence.
 
 
 How did this all come together?
 ===
+After I computed the $\mathbb{R}$-motivic ring of cooperations, I wasn't sure what to do next. Should I go ahead and try to compute the $\text{kq}$-resoultion and say something about motivic $v_1$-periodicity? Should I move on to an entirely new project? I settled on a third point: expand the class of base schemes on which we have a comptuation of the ring of cooperations, or really the whole $\text{E}_1$-page of the $\text{kq}$-resolution. This was the next natural step. It honestly came together very quickly and was much more fun than the $\mathbb{R}$-motivic analogue. The arithmetic coming out was very interesting.
 
 
 What's next?
 ===
+No idea. Lots of directions, lots of decisions.

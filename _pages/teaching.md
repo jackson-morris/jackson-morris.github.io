@@ -4,9 +4,13 @@ title: "Teaching"
 permalink: /teaching/
 author_profile: true
 ---
-* **Spring 2026**: MATH 480 - Homotopy Theory Primary Instructor
+I am currently a TA for Math 208 - Linear Algebra. In Spring 2026, I will be teaching a section of Math 480, an undergraduate topics course which will be on homotopy theory.
+
+Previous Teaching
+=====
+<!-- * **Spring 2026**: MATH 480 - Homotopy Theory Primary Instructor
   * Undergraduate topics course in homotopy theory. Details to come!
-* **Winter 2026**: MATH 208 - Linear Algebra TA
+* **Winter 2026**: MATH 208 - Linear Algebra TA -->
 * **Fall 2025**: MATH 208 - Linear Algebra TA
 * **Fall 2025 - Spring 2026**: [eCHT Research Seminar](https://s.wayne.edu/echt/echt-research-seminar/) TA
   * Organized by [Dan Isaksen](https://s.wayne.edu/isaksen/) (Wayne State University), [Guchuan Li](https://guchuanli.github.io/) (Peking University), [David Mehrle](https://www.davidmehrle.com/) (University of Kentucky), and [J.D. Quigley](https://quigleyjd.github.io/) (University of Virginia)

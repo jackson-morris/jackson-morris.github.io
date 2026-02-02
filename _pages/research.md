@@ -73,9 +73,8 @@ Recent Talks
 * *Splittings and cooperations in motivic homotopy theory*, University of Notre Dame Topology Seminar, September 2025
 * *On the ring of cooperations for real Hermitian K-theory*, University of Washington Topology Seminar, June 2025
 
-More detailed research interests.
+<!-- More detailed research interests.
 =====
-
 My research is oriented by chromatic homotopy theory. Roughly speaking, here is the story. As a homotopy theorist, the one thing I really want to understand more than anything else are the homotopy groups of spheres. There are some reductions/refinements one can make: 
 * Freudenthal tells us that these groups stabilize, so let's focus on computing the stable homotopy groups of spheres; 
 * Serre tells us that the non-negative stable stems are finite abelian groups, so let's work one prime at a time;
@@ -90,5 +89,5 @@ Most of my research has been housed in motivic homotopy theory, a variant of sta
 * understanding the correct motivic analogue of the telescope conjecture, one which captures classical and exotic periodicity;
 * moving towards a more integral class of base scheme.
 
-Most of my current work has used the Adams spectral sequence as a guiding principle (although recently, I have had an eye towards the slice spectral sequence...). I am particularly fond of comparing and contrasting these results as the base scheme varies and with classical stable homotopy theory, and I am eager to connect my work over the real numbers with $C_2$-equivariant homotopy theory.
+Most of my current work has used the Adams spectral sequence as a guiding principle (although recently, I have had an eye towards the slice spectral sequence...). I am particularly fond of comparing and contrasting these results as the base scheme varies and with classical stable homotopy theory, and I am eager to connect my work over the real numbers with $C_2$-equivariant homotopy theory. -->
 

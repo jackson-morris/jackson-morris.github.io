@@ -30,14 +30,14 @@ Preprints/Publications
     We construct spectrum-level splittings of $\text{BPGL}\langle 1\rangle\wedge \text{BPGL}\langle 1\rangle$ at all primes $p$, where $\text{BPGL}\langle 1 \rangle$ is the first truncated motivic Brown-Peterson spectrum. Classically, $\text{BP}\langle 1 \rangle \wedge \text{BP}\langle 1\rangle$ was first described by Kane and Mahowald in terms of Brown-Gitler spectra. This splitting was subsequently reinterpreted by Lellman and Davis-Gitler-Mahowald in terms of Adams covers. In this paper, we give motivic lifts of these splittings in terms of Adams covers, over the base fields $\mathbb{C}$, $\mathbb{R}$, and $\mathbb{F}_q$, where $\text{char}(\mathbb{F}_q)\neq p$. As an application, we compute the $E_1$-page of the $\text{BPGL}\langle 1 \rangle$-based Adams spectral sequence as a module over $\text{BPGL}\langle 1 \rangle$, both in homotopy and in terms of motivic spectra. We also record analogous splittings for $\text{BPGL}\langle 0 \rangle \wedge \text{BPGL} \langle 0 \rangle$.
     </details>    
 
-* **Rings of cooperations for Hermitian K-theory over finite fields**. Submitted. [arxiv:2509.02786](https://arxiv.org/abs/2509.02786)
+* **Rings of cooperations for Hermitian K-theory over finite fields**. Submitted. [arxiv:2509.02786](https://arxiv.org/abs/2509.02786), [User's Guide](guide_finite_kq_coop.md).
     <details>
     <summary>Abstract</summary>
 
     We compute the ring of cooperations $\pi_{**}(\text{kq} \otimes \text{kq})$ for the very effective Hermitian K-theory over all finite fields $\mathbb{F}_q$ where $\text{char}(\text{F}_q) \neq 2$. To do this, we use the motivic Adams spectral sequence and show that all differentials are determined by the integral motivic cohomology of $\mathbb{F}_q$. As an application, we compute the $E_1$-page of the kq-resolution.
     </details>
 
-* **On the ring of cooperations for real Hermitian K-theory**. Submitted. [arxiv:2506.16672](https://arxiv.org/abs/2506.16672), [User's Guide](guide_real_kq_coop.md)
+* **On the ring of cooperations for real Hermitian K-theory**. Submitted. [arxiv:2506.16672](https://arxiv.org/abs/2506.16672), [User's Guide](guide_real_kq_coop.md).
     <details>
     <summary>Abstract</summary>
 

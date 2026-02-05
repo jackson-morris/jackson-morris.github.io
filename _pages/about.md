@@ -21,8 +21,9 @@ In Spring 2026, I am teaching an undergraduate topics course on homotopy theory.
 <!-- I try to collect resources which I have found useful on various topics. Feel free to email me if you have anything to contribute! -->
 
 
-<!-- Upcoming Travel
-===== -->
+Upcoming Travel
+=====
+* [$(\infty, \infty)$-categories workshop](https://antieau.github.io/workshops/2026-03-frg.html) - March 2026, Chicago IL
 
 
 | ![F5 kq charts](/images/f5_kq_charts.jpg) |

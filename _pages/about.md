@@ -6,6 +6,9 @@ redirect_from:
   - /about/
   - /about.html
 ---
+**PAY ATTENTION TO THE TALK!!!!**
+=====
+
 
 Hello! I am a fifth year mathematics PhD candidate at the University of Washington. My [research interests](research.md) are in motivic and chromatic homotopy theory, and my advisors are [Kyle Ormsby](https://kyleormsby.github.io/) and [John Palmieri](https://sites.math.washington.edu//~palmieri/). Things that I am interested in include:
 * Periodicity in the motivic/equivariant/classical stable stems

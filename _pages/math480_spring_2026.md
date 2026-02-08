@@ -1,5 +1,5 @@
 ---
-permalink: /
+permalink: /math480spring2026
 title: "MATH 480 - Homotopy Theory"
 author_profile: false
 redirect_from: 

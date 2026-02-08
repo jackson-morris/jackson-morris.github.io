@@ -6,5 +6,4 @@ redirect_from:
   - /math480spring2026
   - /math480spring2026.html
 ---
-howdoyhiodhsfiohaoifas
-
+Under construction

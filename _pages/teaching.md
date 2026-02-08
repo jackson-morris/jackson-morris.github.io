@@ -4,7 +4,7 @@ title: "Teaching"
 permalink: /teaching/
 author_profile: true
 ---
-I am currently a TA for Math 208 - Linear Algebra. In Spring 2026, I will be teaching a section of Math 480, an undergraduate topics course which will be on homotopy theory.
+I am currently a TA for Math 208 - Linear Algebra. In Spring 2026, I will be teaching [Math 480 - Homotopy Theory](math480_spring_2026.md).
 
 Previous Teaching
 =====

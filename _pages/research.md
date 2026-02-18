@@ -64,8 +64,9 @@ Writings
 | :--: |
 | The ring of cooperations $\pi_{**}(\text{kq} \otimes \text{kq})$ over $\mathbb{F}_3$. |
 
-Recent Talks
+Selected Recent Talks
 =====
+* *Splittings and periodicity in motivic homotopy theory*, University of Washington Topology Seminar, February 2026
 * *Cooperations in motivic homotopy theory*, [JMM](https://meetings.ams.org/math/jmm2026/meetingapp.cgi/Session/13257), January 2026. [Slides](/files/JMM%202025%20-%20cooperations%20in%20motivic%20homotopy%20theory%20SHORT.pdf)
 * *Splittings and cooperations in motivic homotopy theory*, University of Virginia Topology Seminar, November 2025
 * *Splittings and cooperations in motivic homotopy theory*, University of Kentucky Topology Seminar, November 2025
@@ -74,7 +75,7 @@ Recent Talks
 * *Splittings of truncated motivic Brown-Peterson cooperations algebras*, University of Colorado Boulder Homotopy Theory Seminar, September 2025
 * *On the ring of cooperations for real Hermitian K-theory*, University of Michigan Geometry Seminar, September 2025
 * *Splittings and cooperations in motivic homotopy theory*, University of Notre Dame Topology Seminar, September 2025
-* *On the ring of cooperations for real Hermitian K-theory*, University of Washington Topology Seminar, June 2025
+<!-- * *On the ring of cooperations for real Hermitian K-theory*, University of Washington Topology Seminar, June 2025 -->
 
 <!-- More detailed research interests.
 =====

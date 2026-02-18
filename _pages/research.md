@@ -5,7 +5,10 @@ permalink: /research/
 author_profile: true
 ---
 
-My research interests are in homotopy theory, motivated from the chromatic perspective, and the tools I use are often computational.  I have recently been interested in periodicity in motivic and equivariant stable homotopy theory, and I like to use the Adams spectral sequence to access periodic elements (although recently, I have had an eye towards the slice spectral sequence...). I have also written some user's guides to some of my papers that you can [check out here](usersguides.md).
+My research interests are in homotopy theory, motivated from the chromatic perspective, and the tools I use are often computational. I have recently been interested in periodicity in motivic and equivariant stable homotopy theory, and I like to use the Adams spectral sequence to access periodic elements (although recently, I have had an eye towards the slice spectral sequence...). I am also interested in various height-shifting phenomena.
+
+ I have written some user's guides to some of my papers that you can [check out here](usersguides.md).
+
 
 Preprints/Publications
 =====

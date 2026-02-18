@@ -14,7 +14,7 @@ My [research interests](research.md) are in motivic and chromatic homotopy theor
 
 <!-- I received my BS from the University of Kentucky in December 2020 and my Master's from UW in June 2023.  -->
 
-[Here is my CV](/files/CV.pdf) (updated January 2026). I can be contacted at jackmann at uw dot edu.
+[Here is my CV](/files/CV.pdf) (updated February 2026). I can be contacted at jackmann at uw dot edu.
 
 In Spring 2026, I am teaching [Math 480 - Homotopy Theory](math480_spring_2026.md). Send me an email if you are an interested student at UW!
 

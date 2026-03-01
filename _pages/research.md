@@ -47,7 +47,7 @@ Preprints/Publications
     Let $\text{kq}$ denote the very effective cover of the motivic Hermitian K-theory spectrum. We analyze the ring of cooperations $\pi_{**}(\text{kq} \otimes \text{kq})$ in the stable motivic homotopy category $\text{SH}(\mathbb{R})$, giving a full description in terms of Brown-Gitler comodules. To do this, we decompose the $E_2$-page of the motivic Adams spectral sequence and show that it must collapse. The description of the $E_2$-page is accomplished by a series of algebraic Atiyah-Hirzebruch spectral sequences which converge to the summands of the $E_2$-page. Along the way, we prove a splitting result for the very effective symplectic K-theory $\text{ksp}$ over any base field of characteristic not two.
     </details>
 
-* **Toric double determinantal varieties**, joint with Alexander Blose, [Patricia Klein](https://patriciajklein.github.io/), and Owen McGrath. Published in **Communications in Algebra** 49 (2021), 7, 3085-3093. [arxiv:2006.04191](https://arxiv.org/abs/2006.04191)
+ * **Toric double determinantal varieties**, joint with Alexander Blose, [Patricia Klein](https://patriciajklein.github.io/), and Owen McGrath. Published in **Communications in Algebra** 49 (2021), 7, 3085-3093. [arxiv:2006.04191](https://arxiv.org/abs/2006.04191)
     <details>
     <summary>Abstract</summary>
     

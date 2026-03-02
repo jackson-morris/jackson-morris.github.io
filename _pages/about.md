@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I am a fifth year mathematics PhD candidate at the University of Washington, where my advisors are [Kyle Ormsby](https://kyleormsby.github.io/) and [John Palmieri](https://sites.math.washington.edu//~palmieri/). This fall, I will be a postdoc at SLMath as a part of their [semester program on motivic homotopy theory](https://www.slmath.org/programs/384). Starting in January 2027, I will be a Postdoc at Vanderbilt University.
+Hello! I am a fifth year mathematics PhD candidate at the University of Washington, where my advisors are [Kyle Ormsby](https://kyleormsby.github.io/) and [John Palmieri](https://sites.math.washington.edu//~palmieri/). This fall, I will be a postdoc at the [SLMath semester program on motivic homotopy theory](https://www.slmath.org/programs/384). Starting in January 2027, I will be a postdoc at Vanderbilt University.
 
 My [research interests](research.md) are in motivic and chromatic homotopy theory. I am generally interested in periodicity in all flavors of stable homotopy theory.
 

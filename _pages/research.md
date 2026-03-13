@@ -12,10 +12,12 @@ My research interests are in homotopy theory, motivated from the chromatic persp
 
 Preprints/Publications
 =====
-* **Real K-theory of equivariant classifying spaces**, joint with Manyi Guo, [Alex Waugh](https://sites.google.com/view/alex-waugh/home), and [Albert Yang](https://kclo3-naoh.github.io/). In preparation.
+* **Immersions of $\text{C}_2$-projective spaces via $\text{K}\mathbb{R}$-theory**, joint with Manyi Guo, [Alex Waugh](https://sites.google.com/view/alex-waugh/home), and [Albert Yang](https://kclo3-naoh.github.io/). In preparation.
     <details>
     <summary>Abstract</summary>
-    We compute the Atiyah Real K-theory of the classifying space for $C_2$-equivariant principal $\Sigma_2$-bundles. Using our computation, we produce a $C_2$-equivariant analogue of James periodicity.
+    We compute the Atiyah Real K-theory of the classifying space for $C_2$-equivariant principal $\Sigma_2$-bundles. Using our computation, we determine an upper bound on the rank of a $\text{C}_2$-representation $V$ for which there exists a $\text{C}_2$-equivariant immersion
+    $$\mathbb{P}(n\rho) \looparrowright V$$
+    As a consequence, we produce a $C_2$-equivariant analogue of James periodicity.
 
     </details>
 

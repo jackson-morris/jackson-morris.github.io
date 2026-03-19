@@ -4,7 +4,7 @@ title: "Teaching"
 permalink: /teaching/
 author_profile: true
 ---
-In Spring 2026, I am be teaching [Math 480 - Homotopy Theory](math480_spring_2026.md).
+In Spring 2026, I am teaching [Math 480 - Homotopy Theory](math480_spring_2026.md).
 
 Previous Teaching
 =====

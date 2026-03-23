@@ -21,12 +21,12 @@ Preprints/Publications
 
     </details>
 
-* **Exotic motivic self-maps of periodicity 1**. In preparation. 
+<!-- * **Diachromatic blueshift**, joint with Kyle Ormsby. In preparation. 
     <details>
     <summary>Abstract</summary>
 
-    We construct finite motivic spectra with a $v_1$- and $w_1$-self-maps of periodicity 1 over $\mathbb{C}, \mathbb{R},$ and $\mathbb{F}_q$. The cofibers of these self-maps participate in splittings of many chromatically interesting motivic spectra.
-    </details>    
+    We show that for all $n$, the motivic Lubin-Tate spectrum ${\sf{E}}_n^\text{mot}$ detects exotic periodic phenomena in its Tate fixed points $({\sf{E}}_n^{\text{mot}})^{tC_2}$. We then analyze the Hurewicz image over $\mathbb{C}$.
+    </details>     -->
 
 * **Splittings of truncated motivic Brown-Peterson cooperations algebras**, joint with [Sarah Petersen](https://sites.google.com/view/sarahpetersen/home) and [Liz Tatum](https://www.sas.rochester.edu/mth/people/faculty/tatum-elizabeth/index.html). Submitted. [arxiv:2509.19542](https://arxiv.org/abs/2509.19542)
     <details>

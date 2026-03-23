@@ -6,9 +6,9 @@ redirect_from:
   - /math480spring2026
   - /math480spring2026.html
 ---
-* Course Meetings: MWF 12:30 - 1:30 in DEM 002
+* Course Meetings: MWF 12:30 - 1:20 in DEM 002
 * Office Hours: TBD
-* Lecture Notes
+* Lecture Notes: Click Here
 * Recommended texts:
     * Chapter 1 of [Spectra and stable homotopy theory](https://people.math.binghamton.edu/malkiewich/spectra_book_draft.pdf) by Cary Malkiewich
     * Chapters 1 and 4 of [Algebraic Topology](https://pi.math.cornell.edu/~hatcher/AT/AT.pdf) by Allen Hatcher

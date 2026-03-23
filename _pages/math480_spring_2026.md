@@ -28,6 +28,8 @@ This course will be an introduction to the methods used in homotopy theory. We w
 
 **Monday, March 30**
 
+* HW: fill out [this form](https://jackson-morris.github.io/math480spring2026/)!
+
 **Wednesday, April 1**
 
 **Friday, April 3**

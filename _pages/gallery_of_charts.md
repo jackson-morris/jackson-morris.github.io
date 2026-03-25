@@ -35,11 +35,11 @@ Motivic spectral sequences for algebraic K-theory
 
 | ![coolchart](gallery/Ext_E1_fq_hard_p5.png) |
 | :--: |
-| The $\text{E}_2$-term of the $\text{H}\mathbb{F}_2$-based motivic Adams spectral sequence computing $\pi_{**}^{\mathbb{F}_5}(\text{kgl})$ |
+| The $E_2$-term of the motivic Adams spectral sequence computing $\pi_{**}^{\mathbb{F}_5}(\text{kgl})$ |
 
 | ![coolchart](gallery/Ext_E1_Qp_3.png) |
 | :--: |
-| The $\text{E}_2$-term of the $\text{H}\mathbb{F}_2$-based motivic Adams spectral sequence computing $\pi_{**}^{\mathbb{Q}_3}(\text{kgl})$ |
+| The $E_2$-term of the motivic Adams spectral sequence computing $\pi_{**}^{\mathbb{Q}_3}(\text{kgl})$ |
 
 Cooperations
 =====

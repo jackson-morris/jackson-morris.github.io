@@ -14,6 +14,8 @@ redirect_from:
     * Chapters 1 and 4 of [Algebraic Topology](https://pi.math.cornell.edu/~hatcher/AT/AT.pdf) by Allen Hatcher
     * Chapters 7, 8, and 11 of Introduction to Topological Manifolds by Jack Lee
     * Assortments of [Category Theory in Context](https://emilyriehl.github.io/files/context.pdf) by Emily Riehl
+    * Assortments of [Topology: A Categorical Approach](https://topology.mitpress.mit.edu/) by Tai-Danae Bradley, Tyler Bryson, and John Terilla
+
 
 ## Course Description
 

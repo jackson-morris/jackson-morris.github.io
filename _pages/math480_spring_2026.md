@@ -10,6 +10,7 @@ redirect_from:
 * Office Hours: TBD
 * Lecture Notes: Click Here
 * Recommended texts:
+    * Assortments of [A Concise Course in Algebraic Topology](https://www.math.uchicago.edu/~may/CONCISE/ConciseRevised.pdf) by Peter May
     * Chapter 1 of [Spectra and stable homotopy theory](https://people.math.binghamton.edu/malkiewich/spectra_book_draft.pdf) by Cary Malkiewich
     * Chapters 1 and 4 of [Algebraic Topology](https://pi.math.cornell.edu/~hatcher/AT/AT.pdf) by Allen Hatcher
     * Chapters 7, 8, and 11 of Introduction to Topological Manifolds by Jack Lee

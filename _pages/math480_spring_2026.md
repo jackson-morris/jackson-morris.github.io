@@ -7,7 +7,7 @@ redirect_from:
   - /math480spring2026.html
 ---
 * Course Meetings: MWF 12:30 - 1:20 in DEM 002
-* Office Hours: Thursday 12-1 and Friday 1:30-2:30 (right after class) in PDL C-114
+* Office Hours: Thursday 12-1 and Friday 2:30-3:30 in PDL C-114
 * Lecture Notes: Click Here
 * Recommended texts:
     * Assortments of [A Concise Course in Algebraic Topology](https://www.math.uchicago.edu/~may/CONCISE/ConciseRevised.pdf) by Peter May

@@ -8,7 +8,7 @@ redirect_from:
 ---
 * Course Meetings: MWF 12:30 - 1:20 in DEM 002
 * Office Hours: Thursday 12-1 and Friday 2:30-3:30 in PDL C-114
-* [Lecture Notes](math480_docs/Lecture1_3_30_26.pdf)
+* [Lecture Notes](math480_docs/Lecture2_4_1.pdf)
 * Recommended texts:
     * Assortments of [A Concise Course in Algebraic Topology](https://www.math.uchicago.edu/~may/CONCISE/ConciseRevised.pdf) by Peter May
     * Chapter 1 of [Spectra and stable homotopy theory](https://people.math.binghamton.edu/malkiewich/spectra_book_draft.pdf) by Cary Malkiewich
@@ -32,12 +32,12 @@ This course will be an introduction to the methods used in homotopy theory. We w
 **Monday, March 30**
 
 * Syllabus day and background/motivation
-* [Lecture notes for Lecture 1](math480_docs/Lecture1_3_30_26.pdf)
+* [Notes for Lecture 1](math480_docs/Lecture1_3_30_26.pdf)
 
 **Wednesday, April 1**
 
-* Finishing background/motivation, then basic concepts in homotopy theory and the fundamental group
-* Lecture notes for Lecture 2
+* Finishing background/motivation, a discussion of the homotopy groups of spheres
+* [Notes for Lecture 2](math480_docs/Lecture2_4_1.pdf)
 * [**HOMEWORK 1 HERE**](math480_docs/HW1.pdf), due Wednesday, April 8 in class
 
 **Friday, April 3**

@@ -31,11 +31,15 @@ This course will be an introduction to the methods used in homotopy theory. We w
 
 **Monday, March 30**
 
-* Syllabus day and Background/Motivation
-* [Lecture notes for Class 1](math480_docs/Lecture1_3_30_26.pdf)
-* HW: fill out [this form](https://jackson-morris.github.io/math480spring2026/)!
+* Syllabus day and background/motivation
+* [Lecture notes for Lecture 1](math480_docs/Lecture1_3_30_26.pdf)
+* **HW**: fill out [this form](https://jackson-morris.github.io/math480spring2026/)!
 
 **Wednesday, April 1**
+
+* Finishing background/motivation, then basic concepts in homotopy theory and the fundamental group
+* Lecture notes for Lecture 2
+* [**HOMEWORK 1 HERE**](math480_docs/MATH_480__Homotopy_Theory_Lecture_Notes%20(1).pdf), due Wednesday, April 8 in class
 
 **Friday, April 3**
 

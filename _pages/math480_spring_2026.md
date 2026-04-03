@@ -42,6 +42,9 @@ This course will be an introduction to the methods used in homotopy theory. We w
 
 **Friday, April 3**
 
+* Paths, loops, based spaces, and the fundamental group
+* [Notes for Lecture 3](math480_docs/Lecture3_4_3.pdf)
+
 ## Week 2
 
 **Monday, April 6**

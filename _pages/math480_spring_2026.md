@@ -6,10 +6,11 @@ redirect_from:
   - /math480spring2026
   - /math480spring2026.html
 ---
-* Course Meetings: MWF 12:30 - 1:20 in DEM 002
-* Office Hours: Thursday 12-1 and Friday 2:30-3:30 in PDL C-114
-* [Lecture Notes](math480_docs/Lecture2_4_1.pdf)
-* Recommended texts:
+* **Course Meetings:** MWF 12:30 - 1:20 in DEM 002
+* **Office Hours:** Thursday 12-1 and Friday 2:30-3:30 in PDL C-114
+* [**Lecture Notes**](math480_docs/Lecture2_4_1.pdf)
+* [**Final Project instructions and topics**](math480_docs/Final_Project_Topics_v1_4_3.pdf) (last updated: April 4)
+* **Recommended texts:**
     * Assortments of [A Concise Course in Algebraic Topology](https://www.math.uchicago.edu/~may/CONCISE/ConciseRevised.pdf) by Peter May
     * Chapter 1 of [Spectra and stable homotopy theory](https://people.math.binghamton.edu/malkiewich/spectra_book_draft.pdf) by Cary Malkiewich
     * Chapters 1 and 4 of [Algebraic Topology](https://pi.math.cornell.edu/~hatcher/AT/AT.pdf) by Allen Hatcher

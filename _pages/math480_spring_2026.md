@@ -8,7 +8,7 @@ redirect_from:
 ---
 * Course Meetings: MWF 12:30 - 1:20 in DEM 002
 * Office Hours: Thursday 12-1 and Friday 2:30-3:30 in PDL C-114
-* [Lecture Notes](math480_docs/Lecture2_4_1.pdf)
+* [Lecture Notes](math480_docs/Lecture3_4_3.pdfa)
 * Recommended texts:
     * Assortments of [A Concise Course in Algebraic Topology](https://www.math.uchicago.edu/~may/CONCISE/ConciseRevised.pdf) by Peter May
     * Chapter 1 of [Spectra and stable homotopy theory](https://people.math.binghamton.edu/malkiewich/spectra_book_draft.pdf) by Cary Malkiewich

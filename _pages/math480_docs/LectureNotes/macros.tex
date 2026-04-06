@@ -1,0 +1,99 @@
+\newcommand\setItemnumber[1]{\setcounter{enumi}{\numexpr#1-1\relax}}
+
+%%% TYPEFACES 
+\newcommand{\ul}{\underline}
+\newcommand{\mf}{\mathfrak}
+
+%%% SPECIAL LETTERS
+\newcommand{\A}{\mathbb{A}} % blackboard bold A
+\newcommand{\fa}{\mathfrak{a}} % gothic font a
+\newcommand{\fb}{\mathfrak{b}} % gothic font b
+\newcommand{\uA}{\underline{\mathrm{A}}} % underlined A
+\newcommand{\C}{\mathbb{C}} % blackboard bold C
+\newcommand{\F}{\mathbb{F}} % blackboard bold F
+\newcommand{\N}{\mathbb{N}} % blackboard bold N
+\newcommand{\fp}{\mathfrak{p}} % gothic font p
+\newcommand{\QQ}{\mathbb{Q}} % blackboard bold Q
+\newcommand{\fq}{\mathfrak{q}} % gothic font q
+\newcommand{\Q}{\mathtt{Q}} % Q as in the proposition
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}} % blackboard bold Z
+
+%%% OPERATORS
+\DeclareMathOperator{\Hom}{Hom} % Hom set
+\DeclareMathOperator{\Fun}{Fun} % functors
+\DeclareMathOperator{\Spec}{Spec} % prime ideal spectrum
+\DeclareMathOperator{\id}{id} % identity
+\DeclareMathOperator{\modmod}{/\!/}
+\DeclareMathOperator{\ext}{\text{Ext}}
+\newcommand{\colim}{\operatorname{colim}}
+\newcommand{\shk}{\text{SH}(k)}
+\newcommand{\spc}{\text{Spc}}
+
+%BOLD SPECTRA%%%%%
+\newcommand{\KGL}{\textbf{KGL}}
+\newcommand{\kgl}{\textbf{kgl}}
+
+\newcommand{\KO}{\textbf{KO}}
+\newcommand{\ko}{\textbf{ko}}
+\newcommand{\KU}{\textbf{KU}}
+\newcommand{\ku}{\textbf{ku}}
+\newcommand{\HZ}{\textbf{H}\mathbb{Z}}
+\newcommand{\HF}{\textbf{H}\mathbb{F}}
+
+%%%BP<n> STUFF%%%
+\newcommand{\bpgl}[1]{\text{BPGL}\langle #1 \rangle}
+
+
+
+
+
+%%% CATEGORIES
+% Style guide: most pre-existing categories (CRing, Set, etc. in \mathsf)
+% Except polynomial category (in \mathcal)
+\newcommand{\CRing}{\mathsf{CRing}} % commutative 
+
+% Shorter dash, for use in stuff like R-mod, G-set, etc.
+% from https://tex.stackexchange.com/a/642931/15197
+\DeclareMathSymbol{\mhyphen}{\mathord}{AMSa}{"39}
+
+%%% THEOREMS
+\numberwithin{equation}{section} % number the equations as 1.1, 1.2, ... instead of just 1, 2, ... 
+
+\newtheorem{letterthm}{Theorem}
+\renewcommand*{\theletterthm}{\Alph{letterthm}}
+% \newtheorem{thm}[Theorem]{Theorem}
+% \newtheorem{proposition}[Proposition]{Proposition}
+% \newtheorem{lemma}[Lemma]{Lemma}
+% \newtheorem{question}[Question]{Question}
+% \newtheorem{goal}[Goal]{Goal}
+% \newtheorem{corollary}[Corollary]{Corollary}
+\newtheorem*{thm*}{Theorem}
+\newtheorem*{corollary*}{Corollary}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem*{proposition*}{Proposition}
+
+
+
+
+\theoremstyle{definition}
+\newtheorem{definition}[equation]{Definition}
+\newtheorem{notation}[equation]{Notation}
+\newtheorem{example}[equation]{Example}
+
+%%%SS STUFF%%%
+\newcommand{\E}[2]{\prescript{#1}{#2}{E}}
+
+
+
+%%% EDITING MACROS
+\usepackage[textwidth=25mm, textsize=tiny]{todonotes}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{color}
+\definecolor{orange'}{HTML}{D55E00}
+
+
+%Jackson's Notes
+\newcommand{\jmmar}[1]{\todo[color=orange'!50!white,linecolor=orange'!50!white,size=\tiny]{JM: #1}}
+\newcommand{\jmil}[1]{\todo[inline,color=orange'!50!white,linecolor=orange'!50!white,size=\normalsize]{JM: #1}}

@@ -1,0 +1,1128 @@
+%\pdfminorversion=6
+\documentclass[10pt]{amsart}
+\usepackage[margin=1.2in]{geometry}
+% \usepackage{geometry}
+\usepackage[export]{adjustbox}
+% \setlength{\oddsidemargin}{.25in}
+% \setlength{\evensidemargin}{.25in} 
+% \setlength{\topmargin}{.25in}
+% \setlength{\headsep}{.25in}
+% \setlength{\headheight}{0in}
+% \setlength{\textheight}{8.5in}
+% \setlength{\textwidth}{6in} 
+% \usepackage{quiver}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%% PACKAGES %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath, amsthm, amssymb} % standard stuff
+\usepackage{pdflscape}
+\usepackage{fourier}
+
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks, allcolors=OliveGreen]{hyperref} 
+\hypersetup{
+    colorlinks = true,
+    linkcolor = OliveGreen,
+    citecolor = Blue,
+    urlcolor = Blue,
+}
+\usepackage{tikz-cd} 
+\usepackage[nameinlink,capitalize]{cleveref} 
+\usepackage{mathtools}
+\usepackage[shortlabels]{enumitem} 
+\usepackage{microtype} 
+\usepackage{mathrsfs}
+\usepackage{lscape}
+\usepackage{float}
+\usepackage{multicol}
+\usepackage{euscript}
+\newcommand{\euscr}[1]{\EuScript{#1}}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{conj}[thm]{Conjecture}
+\newtheorem{proposition}[thm]{Proposition}
+\newtheorem{corollary}[thm]{Corollary}
+\newtheorem{lemma}[thm]{Lemma}
+\newtheorem{question}[thm]{Question}
+\theoremstyle{definition}
+\newtheorem{rmk}[thm]{Remark}
+\newtheorem{ex}[thm]{Example}
+\newtheorem{watchout}[thm]{\warning \textbf{Warning} \warning}
+\newtheorem{exercise}[thm]{Exercise}
+\usepackage[
+    backend=biber,
+    style=alphabetic,
+    maxbibnames=99,
+    isbn=false,
+    url=false,
+    doi=false,
+    maxalphanames=9,
+    minalphanames=4,
+]{biblatex}
+% \addbibresource{References.bib} 
+\renewcommand*{\bibfont}{\small}
+\newcommand{\cdef}[1]{\textcolor{Bittersweet}{#1}}
+\DeclareFontFamily{T1}{cbgreek}{}
+\DeclareFontShape{T1}{cbgreek}{m}{n}{<-6>  grmn0500 <6-7> grmn0600 <7-8> grmn0700 <8-9> grmn0800 <9-10> grmn0900 <10-12> grmn1000 <12-17> grmn1200 <17-> grmn1728}{}
+\DeclareSymbolFont{quadratics}{T1}{cbgreek}{m}{n}
+\DeclareMathSymbol{\quadf}{\mathord}{quadratics}{21}
+\newcommand{\dq}{\euscr{DQ}}
+
+\newcommand{\aeu}{\euscr{A}}
+\newcommand{\cc}{\mathbb{C}}
+\newcommand{\ff}{\mathbb{F}}
+\newcommand{\mm}{\mathbb{M}}
+\newcommand{\rr}{\mathbb{R}}
+\renewcommand{\ss}{\mathbb{S}}
+\newcommand{\zz}{\mathbb{Z}}
+
+
+\newcommand{\upe}{\textup{E}}
+\newcommand{\uph}{\textup{H}}
+\newcommand{\hsf}{\textup{\textsf{h}}}
+\newcommand{\upbo}{\textup{bo}}
+\newcommand{\upkgl}{\textup{kgl}}
+\newcommand{\upkq}{\textup{kq}}
+\newcommand{\up}[1]{\textup{#1}}
+\newcommand{\upx}{\textup{X}}
+
+\renewcommand{\bar}[1]{\overline{#1}}
+\newcommand{\sser}[4]{\prescript{#1}{#2}{\textup{E}}_{#3}^{#4}}
+\newcommand{\invamalg}{\mathbin{\rotatebox[origin=c]{180}{$\amalg$}}}
+
+\newcommand{\ycw}{\textup{Y}^{\mathbb{C}}_{(\eta, \nu)}}
+\newcommand{\yw}{\textup{Y}_{(\eta, \nu)}}
+\newcommand{\yv}{\textup{Y}_{(\hsf, \eta)}}
+\newcommand{\ywtop}{\textup{Y}^\textup{top}_{(\eta, \nu)}}
+\newcommand{\yvtop}{\textup{Y}^\textup{top}_{(2, \eta)}}
+
+
+\setcounter{tocdepth}{2}
+
+%%% MACROS
+\input{macros.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%%% DOCUMENT BEGINS %%%
+%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%%% TITLE %%%
+\title{MATH 480: Homotopy Theory}
+\author{Jackson Morris}
+\address{Department of Mathematics, University of Washington, Seattle, Washington}
+\email{\href{mailto:jackmann@uw.edu}{jackmann@uw.edu}}
+
+
+% 14F42: motivic cohomology; motivic homotopy theory
+% 55Q10: Stable homotopy groups,
+% 55T15: Adams spectral sequences
+% \subjclass[2020]{14F42, 55Q51, 55T15}
+
+%%% ABSTRACT 
+% \begin{abstract}
+% 	Rough plan for an undergraduate topics course on homotopy theory ran in Spring 2026 at the University of Washington.
+% \end{abstract}
+
+\maketitle
+%%% TABLES OF CONTENTS, FIGURES, TABLES
+\tableofcontents
+\newpage
+
+\section{Motivation/Background}
+\subsection*{Lecture 1}
+\hfill
+
+The things that mathematicians care about can often be distinguished by two qualities: \emph{existence} and \emph{uniqueness}. That is, suppose a mathematician thinks of some concept $X$. There are two obvious questions to ask:
+\begin{itemize}
+    \item Does such a concept $X$ actually exist? If so, can we explicitly construct it?
+    \item If a concept $X$ exists, is it unique? If it isn't unique, can we classify all such types of concepts $X$?
+\end{itemize}
+
+In this course, we will be studying topological spaces. Recall that a \emph{\cdef{topological space}} is a set $X$ together with a collection $\euscr{T}$ of subsets, called the \cdef{\emph{topology}}, such that:
+\begin{itemize}
+    \item $\varnothing, X \in \euscr{T}$,
+    \item for any collection $\{U_i\}_{i \in I} \subseteq \euscr{T}$ we have that $\bigcup_{i \in I}U_i \in \euscr{T}$, and
+    \item for any finite collection $\{U_i\}_{i=1}^n$ we have that $\bigcap_{i=1}^n U_i \in \euscr{T}$.
+\end{itemize}
+We will refer to the elements of $\euscr{T}$ as \cdef{\emph{open sets}}. It is not hard to see that topological spaces exist. 
+\begin{ex}
+\hfill
+    \begin{itemize}
+        \item If $X$ is any metric space, then one can place a topology on $X$ by letting 
+        \[\euscr{T} = \{B_{\varepsilon}(x): x \in X, \varepsilon>0\}.\]
+        In particular, $\mathbb{R}^n$ and $\mathbb{C}^n$ are topological spaces under the usual metric.
+        \item If $Y$ is a subset of any topological space $X$, then $Y$ inherits a subspace topology, where the open sets in $Y$ are just the open sets in $X$ which intersect $Y$. In particular, the \cdef{\emph{n-sphere}}
+        \[S^n = \{x \in \mathbb{R}^{n+1}: ||x||=1\} \subseteq \mathbb{R}^{n+1}\]
+        is a topological space.
+        \item If $X$ is any set, then there are always two ways to topologize $X$: the \cdef{\emph{discrete topology}} has open sets every possible subset of $X$, and the \cdef{\emph{trivial topology}} has open sets just $\varnothing$ and $X$.
+    \end{itemize}
+\end{ex}
+Well, since topological spaces exist, and we can explicitly construct them, let's move on to the second point. Can we \emph{classify} topological spaces?
+
+There is a strict way to attempt to approach this question: classify spaces up to \emph{homeomorphism}. Recall that a \cdef{\emph{continuous function}} $f:X \to Y$ is a function such that the preimage $f^{-1}(U) \subseteq X$ of any open set $U \subseteq Y$ is open, and a \cdef{\emph{homeomorphism}} is a continuous function such that there exists another continuous function $g:Y \to X$, which we'll call the \cdef{\emph{inverse}}, such that
+
+\[g \circ f = \text{id}_X:X \to X, \quad f \circ g = \text{id}_Y:Y \to Y.\]
+
+\begin{watchout}
+    It is not enough for a continuous function to be a bijection to be a homeomorphism.
+\end{watchout}
+
+\begin{exercise}
+    Construct a continuous bijection which is not a homeomorphism.
+\end{exercise}
+
+It is not an easy task to determine whether or not two random spaces are homeomorphic. If we want to be really general and consider all topological spaces (or at least most of them), then classifying them \emph{up to homeomorphism} seems a little out of reach. 
+
+There are two clear directions to move forward from this obstacle. On the one hand, we can put more structure on our spaces and impose a stricter notion of equivalence. For example, we could only consider \emph{manifolds}, which are topological spaces that are locally modeled by $\mathbb{R}^n$, or we could consider \emph{differentiable manifolds}, which have structures amenable to the tools of calculus, or we could consider \emph{varieties}, which are the zero-loci of systems of polynomial equations. Each of these types of spaces has a more fine-tuned notion of equivalence which allows us to better classify that type of space.
+
+This direction will not be the focus of this course. Instead, we will \emph{loosen} our notion of equivalence and study spaces up to \emph{homotopy equivalence}. If you didn't think that topology was flexible enough, what with the open interval being homeomorphic to the real number line, well then get ready for some real gymnastics.
+
+Let $f, g:X \to Y$ be continuous maps. A \emph{\cdef{homotopy}} between $f$ and $g$ is a continous function
+\[H:X \times I \to Y\]
+where $I = [0,1]$ denotes the unit interval (which we think of as a time parameter), such that at time $t=0$, we have $H(x, 0) = f(x)$, and at time $t=1$, we have $H(x, 1) = g(x)$. We will often use the notation $f \simeq g$ if there is a homotopy from $f$ to $g$ and say that they are \cdef{\emph{homotopic}}.
+\begin{ex}
+\label{ex:homotopy between maps}
+    Define two continuous maps $f, g:\mathbb{R} \to \mathbb{R}^2$ by
+    \[f(x) = (x, x^2), \quad g(x)=(x, x).\]
+    We can define a homotopy between $f$ and $g$ quite easily: let $H:\mathbb{R} \times I \to \mathbb{R}^2$ be defined by
+    \[H(x, t) = (x,x^2-tx^2+tx).\]
+    Then $H(x, 0) = (x,x^2) = f(x)$ and $H(x, 1) = (x, x) = g(x).$ This can be seen graphically here \url{https://www.desmos.com/calculator/acoupu1hy1}.
+\end{ex}
+
+\begin{exercise}
+    Show that the notion of homotopy defines an equivalence relation on the set of continuous functions from $X$ to $Y$ by showing the following:
+    \begin{itemize}
+        \item If $f:X \to Y$ is any function, then there is a homotopy $H:X \times I \to Y$ from $f$ to itself.
+        \item If $H:X \times I \to Y$ is a homotopy from $f$ to $g$, then there is a homotopy $H':X \times I \to Y$ from $g$ to $f$.
+        \item If $f, g, h:X \to Y$ are continuous functions such that $f \simeq g$ and $g \simeq h$, then there is a homotopy $H:X \times I \to Y$ from $f$ to $h$.
+    \end{itemize}
+\end{exercise}
+
+A \emph{\cdef{homotopy equivalence}} is a continous function $f: X \to Y$ such that there exists another continuous function $g :Y \to X$ such that
+\[g \circ f \simeq \text{id}_X:X \to X, \quad f \circ g\simeq \text{id}_Y:Y \to Y.\]
+We will often write that $X \simeq Y$ if $X$ is homotopy equivalent to $Y$.
+
+\begin{ex}
+    Consider the functions $f,g:\mathbb{R} \to \mathbb{R}^2$ from the previous example. Essentially the same homotopy between the functions $f$ and $g$ shows that the subspaces
+    \[
+    \text{im}(f), \,\text{im}(g) \subseteq \mathbb{R}^2,
+    \]
+    i.e. the graphs of the functions
+\end{ex}
+
+Notice that this is very similar to the notion of homeomorphism; we have just required that the compositions be \emph{homotopic} to the identity instead of equal. And indeed, this is a weaker notion.
+\begin{proposition}
+    Let $f:X \to Y$ be a homeomorphism. Then $f$ is a homotopy equivalence.
+\end{proposition}
+
+\begin{proof}
+    Since $f$ is a homeomorphism, there is a continuous function $g:Y \to X$ such that $g \circ f = \text{id}_\text{X}$ and $f \circ g = \text{id}_Y$. Define a function $H:X \times I \to X$ by $H(x, t) = (g \circ f)(x)$. This is continuous: if $U \subseteq X$ is open, then 
+    \[H^{-1}(U) = (g \circ f)^{-1}(U) \times I = (\text{id}_X)^{-1}(U) \times I = U \times I.\]
+    This is open in the product topology on $X \times I.$ Moreover, $H(x, 0) = (g \circ f)(x)$, and $H(x, 1) = (g \circ f)(x) = \text{id}_x(x) = x$, so $H$ is a homotopy between $g \circ f$ and $\text{id}_X$. The same argument works to show that $f \circ g \simeq \text{id}_Y$.
+\end{proof}
+To illustrate how loose of a notion homotopy equivalence is, consider the following example.
+\begin{ex}
+    Let $\bar{\mathbb{D}^n}$ be the closed unit disc in $\mathbb{R}^n$, regardless of $n$, and let $*$ denote, well, a point. It is not hard to see that $\bar{\mathbb{D}^n}$ is homotopy equivalent to $*$: let $f:\bar{\mathbb{D}^n} \to *$ be the only map possible (which sends every point in the disc to the point) and let $g:* \to \bar{\mathbb{D}^n}$ send $* \mapsto 0$ (or honestly to any point in the disc). Then we have
+    \[f \circ g:* \to *, \quad (f \circ g)(*) = *,\]
+    and 
+    \[g \circ f:\bar{\mathbb{D}^n} \to \bar{\mathbb{D}^n}, \quad (g \circ f)(x) = g(*) = 0.\]
+    It is worth checking (and not hard) that
+    \[H: * \times I \to *, \quad H(*, t) = *,\]
+    and 
+    \[H': \bar{\mathbb{D}^n} \times I \to \bar{\mathbb{D}^n}, \quad H(x, t) = t \cdot x \]
+    give the desired homotopy equivalences $g \circ f \simeq \text{id}_{\bar{\mathbb{D}^n}}$ and $f \circ g \simeq \text{id}_{*}$.
+\end{ex}
+Something the above example shows is: if you had any preconceived notion of dimension, just know that homotopy equivalences couldn't care less! We will call a space which is homotopy equivalent to a point \cdef{\emph{contractible}}. Notice that the above argument also shows that $\mathbb{R}^n$ itself is contractible.
+
+\begin{watchout}
+    It is \textcolor{red}{NOT TRUE} that if $X$ is contractible and $Y \subseteq X$ is a subspace, then $Y$ is contractible.
+\end{watchout}
+
+It turns out that, except in some particularly cherry-picked examples like the one above, it is still not very easy to determine if two randomly selected spaces are homotopy equivalent. There are a lot of ways to try and address this problem; one of the ways we will address it is by introducing \emph{invariants} known as \cdef{\emph{homotopy groups}}. 
+
+\subsection*{Lecture 2}
+\hfill
+
+We will explore this more thoroughly throughout the course; for now, we will say that the $n^{th}$ homotopy group of a space, denoted $\pi_n(X)$, is a calculable invariant which roughly measures the number of $n$-dimensional holes in $X$. The key point is that instead of telling us when two spaces are homotopy equivalent, these groups are a nice way to tell when two spaces are NOT homotopy equivalent! 
+\begin{thm}
+    Suppose that for some $n >0$, $\pi_n(X) \neq \pi_n(Y)$. Then $X$ is not homotopy equivalent to $Y$.
+\end{thm}
+So, if we can develop tools to compute homotopy groups, then we can try to differentiate spaces. Again, if this were easy, then there would be no field of homotopy theory. But it is in the surprising complexity of this problem that some really beautiful mathematics has been discovered! 
+
+Let's look at our favorite (or at least my favorite) spaces: the spheres $S^n$. These spaces are very simple to define, and for the most part we can even imagine what they look like (or at least pretend). However, the homotopy groups of spheres have a well earned reputation for being chaotic, full of mystery, and are wildly unpredictable. \Cref{table:homotopy groups of spheres} has a few examples.
+\begin{table}[H]
+    \centering
+    \setlength{\tabcolsep}{0.5em} % for the horizontal padding
+    {\renewcommand{\arraystretch}{1.2}% for the vertical padding
+    \begin{tabular}{|r||r|r|r|r|r|r|r|}
+        \hline
+       $\pi_i(S^n)$ & $S^1$ & $S^2$ & $S^3$  & $S^4$ & $S^5$ & $S^6$ & $S^7$\\
+       \hline
+       \hline
+       $\pi_1(-)$ & $\mathbb{Z}$ & 0 & 0 & 0 & 0 & 0 & 0\\
+       $\pi_2(-)$ & 0 & $\mathbb{Z}$ & $0$ & 0 & 0 & 0 & 0 \\
+       $\pi_3(-)$ & 0 & $\mathbb{Z}$ & $\mathbb{Z}$ & 0 & 0 & 0 & 0 \\
+       $\pi_4(-)$ & 0 & $\mathbb{Z}/2$ & $\mathbb{Z}/2$ & $\mathbb{Z}$ & 0 & 0 & 0 \\
+       $\pi_5(-)$ & 0 & $\mathbb{Z}/2$ & $\mathbb{Z}/2$ & $\mathbb{Z}/2$ & $\mathbb{Z}$ & 0  & 0 \\
+       $\pi_6(-)$ & 0 & $\mathbb{Z}/12$ & $\zz/12$ & $\zz/2$ & $\zz/2$ & $\zz$ & 0 \\
+       $\pi_7(-)$ & 0 & $\zz/2$ & $\zz/2$ & $\zz \times \zz/12$ & $\zz/2$ & $\zz/2$ & $\zz$ \\
+       $\pi_8(-)$ & 0 & $\zz/2$ & $\zz/2$ & $\zz/2 \times \zz/2$ & $\zz/24$ & $\zz/2$ & $\zz/2$ \\
+       $\pi_9(-)$ & 0 & $\zz/3$ & $\zz/3$ & $\zz/2 \times \zz/2$ & $\zz/2$ & $\zz/24$ & $\zz/2$ \\
+       $\pi_{10}(-)$ & 0 & $\zz/15$ & $\zz/15$ & $\zz/24 \times \zz/3$ & $\zz/2$ & 0 & $\zz/24$\\
+       \hline
+    \end{tabular}}
+    \caption{Some homotopy groups of spheres. What could it all mean?}    
+    \label{table:homotopy groups of spheres}
+\end{table} 
+We'll talk later about what these particular values mean, but maybe you can already start to see some patterns. Here are a few observations that I'll point out:
+\begin{itemize}
+    \item The only non-trivial homotopy group of the circle $S^1$ is $\pi_1(S^1) = \mathbb{Z}$. Topologically this is like saying that there are no ``higher dimensional hole" in $S^1$.
+    \item If $n <k$, then $\pi_n(S^k) =0$. Topologically, this is like saying there smallest hole in $S^k$ is of dimension $k$.
+    \item At least in the values depicted here, we see that $\pi_n(S^n)=\mathbb{Z}.$
+    \item For $k>1$, we do \textcolor{red}{not} see that $\pi_n(S^k)=0$ for $n>k$, as opposed to the case for $S^1$. So, this is saying that there are ``high-dimensional holes" in $S^k$.
+    \item The values given are \emph{almost} all finite.
+\end{itemize}
+We will try our best to understand and more rigorously study some of these concepts throughout this course.
+
+Another feature of homotopy theory, which is another core tenant of this course, is that there are operations on spaces themselves that give us relations between homotopy groups and can inform us about homotopy equivalences. If homotopy groups are an assignment of algebra to a topological problem, then space-level operations are an \emph{extraction} of algebra from within a topological problem. To avoid getting too side-winded, let me just give a brief example.
+
+\begin{ex}
+    Consider the torus $\mathbb{T}$ and the 2-sphere $S^2$. Both of these objects live in $\mathbb{R}^3$ and seem to have a ``hole". How can we tell if they are homotopy equivalent or not without explicitly trial-and-error-ing our way through this problem? 
+
+    Another way to write the torus is as $\mathbb{T} = S^1 \times S^1$; that is, we can decompose the torus as a product of two better understood spaces (at least, if we accept the above table). This is very nice: homotopy groups \emph{respect products}. That is $\pi_n(X \times Y) = \pi_n(X) \times \pi_n(Y)$. In our case, this tells us that
+    \[\pi_1(\mathbb{T}) = \pi_1(S^1) \times \pi_1(S^1) = \mathbb{Z} \times \mathbb{Z}.\]
+    But our above table says that $\pi_1(S^2)=0$, so there can be no homotopy equivalence between the torus and the 2-sphere.
+\end{ex}
+
+One may organize this course into 3 different themes:
+\begin{itemize}
+    \item Attaching algebraic invariants to topological spaces;
+    \item Studying algebraic phenomena exhibited by topological spaces;
+    \item Understanding the passage from topology to algebra and vice versa.
+\end{itemize}
+This last point really means: we will develop and use the tools of category theory to study the homotopy theory of topological spaces. 
+
+\section{The Fundamental Group}
+\subsection*{Lecture 3}
+\hfill
+
+Let $X$ be a topological space. A \cdef{\emph{path}} in $X$ is a continuous function $\gamma:I \to X$, where $I \subseteq \mathbb{R}$ is the closed unit interval. Two paths $\gamma, \varphi:I \to X$ are \cdef{\emph{composable}} if $\gamma(1) = \varphi(0)$, i.e. if one ends at the starting point of the other. Define their \cdef{\emph{product}} as the path $\varphi \cdot \gamma:I \to X$ given by
+\[ \varphi \cdot \gamma(t) = \left\{ \begin{array}{ll}
+    \gamma(2t) & t \in [0, \tfrac{1}{2}] \\
+    \varphi(2t-1) & t \in [\tfrac{1}{2}, 1].
+\end{array} \right.\]
+Notice that we should read function product from right to left, just as we read function composition. Not everyone follows this convention, so beware!
+
+Paths give us a way to ``feel out" the structure of a space. We only want to work with paths up to homotopy in this class, as we want to work with everything up to homotopy, but we encounter a bit of a snag.
+
+\begin{exercise}
+    Let $X$ be path connected. If $\gamma:I \to X$ and $\varphi:I \to X$ are any paths, then there is a homotopy $H:I \times I \to X$ from $\gamma$ to $\varphi$. (\textbf{Hint:} If $X$ is path-connected, then there is a path from $\gamma(0)$ to $\varphi(0)$. Use this path to go from $\gamma$ to $\varphi$.)
+\end{exercise}
+
+
+This implies that, so as not to make everything trivial in a path-connected space, we should make a slight more refined notion of homotopy for paths.
+A \cdef{\emph{path homotopy}} between two paths $\gamma, \varphi:I \to X$ is a homotopy $H: I \times I \to X$ from $\gamma$ to $\varphi$ such that 
+\[
+H(0, t) = \gamma(0) = \varphi(0), \quad H(1, t) = \gamma(1) = \varphi(1)
+\]
+In other words, the ends of the interval $I$ are sent to the same points in $X$ by both $\gamma$ and $\varphi$, and for any time $t_0$, the path $f_{t_0}:I \to X$ given by $f(s) = F(t_0, s)$ also sends the ends of $I$ to the same points as $\gamma$ and $\varphi$ do. Thus a path homotopy only exists for particular paths which share endpoints. 
+
+Just as homotopy equivalence defines an equivalence relation, so too does path homotopy equivalence. We will let $[f]$ denote the \cdef{\emph{path homotopy class}} of $f$; these are the paths into $X$ which are path-homotopic to $f$.
+
+A path is called a \cdef{\emph{loop}} if we have that $\gamma(0) = \gamma(1)$. Note that if $\gamma:I \to X$ is a loop, then since we can view $S^1$ as the quotient space $I/0 \sim 1,$ we can factor $\gamma$ uniquely through the circle:
+\[
+\begin{tikzcd}
+	I & X \\
+	{S^1}
+	\arrow["\gamma", from=1-1, to=1-2]
+	\arrow[from=1-1, to=2-1]
+	\arrow["{\overline{\gamma}}"', from=2-1, to=1-2]
+\end{tikzcd}
+\]
+The universal property of the quotient implies that $\overline{\gamma}$ is continuous since $\gamma$ is. In fact, this factorization characterizes loops! A path is a loop if and only if the above diagram commutes.
+
+We come to our first invariant. Let $(X, x_0)$ be a based space, which is just a topological space $X$ with a chosen basepoint $x_0$. Note that a morphism of based spaces is just a continuous morphism which sends basepoint to basepoint. The \cdef{\emph{fundamental group}} of $X$ based at $x_0$, denoted $\pi_1(X, x_0)$, is the set of path classes of loops in $X$ based at $x_0$. In other words,
+\[
+\pi_1(X, x_0) = \{[f]|f:(S^1, 1) \to (X, x_0)\text{ based map}\}.
+\]
+There is a constant path $c:S^1 \to X$ where $c(t) = x_0$ for all $t \in S^1$. In general, though, it takes some work to determine what the actual loops are in a space.
+\begin{exercise}
+    Show that re-parameterizing paths doesn't actually do anything to the fundamental group. That is, let $\gamma:S^1 \to X$ be some loop. We can lift this along the quotient map $I \to S^1$ to a map $\tilde{\gamma}:I \to X$ where $\tilde{\gamma}(0) = \tilde{\gamma}(1)$. Let $\varphi:I \to I$ be any continuous map where $\varphi(0)=0$ and $\varphi(1) = 1$. Show that there is a path homotopy from $\tilde{\gamma}$ to $\tilde{\gamma} \circ \varphi$.
+\end{exercise}
+The naming of $\pi_1(X, x_0)$ is not accidental. For a path $\gamma:I \to X$, let $\gamma^{\text{rev}}:I \to X$ be the path which ``does $\gamma$ in reverse". That is, $\gamma^{\text{rev}}(t) = \gamma(1-t)$.
+\begin{thm}
+    Let $\gamma:p \mapsto q$ be a path in a space $X$, and let $\varphi, \psi:I \to X$ be any paths.
+    \begin{itemize}
+        \item $[c_p] \cdot [\gamma] = [\gamma] \cdot [c_q] = [\gamma]$
+        \item $[\gamma][\gamma^\text{rev}] = [c_p]$ and $[\gamma^\text{rev}][\gamma] = [c_q]$
+        \item Whenever defined, we have $[f] \cdot ([g]\cdot[h]) = ([f] \cdot [g]) \cdot [h]$.
+    \end{itemize}
+\end{thm}
+
+\begin{corollary}
+    The set $\pi_1(X, x_0)$ forms a group under path composition, with identity given by $[c_{x_0}].$
+\end{corollary}
+
+\begin{watchout}
+    The fundamental group need not be abelian! That is, there are based spaces $(X, x_0)$ and loops $[\gamma], [\varphi] \in \pi_1(X, x_0)$ such that $[\varphi] \cdot [\gamma] \neq [\gamma] \cdot [\varphi].$
+\end{watchout}
+
+The choice of basepoint is very important here! For example, take $X = Y \amalg \mathbb{R}$, where $Y$ is any space such that $\pi_1(Y, y_0) \neq 0$ for some point $y_0 \in Y$. Then 
+\[
+\pi_1(X, y_0) \cong\pi_1(Y, y_0) \neq 0,
+\]
+since any loop in $X$ which is based at a point in $Y$ must be entirely contained in $Y$ as the image of a connected set is connected. For the same argument, if $t \in \mathbb{R}$ is any point, then any loop $S^1 \to X$ based at $t$ must have image entirely contained in $\mathbb{R}$. But we have already seen that $\mathbb{R} \simeq *$, which implies that $\pi_1(\mathbb{R}, t) = 0$. Thus, we also have that $\pi_1(X, t) = 0$.
+
+\subsection*{Lecture 4}
+\hfill
+
+However, things are much nicer in path-connected spaces.
+
+\begin{proposition}
+    Suppose that $X$ is path-connected, $p, q \in X$ are any points, and $\gamma:p \mapsto q$ is a path. Define a function
+    \[\Phi:\pi_1(X, p) \to \pi_1(X, q), \quad \Phi([\varphi]) = [\gamma]\cdot[\varphi] \cdot[\gamma^\textup{rev}].\]
+    This is an isomorphism of groups.
+\end{proposition}
+
+\begin{proof}
+    First, we must check that this is a group homomorphism. Observe:
+    \begin{align*}
+        \Phi([f] \cdot[g]) &= [\gamma] \cdot[f] \cdot [g] \cdot [\gamma^\text{rev}] \\
+         &= [\gamma] \cdot [f] \cdot [\gamma^\text{rev}] \cdot [\gamma] \cdot [g] \cdot [\gamma^\textup{rev}] \\
+         &= \Phi([f]) \cdot \Phi([g]).
+    \end{align*}
+    For injectivity, suppose that $\Phi([f]) = 0 = [c_q]$. Expanding out our function, this tells us that
+    \[
+    \Phi([f]) = [\gamma] \cdot [f] \cdot [\gamma^\text{rev}] = [c_q].
+    \]
+    Multiplying on the left by $[\gamma^\text{rev}]$ and on the right by $[\gamma]$, we obtain
+    \[
+    [\gamma^\text{rev}] \cdot [\gamma] \cdot [f] \cdot [\gamma^\text{rev}] \cdot [\gamma] = [\gamma^\text{rev}] \cdot [c_q] \cdot [\gamma].
+    \]
+    Since $[\gamma] \cdot [\gamma^{\text{rev}}] = [c_q]$, and since $[c_q]$ is the identity of $\pi_1(X, q)$, we can rewrite our equation as
+    \[
+    [f] = [c_p],
+    \]
+    giving injectivity.
+
+    I will leave surjectivity as an exercise.
+\end{proof}
+
+If $(X, x_0)$ is path-connected, we will simply refer to its fundamental group by $\pi_1(X)$, as the above proposition proves that this is independent of basepoint. 
+
+The next proposition gives us a way to pass from topology to algebra at the level of functions. Namely, continuous maps of based spaces induce group homomorphisms of fundamental groups.
+
+\begin{proposition}
+    Let $f:(X, x_0) \to (Y, y_0)$ be a map of based spaces. Then the function
+    \[f_*:\pi_1(X, x_0) \to \pi_1(Y, y_0), \quad f_*([\gamma]) = [f \circ \gamma]\]
+    is a group homomorphism. Moreover:
+    \begin{itemize}
+        \item if we have $g:(Y, y_0) \to (Z, z_0)$ continuous, then
+        \[(g_* \circ f_*)([\gamma]) = (g \circ f)_*([\gamma])\]
+        \item if $\textup{id}_X:(X, x_0) \to (X, x_0)$ is the identity map, then
+        \[(\textup{Id}_X)_* = \textup{Id}_{\pi_1(X, x_0)}\]
+    \end{itemize}
+\end{proposition}
+
+\begin{proof}
+    Homework.
+\end{proof}
+
+Let's look at some examples!
+\begin{ex}
+    \hfill
+    \begin{itemize}
+        \item Suppose that $X \simeq *$ is contractible and $x_0 \in X$ is any point. Then there is a homotopy $H:X \times I \to X$ witnessing $\text{id}_X \simeq c_{x_0}$. We can use this homotopy to show that any loop $f:S^1 \to X$ is nullhomotopic. Let $F:S^1 \times I \to X$ be defined by
+        \[F(r, t) = H(f(r), t).\]
+        This is continuous, as another way to write this function is as $F = H \circ (f \times \text{id}_I)$. Moreover, 
+        \[
+        F(r,0) = H(f(r), 0) = \text{id}_X(f(r) = f(r),
+        \]
+        and 
+        \[
+        F(r, 1) = H(f(r), 1) = c_{x_0}(f(r)) = x_0.
+        \]
+        Thus, if $X$ is any contractible space, then $\pi_1(X, x_0) = 0$ for any basepoint $X$.
+
+        \item More generally, and this is slightly more work to show, if $f:X \to Y$ is a homotopy equivalence, then the induced map $f_*:\pi_1(X, x_0) \to \pi_1(Y, f(x_0))$ is an isomorphism of groups. Thus, homotopy equivalent spaces have the same fundamental groups.
+    \end{itemize}
+\end{ex}
+
+Next, we will prove our first big theorem, and make our first nontrivial fundamental group computation.
+
+\begin{thm}
+    The fundamental group of the circle is 
+    \[
+    \pi_1(S^1) \cong \mathbb{Z}
+    \]
+\end{thm}
+
+This will require a bit of work. First, define a path $\gamma_n:I \to S^1$ by
+\[
+\gamma_n(t) = e^{2\pi i\cdot n t},
+\]
+where $n \in \mathbb{Z}$ and we are viewing $S^1 \subseteq \mathbb{C}$. This path is a loop, since $e^{0} = e^{2\pi 1 \cdot n} = 1$ for all $n \in \mathbb{Z}$. Geometrically, this is the loop which winds around the circle $n$-times. 
+
+It is straightforward to see that $[\gamma_n] \cdot [\gamma_m] = [\gamma_{n+m}]$. This simple observation is really useful: it implies that the function
+\[
+\phi:\mathbb{Z} \to \pi_1(S^1, 1), \quad \phi(n) = [\gamma_n]
+\]
+is a group homomorphism. Our goal now is to show that $\phi$ is an isomorphism.
+
+The intuition here is that the collection of maps $\{\gamma_n\}_{n \in \mathbb{Z}}$ acts a lot like the integers, where the number $n \in  \mathbb{Z}$ corresponds to going around the circle $n$-times counter-clockwise. The point of our calculation is that that is all that can happen.
+\begin{itemize}
+    \item Showing the map $\phi$ is surjective says that every loop in $S^1$ looks like ``going around the circle" some number of times.
+    \item Showing the map $\varphi$ is injective says that going around the loop $n$-times and going around the loop $m$-times is never somehow equivalent in $\pi_1(S^1, 1)$ when $n \neq m$.
+\end{itemize}
+The ``reason" why $\phi$ is an isomorphism is that, locally, $S^1$ just looks like the real numbers $\mathbb{R}$. Since $\mathbb{R} \simeq *$, meaning $\pi_1(\mathbb{R}, 1) = 0$, there can be no weird local behavior of $S^1$ that obfuscates our argument.
+
+There is a continuous map $p:\mathbb{R} \to S^1$ which will feature very heavily in these arguments. This map is defined by 
+\[
+p(t) = e^{2\pi i \cdot t},
+\]
+which we can geometrically think of as ``winding the real numbers around $S^1$". Consider the map $\gamma_n:I \to S^1$. We can \cdef{lift} this map along $p$ to a map $\tilde{\gamma}_n:I \to \mathbb{R}$ where 
+\[
+\tilde{\gamma}_n(t) = n \cdot t.
+\]
+By ``lift along $p$", I mean that the maps $\gamma_n$ and $p$ fit into a diagram of the form:
+\[\begin{tikzcd}
+	& {\mathbb{R}} \\
+	I & {S^1}
+	\arrow["p", from=1-2, to=2-2]
+	\arrow["{\gamma_n}", from=2-1, to=2-2]
+\end{tikzcd}\]
+and the map $\tilde{\gamma}_n$ fills in the triangle and makes the diagram commute:
+\[
+\begin{tikzcd}
+	& {\mathbb{R}} \\
+	I & {S^1}
+	\arrow["p", from=1-2, to=2-2]
+	\arrow["{\tilde{\gamma}_n}", dashed, from=2-1, to=1-2]
+	\arrow["{\gamma_n}", from=2-1, to=2-2]
+\end{tikzcd}
+\]
+In fact, the existence of a lift is not unique to the paths $\gamma_n$. All paths in $S^1$ lift to $\mathbb{R}$, and they lift \emph{uniquely} as soon as we specify any value.
+
+\begin{proposition}
+    Let $f:I \to S^1$ be any path. Then there is a unique lift $\tilde{f}:I \to \mathbb{R}$ such that $\tilde{f}(0) = 0$ and $f = p \circ \tilde{f}$.
+\end{proposition}
+
+\begin{exercise}
+    Show that if we do not require that $\tilde{\gamma}(0) = 0$, then there need not  be a unique lift $\tilde{\gamma}$?
+\end{exercise}
+
+\begin{proof}
+    
+\end{proof}
+
+
+
+
+
+\section{Category theory}
+\begin{itemize}
+    \item categories
+    \item functors
+    \item natural transformations
+    \item adjunctions
+    \item limits and colimits
+    \item universal properties
+    \item yoneda lemma
+\end{itemize}
+
+We have seen that there is a nice invariant of spaces known as homotopy groups, and have gotten our hands dirty a little bit with the first of these invariants, i.e. the fundamental group. This process takes topology and assigns to it some algebra, and it does so in a way that ``preserves structure". To be precise, to any based space $(X, x_0)$ we assigned a group $\pi_1(X, x_0)$, and to any continuous map of based spaces $f:(X, x_0) \to (Y, y_0)$ we assigned a group homomorphism $f_*:\pi_1(X, x_0) \to \pi_1(Y, y_0)$. Moreover, this procedure respects function composition and sends the identity map of spaces to the identity map of fundamental groups. 
+
+One of the goals of category theory is to generalize this relationship. In doing so, we create a very general, theoretical area of math that is widely applicable, serving as a language to interpret and demystify different areas of mathematics.
+
+
+A \emph{\cdef{category}} $\euscr{C}$ consists of the following data:
+\begin{itemize}
+    \item A class of \emph{objects}, which we may denoted by $\text{ob}(\euscr{C})$;
+    \item For any two objects $X, Y \in \euscr{C}$, a set of \emph{morphisms} or \emph{maps} $\text{Hom}_{\euscr{C}}(X, Y)$, i.e. maps $f:X \to Y$;
+    \item A \emph{composition} operation, meaning for any objects $X, Y, Z \in \text{ob}(\euscr{C})$, there is a function of sets
+    \[\circ:\text{Hom}_{\euscr{C}}(Y, Z) \times\text{Hom}_{\euscr{C}}(X, Y) \to \text{Hom}_{\euscr{C}}(X, Z)\]
+    which represents composition: if $f \in \text{Hom}_{\euscr{C}}(X, Y)$ and $g \in \text{Hom}_{\euscr{C}}(Y, Z)$, then $g \circ f \in \text{Hom}_{\euscr{C}}(X, Z)$
+    is the map you would expect: $X \xrightarrow{f}Y \xrightarrow{g}Z$. Composition satisfies two rules:
+    \begin{itemize}
+        \item (\cdef{\emph{Associativity}}) Whenever this expression makes sense, we have $(h \circ g) \circ f = h \circ (g \circ f)$.
+        \item (\cdef{\emph{Identity}}) For all $X \in \text{ob}(\euscr{C})$, there is an identity map $\text{id}_X \in \text{Hom}_{\euscr{C}}(X, X)$ such that for any morphism $f \in \text{Hom}_{\euscr{C}}(X, Y)$, we have
+        \[f \circ \text{id}_X = \text{id}_Y \circ f = f.\]
+    \end{itemize}
+\end{itemize}
+We say that a morphism $f \in \text{Hom}_\euscr{C}(X, Y)$ is an \cdef{\emph{isomorphism}} if there exists another morphism $g \in \text{Hom}_{\euscr{C}}(X, Y)$ such that
+\[f \circ g = \text{id}_Y, \quad g \circ f = \text{id}_X.\]
+
+You should think of the objects of a category as a collection of ``types of things" one does mathematics with, and the morphisms as functions which preserve the inherent structure that these objects have.
+Here are some familiar categories.
+\begin{ex}
+    \hfill
+    \begin{itemize}
+        \item The collection of all sets and all set functions defines the category $\euscr{S}$et.
+        \item The collection of all topological spaces and all continuous functions defines the category $\euscr{T}$op. We also have a category $\text{h}\euscr{T}\text{op}$ with the same objects, but with morphisms given by homotopy classes of continuous functions.
+        \item The collection of all based topological spaces and all continuous functions defines the category $\euscr{T}$op$_*$. Similarly to above, we also have a category $\text{h}\euscr{T}\text{op}_*$.
+        \item The collection of all vector spaces over a field $k$ and all linear transformations defines the category $\euscr{V}$ect$_k$.
+        \item The collection of all $R$-modules over a commutative ring $R$ with $R$-linear maps defines the category $\text{Mod}(R)$.
+        \item The collection of all groups and group homomorphisms defines the category $\euscr{G}\mathrm{op}$.
+        \item The collection of all abelian groups and group homomoprhis defines the category $\euscr{A}\mathrm{b}$.
+    \end{itemize}
+\end{ex}
+
+However, the definition of a category is exceptionally general. While our first intuition for a category produces the ones listed above, there are many, many more examples. Here are some more exotic categories.
+\begin{ex}
+    \hfill
+    \begin{itemize}
+        \item Let $(P, \leq)$ be a poset (so that $\leq$ is a reflexive, antisymmetric, transitive binary relation. We may regard $P$ as a category, which we will denote $P_\leq$, by letting every point $x\in P$ be an object $x \in \text{ob}(P_\leq)$, and for every relation $x \leq y$ in $P$, assigning a unique morphism $x \to y$ in $P_\leq$.
+        \item Let $k$ be a field. There is a category $\euscr{M}\text{at}_k$ whose objects are nonnegative integers and where a morphism $n \to m$ is represented by an $m \times n$-matrix with entries in $k$. Composition is given by matrix multiplication.
+        \item If $\euscr{C}$ is any category, then its \cdef{\emph{opposite category}} $\euscr{C}^{\text{op}}$ has the same objects as $\euscr{C}$, but for every morphism $f:x \to y$ in $\euscr{C}$, we have a morphism $f^{\text{op}}:y \to x$ in $\euscr{C}^{\text{op}}$.
+        \item Let $G$ be a group. Then we can construct a category, sometimes denoted $BG$ or even just $G$, with only one object $*$ and where $\text{Hom}_{BG}(*, *) = G$. How does composition work? Well, we know how to multiply elements in a group, right?
+        \item There is a category with two non-isomorphic objects between them and no morphisms between these objects. Here is a way to represent this category, where we suppress the isomorphisms:
+        \[
+        \bullet \quad \bullet
+        \]
+        There is a variant of this category where there is a single morphisms between our objects, which we can represent as
+        \[
+        \bullet \to \bullet
+        \]
+        Or, say we had two distinct morphisms between our objects, which can be represented as
+        \[
+        \bullet \substack{\to \\ \to} \bullet
+        \]
+        Or how about a category with three objects, and two morphisms that fit into the following diagram:
+        \[\begin{tikzcd}
+	   \bullet & \bullet \\
+	   \bullet
+	   \arrow[from=1-1, to=1-2]
+	   \arrow[from=1-1, to=2-1]
+        \end{tikzcd}\]
+        Or how about a category with three objects, and two morphisms going the other way?
+        \[\begin{tikzcd}
+	& \bullet \\
+	\bullet & \bullet
+	\arrow[from=1-2, to=2-2]
+	\arrow[from=2-1, to=2-2]
+\end{tikzcd}\]    
+    
+    
+    \end{itemize}
+\end{ex}
+
+This last example fits into a class of categories called \cdef{\emph{groupoids}}. A category is a groupoid if every morphism is an isomorphism.
+
+We can also transport information between categories. A \cdef{\emph{functor}} $F:\euscr{C} \to \euscr{D}$ between categories consists of the following data:
+\begin{itemize}
+    \item for every object $c \in \text{ob}(\euscr{C})$, an object $F(c) \in \text{ob}(\euscr{D})$;
+    \item for every morphism $f:x \to y$ in $\euscr{C}$, a morphism $F(f):F(x) \to F(y)$ in $\euscr{D}$.
+\end{itemize}
+A functor is required to satisfy the following:
+\begin{itemize}
+    \item if $\text{id}_c:c \to c$ is the identity function for an object $c \in \euscr{C}$, then $F(\text{id}_c) = \text{id}_{F(c)} : F(c) \to F(c)$ is the identity function for $F(c)$;
+    \item if $g \circ f:x \to y \to z$ is defined, then $F(g \circ f) = F(g) \circ F(f):F(x) \to F(y) \to F(z)$.
+\end{itemize}
+
+\begin{ex}
+    \hfill
+    \begin{itemize}
+        \item If $\euscr{C}$ is a category which has objects ``sets with some structure" (such as topological space, groups, vector spaces, ...) and morphisms ``set functions which preserve this structure" (such as continuous functions, group homomorphisms, linear transformations, ...), then there is a \cdef{\emph{forgetful functor}} $U:\euscr{C} \to \euscr{S}\text{et}$, where $U(c) \in \text{ob}(\euscr{C})$ is the object $c$ just viewed as a set, and where any morphism $f:x \to y$ in $\euscr{C}$ is sent to its underlying morphism of sets.
+        \item We will see soon that the fundamental group defines a functor $\pi_1:\euscr{T}\text{op}_* \to \euscr{G}\text{rp}$ which sends a based space $(X, x_0)$ to the fundamental group of $X$ based at $x_0$ and any continuous function $f:(X, x_0) \to (Y, y_0)$ to the induced map $\pi_1(f):\pi_1(X, x_0) \to \pi_1(Y, y_0)$
+        \item dual of a vector space is an endo functor
+        \item Hom functor in both variables
+        \item Representable functors
+    \end{itemize}
+\end{ex}
+
+\begin{rmk}
+    There is a category $\euscr{C}\text{at}$ of categories! The objects are categories, and the morphisms are functors.
+\end{rmk}
+
+We can go further and define morphisms between morphisms! Let $F, G:\euscr{C} \to \euscr{D}$ be functors. A \cdef{\emph{natural transformation}} $\alpha:F \implies G$ is the data of:
+\begin{itemize}
+    \item a morphism $\alpha_c:F(c) \to G(c)$ in $\euscr{D}$ for every object $c \in \textup{ob}(\euscr{C})$
+    \item if $f:c \to c'$ is any morphism in $\euscr{C}$, then the following diagram commutes:
+    \[\begin{tikzcd}
+	{F(c)} & {F(c')} \\
+	{G(c)} & {G(c')}
+	\arrow["{F(f)}", from=1-1, to=1-2]
+	\arrow["{\alpha_c}"', from=1-1, to=2-1]
+	\arrow["{\alpha_{c'}}"', from=1-2, to=2-2]
+	\arrow["{G(f)}", from=2-1, to=2-2]
+    \end{tikzcd}\] 
+\end{itemize}
+
+\begin{ex}
+    \hfill
+    \begin{itemize}
+        \item There is a functor $(-)^{**}:\text{Vect}_k \to \text{Vect}_k$ which sends a vector space to its double dual and a linear map to what you'd expect. There is a natural transformation $\text{ev}:\text{Id}_{\text{Vect}_k} \implies (-)^{**}$ whose component morphisms are evaluation! Meaning, remember that 
+        \[V^{**} = \text{Hom}_k(V, \text{Hom}_k(V, k)),\]
+        so that any element $f \in V^{**}$ represents a linear function
+        \[f:V \to \text{Hom}_k(V, k).\]
+        Thus, for any $v \in V$, we have a linear function
+        \[f(v):V \to k.\]
+        Now, fix some $V$. The evaluation component morphism $\text{ev}_V: V \to V^{**}$ is defined by 
+        \[\text{ev}_V(w)(f) = f(w).\]
+        This is a natural transformation. \textcolor{blue}{Check the morphisms condition if you aren't convinced!} This is an example of a natural isomorphism, where the component morphisms are isomorphisms.
+    \end{itemize}
+\end{ex}
+
+\begin{rmk}
+    Let $\euscr{C}, \euscr{D}$ be any two categories. Then there is a category $\text{Fun}(\euscr{C}, \euscr{D})$ whose objects are functors $\euscr{C} \to \euscr{D}$ and whose morphisms are natural transformations.
+\end{rmk}
+
+Suppose that $\euscr{C}, \euscr{D}$ are two categories. Suppose we have functors $F:\euscr{C} \rightleftarrows \euscr{D}: G$. We say that $F$ and $G$ are \cdef{\emph{adjoint}} if there is a bijection
+\[\text{Hom}_{\euscr{D}}(F(c), d) \cong \text{Hom}_{\euscr{D}}(c, G(d))\]
+for all objects $c \in \text{ob}(\euscr{C})$ and $d \in \text{ob}(\euscr{D})$. In this setup, we say that $F$ is \cdef{\emph{left-adjoint}} to $G$, and similarly that $G$ if \cdef{\emph{right-adjoint}} to $F$.
+
+\begin{proposition}
+    If $F:\euscr{C} \rightleftarrows \euscr{D}:G$ is an adjunction, then there are natural transformations
+    \[\eta_\euscr{C}: \textup{Id}_{\euscr{C}} \implies G \circ F, \quad \varepsilon_{\euscr{D}}:F \circ G \implies \textup{Id}_{\euscr{D}}\]
+    known as the \cdef{unit} and $\cdef{counit}$ of the adjunction. We sometimes also get a 
+\end{proposition}
+
+\begin{ex}
+    \hfill
+    \begin{itemize}
+        \item Suppose $\euscr{C}$ is a category where the objects are ``sets with some structure". We have seen that there is a forgetful functor
+        \[U:\euscr{C} \to \euscr{S}\textup{et}\]
+        which sends an object of $\euscr{C}$ to its underlying set and morphisms to the underlying set map. Quite often, the forgetful functor admits a left adjoint known as the \cdef{\emph{free functor}}, which I'll denote $F:\euscr{S}\text{et} \to \euscr{C}$. Less often, but still sometimes, the forgetful functor will also admit a left adjoint. Sometimes this right adjoint is called the \cdef{\emph{cofree}} functor. Let's look at some particular examples. In each case, try to verify that these are actually adjunctions.
+        \begin{itemize}
+            \item Consider the forgetful functor
+            \[U:\euscr{T}\text{op} \to \euscr{S}\text{et}.\]
+            This admits a left adjoint \[F:\euscr{S}\text{et} \to \euscr{T}\text{op}.\] For a set $X$, the topological space $F(X)$ has underlying set $X$ with topology the discrete topology. The forgetful functor also admits a right adjoint
+            \[C:\euscr{S}\text{et} \to \euscr{T}\text{op}.\]
+            For a set $X$, the topoological space $C(X)$ has underlying set $X$ with topology the trivial topology.
+            \item Consider the forgetful functor
+            \[U:\text{Vect}_k \to \euscr{S}\text{et}.\]
+            This admits a left adjoint
+            \[F:\euscr{S}\text{et} \to \text{Vect}_k\]
+            sending a set $X$ to the vector space $F(X)$ with a basis element $e_x$ for every element $x \in X$.
+        \end{itemize}
+    \end{itemize}
+\end{ex}
+
+\begin{proposition}[RAPL and LAPCO]
+    Right adjoints preserve limits. Dually, left adjoints preserve colimits.
+\end{proposition}
+
+This is really important! Lots of constructions we make in algebraic topology are by some limit or colimit construction. Knowing that some functor is a left or right adjoint means that we can ``commute" this limit or colimit construction by the functor. 
+
+For example, take the forgetful functor $U:\euscr{T}\text{op} \to \euscr{S}\text{et}$. The discrete and trivial topology define left and right adjoints, respectively, meaning that the forgetful functor commutes with limits AND colimits! This is extremely useful: this implies that, if I have some diagram whose limit or colimit defines a topological space $X$, then the underlying set of $X$ is the limit or colimit of the underlying sets of the diagrams! This is kind of a fact we take for granted that is extremely powerful.
+
+\begin{itemize}
+    \item diagrams
+    \item colimits and limits
+    \item Adjoints
+    \item universal properties via yoneda
+\end{itemize}
+
+
+\section{Fundamental groupoid}
+Recall that a category $\euscr{C}$ is a groupoid if every morphism in $\euscr{C}$ is an isomorphism. The prototypical example of such a category is the category $BG$, where $G$ is a group, with a single object $*$, a set of morphisms $\text{Hom}_{BG}(*, *) = BG$, and composition being given by the group structure. There are more examples. Here's a silly one: if we have groups $G_1, \dots, G_n$, then the category $\euscr{C}$ with objects $\{*_{G_1}, \dots, *_{G_n}\}$ (i.e. one point for each group) and morphisms
+\[\text{Hom}_{\euscr{C}}(*_{G_i}, *_{G_i})= G_i, \quad \text{Hom}_{\euscr{C}}(*_{G_j}, *_{G_k}) = \varnothing \text{ for }j \neq k\]
+is a groupoid. This is just the disjoint union of the groupoids $BG_i$, though, and not very interesting. However, there is a way to make a very interesting groupoid in the context of this class! For usage later, define $\euscr{G}\text{rpd}$ the category of groupoids.
+
+Let $X$ be a space. We have seen that for any point $x \in X$, there is an invariant known as the fundamental group of $X$, denoted $\pi_1(X, x)$. The elements of this group are path classes of loops $\gamma:I \to X$ based at $x$, and the group structure is given by path concatenation. This depends very much on the basepoint of $X$, unless of course $X$ is path-connected. We can soup this invariant up to a groupoid! 
+
+The \cdef{\emph{fundamental groupoid}} of $X$, denoted $\Pi_1X$, is the category where:
+\begin{itemize}
+    \item The objects of $\Pi_1X$ are the points of $X$, and
+    \item For any two points $x, y \in X$, regarded as objects in $\Pi_1X$, a morphism $f:x \to y$ is given by path concatenation.
+\end{itemize}
+Note that this is definitely a groupoid: if $\gamma:x \to y$ is any path, then there is the ``go backwards" reparameterization $\overline{\gamma}:y \to x$.
+\begin{lemma}
+    The assignment
+    \[\Pi_1:\euscr{T}\mathrm{op} \to \euscr{G}\mathrm{rpd}\]
+    which on objects sends $X \mapsto \Pi_1X$ is a functor.
+\end{lemma}
+
+This is a very natural thing to define, and basically looks like the definition of the fudamental group. The important thing to note here is that there is no restriction on path-component on $X$ in this definition. In other words, the fundamental groupoid incorporates the data of all of the fundamental groups of $X$ as we vary path-component! 
+
+Here's what I really mean. For $X$ an object in an arbitrary category $\euscr{C}$, there is a natural set of endomorphisms $\text{Hom}_{\euscr{C}}(X, X) =: \text{End}_{\euscr{C}}(X)$. There is a subset of these morphisms which are isomorphisms, known as automorphisms and denoted $\text{Aut}_{\euscr{C}}(X)$. There is always an identity map $\text{id}_X:X \to X$, and if $f, g \in \text{End}_{\euscr{C}}(X)$, then clearly $f \circ g \in \text{End}_{\euscr{C}}(X)$. This tells us that the endomorphisms of an object form a \cdef{\emph{monoid}}. The set $\text{Aut}_{\euscr{C}}(X)$ is a more familiar object:
+
+\begin{lemma}
+    The set $\mathrm{Aut}_\euscr{C}(X)$ forms a group under function composition.
+\end{lemma}
+
+In the case of the fundamental groupoid $\Pi_1X$, we can identify these automorphism groups.
+
+\begin{proposition}
+    Let $X$ be a space, and let $x$ be an object of the fundamental groupoid $\Pi_1X$. There is an isomorphism of groups:
+    \[
+    \mathrm{Aut}_{\Pi_1X}(x) \cong \pi_1(X, x).
+    \]
+\end{proposition}
+
+
+\section{Constructions}
+To shift towards categorical language, today we will review certain constructions we can perform on topological spaces and their universal properties. First, an important type of space to us will be that of a \cdef{\emph{based space}}. A based space is just a topological space $X$ together with a chosen basepoint $x_0 \in X$. If $X$ and $Y$ are two based spaces, then a map of based spaces between them is a continuous map $f:X \to Y$ of topological spaces such that $f(x_0) = y_0$. In other words, based maps send basepoints to basepoints.
+
+\subsection*{Products}
+If $X$ and $Y$ are topological spaces, then their cartesian product $X \times Y$ may be endowed with a topology known as the \cdef{\emph{product topology}}. This is generated by the basis
+\[\{U \times V \, | \, U \subseteq X \text{ open,}\,V \subseteq Y \text{ open.}\}\]
+The product topology on $X \times Y$ has a special property known as the \emph{\cdef{universal property of the product}}: if $Z$ is any space such that there exist continuous maps $f:Z \to X$ and $g:Z \to Y$, then there is a unique continuous map $Z \to X \times Y$ making the following diagram commute, where $p_X$ and $p_Y$ are the projection maps.
+\[\begin{tikzcd}
+	Z \\
+	& {X \times Y} & X \\
+	& Y
+	\arrow["{\exists!}"{description}, dashed, from=1-1, to=2-2]
+	\arrow["f", bend left = 20, from=1-1, to=2-3]
+	\arrow["g"', bend right = 20, from=1-1, to=3-2]
+	\arrow["{p_X}", from=2-2, to=2-3]
+	\arrow["{p_Y}"', from=2-2, to=3-2]
+\end{tikzcd}\]    
+\begin{exercise}
+    Show that this holds. Note that a subtle implication here that you should show is that the projection maps $p_X:X \times Y \to X$ and $p_Y:X \times Y \to Y$ are continuous.
+\end{exercise}
+
+Something you may have seen in the past is that placing a correct topology on the infinite product $\prod_IX_i$ is actually a little tricky. There are is an obvious way to topologize this space, called the box topology, and one can show that this space does not satisfy the analogous universal property. To be precise, if $\prod_IX_i$ has the box topology, and $Z$ is any space equipped with continuous maps $f_i:Z \to X_i$ for all $i \in I$, then it is not necessarily true that there is a unique continuous map $Z \to \prod_IX_i$ such that the composite $Z \to \prod_IX_i \xrightarrow{p_{X_i}}X_i$ is equivalent to $f_i$.
+
+The point of universal properties is that they are usually easier to deal with than the actual topologies themselves. In fact, when proving things with these types of constructions, one often uses the universal property more than the actual details of the topology. 
+
+As such, for some of the following constructions, we will \emph{define} the topology as one satisfying a particular universal property.
+
+\begin{watchout}
+    One downside of this philosophy is that I am not actually showing you that such a space \emph{exists} at all. I'd urge you to try to write out the details of the topology on any of the constructions if that bothers you.
+\end{watchout}
+
+\subsection*{Coproducts}
+Let $X$ and $Y$ be topological spaces. The \cdef{\emph{coproduct topology}} on the disjoint union $X \coprod Y$ is the one such that it satisfies the \cdef{\emph{universal property of the coproduct}}: if $Z$ is any topological space such that there exist continuous maps $f:X \to Z$ and $g:Y\to Z$, then there is a unique continuous map $X \coprod Y \to Z$ making the following diagram commute, where $i_X$ an $i_Y$ are the inclusion maps.
+\[\begin{tikzcd}
+	& X \\
+	Y & {X\coprod Y} \\
+	&& Z
+	\arrow["i_X"', from=1-2, to=2-2]
+	\arrow["f",bend left = 20, from=1-2, to=3-3]
+	\arrow["i_Y",  from=2-1, to=2-2]
+	\arrow["g"',bend right = 20, from=2-1, to=3-3]
+	\arrow["{\exists!}"{description}, dashed, from=2-2, to=3-3]
+\end{tikzcd}\]
+
+\subsection*{Quotients}
+For $f:X \to Y$ a surjective continuous map where $X$ is any space and $Y$ is a set, the \cdef{\emph{quotient topology}} on $Y$ is defined by the \cdef{\emph{universal property of the quotient}}: if $Z$ is any space and $g:Y \to Z$ is any function, then $g$ is continuous if and only if $g \circ f:X \to Z$ is continuous.
+
+\begin{exercise}
+    If $X$ is a topological space and $\sim$ is an equivalence relation on $X$, then the set of equivalence class $X/\sim$ inherits a quotient topology along with a continuous map $q:X \to X/\sim$. Show that if $g:X \to Z$ is any continuous map such that, for any point $z \in X/\sim$ and any two points $x, y \in q^{-1}(z)$ in the fiber over $z$, we have $g(x) = g(y)$, then there is a unique continuous map $f:X/\sim \to Z$ such that the following diagram commutes.
+    \[\begin{tikzcd}
+	X & Z \\
+	{X/\sim}
+	\arrow["g", from=1-1, to=1-2]
+	\arrow["q"', from=1-1, to=2-1]
+	\arrow["f"', dashed, from=2-1, to=1-2]
+    \end{tikzcd}\]    
+\end{exercise}
+
+Next, let's look at some operations on pointed spaces. While it might not seem like keeping track of a basepoint should change things all that much, we'll see that, in fact, this subtle piece of data plays a very important role in turning our situation more algebraic. 
+
+\subsection*{Wedge Sum}
+The \cdef{\emph{wedge sum}} of two based space $X$ and $Y$ $X \vee Y$ is the quotient space $X \coprod Y/(x_0 \sim y_0)$. You should visualize this space as ``gluing" $X$ to $Y$ at the base point. The wedge sum itself is naturally a based space at the image of either $x_0$ or $y_0$ in the quotient. The \cdef{\emph{universal property of the wedge sum}} is essentially (in fact, more than essentially as we will later see) the same as the universal property of the coproduct, where every map in the below diagram is assumed to be one of based spaces.
+\[\begin{tikzcd}
+	& X \\
+	Y & {X\vee Y} \\
+	&& Z
+	\arrow["i_X"', from=1-2, to=2-2]
+	\arrow["f",bend left = 20, from=1-2, to=3-3]
+	\arrow["i_Y",  from=2-1, to=2-2]
+	\arrow["g"',bend right = 20, from=2-1, to=3-3]
+	\arrow["{\exists!}"{description}, dashed, from=2-2, to=3-3]
+\end{tikzcd}\]
+
+\begin{exercise}
+    Let $Y = *$ be a one-pointed based space. Show that for any based space $X$, we have $X \vee Y \cong X$. Think about this in analogy with the direct sum of vector spaces: if $V$ is any vector space and $W$ is a 0-dimensional vector space, then $V \oplus W \cong V$.
+\end{exercise}
+
+\subsection*{The Smash Product}
+The \emph{\cdef{smash product}} of two based spaces $X$ and $Y$ is the quotient space $X \wedge Y = X \times Y /(X \vee Y)$. Here, we are using that the wedge sum $X \vee Y$ is homeomorphic to a subspace of the product:
+\[X \vee Y \cong (X \times \{y_0\}) \cup (\{x_0\} \times Y).\]
+This allows for a simple definition of the topology on the smash product: it is just the quotient topology!
+
+\begin{exercise}
+    Try to draw a diagram for the universal property of the smash product.
+\end{exercise}
+
+You should think of the smash product of based spaces as being analogous to the tensor product of vector spaces.
+
+\begin{exercise}
+    Let $X$ be any based space. Show that $X \wedge S^0 \cong X.$
+\end{exercise}
+
+\begin{exercise}
+    Show that $S^1 \wedge S^1$ is homeomorphic to the 2-sphere $S^2$. More generally, show that $S^n \wedge S^m \cong S^{n+m}$.
+\end{exercise}
+
+Using the smash product, we define the (reduced) \cdef{\emph{suspension}} of a based space $X$ as $\cdef{\Sigma X} \coloneq X \wedge S^1$. The above exercise shows that $\Sigma S^n \cong S^{n+1}.$ More generally, the $k$-fold suspension is $\Sigma^k X\coloneq S^k \wedge X.$
+
+\begin{rmk}
+    One can also think about the suspension in a more tactile way, if you prefer. It is homeomorphic to 
+    \[\Sigma X \cong (X \times I)/\left((X \times \{0\}) \cup (x_0 \times I) \cup (X \times \{1\})\right).\]
+    In other words, take the two spaces $X \times I/(X \times \{0\})$ and $X \times I/(X \times \{1\})$ (these are \cdef{cones} on X), glue them together at the equator, and then identify the vertical strip in each ``slice" at the base point $x_0 \in X$.
+\end{rmk}
+
+\subsection*{The Mapping Space}
+The \emph{\cdef{mapping space}} between two spaces $X$ and $Y$ is the topological space $\text{Map}(X, Y)$ of continuous maps between $X$ and $Y$. If $X$ and $Y$ are based spaces, then there is also a based mapping space $\text{Map}_*(X, Y)$ of basepoint-preserving continuous maps from $X$ to $Y$. This space is pretty annoying to topologize which uses the so called compact-open topology. However, it obeys a universal property which allows for a more intuitive description. The space $\text{Map}(X, Y)$ has the property that the assignment
+\[\left(F:K \times X \to Y\right) \mapsto \left(G:K \to \text{Map}(X, Y)\right)\]
+where $G(k) \in \text{Map}(X, Y)$ is the function defined by $G(k)(x) = F(k, x)$, is a bijection of sets.
+
+\begin{exercise}
+    What is the pointed version of this universal property?
+\end{exercise}
+
+Using the mapping space, we define the \emph{\cdef{loop space}} of a based space $X$ as $\cdef{\Omega X} \coloneq \text{Map}_*(S^1, X)$.
+
+\subsection{Cofibrations}
+A map of spaces $i:A \to X$ is a \cdef{\emph{cofibration}} if for any continuous maps $h:A \times I \to Y$ and $f:X \to Y$ such that the following diagram commutes:
+\[
+\begin{tikzcd}
+	A & {A \times I} \\
+	X & Y
+	\arrow["{(\text{id}_A, 0)}", from=1-1, to=1-2]
+	\arrow["i"', from=1-1, to=2-1]
+	\arrow["h", from=1-2, to=2-2]
+	\arrow["f", from=2-1, to=2-2]
+\end{tikzcd}
+\]
+there exists some $\tilde{h}:X \times I \to Y$ making the following diagram commute:
+\[
+\begin{tikzcd}
+	A & {A \times I} & {X \times I} \\
+	X & Y
+	\arrow["{(\text{id}_A, 0)}", from=1-1, to=1-2]
+	\arrow["i"', from=1-1, to=2-1]
+	\arrow["{i \times \text{id}_I}", from=1-2, to=1-3]
+	\arrow["h", from=1-2, to=2-2]
+	\arrow["{\tilde{h}}", dashed, from=1-3, to=2-2]
+	\arrow["f", from=2-1, to=2-2]
+\end{tikzcd}
+\]
+Some people call this property the \cdef{\emph{homotopy extension property}}, as we've extended the first diagram a little. 
+You should think about cofibrations as being ``good inclusions".
+
+Maybe to be a little more specific: suppose we have a map $f:V \to W$ of $k$-vector spaces. Something spectacular about vector spaces is how easy it is to verify conditions about linear transformations by making a clever reduction with linear algebra. 
+    
+One of the first times we see this is when checking whether $f$ is injective or not. By definition, $f$ is injective if for all vectors $v , w \in V$, if $f(v)=f(w)$, then in fact $v=w$. This definition asks about every possible set of two vectors from $V$, which is a kinda ridiculous thing to check in practice. There is a clever fix coming from algebra. Suppose I only know that if $f(v)=0$, then in fact $v=0$. Well, consider any other two vectors $u, w \in V$, and suppose that $f(u)=f(w)$. Linear transformations commute with addition and subtraction (this is a \textbf{big deal!!!}), so we have that
+\[
+0 = f(u)-f(w) = f(u-w).
+\]
+But now we must have that $u-w=0$, hence $u=w$ and $f$ must be injective.
+
+A cofibration is the topologists replacement for a "nice" injective map. There are a lot of more interesting continuous maps in topology, which makes it very interesting, but also (in addition to a lack of any algebra) can make it hard to work with things. Cofibrations are a more robust class of maps which are injective-like and have a condition we can check.
+
+\begin{rmk}
+    Another thing that's failing here: the category $\euscr{T}\mathrm{op}$ is not \emph{abelian}!
+\end{rmk}
+
+Another nice fact about injective linear maps is that they are isomorphisms onto their images. There is a sort of space level analogue of this fact. For any map $f:X \to Y$ of spaces, we can construct the \cdef{\emph{mapping cylinder}} of $f$, the topological space denoted $Mf$ and defined by
+\[
+(Mf \coloneq (X \times I) \amalg Y)/((x,0) \sim f(x)).
+\]
+In other words, take the cylinder on $X$, then glue the bottom of the cylinder onto Y at the points specified by $f$. There is an inclusion $i:X \to Mf$ which sends $X$ to its copy at the top of the cylinder, and there is a projection $r:Mf \to Y$ sending $Y$ to itself and sending any point $(x,t)$ in the cylinder to $f(x) \in Y$. 
+
+\begin{proposition}
+    For any continuous map $f:X \to Y$, the map $i:X \to Mf$ is a cofibration, and the map $r:Mf \to Y$ is a homotopy equivalence. Moreover, there is a factorization
+    \[\begin{tikzcd}
+	& Mf \\
+	X & Y
+	\arrow["r", from=1-2, to=2-2]
+	\arrow["i", from=2-1, to=1-2]
+	\arrow["f", from=2-1, to=2-2]
+    \end{tikzcd}\]
+\end{proposition}
+
+This proposition is saying that up to homotopy, every morphism is a cofibration. That's kinda funky!
+
+\begin{exercise}
+    Suppose that $i:A \to X$ is a cofibration where $A \simeq *$. Show that the quotient map $X \to X/A$ is an equivalence.
+\end{exercise}
+
+\subsection{Fibrations}
+Dual to cofibrations, we say that a surjective map of spaces $p:E \to B$ is a \cdef{\emph{fibration}} if for any continuous maps $f:Y \to E$ and $h:Y \times I \to Y$ such that the following diagram commutes:
+\[\begin{tikzcd}
+	Y & E \\
+	{Y \times I} & B
+	\arrow["f", from=1-1, to=1-2]
+	\arrow["{(\text{id}_Y, 0)}"', from=1-1, to=2-1]
+	\arrow["p", from=1-2, to=2-2]
+	\arrow["h", from=2-1, to=2-2]
+\end{tikzcd}\]
+there exists some $\tilde{h}$ making the following diagram commute:
+\[\begin{tikzcd}
+	Y & E \\
+	{Y \times I} & B
+	\arrow["f", from=1-1, to=1-2]
+	\arrow["{(\text{id}_Y, 0)}"', from=1-1, to=2-1]
+	\arrow["p", from=1-2, to=2-2]
+	\arrow["{\tilde{h}}", dashed, from=2-1, to=1-2]
+	\arrow["h", from=2-1, to=2-2]
+\end{tikzcd}\]
+Some people call this the \cdef{\emph{homotopy extension property}}, as we've lifted the map $h:Y \times I \to B$, which is a homotopy between the continuous maps $h_0, h_1:Y \to B$, along the map $p$ to $E$.
+
+\textcolor{blue}{factor through mapping space}
+
+\textcolor{blue}{fiber bundle}
+
+
+
+
+
+\section{Vector fields on spheres, and some things to do with homotopy}
+You might remember from a calculus course in the past the notion of a vector field in the plane. In this context, a vector field can be represented as a function of two variables, say of the form
+\[F(x, y) = \langle f(x,y), g(x,y)\rangle,\]
+and the end result is usually drawn in the plane, assigning the vector $F(x, y)$ to the point $(x, y)$. If you have taken a differential equations course, or perhaps a differential geometry course, you might know that vector fields come up a lot. We can try to generalize the notion of a vector field to more exotic topological spaces than just Euclidean space. What are the key points of a vector field that we can take with us to an arbitrary space $X$?
+\begin{itemize}
+    \item To each point $x \in X$, we have some vector $\sigma(x)$;
+    \item As we vary continuously along $X$, the corresponding vectors in the vector field also vary continuously.
+\end{itemize}
+This first point is a little vague, so let's work through an example.
+\begin{ex}
+    Let $X$ be the graph of the function $f(x) = x^2$ living in $\mathbb{R}^2$ (alright, I know this curve is homeomorphic to $\mathbb{R}$, but bare with me). What should a vector field on $X$ look like? A more important question: what \emph{direction} should the vectors in the vector field point?
+
+    Remembering calculus again (sorry), if $p \in X$ is any point on our curve, we actually have a way to assign a pretty nice vector space to $p$: this is the \emph{tangent space}! The derivative $f'(x) = 2x$ allows us to associate to any point $p \in X$ the tangent space $T_pX$. In this case, the tangent space is a line, where if $p = (x_0,y_0)$, we have
+    \[T_pX = \{(x, y) : y-y_0 = 2(x-x_0)\}.\]
+    This is how we choose the vectors in a vector field: they all live in the tangent space!
+\end{ex}
+
+\begin{rmk}
+    There is a more sophisticated way to do this, if you are interested. Each of the tangent spaces $T_pX$ from above is a 1-dimensional vector space. There is a topological space known as the \cdef{\emph{tangent bundle}}, which is just sticking these tangent spaces together:
+    \[TX = \coprod_{p \in X}T_pX.\]
+    The tangent bundle comes equipped with a canonical continuous map $\pi_:TX \to X$ which has the property that if $v \in T_pX$ is a tangent vector to $X$ at $p$, then $\pi(v)=p$. In this language, a vector field on $X$ is a section $\sigma:X \to TX$ of the tangent bundle. This has the property that for any $x \in X$, $\sigma(x) \in T_pX$ and $\pi(\sigma(x)) = x$. The tangent space also allows us to define a functor
+    \[F: \euscr{C}_* \to \text{Vect}_{\mathbb{R}}\]
+    where $\euscr{C}_*$ here denotes the category whose objects are the graphs of continuous functions $f:\mathbb{R} \to \mathbb{R}$ with a distinguished basepoint $p$, where $F(X, p) = T_pX$.
+\end{rmk}
+
+Notice that we are implicitly using that the tangent space to a curve is 1-dimensional, and so that defining the tangent space apriori suggest some notion of dimension that is not present for all topological spaces. We will be mostly concerned with spheres $S^n \subseteq \mathbb{R}^{n-1}$, and it is not hard to see that for any $p \in S^{n}$, there is a well-defined tangent space $T_pS^n$ which is an $n$-dimensional vector space.
+
+A very interesting question is: what spheres $S^n$ admit nonzero vector fields?
+
+
+\section{Operations on topological spaces}
+\begin{itemize}
+    \item Loops spaces
+    \item mapping spaces
+    \item Suspensions
+    \item the loop suspension adjunction
+    \item quotient spaces
+    \item product spaces
+    \item coproduct spaces
+    \item CW complexes
+    \item smash products
+    \item homotopy
+    \item cofibrations
+    \item fibrations
+    \item James splitting
+    \item Hilton-Milnor splitting
+    \item H-spaces
+    \item co H-spaces
+    \item mapping cones and mapping cylinders
+\end{itemize}
+
+\subsection{H-space}
+An \cdef{\emph{H-space}} is a based space $(X, x_0)$ equipped with a continuous map
+\[\mu:X \times X \to X\]
+such that $\mu(x_0, x_0) = x_0$ and that the continuous maps
+\[f:X \to X, \quad f(x) = \mu(x_0, x)\]
+\[g:X \to X, \quad g(x) = \mu(x, x_0)\]
+are homotopic to the identity $\text{id}:X \to X$ through maps which presreve the basepoint.
+
+\begin{rmk}
+    This is kind of like a group object in spaces, but it is a strictly weaker notion. We can (and should) think of $\mu$ as a multiplication on $X$ with unit given by the basepoint, but we should note that we are not requiring inverses nor associativity.
+\end{rmk}
+
+Here's a question: what spheres inherit H-space structures?
+
+
+\section{Covering spaces and Vector Bundles}
+
+
+
+\section{A quick dose of group theory}
+\subsection{Group theory}
+\begin{itemize}
+    \item groups
+    \item abelian groups
+    \item long exact sequences
+    \item Eckmann Hilton
+\end{itemize}
+
+\section{Homotopy groups}
+\begin{itemize}
+    \item fundamental group
+    \item covering spaces
+    \item Van Kampen
+    \item fundamental group of the circle
+    \item retracts and deformation retracts
+    \item long exact sequence in homotopy groups
+    \item Brouwer fixed point theorem
+    \item fundamental theorem of algebra
+    \item Borsuk-Ulam theorem
+    \item Eilenberg-Maclane spaces
+    \item fiber bundles / vector bundles
+    \item postnikov systems
+\end{itemize}
+
+\subsection{Van Kampen}
+For a set $A$, let $\Pi_1(X, A)$ denote the restriction of the fundamental groupoid of $X$ to the points of $X$ which also lie in $A$. Typically, $A$ will be a subspace of $X$, but since the topology on $A$ isn't important for this definition, we have referred to it as a set. We should think of $A$ as the ``set of basepoint" we want to consider.
+
+\begin{thm}[van Kampen for Fundamental Groupoids]
+    Let $X$ be a space which is covered by the interiors of two subspaces: i.e., there are subspaces $X_1, X_2 \subseteq X$ such that $X = \mathring{X}_1 \cup \mathring{X}_2$. Suppose $A$ is a set which meets each path component of $X_1$ and $X_2$. Then $A$ meets each path component of $X$, and the diagram of groupoids induced by the natural inclusions
+    \[\begin{tikzcd}
+	{\Pi_1(X_1 \cap X_2, A)} & {\Pi_1(X_1, A)} \\
+	{\Pi_1(X_2, A)} & {\Pi_1(X, A)}
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=1-1, to=2-1]
+	\arrow[from=1-2, to=2-2]
+	\arrow[from=2-1, to=2-2]
+    \end{tikzcd}\]
+    is a pushout in $\euscr{G}\mathrm{rpd}.$
+\end{thm}
+This is a ``reconstruction" theorem. It is giving you a formula to compute the fundamental groupoid, hence the fundamental group, of a space $X$, and requires as input some particularly nice subspaces (whose fundamental groupoids are typically easier to compute) and their topology relative to $X$. 
+
+\begin{ex}
+    Let $X=S^1$, and let $A = \{N, S\}$ be the north and south pole. Let $X_1$ be the left hemisphere plus some wiggle room, and let $X_2$ be the right hemisphere plus some wiggle room. These choices satisfy the conditions of van Kampen. Thus, we have a pushout of groupoids
+    \[\begin{tikzcd}
+	{\Pi_1(X_1 \cap X_2, \{N, S\})} & {\Pi_1(X_1, \{N, S\})} \\
+	{\Pi_1(X_2, \{N,S\})} & {\Pi_1(X, \{N,S\})}
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=1-1, to=2-1]
+	\arrow[from=1-2, to=2-2]
+	\arrow[from=2-1, to=2-2]
+    \end{tikzcd}\]
+    Notice that the spaces $X_1, X_2$ are contractible. In fact, this implies that the fundamental groupoids of these subspaces, relative to $\{N, S\}$ given in the diagram, are isomorphic to the groupoid with two objects $x, y$ and exactly one morphism $x \to y$ and $y \to x$. \textcolor{blue}{how to get that $\pi_1(S^1)=\mathbb{Z}?$ Somehow use that one of these groupoids is the image of $\mathbb{Z}$ or something?}
+\end{ex}
+
+
+\subsection{freudenthal}
+\begin{thm}[Freudenthal Suspension]
+    Suppose $X$ is an $(n-1)$-connected based space. Then the suspension map
+    \[\Sigma_*:\pi_{i-1}(X) \to \pi_i(\Sigma X)\]
+    is an isomorphism for $i <2n$ and a surjection for $i=2n$.
+\end{thm}
+
+Taking $X$ to be a sphere, and noting that $\Sigma S^n \simeq S^{n+1}$, this let's us define the \cdef{\emph{stable homotopy groups of spheres}}. More precisely, Freudenthal's theorem tells us that the group $\pi_{n+k}(S^n)$ is independent of $n$ for $n \geq k+2$. The $k$-th stable stem, then is defined as
+\[\pi_k(\mathbb{S}) =\pi_k^s \coloneq \text{colim}_n(\pi_{n+k}(S^n)).\]
+
+\begin{ex}
+    We know that $\pi_1(S^1) \cong \mathbb{Z}$. Using the Hopf fibration $S^1 \to S^3 \xrightarrow{\eta} S^2$, the long exact sequence in homotopy groups showed us that $\pi_2(S^2) \cong \mathbb{Z}$. Freudenthal suspension now kicks in: for $n \geq 2$, the group $\pi_n(S^n)$ is independent from $n$. In particular, we have
+    \[\pi_0(\mathbb{S}) = \pi_0^s = \text{colim}(\pi_1(S^1) \to \pi_2(S^2) \to \pi_3(S^3) \to \cdots) = \text{colim}(\mathbb{Z} \to \mathbb{Z} \xrightarrow{\cong}\mathbb{Z} \xrightarrow{\cong} \cdots) = \mathbb{Z}.\]
+    In other words, $\pi_n(S^n) \cong \mathbb{Z}$ for all $n \geq 0$.
+\end{ex}
+
+\begin{ex}
+    The Hopf fibration also showed us that $\pi_3(S^2) \cong \mathbb{Z}$. Freudenthal suspension tells us that we have entered the stable range at $\pi_4(S^3)$, so that we have a diagram
+    \[\pi_1(\mathbb{S}) = \pi_1^s = \text{colim}(\pi_2(S^1) \to \pi_3(S^2) \to \pi_4(S^3) \to \cdots) = \text{colim}(0 \to \mathbb{Z} \to \pi_4(S^3) \to \cdots).\]
+    Notice that Freudenthal also implies that the map $\mathbb{Z} \to \pi_4(S^3)$ is surjective, so that we at least know that $\pi_4(S^3)$, and hence $\pi_1(\mathbb{S})$, is no larger than $\mathbb{Z}$. In fact, one can show that $\pi_4(S^3) \cong \mathbb{Z}/2$, generated by $\Sigma\eta$, the suspension of the Hopf fibration.
+\end{ex}
+
+How do we compute the higher stable stems? This is where the course ends, and this is where we need some more high tech algebraic machinery that I have been avoiding. I'll give a glimpse into this world in our last lecture.
+
+\textcolor{blue}{to do}
+\begin{itemize}
+    \item define CW complexes
+    \item define homotopy groups
+    \item show that CW complexes are determined by elements in the homotopy groups of spheres
+    \item Whitehead's theorem
+    \item table of homotopy groups of spheres
+\end{itemize}
+
+% \printbibliography
+\end{document}

@@ -461,64 +461,129 @@ Next, we will prove our first big theorem, and make our first nontrivial fundame
     \]
 \end{thm}
 
-This will require a bit of work. First, define a path $\gamma_n:I \to S^1$ by
+This will require a bit of work. First, define a path $\omega_n:I \to S^1$ by
 \[
-\gamma_n(t) = e^{2\pi i\cdot n t},
+\omega_n(t) = e^{2\pi i\cdot n t},
 \]
-where $n \in \mathbb{Z}$ and we are viewing $S^1 \subseteq \mathbb{C}$. This path is a loop, since $e^{0} = e^{2\pi 1 \cdot n} = 1$ for all $n \in \mathbb{Z}$. Geometrically, this is the loop which winds around the circle $n$-times. 
+where $n \in \mathbb{Z}$ and we are viewing $S^1 \subseteq \mathbb{C}$. 
+This path is a loop, since $e^{0} = e^{2\pi 1 \cdot n} = 1$ for all $n \in \mathbb{Z}$. 
+Geometrically, this is the loop which winds around the circle $n$-times. 
 
-It is straightforward to see that $[\gamma_n] \cdot [\gamma_m] = [\gamma_{n+m}]$. This simple observation is really useful: it implies that the function
+\subsection*{Lecture 5}
+\hfill
+
+It is straightforward to see that $[\omega_n] \cdot [\omega_m] = [\omega_{n+m}]$. 
+This simple observation is really useful: it implies that the function
 \[
-\phi:\mathbb{Z} \to \pi_1(S^1, 1), \quad \phi(n) = [\gamma_n]
+\phi:\mathbb{Z} \to \pi_1(S^1, 1), \quad \phi(n) = [\omega_n]
 \]
 is a group homomorphism. Our goal now is to show that $\phi$ is an isomorphism.
 
-The intuition here is that the collection of maps $\{\gamma_n\}_{n \in \mathbb{Z}}$ acts a lot like the integers, where the number $n \in  \mathbb{Z}$ corresponds to going around the circle $n$-times counter-clockwise. The point of our calculation is that that is all that can happen.
+The intuition here is that the collection of maps $\{\omega_n\}_{n \in \mathbb{Z}}$ acts a lot like the integers, where the number $n \in  \mathbb{Z}$ corresponds to going around the circle $n$-times counter-clockwise. The point of our calculation is that that is all that can happen.
 \begin{itemize}
     \item Showing the map $\phi$ is surjective says that every loop in $S^1$ looks like ``going around the circle" some number of times.
     \item Showing the map $\varphi$ is injective says that going around the loop $n$-times and going around the loop $m$-times is never somehow equivalent in $\pi_1(S^1, 1)$ when $n \neq m$.
 \end{itemize}
 The ``reason" why $\phi$ is an isomorphism is that, locally, $S^1$ just looks like the real numbers $\mathbb{R}$. Since $\mathbb{R} \simeq *$, meaning $\pi_1(\mathbb{R}, 1) = 0$, there can be no weird local behavior of $S^1$ that obfuscates our argument.
 
-There is a continuous map $p:\mathbb{R} \to S^1$ which will feature very heavily in these arguments. This map is defined by 
+There is a continuous map $p:\mathbb{R} \to S^1$ which will feature very heavily in these arguments.
+This map is defined by 
 \[
 p(t) = e^{2\pi i \cdot t},
 \]
-which we can geometrically think of as ``winding the real numbers around $S^1$". Consider the map $\gamma_n:I \to S^1$. We can \cdef{lift} this map along $p$ to a map $\tilde{\gamma}_n:I \to \mathbb{R}$ where 
+which we can geometrically think of as ``winding the real numbers around $S^1$". 
+Consider again the map $\omega_n:I \to S^1$. 
+We can \cdef{lift} this map along $p$ to a map $\tilde{\omega}_n:I \to \mathbb{R}$ where 
 \[
-\tilde{\gamma}_n(t) = n \cdot t.
+\tilde{\omega}_n(t) = n \cdot t.
 \]
-By ``lift along $p$", I mean that the maps $\gamma_n$ and $p$ fit into a diagram of the form:
+By ``lift along $p$", I mean that the maps $\omega_n$ and $p$ fit into a diagram of the form:
 \[\begin{tikzcd}
 	& {\mathbb{R}} \\
 	I & {S^1}
 	\arrow["p", from=1-2, to=2-2]
-	\arrow["{\gamma_n}", from=2-1, to=2-2]
+	\arrow["{\omega_n}", from=2-1, to=2-2]
 \end{tikzcd}\]
-and the map $\tilde{\gamma}_n$ fills in the triangle and makes the diagram commute:
+and the map $\tilde{\omega}_n$ fills in the triangle and makes the diagram commute:
 \[
 \begin{tikzcd}
 	& {\mathbb{R}} \\
 	I & {S^1}
 	\arrow["p", from=1-2, to=2-2]
-	\arrow["{\tilde{\gamma}_n}", dashed, from=2-1, to=1-2]
-	\arrow["{\gamma_n}", from=2-1, to=2-2]
+	\arrow["{\tilde{\omega}_n}", dashed, from=2-1, to=1-2]
+	\arrow["{\omega_n}", from=2-1, to=2-2]
 \end{tikzcd}
 \]
-In fact, the existence of a lift is not unique to the paths $\gamma_n$. All paths in $S^1$ lift to $\mathbb{R}$, and they lift \emph{uniquely} as soon as we specify any value.
+In fact, the existence of a lift is not unique to the paths $\gamma_n$. 
+All paths in $S^1$ lift to $\mathbb{R}$, and they lift \emph{uniquely} as soon as we specify any value.
 
-\begin{proposition}
-    Let $f:I \to S^1$ be any path. Then there is a unique lift $\tilde{f}:I \to \mathbb{R}$ such that $\tilde{f}(0) = 0$ and $f = p \circ \tilde{f}$.
+\begin{proposition}[\cdef{Path lifting}]
+    Let $f:I \to S^1$ be any path with $\gamma(0) = x \in S^1$.
+    Let $\tilde{x} \in p^{-1}(x)$ be any point in the fiber over $x$.
+    Then there is a unique lift $\tilde{f}:I \to \mathbb{R}$ such that $\tilde{f}(0) = \tilde{x}$ and $f = p \circ \tilde{f}$.
 \end{proposition}
 
 \begin{exercise}
-    Show that if we do not require that $\tilde{\gamma}(0) = 0$, then there need not  be a unique lift $\tilde{\gamma}$?
+    Prove the above proposition. 
+    Notice that as there are infinitely many points in the fiber $p^{-1}(x) \subseteq \mathbb{R}$ (in fact if $t \in p^{-1}(x)$ then $t+n \in p^{-1}(x)$ for any $n \in \mathbb{Z}$), the choice of lift $\tilde{f}$ is certainly not unique unless we specify $\tilde{f}(0)$.
 \end{exercise}
 
-\begin{proof}
-    
-\end{proof}
+Path lifting is nice. Even stronger is that we can lift entire homotopies from $S^1$ to $\mathbb{R}$.
 
+\begin{proposition}[\cdef{Homotopy path lifting}]
+    Let $H:I \times I \to S^1$ be a path homotopy from $H(s, 0)$ and $H(s,1)$, and let $x = H(0, t)$ for any $t \in I$.
+    Let $\tilde{x} \in p^{-1}(x)$.
+    Then there is a unique lift $\tilde{H}:I \times I \to \mathbb{R}$ such that $H = p \circ \tilde{H}$ and $\tilde{H}(0, t) = \tilde{x}$ for all $t \in I$.
+\end{proposition}
+
+\begin{rmk}
+    We will not prove the above proposition. For reference, see section 1.1 of Hatcher's book.
+\end{rmk}
+
+Using these propositions, we will prove that $\pi_1(S^1, 1) \cong \mathbb{Z}$.
+
+First, we show that $\phi$ is surjective.
+Let $\gamma:(I, 0) \to (S^1, 1)$ be a loop. 
+\cdef{Path lifting} implies that there is a unique lift $\tilde{\gamma}:(I, 1) \to (\mathbb{R}, 0)$ such that $\tilde{\gamma}(0) = 0$.
+\[\begin{tikzcd}
+	& {\mathbb{R}} \\
+	I & {S^1}
+	\arrow["p", from=1-2, to=2-2]
+	\arrow["{\tilde{\gamma}}", from=2-1, to=1-2]
+	\arrow["\gamma", from=2-1, to=2-2]
+\end{tikzcd}\]
+By commutativity of the above diagram, we have that $p \circ \tilde{\gamma}(1) = \gamma(1) = \gamma(0) = 1$, thus $\tilde{\gamma}(1) \in p^{-1}(1)$.
+Since $p^{-1}(1) = \mathbb{Z} \subseteq \mathbb{R}$, this implies that $\tilde{\gamma}(1)$ is some integer $n$.
+
+There is another path in $\mathbb{R}$ from $0$ to $n$: it is the lift $\tilde{\omega}_n:I \to \mathbb{R}$.
+We have a homotopy from $\tilde{\gamma}$ to $\tilde{\omega}_n$:
+\[
+H:I \times I \to \mathbb{R}, \quad H(s,t) = (1-t)\tilde{\gamma}(s) + t \cdot \tilde{\omega}_n(s).
+\]
+Now we can just compose with $p$, getting a map $p \circ H:I \times I \to \mathbb{R} \to S^1$.
+By construction, this map exhibits a homotopy between $\gamma$ and $\omega_n$.
+Hence $[\omega_n] = [\gamma]$, so $\phi$ is surjective.
+
+Now, suppose that $\gamma:I \to S^1$ is some path such that $\gamma \simeq \omega_n$ and $\gamma \simeq \omega_m$.
+Homotopy equivalence is transitive, so there is a homotopy
+\[
+H:I \times I \to S^1
+\]
+from $\omega_n$ to $\omega_m$.
+By \cdef{Homotopy path lifting}, there is a unique lift $\tilde{H}:I \times I \to \mathbb{R}$ such that $\tilde{H}(0, t)= 0$.
+\[\begin{tikzcd}
+	& {\mathbb{R}} \\
+	{I \times I} & {S^1}
+	\arrow["p", from=1-2, to=2-2]
+	\arrow["{\tilde{H}}", from=2-1, to=1-2]
+	\arrow["H", from=2-1, to=2-2]
+\end{tikzcd}\]
+By uniqueness of path lifting, since $\tilde{H}(s, 0)$ is a lift of $\omega_n$ which starts at 0 and ends at $n$, we must have that $\tilde{H}(s, 0) = \tilde{\omega}_n(s)$.
+Similarly, $\tilde{H}(s, 1) = \tilde{\omega}_m(s)$.
+Since $\tilde{H}$ is a path homotopy, we must have that $\tilde{H}(1, t)$ is a fixed point $x \in \mathbb{R}$.
+When $t=0$, we see that $\tilde{H}(1, 0) = \tilde{\omega}_n(1) = n$.
+When $t=1$, we see that $\tilde{H}(1,1) = \tilde{\omega}_m(1) = m$.
+Therefore, we must have that $n=m$, hence $\phi$ is injective, finishing the proof.
 
 
 

@@ -1,0 +1,27 @@
+\contentsline {section}{\tocsection {}{1}{Instructions}}{1}{section.1}%
+\contentsline {section}{\tocsection {}{2}{Topics}}{2}{section.2}%
+\contentsline {subsection}{\tocsubsection {}{2.1}{More of a $\sim $topology$\sim $ flavor}}{2}{subsection.2.1}%
+\contentsline {subsection}{\tocsubsection {}{}{Configuration spaces}}{2}{section*.2}%
+\contentsline {subsection}{\tocsubsection {}{}{Universal covers and covering spaces}}{2}{section*.3}%
+\contentsline {subsection}{\tocsubsection {}{}{Cobordism of manifolds}}{2}{section*.4}%
+\contentsline {subsection}{\tocsubsection {}{}{Group actions on spaces}}{3}{section*.5}%
+\contentsline {subsection}{\tocsubsection {}{}{Exotic spheres}}{4}{section*.6}%
+\contentsline {subsection}{\tocsubsection {}{}{Lie groups and Lie algebras}}{5}{section*.7}%
+\contentsline {subsection}{\tocsubsection {}{}{James splitting}}{5}{section*.8}%
+\contentsline {subsection}{\tocsubsection {}{}{Vector bundles and topological K-theory}}{5}{section*.9}%
+\contentsline {subsection}{\tocsubsection {}{2.2}{More of an $\sim $algebra$\sim $ flavor}}{6}{subsection.2.2}%
+\contentsline {subsection}{\tocsubsection {}{}{Homology and cohomology}}{6}{section*.10}%
+\contentsline {subsection}{\tocsubsection {}{}{Mayer--Vietoris}}{6}{section*.11}%
+\contentsline {subsection}{\tocsubsection {}{}{Topological data analysis}}{7}{section*.12}%
+\contentsline {subsection}{\tocsubsection {}{}{Quadratic forms, the Grothendieck--Witt ring, and Milnor K-theory}}{7}{section*.13}%
+\contentsline {subsection}{\tocsubsection {}{}{The Steenrod algebra}}{7}{section*.14}%
+\contentsline {subsection}{\tocsubsection {}{2.3}{More of a $\sim $Category Theory$\sim $ flavor}}{8}{subsection.2.3}%
+\contentsline {subsection}{\tocsubsection {}{}{Model categories}}{8}{section*.15}%
+\contentsline {subsection}{\tocsubsection {}{}{$\infty $-categories}}{8}{section*.16}%
+\contentsline {subsection}{\tocsubsection {}{}{Kan extensions}}{9}{section*.17}%
+\contentsline {subsection}{\tocsubsection {}{}{Abelian categories}}{9}{section*.18}%
+\contentsline {subsection}{\tocsubsection {}{}{Symmetric monoidal categories}}{10}{section*.19}%
+\contentsline {subsection}{\tocsubsection {}{}{Brown's representability}}{10}{section*.20}%
+\contentsline {subsection}{\tocsubsection {}{}{Operads}}{10}{section*.21}%
+\contentsline {subsection}{\tocsubsection {}{}{Infinite loop spaces}}{10}{section*.22}%
+\contentsline {subsection}{\tocsubsection {}{}{Postnikov towers and obstruction theory}}{11}{section*.23}%

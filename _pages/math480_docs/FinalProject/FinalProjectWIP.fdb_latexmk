@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber FinalProjectWIP"] 1775578601 "FinalProjectWIP.bcf" "FinalProjectWIP.bbl" "FinalProjectWIP" 1775579069 0
-  "FinalProjectWIP.bcf" 1775579069 107359 f6307eae620a0861f7266496640e7728 "pdflatex"
+["biber FinalProjectWIP"] 1775578601 "FinalProjectWIP.bcf" "FinalProjectWIP.bbl" "FinalProjectWIP" 1775673049 0
+  "FinalProjectWIP.bcf" 1775673049 107359 f6307eae620a0861f7266496640e7728 "pdflatex"
   (generated)
   "FinalProjectWIP.bbl"
   "FinalProjectWIP.blg"
   (rewritten before read)
-["pdflatex"] 1775579066 "/Users/jackmann/vscode/jackson-morris.github.io/_pages/math480_docs/FinalProject/FinalProjectWIP.tex" "FinalProjectWIP.pdf" "FinalProjectWIP" 1775579069 0
-  "/Users/jackmann/vscode/jackson-morris.github.io/_pages/math480_docs/FinalProject/FinalProjectWIP.tex" 1775579062 45951 258f406c1de7fd3198761fde9fcd25bb ""
+["pdflatex"] 1775673045 "/Users/jackmann/vscode/jackson-morris.github.io/_pages/math480_docs/FinalProject/FinalProjectWIP.tex" "FinalProjectWIP.pdf" "FinalProjectWIP" 1775673049 0
+  "/Users/jackmann/vscode/jackson-morris.github.io/_pages/math480_docs/FinalProject/FinalProjectWIP.tex" 1775673045 45959 a74d74a1da26d6ebbee9aa57385582db ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/euler/eusm10.tfm" 1246382020 896 1783287efa3eab95c325db36ffb6426d ""
@@ -247,12 +247,12 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1691675390 4647401 00ff9efb2ef8bbb46dd24b87a26bdf62 ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1691675353 8172678 1210b78147549d84bf26ba5ce71b7c40 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "FinalProjectWIP.aux" 1775579069 5084 440a4f5ef22036badc96f4a7b02cfad4 "pdflatex"
+  "FinalProjectWIP.aux" 1775673049 5084 440a4f5ef22036badc96f4a7b02cfad4 "pdflatex"
   "FinalProjectWIP.bbl" 1775578607 0 d41d8cd98f00b204e9800998ecf8427e "biber FinalProjectWIP"
-  "FinalProjectWIP.out" 1775579069 4855 98d0bc29f8202c1ad205071f7a52e48d "pdflatex"
-  "FinalProjectWIP.run.xml" 1775579069 2307 a1c4ef70aedbe4f84e9995a90665a487 "pdflatex"
-  "FinalProjectWIP.tex" 1775579062 45951 258f406c1de7fd3198761fde9fcd25bb ""
-  "FinalProjectWIP.toc" 1775579069 2483 8ccaf1a0e3965cd354092c169a9d84a3 "pdflatex"
+  "FinalProjectWIP.out" 1775673049 4855 98d0bc29f8202c1ad205071f7a52e48d "pdflatex"
+  "FinalProjectWIP.run.xml" 1775673049 2307 a1c4ef70aedbe4f84e9995a90665a487 "pdflatex"
+  "FinalProjectWIP.tex" 1775673045 45959 a74d74a1da26d6ebbee9aa57385582db ""
+  "FinalProjectWIP.toc" 1775673049 2483 8ccaf1a0e3965cd354092c169a9d84a3 "pdflatex"
   "cob.png" 1775578385 28602 14409448112ca5232e4845abb4fc6b91 ""
   "macros.tex" 1775578385 3065 64f142a27ccf2c7adcbb025a48b8ba6f ""
   (generated)

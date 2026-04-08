@@ -9,7 +9,7 @@ redirect_from:
 * **Course Meetings:** MWF 12:30 - 1:20 in DEM 002
 * **Office Hours:** Thursday 12-1 and Friday 2:30-3:30 in PDL C-114
 * [**Lecture Notes**](math480_docs/Lecture4_4_6.pdf)
-* [**Final Project instructions and topics**](math480_docs/Final_Project_Topics_v1_4_3.pdf) (last updated: April 4)
+* [**Final Project instructions and topics**](math480_docs/FinalProject/FinalProjectWIP.pdf) (last updated: April 8)
 * **Recommended texts:**
     * Assortments of [A Concise Course in Algebraic Topology](https://www.math.uchicago.edu/~may/CONCISE/ConciseRevised.pdf) by Peter May
     * Chapter 1 of [Spectra and stable homotopy theory](https://people.math.binghamton.edu/malkiewich/spectra_book_draft.pdf) by Cary Malkiewich
@@ -22,7 +22,7 @@ redirect_from:
 ## Course Description
 
 A fundamental question in topology is the following: given two topological spaces
-$X$ and $Y$, how can one determine if there is an equivalence $X \cong Y$? One way to probe this question is to study algebraic invariants of X and Y . For example, there is an invariant called the fundamental group of a space, denoted by $\pi_1(-)$, and if $\pi_1(X) \not\cong \pi_1(Y)$, then in fact $X \not\cong Y$.
+$X$ and $Y$, how can one determine if there is an equivalence $X \cong Y$? One way to probe this question is to study algebraic invariants of X and Y. For example, there is an invariant called the fundamental group of a space, denoted by $\pi_1(-)$, and if $\pi_1(X) \not\cong \pi_1(Y)$, then in fact $X \not\cong Y$.
 
 However, rather than merely assigning algebraic invariants, we can also study nice properties of the spaces themselves. For example, if one can show that a continuous function $∗ → X$ is a cofibration, then in fact $*\cong X$. These two perspectives, of using algebraic invariants to study spaces and exhibiting properties of spaces which are invariant, combine together to create homotopy theory.
 
@@ -60,13 +60,24 @@ This course will be an introduction to the methods used in homotopy theory. We w
 
 **Friday, April 10**
 
+* Substitute lecturer: [Alex Waugh](https://sites.google.com/view/alex-waugh)
+
 ## Week 3
 
 **Monday, April 13**
 
+* Substitute lecturer: [Alex Waugh](https://sites.google.com/view/alex-waugh)
+
 **Wednesday, April 15**
 
+* **Homework 2 due in class**
+* Substitute lecturer: [Jay Reiter](https://jay-reiter.github.io/)
+
+
 **Friday, April 17**
+
+* Substitute lecturer: [Jay Reiter](https://jay-reiter.github.io/)
+
 
 ## Week 4
 
@@ -111,6 +122,8 @@ This course will be an introduction to the methods used in homotopy theory. We w
 ## Week 9
 
 **Monday, May 25**
+
+* **MEMORIAL DAY, NO CLASS**
 
 **Wednesday, May 27**
 

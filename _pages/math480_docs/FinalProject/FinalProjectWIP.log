@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.10)  7 APR 2026 09:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.10)  8 APR 2026 11:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1272,41 +1272,41 @@ Package microtype Info: Loading generic protrusion settings for font family
  [1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc}]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 150.
+(hyperref)                removing `math shift' on input line 151.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 150.
+(hyperref)                removing `\sim' on input line 151.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 150.
+(hyperref)                removing `math shift' on input line 151.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 150.
+(hyperref)                removing `math shift' on input line 151.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 150.
+(hyperref)                removing `\sim' on input line 151.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 150.
+(hyperref)                removing `math shift' on input line 151.
 
 [2]
 <cob.png, id=162, 450.9648pt x 422.0568pt>
 File: cob.png Graphic file (type png)
 <use cob.png>
-Package pdftex.def Info: cob.png  used on input line 206.
+Package pdftex.def Info: cob.png  used on input line 207.
 (pdftex.def)             Requested size: 157.84003pt x 147.72208pt.
  [3
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.232 A
-        group action of $G$ on a space $X$ is a map $G \times X \to X$ such ... <./cob.png>]
-LaTeX Font Info:    Trying to load font information for U+eus on input line 254.
+l.232 
+       <./cob.png>]
+LaTeX Font Info:    Trying to load font information for U+eus on input line 255.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/ueus.fd
 File: ueus.fd 2013/01/14 v3.01 Euler Script
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/microtype/mt-eus.cfg
@@ -1314,64 +1314,64 @@ File: mt-eus.cfg 2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
 ) [4] [5]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 314.
+(hyperref)                removing `math shift' on input line 315.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 314.
+(hyperref)                removing `\sim' on input line 315.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 314.
+(hyperref)                removing `math shift' on input line 315.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 314.
+(hyperref)                removing `math shift' on input line 315.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 314.
+(hyperref)                removing `\sim' on input line 315.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 314.
+(hyperref)                removing `math shift' on input line 315.
 
 [6] [7]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 399.
+(hyperref)                removing `math shift' on input line 400.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 399.
+(hyperref)                removing `\sim' on input line 400.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 399.
+(hyperref)                removing `math shift' on input line 400.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 399.
+(hyperref)                removing `math shift' on input line 400.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 399.
+(hyperref)                removing `\sim' on input line 400.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 399.
+(hyperref)                removing `math shift' on input line 400.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 431.
+(hyperref)                removing `math shift' on input line 432.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\infty' on input line 431.
+(hyperref)                removing `\infty' on input line 432.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 431.
+(hyperref)                removing `math shift' on input line 432.
 
 [8] [9] [10] [11] [12] (./FinalProjectWIP.aux)
  ***********
@@ -1394,15 +1394,15 @@ Package logreq Info: Writing requests to 'FinalProjectWIP.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38946 strings out of 475188
- 757388 string characters out of 5763801
+ 38954 strings out of 475188
+ 757475 string characters out of 5763801
  1946254 words of memory out of 5000000
  59053 multiletter control sequences out of 15000+600000
- 663896 words of font info for 391 fonts, out of 8000000 for 9000
+ 664440 words of font info for 397 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  98i,17n,101p,1167b,1123s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/euler/eusm7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on FinalProjectWIP.pdf (12 pages, 175364 bytes).
+Output written on FinalProjectWIP.pdf (12 pages, 175234 bytes).
 PDF statistics:
  282 PDF objects out of 1000 (max. 8388607)
  241 compressed objects within 3 object streams

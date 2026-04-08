@@ -8,7 +8,7 @@ redirect_from:
 ---
 * **Course Meetings:** MWF 12:30 - 1:20 in DEM 002
 * **Office Hours:** Thursday 12-1 and Friday 2:30-3:30 in PDL C-114
-* [**Lecture Notes**](math480_docs/Lecture4_4_6.pdf)
+* [**Lecture Notes**](math480_docs/Lecture5_4_8.pdf)
 * [**Final Project instructions and topics**](math480_docs/FinalProject/FinalProjectWIP.pdf) (last updated: April 8)
 * **Recommended texts:**
     * Assortments of [A Concise Course in Algebraic Topology](https://www.math.uchicago.edu/~may/CONCISE/ConciseRevised.pdf) by Peter May
@@ -55,7 +55,9 @@ This course will be an introduction to the methods used in homotopy theory. We w
 
 **Wednesday, April 8**
 
+* Proved that $\pi_1(S^1) \cong \mathbb{Z}$
 * **Homework 1 due in class**
+* [Notes for Lecture 5](math480_docs/Lecture5_4_8.pdf)
 * [**HOMEWORK 2 HERE**](math480_docs/HW2.pdf), due Wednesday, April 15 in class
 
 **Friday, April 10**

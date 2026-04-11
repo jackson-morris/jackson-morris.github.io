@@ -58,7 +58,7 @@ This course will be an introduction to the methods used in homotopy theory. We w
 * Proved that $\pi_1(S^1) \cong \mathbb{Z}$
 * **Homework 1 due in class**
 * [Notes for Lecture 5](math480_docs/Lecture5_4_8.pdf)
-* [**HOMEWORK 2 HERE**](math480_docs/HW2.pdf), due Wednesday, April 15 in class
+* [**HOMEWORK 2 HERE**](math480_docs/HW2.pdf), due Wednesday, April 15 in class (Note: Problem 4 is now **optional**)
 
 **Friday, April 10**
 
@@ -74,7 +74,7 @@ This course will be an introduction to the methods used in homotopy theory. We w
 
 **Wednesday, April 15**
 
-* **Homework 2 due in class**
+* **Homework 2 due in class** (Note: Problem 4 is now **optional**)
 * Substitute lecturer: [Jay Reiter](https://jay-reiter.github.io/)
 
 

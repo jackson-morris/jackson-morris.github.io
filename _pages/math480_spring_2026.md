@@ -8,7 +8,7 @@ redirect_from:
 ---
 * **Course Meetings:** MWF 12:30 - 1:20 in DEM 002
 * **Office Hours:** Thursday 12-1 and Friday 2:30-3:30 in PDL C-114
-* [**Lecture Notes**](math480_docs/Lecture5_4_8.pdf)
+* [**Lecture Notes**](math480_docs/Lecture6_4_10.pdf)
 * [**Final Project instructions and topics**](math480_docs/FinalProject/FinalProjectWIP.pdf) (last updated: April 8)
 * **Recommended texts:**
     * Assortments of [A Concise Course in Algebraic Topology](https://www.math.uchicago.edu/~may/CONCISE/ConciseRevised.pdf) by Peter May
@@ -63,6 +63,8 @@ This course will be an introduction to the methods used in homotopy theory. We w
 **Friday, April 10**
 
 * Substitute lecturer: [Alex Waugh](https://sites.google.com/view/alex-waugh)
+* $\pi_1(X \times Y) \cong \pi_1(X) \times \pi_1(Y)$, fundamental group respects homotopy equivalence
+* [Notes for Lecture 6](math480_docs/Lecture6_4_10.pdf)
 
 ## Week 3
 

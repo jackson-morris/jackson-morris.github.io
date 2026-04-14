@@ -40,6 +40,7 @@ This course will be an introduction to the methods used in homotopy theory. We w
 * Finishing background/motivation, a discussion of the homotopy groups of spheres
 * [Notes for Lecture 2](math480_docs/Lecture2_4_1.pdf)
 * [**HOMEWORK 1 HERE**](math480_docs/HW1.pdf), due Wednesday, April 8 in class
+  * [Solutions](math480_docs/SOLNS_HW1.pdf)
 
 **Friday, April 3**
 

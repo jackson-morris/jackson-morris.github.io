@@ -71,12 +71,14 @@ This course will be an introduction to the methods used in homotopy theory. We w
 **Monday, April 13**
 
 * Substitute lecturer: [Alex Waugh](https://sites.google.com/view/alex-waugh)
+* Brouwer fixed point theorem and Borsuk-Ulam Theorem
+* [Notes for Lecture 7](math480_docs/Lecture7_4_13.pdf)
 
 **Wednesday, April 15**
 
 * **Homework 2 due in class** (Note: Problem 4 is now **optional**)
 * Substitute lecturer: [Jay Reiter](https://jay-reiter.github.io/)
-
+* **[HOMEWORK 3 HERE](math480_docs/HW3.pdf)**, due Wednesday, April 22 in class
 
 **Friday, April 17**
 

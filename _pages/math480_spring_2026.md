@@ -79,6 +79,8 @@ This course will be an introduction to the methods used in homotopy theory. We w
 
 * **Homework 2 due in class** (Note: Problem 4 is now **optional**)
 * Substitute lecturer: [Jay Reiter](https://jay-reiter.github.io/)
+* Start of category theory, definitionand examples of categories
+* [Notes for Lecture 8](math480_docs/Lecture8_4_15.pdf)
 * **[HOMEWORK 3 HERE](math480_docs/HW3.pdf)**, due Wednesday, April 22 in class
 
 **Friday, April 17**

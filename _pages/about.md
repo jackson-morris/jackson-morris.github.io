@@ -23,9 +23,9 @@ In Spring 2026, I am teaching [Math 480 - Homotopy Theory](math480_spring_2026.m
 
 Upcoming Travel
 =====
-**Algebraic Structures in Topology**, San Juan, PR - July 2026
+**[Algebraic Structures in Topology](https://algtoppr.github.io/)**, San Juan, PR - July 2026
 
-**Machine Computation in Homotopy Theory**, ICERM - June 2026
+**[Young Topologists Meeting](https://www.math.ku.dk/english/calendar/events/ytm26/)**, Copenhagen, DK - June/July 2026
 
 
 | ![F5 kq charts](/images/f5_kq_charts.jpg) |

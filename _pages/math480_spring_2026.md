@@ -8,7 +8,7 @@ redirect_from:
 ---
 * **Course Meetings:** MWF 12:30 - 1:20 in DEM 002
 * **Office Hours:** Thursday 12-1 and Friday 2:30-3:30 in PDL C-114
-* [**Lecture Notes**](math480_docs/Lecture6_4_10.pdf)
+* [**Lecture Notes**](math480_docs/Lecture9_4_17.pdf)
 * [**Final Project instructions and topics**](math480_docs/FinalProject/FinalProjectWIP.pdf) (last updated: April 8)
 * **Recommended texts:**
     * Assortments of [A Concise Course in Algebraic Topology](https://www.math.uchicago.edu/~may/CONCISE/ConciseRevised.pdf) by Peter May
@@ -79,13 +79,15 @@ This course will be an introduction to the methods used in homotopy theory. We w
 
 * **Homework 2 due in class** (Note: Problem 4 is now **optional**)
 * Substitute lecturer: [Jay Reiter](https://jay-reiter.github.io/)
-* Start of category theory, definitionand examples of categories
+* Start of category theory, definition and examples of categories
 * [Notes for Lecture 8](math480_docs/Lecture8_4_15.pdf)
 * **[HOMEWORK 3 HERE](math480_docs/HW3.pdf)**, due Wednesday, April 22 in class
 
 **Friday, April 17**
 
 * Substitute lecturer: [Jay Reiter](https://jay-reiter.github.io/)
+* Functors and representability
+* [Notes for Lecture 9](math480_docs/Lecture9_4_17.pdf)
 
 
 ## Week 4

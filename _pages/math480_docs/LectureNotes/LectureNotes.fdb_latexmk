@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber LectureNotes"] 1775512840 "LectureNotes.bcf" "LectureNotes.bbl" "LectureNotes" 1775517015 0
-  "LectureNotes.bcf" 1775517015 107359 f6307eae620a0861f7266496640e7728 "pdflatex"
+["biber LectureNotes"] 1775512840 "LectureNotes.bcf" "LectureNotes.bbl" "LectureNotes" 1775779145 0
+  "LectureNotes.bcf" 1775779145 107359 f6307eae620a0861f7266496640e7728 "pdflatex"
   (generated)
   "LectureNotes.bbl"
   "LectureNotes.blg"
   (rewritten before read)
-["pdflatex"] 1775517012 "/Users/jackmann/vscode/jackson-morris.github.io/_pages/math480_docs/LectureNotes/LectureNotes.tex" "LectureNotes.pdf" "LectureNotes" 1775517015 0
-  "/Users/jackmann/vscode/jackson-morris.github.io/_pages/math480_docs/LectureNotes/LectureNotes.tex" 1775517012 75360 c102d394e5fcdaf569f11eca0f3ca5a0 ""
+["pdflatex"] 1775779141 "/Users/jackmann/vscode/jackson-morris.github.io/_pages/math480_docs/LectureNotes/LectureNotes.tex" "LectureNotes.pdf" "LectureNotes" 1775779145 0
+  "/Users/jackmann/vscode/jackson-morris.github.io/_pages/math480_docs/LectureNotes/LectureNotes.tex" 1775519833 75362 e63919b11670182d50098c8ecf2f3927 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -259,12 +259,12 @@
   "/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1691675390 4647401 00ff9efb2ef8bbb46dd24b87a26bdf62 ""
   "/usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt" 1691675353 8172678 1210b78147549d84bf26ba5ce71b7c40 ""
   "/usr/local/texlive/2023/texmf.cnf" 1678822455 577 1b2b1af17af2508fb20dd85783af4050 ""
-  "LectureNotes.aux" 1775517015 4686 1ebb0a27030b12cfccf78deae960d7cd "pdflatex"
+  "LectureNotes.aux" 1775779145 4686 1ebb0a27030b12cfccf78deae960d7cd "pdflatex"
   "LectureNotes.bbl" 1775512877 0 d41d8cd98f00b204e9800998ecf8427e "biber LectureNotes"
-  "LectureNotes.out" 1775517015 4046 24cd715e2336dcdc43cf99f89311066a "pdflatex"
-  "LectureNotes.run.xml" 1775517015 2286 24ed954754f5bef188b47ca0f2978a77 "pdflatex"
-  "LectureNotes.tex" 1775517012 75360 c102d394e5fcdaf569f11eca0f3ca5a0 ""
-  "LectureNotes.toc" 1775517015 2229 653048940b6632739cab21297234ac26 "pdflatex"
+  "LectureNotes.out" 1775779145 4046 24cd715e2336dcdc43cf99f89311066a "pdflatex"
+  "LectureNotes.run.xml" 1775779145 2286 24ed954754f5bef188b47ca0f2978a77 "pdflatex"
+  "LectureNotes.tex" 1775519833 75362 e63919b11670182d50098c8ecf2f3927 ""
+  "LectureNotes.toc" 1775779145 2229 653048940b6632739cab21297234ac26 "pdflatex"
   "macros.tex" 1775512833 3065 64f142a27ccf2c7adcbb025a48b8ba6f ""
   (generated)
   "LectureNotes.aux"

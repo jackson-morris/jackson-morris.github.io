@@ -7,7 +7,7 @@ author_profile: true
 
 My research interests are in homotopy theory, motivated from the chromatic perspective, and the tools I use are often computational. I have recently been interested in periodicity in motivic and equivariant stable homotopy theory, and I like to use the Adams spectral sequence to access periodic elements. I am also interested in various height-shifting phenomena related to algebraic and hermitian K-theory.
 
- I have written some user's guides to some of my papers that you can [check out here](usersguides.md).
+ I have written user's guides to some of my papers that you can [check out here](usersguides.md).
 
 
 Preprints/Publications
@@ -61,6 +61,7 @@ Preprints/Publications
 * **Splittings and the algebraic Atiyah-Hirzebruch spectral sequence** Expanded set of notes for  preseminar talk at UW. [PDF](/files/Splittings_and_the_algebraic_Atiyah_Hirzebruch_spectral_sequence%20(2).pdf)
 * **Galois descent and the Picard group of K-theory** Notes for a talk in the [UW Student AG Seminar](https://theprismatic.site/seminars/uwag/). [PDF](/files/Galois_descent_and_the_Picard_group_of_K_theory%20(2).pdf)
 * **The Adams spectral sequence and Hopf algebroids** Notes for a talk in the [DUBTOP seminar](https://sites.google.com/view/jay-reiter/dubtop-fall-2025?authuser=0). [PDF](/files/The_Adams_spectral_sequence_and_Hopf_algebroids%20(2).pdf) -->
+
 | ![coolchart](/images/coolchart.png) |
 | :--: |
 | The ring of cooperations $\pi_{**}(\text{kq} \otimes \text{kq})$ over $\mathbb{F}_3$. |

@@ -123,6 +123,8 @@ This course will be an introduction to the methods used in homotopy theory. We w
 
 **Friday, May 8**
 
+* **CHOOSE TOPIC FOR FINAL PROJECT BY TODAY!!**
+
 ## Week 7
 
 **Monday, May 11**

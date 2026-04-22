@@ -310,6 +310,85 @@ Vector bundles are an example of a fiber bundle, where the fibers are all vector
     \]
 \end{itemize}
 
+\subsection*{Infinite loop spaces}
+We say that a based space $X$ is a loop space if $X \simeq \Omega Y$ for some based space $Y$. We say that $X$ is an $n$-fold loop space if $X \simeq \Omega^j Y_j$ for based spaces $Y_j$ for all $1 \leq j \leq n$, and that $X$ is an \cdef{\emph{infinite loop space}} if $X \simeq \Omega^j Y_j$ for all $j \geq 1$. Infinite loop spaces show up quite often in homotopy theory, and naturally give rise to objects in stable homotopy theory known as spectra or $\Omega$-spectra. They also are closely related to the theory of operads. I'd recommend
+\href{https://people.math.binghamton.edu/malkiewich/spectra_book_draft.pdf}{Chapters 2 and 9 of this textbook by Cary Malkiewich}
+and
+\href{https://www.math.uchicago.edu/~may/PAPERS/18.pdf}{Peter May's book} if you are interested.
+
+\subsection*{Postnikov towers and obstruction theory}
+Let $X$ be a nice topological space (by nice here, I mean a connected CW-complex). The \cdef{\emph{Postnikov tower}} of $X$ is a way to decompose $X$ by peeling off its homotopy groups. the idea is as follows: we want a sequence of spaces
+\[
+\begin{tikzcd}
+	\cdots & {X_{n+1}} & {X_n} & {X_{n-1}} & \cdots & {X_1} & {X_0 = *}
+\end{tikzcd}
+\]
+where $\pi_i(X) \cong \pi_i(X_n)$ for all $i \leq n$ and $\pi_i(X_n) = 0$ for $i \geq n$. Moreover, we want a map $X_n \to X_{n-1}$ which witnesses us ``attaching the next homotopy group of $X$". What this enforces is that there are map $p_n:X_n \to X_{n-1}$ which are fibrations such that the fibers are Eilenberg--MacLane spaces $\text{K}(\pi_n(X), n)$, meaning they only have one nontrivial homotopy group, it is in degree $n$, and it is $\pi_n(X)$. To sum this all up, this gives us a commutative diagram:
+\[\begin{tikzcd}
+	& X \\
+	& \vdots \\
+	{\text{K}(\pi_{n+1}(X), n+1)} & {X_{n+1}} \\
+	{\text{K}(\pi_n(X), n)} & {X_n} \\
+	{\text{K}(\pi_{n-1}(X), n-1)} & {X_{n-1}} \\
+	& \vdots \\
+	{\text{K}(\pi_1(X), 1)} & {X_1} \\
+	& {*}
+	\arrow["\phi", from=1-2, to=2-2]
+	\arrow["{p_{n+2}}", from=2-2, to=3-2]
+	\arrow[from=3-1, to=3-2]
+	\arrow["{p_{n+1}}", from=3-2, to=4-2]
+	\arrow[from=4-1, to=4-2]
+	\arrow["{p_{n}}", from=4-2, to=5-2]
+	\arrow[from=5-1, to=5-2]
+	\arrow["{p_{n-1}}", from=5-2, to=6-2]
+	\arrow["{p_2}", from=6-2, to=7-2]
+	\arrow[from=7-1, to=7-2]
+	\arrow["{p_1}", from=7-2, to=8-2]
+\end{tikzcd}\]
+We write $X$ at the top of the diagram because we our construction enforces that $X$ is the limit of this diagram; the map $\phi$ is the universal map inducing the isomorphisms described above on homotopy groups.
+
+Postnikov towers are useful in answer questions in \cdef{\emph{obstruction theory}}. Here are two types of question one may be interested in answering:
+\begin{enumerate}
+    \item (\textbf{The extension problem}) Suppose that $A \subset X$ is a ``nice" subsbace (meaning that inclusion $A \hookrightarrow X$ is a cofibration) and that there is a continuous map $A \to Y$. Under what conditions is there a continuous map $X \to Y$ making the following diagram commute?
+    \[\begin{tikzcd}
+	A & Y \\
+	X
+	\arrow[from=1-1, to=1-2]
+	\arrow[hook, from=1-1, to=2-1]
+	\arrow[dashed, from=2-1, to=1-2]
+    \end{tikzcd}\]    
+    \item  (\textbf{The lifting problem}) Suppose that $X \to Y$ is a fibration and $Z \to Y$ is any continuous map. Under what conditions is there a continuous map $Z \to X$ making the following diagram commute?
+    \[\begin{tikzcd}
+	& X \\
+	Z & Y
+	\arrow[from=1-2, to=2-2]
+	\arrow[dashed, from=2-1, to=1-2]
+	\arrow[from=2-1, to=2-2]
+    \end{tikzcd}\]    
+\end{enumerate}
+Using Brown Representability, one can establish conditions on whether the indicated extension or lift exists by looking in cohomology, thus turning this topological problem into a computational one.
+
+\subsection*{Less details, still fun}
+\begin{itemize}
+    \item (\textbf{Hopf fibrations and the Hopf invariant}) The first nontrivial element in the homotopy groups of spheres, that is, the first non-nullhomotopic map of spheres not of the form $S^n \to S^n$, is known as the \cdef{\emph{Hopf fibration}}.
+    The Hopf fibration is a map $\eta:S^3 \to S^2$, and the fiber over any point $x \in S^2$ is homeomorphic to $S^1$.
+    This map is a generator for $\pi_3(S^2) \cong \mathbb{Z}$.
+
+    In fact, there are other Hopf maps! There is a map $\nu:S^7 \to S^4$ such that $\nu^{-1}(x) \cong S^3$ and a map $\sigma:S^{15}\to S^8$ such that $\sigma^{-1}(x) \cong S^7$.
+    Kind of incredibly, there are no other such maps of spheres such that the fibers are also spheres.
+    This is a famous result due to Adams from the 60s and is one of the best examples of a propblem in topology that was solved using algebra.
+
+    \item (\textbf{Eilenberg-MacLane spaces}) For any finite group $G$, there is a space $K(G, n)$ called an \cdef{\emph{Eilenberg--MacLane space}} with the property that the $\pi_n(K(G, n)) \cong G$ and $\pi_i(K(G, n))=0$ for $i \neq n$.
+    In the case of $n=1$, there is a very tactile construction of these spaces, and in fact some of them you are already probably familiar with!
+
+    \item (\textbf{Spectra and stable homotopy theory}) A \cdef{\emph{spectrum}} $X$ is a sequence of based topological spaces 
+    \[(X_0, X_1, X_2, \dots)\]
+    equipped with homotopy equivalences $\Omega X_i \xrightarrow{\simeq} X_{i+1}$ for all $i \geq 0$.
+    These objects are the primary objects of study in \cdef{\emph{stable homotopy theory}}, and many familiar spaces assemble nicely to produce spectra of interest: the spheres $S^0, S^1, \cdots$ create the sphere spectrum $\mathbb{S}$, the Eilenberg--MacLane spaces  $K(G, n)$ form the Eilenberg--MacLane spectrum $HG$, and many more.
+    The category $\text{Sp}$ of spectra is much more well-behaved than the category of topological spaces and allow one to more easily do algebra.
+\end{itemize}
+
+
 
 \subsection{More of an $\sim$algebra$\sim$ flavor}
 \subsection*{Homology and cohomology}
@@ -394,6 +473,27 @@ Let's work with simple coefficients, like $R=\mathbb{F}_2$, so that every cohomo
     \item If $X \simeq Y$, then in addition to what I mentioned above, we must also have that $\text{H}^*(X; \mathbb{F}_2) \cong \text{H}^*(Y; \mathbb{F}_2)$ as \emph{modules over the Steenrod algebra}.
     \item Deducing the action of the Steenrod algebra on the cohomology of a space is a fun, often combinatorial game.
     \item The Steenrod algebra is an example of a Hopf algebra.
+\end{itemize}
+
+\subsection*{Less details, still fun}
+\begin{itemize}
+    \item (\textbf{Hopf algebras}) Let $k$ be a field. An algebra over $k$ is a vector space $A$ equipped with a $k$-linear multiplication.
+    We often think of this multiplication as a diagram
+    \[
+    m:A \otimes_k A \to A
+    \]
+    satisying various properties (associativity, unitality, commutativity,...).
+    A \emph{coalgebra} over $k$ is a vector space $C$ equipped with a $k$-linear map
+    \[
+    \Delta:C \to C \otimes _k C
+    \]
+    called comultiplication.
+    A \emph{bialgebra} over $k$ is an algebra which is also a coalgebra such that the multiplication and comultiplication interact nicely.
+    A \cdef{\emph{Hopf algebra}} adds one additional piece of data on top of a bialgebra called an antipode.
+    These objects come up often in representation theory and homotopy theory, and are also quite common in combinatorics.
+    The prototypical example of a Hopf algebra is the group algebra $kG$ where $G$ is a finite group.
+    As a vector space over $k$, a basis for $kG$ is given by $\{g_1, g_2, \dots g_n\}$ all of the elements of $G$. 
+
 \end{itemize}
 
 \subsection{More of a $\sim$Category Theory$\sim$ flavor}
@@ -525,45 +625,10 @@ There are many many examples of symmetric monoidal categories.
 
 As one sees these types of categories appearing in the wild quite often, it is nice to have a toolkit to work with them. One can also loosen some of the definitions to get \cdef{\emph{braided monoidal categories}}. In these categories, the particular choice of isomorphism $A \otimes B \to B \otimes A$ becomes important data to keep track of. These categories show up very often in knot theory (braids!) and representation theory.
 
-% \subsection{Haskell and functional programming}
-
 % \subsection{Derived functors}
-
-% \subsection{Hopf fibrations and the Hopf invariant}
-
-% \subsection{Vector fields on spheres}
 
 % \subsection{The Euler characteristic}
 
-% \subsection{The Whitehead product and the Lie algebra structure on homotopy groups}
-
-% \subsection{Eilenberg--MacLane spaces}
-
-% \subsection{Classifying spaces}
-
-% \subsection{Spectra}
-
-% \subsection{Moore spaces}
-
-% \subsection{Grassmanians}
-
-% \subsection{The J-homomorphism}
-
-% \subsection{Spectral sequences}
-
-% \subsection{The Kervaire invariant}
-
-% \subsection{Rational homotopy theory}
-
-% \subsection{Hopf algebras and H-spaces}
-
-% \subsection{Triangulated categories}
-
-% \subsection*{Algebraic geometry}
-
-% \subsection*{Balmer spectrum}
-
-% \subsection{Sheaves}
 
 \subsection*{Brown's representability}
 \cdef{\emph{Brown's representability theorem}} begins with a recasting of cohomology in terms of homotopy theory. Namely, if we have a connected CW complex $X$, then there is an isomorphism of groups:
@@ -585,63 +650,21 @@ An \cdef{\emph{operad}} is a collection of operations with multiple inputs and a
 
 Operads are used in the study of the group structure that an infinite loop space is endowed with, and they let us be more formal with notions that may seem abstract in homotopy theory. I would recommend  \href{https://people.math.binghamton.edu/malkiewich/spectra_book_draft.pdf}{Chapters 9 of this textbook by Cary Malkiewich} and the Operad wikipedia entry to get started.
 
-\subsection*{Infinite loop spaces}
-We say that a based space $X$ is a loop space if $X \simeq \Omega Y$ for some based space $Y$. We say that $X$ is an $n$-fold loop space if $X \simeq \Omega^j Y_j$ for based spaces $Y_j$ for all $1 \leq j \leq n$, and that $X$ is an \cdef{\emph{infinite loop space}} if $X \simeq \Omega^j Y_j$ for all $j \geq 1$. Infinite loop spaces show up quite often in homotopy theory, and naturally give rise to objects in stable homotopy theory known as spectra or $\Omega$-spectra. They also are closely related to the theory of operads. I'd recommend
-\href{https://people.math.binghamton.edu/malkiewich/spectra_book_draft.pdf}{Chapters 2 and 9 of this textbook by Cary Malkiewich}
-and
-\href{https://www.math.uchicago.edu/~may/PAPERS/18.pdf}{Peter May's book} if you are interested.
 
-\subsection*{Postnikov towers and obstruction theory}
-Let $X$ be a nice topological space (by nice here, I mean a connected CW-complex). The \cdef{\emph{Postnikov tower}} of $X$ is a way to decompose $X$ by peeling off its homotopy groups. the idea is as follows: we want a sequence of spaces
-\[
-\begin{tikzcd}
-	\cdots & {X_{n+1}} & {X_n} & {X_{n-1}} & \cdots & {X_1} & {X_0 = *}
-\end{tikzcd}
-\]
-where $\pi_i(X) \cong \pi_i(X_n)$ for all $i \leq n$ and $\pi_i(X_n) = 0$ for $i \geq n$. Moreover, we want a map $X_n \to X_{n-1}$ which witnesses us ``attaching the next homotopy group of $X$". What this enforces is that there are map $p_n:X_n \to X_{n-1}$ which are fibrations such that the fibers are Eilenberg--MacLane spaces $\text{K}(\pi_n(X), n)$, meaning they only have one nontrivial homotopy group, it is in degree $n$, and it is $\pi_n(X)$. To sum this all up, this gives us a commutative diagram:
-\[\begin{tikzcd}
-	& X \\
-	& \vdots \\
-	{\text{K}(\pi_{n+1}(X), n+1)} & {X_{n+1}} \\
-	{\text{K}(\pi_n(X), n)} & {X_n} \\
-	{\text{K}(\pi_{n-1}(X), n-1)} & {X_{n-1}} \\
-	& \vdots \\
-	{\text{K}(\pi_1(X), 1)} & {X_1} \\
-	& {*}
-	\arrow["\phi", from=1-2, to=2-2]
-	\arrow["{p_{n+2}}", from=2-2, to=3-2]
-	\arrow[from=3-1, to=3-2]
-	\arrow["{p_{n+1}}", from=3-2, to=4-2]
-	\arrow[from=4-1, to=4-2]
-	\arrow["{p_{n}}", from=4-2, to=5-2]
-	\arrow[from=5-1, to=5-2]
-	\arrow["{p_{n-1}}", from=5-2, to=6-2]
-	\arrow["{p_2}", from=6-2, to=7-2]
-	\arrow[from=7-1, to=7-2]
-	\arrow["{p_1}", from=7-2, to=8-2]
-\end{tikzcd}\]
-We write $X$ at the top of the diagram because we our construction enforces that $X$ is the limit of this diagram; the map $\phi$ is the universal map inducing the isomorphisms described above on homotopy groups.
+\subsection*{Less details, still fun}
+\begin{itemize}
+    \item (\textbf{The Balmer spectrum}) There is a way to take a commutative ring $R$ and create a topological space $\text{Spec}(R)$.
+    This space is called the \emph{Zariski spectrum}, and its topology is determined by the prime ideals of the ring $R$.
+    The spaces $\text{Spec}(R)$ are the fundamental objects of study in algebraic geometry.
 
-Postnikov towers are useful in answer questions in \cdef{\emph{obstruction theory}}. Here are two types of question one may be interested in answering:
-\begin{enumerate}
-    \item (\textbf{The extension problem}) Suppose that $A \subset X$ is a ``nice" subsbace (meaning that inclusion $A \hookrightarrow X$ is a cofibration) and that there is a continuous map $A \to Y$. Under what conditions is there a continuous map $X \to Y$ making the following diagram commute?
-    \[\begin{tikzcd}
-	A & Y \\
-	X
-	\arrow[from=1-1, to=1-2]
-	\arrow[hook, from=1-1, to=2-1]
-	\arrow[dashed, from=2-1, to=1-2]
-    \end{tikzcd}\]    
-    \item  (\textbf{The lifting problem}) Suppose that $X \to Y$ is a fibration and $Z \to Y$ is any continuous map. Under what conditions is there a continuous map $Z \to X$ making the following diagram commute?
-    \[\begin{tikzcd}
-	& X \\
-	Z & Y
-	\arrow[from=1-2, to=2-2]
-	\arrow[dashed, from=2-1, to=1-2]
-	\arrow[from=2-1, to=2-2]
-    \end{tikzcd}\]    
-\end{enumerate}
-Using Brown Representability, one can establish conditions on whether the indicated extension or lift exists by looking in cohomology, thus turning this topological problem into a computational one.
+    If $\euscr{C}$ is a category with sufficiently nice properties, then there is a way to replicate what is done for rings.
+    We can associate to $\euscr{C}$ a topological space $\text{Spc}(\euscr{C})$ called the \cdef{\emph{Balmer spectrum}} of $\euscr{C}$.
+    Computing the Balmer spectrum is often a very interesting and very difficult task.
+
+    \item (\textbf{Category theory and computer science}) Allegedly, one can use category theory in computer science.
+    I think some buzzwords are functional programming, Haskell, Lean, Homotopy Type Theory. Look those up if you are interested!
+\end{itemize}
+
 
 
 \end{document}

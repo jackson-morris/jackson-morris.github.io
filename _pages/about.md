@@ -27,6 +27,8 @@ Upcoming Travel
 
 **[Young Topologists Meeting](https://www.math.ku.dk/english/calendar/events/ytm26/)**, Copenhagen, DK - June/July 2026
 
+**[Cascade Topology Seminar](https://sites.google.com/view/cascadetopologyseminar/)**, Portland, OR - May 2026
+
 
 | ![F5 kq charts](/images/f5_kq_charts.jpg) |
 | :--: |

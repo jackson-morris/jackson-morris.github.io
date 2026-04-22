@@ -8,7 +8,7 @@ redirect_from:
 ---
 * **Course Meetings:** MWF 12:30 - 1:20 in DEM 002
 * **Office Hours:** Thursday 12-1 and Friday 2:30-3:30 in PDL C-114
-* [**Lecture Notes**](math480_docs/Lecture9_4_17.pdf)
+* [**Lecture Notes**](math480_docs/Lecture11_4_22.pdf)
 * [**Final Project instructions and topics**](math480_docs/Math480_Final_Project.pdf)
 * **Recommended texts:**
     * Assortments of [A Concise Course in Algebraic Topology](https://www.math.uchicago.edu/~may/CONCISE/ConciseRevised.pdf) by Peter May
@@ -99,6 +99,8 @@ This course will be an introduction to the methods used in homotopy theory. We w
 
 **Wednesday, April 22**
 
+* Representable functors, natural transformations and the Yoneda Lemma
+* [**Notes for Lecture 11**](math480_docs/Lecture11_4_22.pdf)
 * [**HOMEWORK 4 HERE**](math480_docs/HW4.pdf), due Friday, May 1
 
 **Friday, April 24**

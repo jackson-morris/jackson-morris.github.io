@@ -112,6 +112,17 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/uniquecounter/uniquecounter
 INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/comment/comment.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/comment/comment.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/dvipsnam.def
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/dvipsnam.def
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/dvipsnam.def
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT ./CV.aux
@@ -123,6 +134,8 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/grfext/grfext.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/grfext/grfext.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg

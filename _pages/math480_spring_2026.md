@@ -105,6 +105,8 @@ This course will be an introduction to the methods used in homotopy theory. We w
 
 **Friday, April 24**
 
+* The Yoneda embedding, cones and cocones, limits and colimits
+* [**Notes for Lecture 12**](math480_docs/Lecture12_4_24.pdf)
 * **Homework 3 due in class**
 
 ## Week 5

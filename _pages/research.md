@@ -36,7 +36,7 @@ Preprints/Publications
     We show that for all $n$, the motivic Lubin-Tate spectrum ${\sf{E}}_n^\text{mot}$ detects exotic periodic phenomena in its Tate fixed points $({\sf{E}}_n^{\text{mot}})^{tC_2}$. We then analyze the Hurewicz image over $\mathbb{C}$.
     </details>     -->
 
-* **Splittings of truncated motivic Brown-Peterson cooperations algebras**, joint with [Sarah Petersen](https://sites.google.com/view/sarahpetersen/home) and [Liz Tatum](https://www.sas.rochester.edu/mth/people/faculty/tatum-elizabeth/index.html). Submitted. Available on[arXiv](https://arxiv.org/abs/2509.19542).
+* **Splittings of truncated motivic Brown-Peterson cooperations algebras**, joint with [Sarah Petersen](https://sites.google.com/view/sarahpetersen/home) and [Liz Tatum](https://www.sas.rochester.edu/mth/people/faculty/tatum-elizabeth/index.html). Submitted. Available on [arXiv](https://arxiv.org/abs/2509.19542).
     <details>
     <summary>Abstract</summary>
 

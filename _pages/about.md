@@ -36,4 +36,4 @@ Upcoming Travel
 
 | ![F5 kq charts](/images/f5_kq_charts.jpg) |
 | :--: |
-| Send me an email if you know what this charts is displaying! |
+| Send me an email if you know what this chart is displaying! |

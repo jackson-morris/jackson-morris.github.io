@@ -20,7 +20,6 @@ Preprints/Publications
 
     </details>
 
-
 * **Immersions of $\text{C}_2$-projective spaces via $\text{K}\mathbb{R}$-theory**, joint with Manyi Guo, [Alex Waugh](https://sites.google.com/view/alex-waugh/home), and [Albert Yang](https://kclo3-naoh.github.io/). In preparation.
     <details>
     <summary>Abstract</summary>
@@ -29,7 +28,6 @@ Preprints/Publications
     As a consequence, we produce a $\text{C}_2$-equivariant analogue of James periodicity.
 
     </details>
-
 <!-- * **Diachromatic blueshift**, joint with Kyle Ormsby. In preparation. 
     <details>
     <summary>Abstract</summary>
@@ -37,14 +35,12 @@ Preprints/Publications
     We show that for all $n$, the motivic Lubin-Tate spectrum ${\sf{E}}_n^\text{mot}$ detects exotic periodic phenomena in its Tate fixed points $({\sf{E}}_n^{\text{mot}})^{tC_2}$. We then analyze the Hurewicz image over $\mathbb{C}$.
     </details>     -->
 
-
 * **Splittings of truncated motivic Brown-Peterson cooperations algebras**, joint with [Sarah Petersen](https://sites.google.com/view/sarahpetersen/home) and [Liz Tatum](https://www.sas.rochester.edu/mth/people/faculty/tatum-elizabeth/index.html). Submitted. Available on [arXiv](https://arxiv.org/abs/2509.19542).
     <details>
     <summary>Abstract</summary>
 
     We construct spectrum-level splittings of $\text{BPGL}\langle 1\rangle\wedge \text{BPGL}\langle 1\rangle$ at all primes $p$, where $\text{BPGL}\langle 1 \rangle$ is the first truncated motivic Brown-Peterson spectrum. Classically, $\text{BP}\langle 1 \rangle \wedge \text{BP}\langle 1\rangle$ was first described by Kane and Mahowald in terms of Brown-Gitler spectra. This splitting was subsequently reinterpreted by Lellman and Davis-Gitler-Mahowald in terms of Adams covers. In this paper, we give motivic lifts of these splittings in terms of Adams covers, over the base fields $\mathbb{C}$, $\mathbb{R}$, and $\mathbb{F}_q$, where $\text{char}(\mathbb{F}_q)\neq p$. As an application, we compute the $E_1$-page of the $\text{BPGL}\langle 1 \rangle$-based Adams spectral sequence as a module over $\text{BPGL}\langle 1 \rangle$, both in homotopy and in terms of motivic spectra. We also record analogous splittings for $\text{BPGL}\langle 0 \rangle \wedge \text{BPGL} \langle 0 \rangle$.
     </details>    
-
 
 * **Rings of cooperations for hermitian K-theory over finite fields**. Submitted. Available on [arXiv](https://arxiv.org/abs/2509.02786). [User's Guide](guide_finite_kq_coop.md).
     <details>
@@ -54,16 +50,13 @@ Preprints/Publications
     </details>
 
 * **On the ring of cooperations for real hermitian K-theory**. To appear in *Annals of K-theory*. Also available on [arXiv](https://arxiv.org/abs/2506.16672). [User's Guide](guide_real_kq_coop.md). 
-
     <details>
     <summary>Abstract</summary>
 
     Let $\text{kq}$ denote the very effective cover of the motivic hermitian K-theory spectrum. We analyze the ring of cooperations $\pi_{**}(\text{kq} \otimes \text{kq})$ in the stable motivic homotopy category $\text{SH}(\mathbb{R})$, giving a full description in terms of Brown-Gitler comodules. To do this, we decompose the $E_2$-page of the motivic Adams spectral sequence and show that it must collapse. The description of the $E_2$-page is accomplished by a series of algebraic Atiyah-Hirzebruch spectral sequences which converge to the summands of the $E_2$-page. Along the way, we prove a splitting result for the very effective symplectic K-theory $\text{ksp}$ over any base field of characteristic not two.
     </details>
 
-
 *  [**Toric double determinantal varieties**](https://www.tandfonline.com/doi/pdf/10.1080/00927872.2021.1887882), joint with Alexander Blose, [Patricia Klein](https://patriciajklein.github.io/), and Owen McGrath. Published in *Communications in Algebra* 49 (2021), 7, 3085-3093. Also available on [arXiv](https://arxiv.org/abs/2006.04191). 
-
     <details>
     <summary>Abstract</summary>
     

@@ -13,7 +13,7 @@ My research interests are in homotopy theory, motivated from the chromatic persp
 Preprints/Publications
 =====
 
-|6.| **Chromatic structures in motivic homotopy theory**. In preparation.
+6. **Chromatic structures in motivic homotopy theory**. In preparation.
 *   <details>
     <summary>Abstract</summary>
     Over the last 50 years, many of the insights into stable homotopy theory have been made from the chromatic perspective. This persepctive organizes the category of spectra into more tractible localizations governed by the moduli stack of formal groups. Over the last 20 years, the field of motivic homotopy theory has developed into a far reaching subject bearing similarity with classical stable homotopy theory. In this survey article, we examine chromatic structures in motivic homotopy theory. We pay particular attention to the properties of classical spectra which analogize nicely to motivic spectra, new phenomena which is unique to the motivic setting, and computational tools which give a tactile way to understand the complexity of motivic homotopy theory.
@@ -21,7 +21,7 @@ Preprints/Publications
     </details>
 
 
-|5.| **Immersions of $\text{C}_2$-projective spaces via $\text{K}\mathbb{R}$-theory**, joint with Manyi Guo, [Alex Waugh](https://sites.google.com/view/alex-waugh/home), and [Albert Yang](https://kclo3-naoh.github.io/). In preparation.
+5. **Immersions of $\text{C}_2$-projective spaces via $\text{K}\mathbb{R}$-theory**, joint with Manyi Guo, [Alex Waugh](https://sites.google.com/view/alex-waugh/home), and [Albert Yang](https://kclo3-naoh.github.io/). In preparation.
 *   <details>
     <summary>Abstract</summary>
     We compute the Atiyah Real K-theory of the classifying space for $\text{C}_2$-equivariant principal $\Sigma_2$-bundles. Using our computation, we determine an upper bound on the rank of a $\text{C}_2$-representation $V$ for which there exists a $\text{C}_2$-equivariant immersion
@@ -38,7 +38,7 @@ Preprints/Publications
     </details>     -->
 
 
-|4.| **Splittings of truncated motivic Brown-Peterson cooperations algebras**, joint with [Sarah Petersen](https://sites.google.com/view/sarahpetersen/home) and [Liz Tatum](https://www.sas.rochester.edu/mth/people/faculty/tatum-elizabeth/index.html). Submitted. Available on [arXiv](https://arxiv.org/abs/2509.19542).
+4. **Splittings of truncated motivic Brown-Peterson cooperations algebras**, joint with [Sarah Petersen](https://sites.google.com/view/sarahpetersen/home) and [Liz Tatum](https://www.sas.rochester.edu/mth/people/faculty/tatum-elizabeth/index.html). Submitted. Available on [arXiv](https://arxiv.org/abs/2509.19542).
 *   <details>
     <summary>Abstract</summary>
 
@@ -46,7 +46,7 @@ Preprints/Publications
     </details>    
 
 
-|3.| **Rings of cooperations for hermitian K-theory over finite fields**. Submitted. Available on [arXiv](https://arxiv.org/abs/2509.02786). [User's Guide](guide_finite_kq_coop.md).
+3. **Rings of cooperations for hermitian K-theory over finite fields**. Submitted. Available on [arXiv](https://arxiv.org/abs/2509.02786). [User's Guide](guide_finite_kq_coop.md).
 *   <details>
     <summary>Abstract</summary>
 
@@ -54,7 +54,7 @@ Preprints/Publications
     </details>
 
 
-|2.| **On the ring of cooperations for real hermitian K-theory**. To appear in *Annals of K-theory*. Also available on [arXiv](https://arxiv.org/abs/2506.16672). [User's Guide](guide_real_kq_coop.md). 
+2. **On the ring of cooperations for real hermitian K-theory**. To appear in *Annals of K-theory*. Also available on [arXiv](https://arxiv.org/abs/2506.16672). [User's Guide](guide_real_kq_coop.md). 
 
 *   <details>
     <summary>Abstract</summary>
@@ -63,7 +63,7 @@ Preprints/Publications
     </details>
 
 
-| 1. | [**Toric double determinantal varieties**](https://www.tandfonline.com/doi/pdf/10.1080/00927872.2021.1887882), joint with Alexander Blose, [Patricia Klein](https://patriciajklein.github.io/), and Owen McGrath. Published in *Communications in Algebra* 49 (2021), 7, 3085-3093. Also available on [arXiv](https://arxiv.org/abs/2006.04191). 
+1.  [**Toric double determinantal varieties**](https://www.tandfonline.com/doi/pdf/10.1080/00927872.2021.1887882), joint with Alexander Blose, [Patricia Klein](https://patriciajklein.github.io/), and Owen McGrath. Published in *Communications in Algebra* 49 (2021), 7, 3085-3093. Also available on [arXiv](https://arxiv.org/abs/2006.04191). 
 
 * <details>
     <summary>Abstract</summary>

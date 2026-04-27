@@ -113,11 +113,14 @@ This course will be an introduction to the methods used in homotopy theory. We w
 
 **Monday, April 27**
 
+* Examples of limits and colimits: products, coproducts, pushouts
+* [**Notes for Lecture 13**](math480_docs/Lecture13_4_27.pdf)
+
 **Wednesday, April 29**
 
 **Friday, May 1**
 
-* **Homework 4 due**
+* **Homework 4 due in class**
 
 ## Week 6
 

@@ -60,7 +60,6 @@ This course will be an introduction to the methods used in homotopy theory. We w
 * **Homework 1 due in class**
 * [Notes for Lecture 5](math480_docs/Lecture5_4_8.pdf)
 * [**HOMEWORK 2 HERE**](math480_docs/HW2.pdf), due Wednesday, April 15 in class (Note: Problem 4 is now **optional**)
-  * [Solutions](math480_docs/HW2_SOLNS.pdf)
 
 **Friday, April 10**
 
@@ -83,7 +82,6 @@ This course will be an introduction to the methods used in homotopy theory. We w
 * Start of category theory, definition and examples of categories
 * [Notes for Lecture 8](math480_docs/Lecture8_4_15.pdf)
 * **[HOMEWORK 3 HERE](math480_docs/HW3.pdf)**, due Friday, April 22 in class
-  * [Solutions](math480_docs/HW3_SOLNS.pdf)
 
 **Friday, April 17**
 

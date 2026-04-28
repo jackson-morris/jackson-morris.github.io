@@ -118,6 +118,8 @@ This course will be an introduction to the methods used in homotopy theory. We w
 
 **Wednesday, April 29**
 
+* [**HOMEWORK 5 HERE**](math480_docs/HW5.pdf), due Friday, May 8
+
 **Friday, May 1**
 
 * **Homework 4 due in class**
@@ -131,6 +133,7 @@ This course will be an introduction to the methods used in homotopy theory. We w
 **Friday, May 8**
 
 * **CHOOSE TOPIC FOR FINAL PROJECT BY TODAY!!**
+* **Homework 5 due in class**
 
 ## Week 7
 

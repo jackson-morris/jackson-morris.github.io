@@ -20,7 +20,7 @@ Preprints/Publications
 
     </details>
 
-* **Immersions of $\text{C}_2$-projective spaces via $\text{K}\mathbb{R}$-theory**, joint with Manyi Guo, [Alex Waugh](https://sites.google.com/view/alex-waugh/home), and [Albert Yang](https://kclo3-naoh.github.io/). In preparation.
+* **Immersions of $\text{C}_2$-projective spaces via $\text{K}\mathbb{R}$-theory**, joint with Manyi Guo, [Alex Waugh](https://sites.google.com/view/alex-waugh/home), and [Albert Yang](https://kclo3-naoh.github.io/). Submitted. Available on [arXiv](https://arxiv.org/abs/2604.25260).
     <details>
     <summary>Abstract</summary>
     We compute the Atiyah Real K-theory of the classifying space for $\text{C}_2$-equivariant principal $\Sigma_2$-bundles. Using our computation, we determine an upper bound on the rank of a $\text{C}_2$-representation $V$ for which there exists a $\text{C}_2$-equivariant immersion

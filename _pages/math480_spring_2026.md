@@ -100,13 +100,13 @@ This course will be an introduction to the methods used in homotopy theory. We w
 **Wednesday, April 22**
 
 * Representable functors, natural transformations and the Yoneda Lemma
-* [**Notes for Lecture 11**](math480_docs/Lecture11_4_22.pdf)
+* [Notes for Lecture 11](math480_docs/Lecture11_4_22.pdf)
 * [**HOMEWORK 4 HERE**](math480_docs/HW4.pdf), due Friday, May 1
 
 **Friday, April 24**
 
 * The Yoneda embedding, cones and cocones, limits and colimits
-* [**Notes for Lecture 12**](math480_docs/Lecture12_4_24.pdf)
+* [Notes for Lecture 12](math480_docs/Lecture12_4_24.pdf)
 * **Homework 3 due in class**
 
 ## Week 5
@@ -114,12 +114,12 @@ This course will be an introduction to the methods used in homotopy theory. We w
 **Monday, April 27**
 
 * Examples of limits and colimits: products, coproducts, pushouts
-* [**Notes for Lecture 13**](math480_docs/Lecture13_4_27.pdf)
+* [Notes for Lecture 13](math480_docs/Lecture13_4_27.pdf)
 
 **Wednesday, April 29**
 
 * More limits and colimits, together! In class!
-* [**Notes for Lecture 14**](math480_docs/Lecture14_4_29.pdf)
+* [Notes for Lecture 14](math480_docs/Lecture14_4_29.pdf)
 * [**HOMEWORK 5 HERE**](math480_docs/HW5.pdf), due Friday, May 8
 
 **Friday, May 1**

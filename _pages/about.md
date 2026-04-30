@@ -33,6 +33,6 @@ Upcoming Travel
 **[Cascade Topology Seminar](https://sites.google.com/view/cascadetopologyseminar/)**, Portland State University, Portland, OR - May 2026
 
 
-| ![F5 kq charts](/images/f5_kq_charts.jpg) |
-| :--: |
-| Send me an email if you know what this chart is displaying! |
+<!-- | ![F5 kq charts](/images/f5_kq_charts.jpg) |
+| :----------------: |
+| Send me an email if you know what this chart is displaying! | -->

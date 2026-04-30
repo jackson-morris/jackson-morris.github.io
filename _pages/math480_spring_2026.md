@@ -118,6 +118,8 @@ This course will be an introduction to the methods used in homotopy theory. We w
 
 **Wednesday, April 29**
 
+* More limits and colimits, together! In class!
+* [**Notes for Lecture 14**](math480_docs/Lecture14_4_29.pdf)
 * [**HOMEWORK 5 HERE**](math480_docs/HW5.pdf), due Friday, May 8
 
 **Friday, May 1**
@@ -133,6 +135,7 @@ This course will be an introduction to the methods used in homotopy theory. We w
 **Friday, May 8**
 
 * **CHOOSE TOPIC FOR FINAL PROJECT BY TODAY!!**
+* [**Fill out this form for final project**](https://docs.google.com/forms/d/e/1FAIpQLScmubhv0MNet1u8iCS30WGLjMNLJfy3SZ4jsOGZMIONJVUWRg/viewform?usp=header)
 * **Homework 5 due in class**
 
 ## Week 7

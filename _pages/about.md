@@ -22,17 +22,21 @@ In Spring 2026, I am teaching [Math 480 - Homotopy Theory](math480_spring_2026.m
 
 Upcoming Travel
 =====
+[Cascade Topology Seminar](https://sites.google.com/view/cascadetopologyseminar/), Portland State University, Portland, OR - May 2026
+
+[Young Topologists Meeting](https://www.math.ku.dk/english/calendar/events/ytm26/), University of Copenhagen, Copenhagen, DK - June/July 2026
+
+[Algebraic Structures in Topology](https://algtoppr.github.io/), San Juan, PR - July 2026
+
+[Motivic Homotopy Theory: Connections and Applications](https://www.slmath.org/programs/384), SLMath, Berkeley, CA - Fall 2026
+
 **[AMS Sectional: Computational Homotopy Theory](https://www.ams.org/meetings/sectional/2335_program.html)**, Arizona State University, Tempe, AZ - November 2026
 
-**[Motivic Homotopy Theory: Connections and Applications](https://www.slmath.org/programs/384)**, SLMath, Berkeley, CA - Fall 2026
-
-**[Algebraic Structures in Topology](https://algtoppr.github.io/)**, San Juan, PR - July 2026
-
-**[Young Topologists Meeting](https://www.math.ku.dk/english/calendar/events/ytm26/)**, University of Copenhagen, Copenhagen, DK - June/July 2026
-
-**[Cascade Topology Seminar](https://sites.google.com/view/cascadetopologyseminar/)**, Portland State University, Portland, OR - May 2026
 
 
-<!-- | ![F5 kq charts](/images/f5_kq_charts.jpg) |
+
+
+
+| ![F5 kq charts](/images/f5_kq_charts.jpg) |
 | :----------------: |
-| Send me an email if you know what this chart is displaying! | -->
+| Send me an email if you know what this chart is displaying! |

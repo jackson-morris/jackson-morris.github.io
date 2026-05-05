@@ -124,11 +124,16 @@ This course will be an introduction to the methods used in homotopy theory. We w
 
 **Friday, May 1**
 
+* Formulas for limits and colimits of sets, pullbacks
+* [Notes for Lecture 15](math480_docs/Lecture15_5_1.pdf)
 * **Homework 4 due in class**
 
 ## Week 6
 
 **Monday, May 4**
+
+* CW complexes, definition and some examples
+* [Notes for Lecture 16](math480_Docs/Lecture16_5_4.pdf)
 
 **Wednesday, May 6**
 

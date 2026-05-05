@@ -30,7 +30,7 @@ Upcoming Travel
 
 [Motivic Homotopy Theory: Connections and Applications](https://www.slmath.org/programs/384), SLMath, Berkeley, CA - Fall 2026
 
-**[AMS Sectional: Computational Homotopy Theory](https://www.ams.org/meetings/sectional/2335_program.html)**, Arizona State University, Tempe, AZ - November 2026
+[AMS Sectional: Computational Homotopy Theory](https://www.ams.org/meetings/sectional/2335_program.html), Arizona State University, Tempe, AZ - November 2026
 
 
 

@@ -37,6 +37,6 @@ Upcoming Travel
 
 
 
-| ![F5 kq charts](/images/f5_kq_charts.jpg) |
+| ![ASS](/images/ASS.pdf) |
 | :----------------: |
-| Send me an email if you know what this chart is displaying! |
+| The $\text{E}_\infty$-page of the Adams spectral sequence.|

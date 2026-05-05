@@ -37,6 +37,6 @@ Upcoming Travel
 
 
 
-| ![ASS](/images/ASS.pdf) |
+| ![ASS](/images/ASS.png) |
 | :----------------: |
 | The $\text{E}_\infty$-page of the Adams spectral sequence.|

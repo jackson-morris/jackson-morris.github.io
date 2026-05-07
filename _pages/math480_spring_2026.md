@@ -137,6 +137,10 @@ This course will be an introduction to the methods used in homotopy theory. We w
 
 **Wednesday, May 6**
 
+* Sequential colimits, more examples of CW complexes and why we should care about them
+* [Notes for Lecture 17](math480_docs/Lecture17_5_6.pdf)
+* [**HOMEWORK 6 HERE**](math480_docs/HW6.pdf)
+
 **Friday, May 8**
 
 * **CHOOSE TOPIC FOR FINAL PROJECT BY TODAY!!**

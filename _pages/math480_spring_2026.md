@@ -153,6 +153,9 @@ This course will be an introduction to the methods used in homotopy theory. We w
 
 **Monday, May 11**
 
+* Cofibers and Puppe sequences
+* [Notes for Lecture 19](math480_docs/Lecture19_5_11.pdf)
+
 **Wednesday, May 13**
 
 **Friday, May 15**
@@ -166,6 +169,8 @@ This course will be an introduction to the methods used in homotopy theory. We w
 **Wednesday, May 20**
 
 **Friday, May 22**
+
+* **In-progress final project draft due**
 
 ## Week 9
 
@@ -182,5 +187,7 @@ This course will be an introduction to the methods used in homotopy theory. We w
 **Monday, June 1**
 
 **Wednesday, June 3**
+
+* **Sharing final projects!!**
 
 **Friday, June 5**

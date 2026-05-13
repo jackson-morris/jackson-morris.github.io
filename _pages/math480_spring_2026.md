@@ -158,9 +158,14 @@ This course will be an introduction to the methods used in homotopy theory. We w
 
 **Wednesday, May 13**
 
+* Long exact sequence induced by a Puppe sequence
+* [Notes for Lecture 20](math480_docs/Lecture20_5_13.pdf)
+
 **Friday, May 15**
 
-* **Homework 6 due in class**
+* **NO CLASS!!!!!**
+* Instead, you should go see Sean speak at the [Undergrad Research Symposium](https://event.fourwaves.com/uw-2026urs/schedule)! The session is from 11:30-12:45 in MGH 251.
+* **Homework 6 due**
 
 ## Week 8
 

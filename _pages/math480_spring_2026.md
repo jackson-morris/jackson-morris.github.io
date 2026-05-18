@@ -171,6 +171,9 @@ This course will be an introduction to the methods used in homotopy theory. We w
 
 **Monday, May 18**
 
+* Fibrations
+* [Notes for lecture 21](math480_docs/Lecture21_5_18.pdf)
+
 **Wednesday, May 20**
 
 **Friday, May 22**

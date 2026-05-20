@@ -32,6 +32,8 @@ Upcoming Travel
 
 [AMS Sectional: Computational Homotopy Theory](https://www.ams.org/meetings/sectional/2335_program.html), Arizona State University, Tempe, AZ - November 2026
 
+I am defending my thesis on May 21, 2026. [Here are the slides for my presentation.](/files/THESISDEFENSE_copy.pdf)
+
 
 
 

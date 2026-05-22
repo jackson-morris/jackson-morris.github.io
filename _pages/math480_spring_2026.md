@@ -176,11 +176,13 @@ This course will be an introduction to the methods used in homotopy theory. We w
 
 **Wednesday, May 20**
 
-* Hopf fibrations, mapping path space, factoring a morphism into a fibratoin followed by a weak equivalence
+* Hopf fibrations, path mapping space, factoring a morphism into a fibration followed by a weak equivalence
 * [Notes for lecture 22](math480_docs/Lecture22_5_20.pdf)
 
 **Friday, May 22**
 
+* More on path mapping space, homotopy fiber, loop space, fiber Puppe sequence, long exact sequence associated to a fibration
+* [Notes for lecture 23](math480_docs/Lecture23_5_22.pdf)
 * **In-progress final project draft due**
 
 ## Week 9

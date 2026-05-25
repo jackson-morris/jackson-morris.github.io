@@ -32,7 +32,6 @@ Upcoming Travel
 
 [AMS Sectional: Computational Homotopy Theory](https://www.ams.org/meetings/sectional/2335_program.html), Arizona State University, Tempe, AZ - November 2026
 
-I am defending my thesis on May 21, 2026. [Here are the slides for my presentation.](/files/THESISDEFENSE_copy.pdf)
 
 
 
@@ -41,4 +40,4 @@ I am defending my thesis on May 21, 2026. [Here are the slides for my presentati
 
 | ![ASS](/images/ASS.png) |
 | :----------------: |
-| The $\text{E}_\infty$-page of the Adams spectral sequence.|
+| The $\text{E}_\infty$-page of the mod-2 Adams spectral sequence.|

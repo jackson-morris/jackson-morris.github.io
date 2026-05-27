@@ -193,6 +193,9 @@ This course will be an introduction to the methods used in homotopy theory. We w
 
 **Wednesday, May 27**
 
+* Adjunctions and examples
+* [Notes for Lecture 24](math480_docs/Lecture24_5_27.pdf)
+
 **Friday, May 29**
 
 ## Week 10
@@ -204,3 +207,5 @@ This course will be an introduction to the methods used in homotopy theory. We w
 * **Sharing final projects!!**
 
 **Friday, June 5**
+
+* **Final Project Due!!**

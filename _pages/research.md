@@ -5,7 +5,13 @@ permalink: /research/
 author_profile: true
 ---
 
-My research interests are in homotopy theory, motivated from the chromatic perspective, and the tools I use are often computational. I have recently been interested in periodicity in motivic and equivariant stable homotopy theory, and I like to use the Adams spectral sequence to access periodic elements. I am also interested in various height-shifting phenomena related to algebraic and hermitian K-theory.
+My research interests are in homotopy theory, motivated from the chromatic perspective, and the tools I use are often computational. Here are some things that I have been interested in recently.
+* periodicity in stable motivic homotopy theory
+* odd primary computations
+* the kq-based Adams spectral sequence
+* blueshift in motivic homotopy theory
+* motivic invariants over more general base schemes
+* equivariant analogues of immersion problems
 
 I have written user's guides to some of my papers that you can [check out here](usersguides.md).
 

@@ -7,27 +7,36 @@ author_profile: true
 
 My research interests are in homotopy theory, motivated from the chromatic perspective, and the tools I use are often computational. I have recently been interested in periodicity in motivic and equivariant stable homotopy theory, and I like to use the Adams spectral sequence to access periodic elements. I am also interested in various height-shifting phenomena related to algebraic and hermitian K-theory.
 
- I have written user's guides to some of my papers that you can [check out here](usersguides.md).
+I have written user's guides to some of my papers that you can [check out here](usersguides.md).
 
 
 Preprints/Publications
 =====
 
-* **Chromatic structures in motivic homotopy theory**. In preparation.
+|  | Title | Authors | Links | Status |
+| -|----- | ------- | ----- | ---|
+| 6. | **Chromatic structures in motivic homotopy theory**<details><summary>Abstract</summary>Over the last 50 years, many of the insights into stable homotopy theory have been made from the chromatic perspective. This persepctive organizes the category of spectra into more tractible localizations governed by the moduli stack of formal groups. Over the last 20 years, the field of motivic homotopy theory has developed into a far reaching subject bearing similarity with classical stable homotopy theory. In this survey article, we examine chromatic structures in motivic homotopy theory. We pay particular attention to the properties of classical spectra which analogize nicely to motivic spectra, new phenomena which is unique to the motivic setting, and computational tools which give a tactile way to understand the complexity of motivic homotopy theory.</details>| Jackson Morris |  | In preparation |
+|5. | **Immersions of $\mathrm{C}_2$-projective spaces via $\mathrm{K}\mathbb{R}$-theory**<details><summary>Abstract</summary>We compute the Atiyah Real K-theory of C2-equivariant projective spaces and construct immersions of such spaces into multiples of the regular representation. These computations are made tractable by the recent geometric filtration of equivariant projective spaces due to Bhattacharya–Waugh–Zeng–Zou, together with a variant of the localized slice spectral sequence introduced by Meier–Shi–Zeng. As an immediate corollary of these computations, we obtain an equivariant analogue of James periodicity.</details>| [Manyi Guo](https://math.washington.edu/people/manyi-guo), Jackson Morris, [Alex Waugh](https://sites.google.com/view/alex-waugh/home), [Albert Yang](https://kclo3-naoh.github.io/) | [arXiv](https://arxiv.org/abs/2604.25260) | Submitted |
+|4. | **Splittings of truncated motivic Brown-Peterson cooperation algebras**<details><summary>Abstract</summary>We construct spectrum-level splittings of $\text{BPGL}\langle 1\rangle\wedge \text{BPGL}\langle 1\rangle$ at all primes $p$, where $\text{BPGL}\langle 1 \rangle$ is the first truncated motivic Brown-Peterson spectrum. Classically, $\text{BP}\langle 1 \rangle \wedge \text{BP}\langle 1\rangle$ was first described by Kane and Mahowald in terms of Brown-Gitler spectra. This splitting was subsequently reinterpreted by Lellman and Davis-Gitler-Mahowald in terms of Adams covers. In this paper, we give motivic lifts of these splittings in terms of Adams covers, over the base fields $\mathbb{C}$, $\mathbb{R}$, and $\mathbb{F}_q$, where $\text{char}(\mathbb{F}_q)\neq p$. As an application, we compute the $E_1$-page of the $\text{BPGL}\langle 1 \rangle$-based Adams spectral sequence as a module over $\text{BPGL}\langle 1 \rangle$, both in homotopy and in terms of motivic spectra. We also record analogous splittings for $\text{BPGL}\langle 0 \rangle \wedge \text{BPGL} \langle 0 \rangle$.</details> | Jackson Morris, [Sarah Petersen](https://sites.google.com/view/sarahpetersen/home), [Liz Tatum](https://www.sas.rochester.edu/mth/people/faculty/tatum-elizabeth/index.html) | [arXiv](https://arxiv.org/abs/2509.19542) | Submitted |
+|3. | **Rings of cooperations for hermitian K-theory over finite fields**<details><summary>Abstract</summary>We compute the ring of cooperations $\pi_{**}(\text{kq} \otimes \text{kq})$ for the very effective Hermitian K-theory over all finite fields $\mathbb{F}_q$ where $\text{char}(\text{F}_q) \neq 2$. To do this, we use the motivic Adams spectral sequence and show that all differentials are determined by the integral motivic cohomology of $\mathbb{F}_q$. As an application, we compute the $E_1$-page of the kq-resolution.</details>| Jackson Morris | [arXiv](https://arxiv.org/abs/2509.02786), [User's Guide](guide_finite_kq_coop.md) | Submitted|
+|2. |**On the ring of cooperations for real hermitian K-theory**<details><summary>Abstract</summary>Let $\text{kq}$ denote the very effective cover of the motivic hermitian K-theory spectrum. We analyze the ring of cooperations $\pi_{**}(\text{kq} \otimes \text{kq})$ in the stable motivic homotopy category $\text{SH}(\mathbb{R})$, giving a full description in terms of Brown-Gitler comodules. To do this, we decompose the $\text{E}_2$-page of the motivic Adams spectral sequence and show that it must collapse. The description of the $\text{E}_2$-page is accomplished by a series of algebraic Atiyah-Hirzebruch spectral sequences which converge to the summands of the $\text{E}_2$-page. Along the way, we prove a splitting result for the very effective symplectic K-theory $\text{ksp}$ over any base field of characteristic not two.</details> | Jackson Morris | [arXiv](https://arxiv.org/abs/2506.16672), [User's Guide](guide_real_kq_coop.md) | Accepted to *Annals of K-theory* |
+|1. | **Toric double determinantal varieties**<details><summary>Abstract</summary>We examine Li's double determinantal varieties in the special case that they are toric. We recover from the general double determinantal varieties case, via a more elementary argument, that they are irreducible and show that toric double determinantal varieties are smooth. We use this framework to give a straighforward formula for their dimension. Finally, we use the smallest nontrivial toric double determinantal variety to provide some empirical evidence concerning an open problem in local algebra.</details> | Alexander Blose, [Patricia Klein](https://patriciajklein.github.io/), Owen McGrath, Jackson Morris | [arXiv](https://arxiv.org/abs/2006.04191) |[*Communications in Algebra*](https://www.tandfonline.com/doi/pdf/10.1080/00927872.2021.1887882) (2021)|
+
+<!-- 1. **Chromatic structures in motivic homotopy theory**. In preparation.
     <details>
     <summary>Abstract</summary>
     Over the last 50 years, many of the insights into stable homotopy theory have been made from the chromatic perspective. This persepctive organizes the category of spectra into more tractible localizations governed by the moduli stack of formal groups. Over the last 20 years, the field of motivic homotopy theory has developed into a far reaching subject bearing similarity with classical stable homotopy theory. In this survey article, we examine chromatic structures in motivic homotopy theory. We pay particular attention to the properties of classical spectra which analogize nicely to motivic spectra, new phenomena which is unique to the motivic setting, and computational tools which give a tactile way to understand the complexity of motivic homotopy theory.
 
-    </details>
+    </details> -->
 
-* **Immersions of $\text{C}_2$-projective spaces via $\text{K}\mathbb{R}$-theory**, joint with Manyi Guo, [Alex Waugh](https://sites.google.com/view/alex-waugh/home), and [Albert Yang](https://kclo3-naoh.github.io/). Submitted. Available on [arXiv](https://arxiv.org/abs/2604.25260).
+<!-- 2. **Immersions of $\text{C}_2$-projective spaces via $\text{K}\mathbb{R}$-theory**, joint with Manyi Guo, [Alex Waugh](https://sites.google.com/view/alex-waugh/home), and [Albert Yang](https://kclo3-naoh.github.io/). Submitted. Available on [arXiv](https://arxiv.org/abs/2604.25260).
     <details>
     <summary>Abstract</summary>
     We compute the Atiyah Real K-theory of the classifying space for $\text{C}_2$-equivariant principal $\Sigma_2$-bundles. Using our computation, we determine an upper bound on the rank of a $\text{C}_2$-representation $V$ for which there exists a $\text{C}_2$-equivariant immersion
     $$\mathbb{P}(n\rho) \looparrowright V$$
     As a consequence, we produce a $\text{C}_2$-equivariant analogue of James periodicity.
 
-    </details>
+    </details> -->
 <!-- * **Diachromatic blueshift**, joint with Kyle Ormsby. In preparation. 
     <details>
     <summary>Abstract</summary>
@@ -35,33 +44,33 @@ Preprints/Publications
     We show that for all $n$, the motivic Lubin-Tate spectrum ${\sf{E}}_n^\text{mot}$ detects exotic periodic phenomena in its Tate fixed points $({\sf{E}}_n^{\text{mot}})^{tC_2}$. We then analyze the Hurewicz image over $\mathbb{C}$.
     </details>     -->
 
-* **Splittings of truncated motivic Brown-Peterson cooperations algebras**, joint with [Sarah Petersen](https://sites.google.com/view/sarahpetersen/home) and [Liz Tatum](https://www.sas.rochester.edu/mth/people/faculty/tatum-elizabeth/index.html). Submitted. Available on [arXiv](https://arxiv.org/abs/2509.19542).
+<!-- 3. **Splittings of truncated motivic Brown-Peterson cooperations algebras**, joint with [Sarah Petersen](https://sites.google.com/view/sarahpetersen/home) and [Liz Tatum](https://www.sas.rochester.edu/mth/people/faculty/tatum-elizabeth/index.html). Submitted. Available on [arXiv](https://arxiv.org/abs/2509.19542).
     <details>
     <summary>Abstract</summary>
 
     We construct spectrum-level splittings of $\text{BPGL}\langle 1\rangle\wedge \text{BPGL}\langle 1\rangle$ at all primes $p$, where $\text{BPGL}\langle 1 \rangle$ is the first truncated motivic Brown-Peterson spectrum. Classically, $\text{BP}\langle 1 \rangle \wedge \text{BP}\langle 1\rangle$ was first described by Kane and Mahowald in terms of Brown-Gitler spectra. This splitting was subsequently reinterpreted by Lellman and Davis-Gitler-Mahowald in terms of Adams covers. In this paper, we give motivic lifts of these splittings in terms of Adams covers, over the base fields $\mathbb{C}$, $\mathbb{R}$, and $\mathbb{F}_q$, where $\text{char}(\mathbb{F}_q)\neq p$. As an application, we compute the $E_1$-page of the $\text{BPGL}\langle 1 \rangle$-based Adams spectral sequence as a module over $\text{BPGL}\langle 1 \rangle$, both in homotopy and in terms of motivic spectra. We also record analogous splittings for $\text{BPGL}\langle 0 \rangle \wedge \text{BPGL} \langle 0 \rangle$.
-    </details>    
+    </details>     -->
 
-* **Rings of cooperations for hermitian K-theory over finite fields**. Submitted. Available on [arXiv](https://arxiv.org/abs/2509.02786). [User's Guide](guide_finite_kq_coop.md).
+<!-- 4. **Rings of cooperations for hermitian K-theory over finite fields**. Submitted. Available on [arXiv](https://arxiv.org/abs/2509.02786). [User's Guide](guide_finite_kq_coop.md).
     <details>
     <summary>Abstract</summary>
 
     We compute the ring of cooperations $\pi_{**}(\text{kq} \otimes \text{kq})$ for the very effective Hermitian K-theory over all finite fields $\mathbb{F}_q$ where $\text{char}(\text{F}_q) \neq 2$. To do this, we use the motivic Adams spectral sequence and show that all differentials are determined by the integral motivic cohomology of $\mathbb{F}_q$. As an application, we compute the $E_1$-page of the kq-resolution.
-    </details>
+    </details> -->
 
-* **On the ring of cooperations for real hermitian K-theory**. To appear in *Annals of K-theory*. Also available on [arXiv](https://arxiv.org/abs/2506.16672). [User's Guide](guide_real_kq_coop.md). 
+<!-- 5. **On the ring of cooperations for real hermitian K-theory**. To appear in *Annals of K-theory*. Also available on [arXiv](https://arxiv.org/abs/2506.16672). [User's Guide](guide_real_kq_coop.md). 
     <details>
     <summary>Abstract</summary>
 
     Let $\text{kq}$ denote the very effective cover of the motivic hermitian K-theory spectrum. We analyze the ring of cooperations $\pi_{**}(\text{kq} \otimes \text{kq})$ in the stable motivic homotopy category $\text{SH}(\mathbb{R})$, giving a full description in terms of Brown-Gitler comodules. To do this, we decompose the $E_2$-page of the motivic Adams spectral sequence and show that it must collapse. The description of the $E_2$-page is accomplished by a series of algebraic Atiyah-Hirzebruch spectral sequences which converge to the summands of the $E_2$-page. Along the way, we prove a splitting result for the very effective symplectic K-theory $\text{ksp}$ over any base field of characteristic not two.
-    </details>
+    </details> -->
 
-*  [**Toric double determinantal varieties**](https://www.tandfonline.com/doi/pdf/10.1080/00927872.2021.1887882), joint with Alexander Blose, [Patricia Klein](https://patriciajklein.github.io/), and Owen McGrath. Published in *Communications in Algebra* 49 (2021), 7, 3085-3093. Also available on [arXiv](https://arxiv.org/abs/2006.04191). 
+<!-- 6.  [**Toric double determinantal varieties**](https://www.tandfonline.com/doi/pdf/10.1080/00927872.2021.1887882), joint with Alexander Blose, [Patricia Klein](https://patriciajklein.github.io/), and Owen McGrath. Published in *Communications in Algebra* 49 (2021), 7, 3085-3093. Also available on [arXiv](https://arxiv.org/abs/2006.04191). 
     <details>
     <summary>Abstract</summary>
     
     We examine Li's double determinantal varieties in the special case that they are toric. We recover from the general double determinantal varieties case, via a more elementary argument, that they are irreducible and show that toric double determinantal varieties are smooth. We use this framework to give a straighforward formula for their dimension. Finally, we use the smallest nontrivial toric double determinantal variety to provide some empirical evidence concerning an open problem in local algebra.
-    </details>
+    </details> -->
 
 
 <!-- Writings

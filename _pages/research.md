@@ -12,11 +12,7 @@ I have written user's guides to some of my papers that you can [check out here](
 
 Preprints/Publications
 =====
-<style scoped>
-table {
-  font-size: 13px;
-}
-</style>
+
 |  # | Title | Authors | Links | Status |
 | -|----- | ------- | ----- | ---|
 | 6. | **Chromatic structures in motivic homotopy theory**<details>Over the last 50 years, many of the insights into stable homotopy theory have been made from the chromatic perspective. This persepctive organizes the category of spectra into more tractible localizations governed by the moduli stack of formal groups. Over the last 20 years, the field of motivic homotopy theory has developed into a far reaching subject bearing similarity with classical stable homotopy theory. In this survey article, we examine chromatic structures in motivic homotopy theory. We pay particular attention to the properties of classical spectra which analogize nicely to motivic spectra, new phenomena which is unique to the motivic setting, and computational tools which give a tactile way to understand the complexity of motivic homotopy theory.</details>| Jackson Morris |  | In preparation |

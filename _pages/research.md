@@ -45,7 +45,7 @@ Preprints/Publications
 Selected Recent Talks
 =====
 
-* *Higher Witt K-theories*, [Cascade Topology Seminar](https://sites.google.com/view/cascadetopologyseminar/cts_spring26), May 2026
+* *Higher Witt K-theories*, [Cascade Topology Seminar](https://sites.google.com/view/cascadetopologyseminar/cts_spring26), May 2026. [Slides](/files/CASCADE2026.pdf)
 * *Cooperations in motivic homotopy theory*, Thesis defense, May 2026. [Slides](/files/THESISDEFENSE_copy.pdf)
 * *Splittings and periodicity in motivic homotopy theory*, University of Washington Topology Seminar, February 2026
 * *Cooperations in motivic homotopy theory*, [JMM](https://meetings.ams.org/math/jmm2026/meetingapp.cgi/Session/13257), January 2026. [Slides](/files/JMM%202025%20-%20cooperations%20in%20motivic%20homotopy%20theory%20SHORT.pdf)

@@ -22,8 +22,6 @@ In Spring 2026, I am teaching [Math 480 - Homotopy Theory](math480_spring_2026.m
 
 Upcoming Travel
 =====
-[Cascade Topology Seminar](https://sites.google.com/view/cascadetopologyseminar/), Portland State University, Portland, OR - May 2026
-
 [Young Topologists Meeting](https://www.math.ku.dk/english/calendar/events/ytm26/), University of Copenhagen, Copenhagen, DK - June/July 2026
 
 [Algebraic Structures in Topology](https://algtoppr.github.io/), San Juan, PR - July 2026

@@ -198,6 +198,9 @@ This course will be an introduction to the methods used in homotopy theory. We w
 
 **Friday, May 29**
 
+* Long exact sequence in homotopy groups, extended computation with the Hopf fibration
+* [Notes for Lecture 25](math480_docs/Lecture25_5_29.pdf)
+
 ## Week 10
 
 **Monday, June 1**

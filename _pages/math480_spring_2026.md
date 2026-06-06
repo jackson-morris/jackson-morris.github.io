@@ -8,7 +8,7 @@ redirect_from:
 ---
 * **Course Meetings:** MWF 12:30 - 1:20 in DEM 002
 * **Office Hours:** Thursday 12-1 and Friday 2:30-3:30 in PDL C-114
-* [**Lecture Notes**](math480_docs/Lecture11_4_22.pdf)
+* [**Lecture Notes**](math480_docs/Lecture25_5_29.pdf)
 * [**Final Project instructions and topics**](math480_docs/Math480_Final_Project.pdf)
 * **Recommended texts:**
     * Assortments of [A Concise Course in Algebraic Topology](https://www.math.uchicago.edu/~may/CONCISE/ConciseRevised.pdf) by Peter May
@@ -205,6 +205,8 @@ This course will be an introduction to the methods used in homotopy theory. We w
 
 **Monday, June 1**
 
+* More on the long exact sequence
+
 **Wednesday, June 3**
 
 * **Sharing final projects!!**
@@ -212,3 +214,4 @@ This course will be an introduction to the methods used in homotopy theory. We w
 **Friday, June 5**
 
 * **Final Project Due!!**
+* The Adams spectral sequence

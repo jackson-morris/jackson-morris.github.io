@@ -15,7 +15,6 @@ My [research interests](research.md) are in motivic and chromatic homotopy theor
 
 [Here is my CV](/files/CV.pdf) (updated May 2026). I can be contacted at jacksonmorris1999 at gmail dot com.
 
-In Spring 2026, I am teaching [Math 480 - Homotopy Theory](math480_spring_2026.md).
 
 <!-- I try to collect resources which I have found useful on various topics. Feel free to email me if you have anything to contribute! -->
 

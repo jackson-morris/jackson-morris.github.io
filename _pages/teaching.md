@@ -23,7 +23,7 @@ I was been assistant for the following courses at UW:
 *  MATH 300 - Introduction to mathematical reasoning 
 *  MATH 441 - Topology 
 
-Additionally, I have been an assistant for the following external events.
+Additionally, I have been an assistant for the following external events:
 * In **Summer 2024**, I was the assistant for the [PCMI Experimental Math Lab](https://www.ias.edu/pcmi/pcmi-2024-summer-session).
   * Organized by [J.D. Quigley](https://quigleyjd.github.io/) (University of Virginia)
   * [Here is a document](https://quigleyjd.github.io/PCMI_XML_2024.pdf) created by J.D. and myself for this summer program.

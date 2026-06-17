@@ -23,9 +23,9 @@ author:
   # Biographic information
   avatar           : "profile_photo_11_30.jpg"
   name             : "Jackson Morris"
-  bio              : "Math PhD student"
+  bio              : "Mathematics PhD"
   location         : "Seattle, WA"
-  employer         : "University of Washington"
+  employer         : # SLMath
   uri              : # URL
   email            : "jacksonmorris1999@gmail.com" 
 

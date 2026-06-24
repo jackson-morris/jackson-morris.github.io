@@ -45,6 +45,7 @@ Preprints/Publications
 Selected Recent Talks
 =====
 
+* *Higher Witt K-theories*, [YTM](https://www.math.ku.dk/english/calendar/events/ytm26/), June 2026.
 * *Higher Witt K-theories*, [Cascade Topology Seminar](https://sites.google.com/view/cascadetopologyseminar/cts_spring26), May 2026. [Slides](/files/CASCADE2026.pdf)
 * *Cooperations in motivic homotopy theory*, Thesis defense, May 2026. [Slides](/files/THESISDEFENSE_copy.pdf)
 * *Splittings and periodicity in motivic homotopy theory*, University of Washington Topology Seminar, February 2026

@@ -18,9 +18,8 @@ My [research interests](research.md) are in motivic and chromatic homotopy theor
 
 <!-- I try to collect resources which I have found useful on various topics. Feel free to email me if you have anything to contribute! -->
 
+<h2>Upcoming travel</h2>
 
-Upcoming Travel
-=====
 [Young Topologists Meeting](https://www.math.ku.dk/english/calendar/events/ytm26/), University of Copenhagen, Copenhagen, DK - June/July 2026
 
 [Algebraic Structures in Topology](https://algtoppr.github.io/), San Juan, PR - July 2026

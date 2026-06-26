@@ -37,3 +37,44 @@ My [research interests](research.md) are in motivic and chromatic homotopy theor
 | ![ASS](/images/ASS.png) |
 | :----------------: |
 | The $\text{E}_\infty$-page of the mod-2 Adams spectral sequence.|
+
+
+<details>
+    <summary>Past conferences and seminars attended</summary>
+    Instances where talks were given are <strong>in bold</strong>.
+    <ul>
+    <li> <strong>Cascade Topology Seminar</strong> (Portland, OR), May 2026</li>
+    <li> FRG workshop on igher categories and geometry (Chicago, IL), March 2026</li>
+    <li> <strong>eCHT reading course: Group Actions on Exotic Spheres</strong> (Online), March 2026</li>
+    <li> <strong>University of Washington Topology Seminar</strong>, February 2026</li>
+    <li> <strong>University of Illinois Urbana-Champaign Topology Seminar</strong>, January 2026</li>
+    <li> <strong>Joint Mathematics Meeting 2026</strong> (Washington, D.C.), January 2026</li>
+    <li> <strong>University of Virginia Topology Seminar</strong>, November 2025</li>
+    <li> <strong>University of Kentucky Topology Seminar</strong>, November 2025</li>
+    <li> <strong>eCHT reading course: The Secondary Steenrod Algebra</strong> (Online), November 2025</li>
+    <li> Midwest Topology Seminar (Minneapolis, MN), October 2025</li>
+    <li> <strong>Duke University Geometry and Topology Seminar</strong>, October 2025</li>
+    <li> <strong>University of Colorado Boulder Homotopy Theory Seminar</strong>, September 2025</li>
+    <li> <strong>University of Michigan Geometry Seminar</strong>, September 2025</li>
+    <li> <strong>University of Notre Dame Topology Seminar</strong>, September 2025</li>
+    <li> <strong>European Talbot 2025</strong> (Kolding, DK), July 2025</li>
+    <li> <strong>University of Washington Topology Seminar</strong> (Seattle, WA), June 2025</li>
+    <li> Western Algebraic Geometry Symposium (Vancouver, WA), April 2025</li>
+    <li> <strong>Graduate Student Geometry and Topology Seminar</strong> (Bloomington, IN), April 2025</li>
+    <li> <Strong>Reed College Mathematics Colloquium</strong>, February 2025</li>
+    <li> <strong>Joint Math Meeting 2052</strong> (Seattle, WA), January 2025</li>
+    <li> SLMath Hot Topics: Life After the Telescope Conjecture (Berkeley, CA), December 2024</li>
+    <li> <strong>European Autumn School in Topology</strong> (Utrecht, NL), September 2024</li>
+    <li> <strong>Talbot 2024</strong> (Nacogdoches, TX), August 2024</li>
+    <li> <strong>Motivic Homotopy Theory, K-theory, and Modular Representations</strong> (Los Angeles, CA), August 2024</li>
+    <li> Park City Mathematics Institute 2024 (Park City, UT), July 2024</li>
+    <li> eCHT Research Workshop on Hopf Rings (Online), June 2024</li>
+    <li> <strong>eCHT reading course: Hopf Rings</strong> (Online), April 2024</li>
+    <li> Joint Math Meeting 2024 (San Francisco, CA), January 2024</li>
+    <li> Scissors Congruence, Algebraic K-theory, and Trace Methods (Bloomington, IN), July 2023</li>
+    <li> Cascade Topology Seminar (Vancouver, CAN), April 2023</li>
+    <li> PRIMA Congress (Vancouver, CAN), December 2022</li>
+    <li> Graduate Students in Geometry, Topology, and Algebra (Phildaelphia, PA), May 2022</li>
+    </ul>
+
+</details>

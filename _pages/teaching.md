@@ -6,16 +6,16 @@ author_profile: true
 ---
 I am not currently teaching.
 
-Lead Instructor
-=====
+<h2>Lead instructor</h2>
+
 * **Spring 2026**: [MATH 480 - Homotopy theory](math480_spring_2026.md)
 * **Summer 2023**: MATH 208 - Linear Algebra
   * [Here is a recording](https://drive.google.com/file/d/1rwfSVm7kO3fhmomm0s6gtLGiLPpq0Wda/view) of a lecture I gave for this course.
 * **Winter 2023**: MATH 208 - Linear Algebra
 
-Assistant
-=====
-I was been assistant for the following courses at UW:
+<h2>Assistant</h2>
+
+I was an assistant for the following courses at the University of Washington:
 *  MATH 120 - Precalculus 
 *  MATH 124 - Calculus I 
 *  MATH 126 - Calculus III 
@@ -35,8 +35,9 @@ Additionally, I have been an assistant for the following external events:
 
 
 
-Directed Reading Projects
-=====
+<h2>Directed reading projects</h2>
+
+I mentored many undergraduate students through the [University of Washington directed reading program](https://sites.uw.edu/wdrp/).
 * **Summer 2025**: Homological algebra over the Steenrod algebra
   * An exploration into homological algebra motivated by computing Ext over the Steenrod algebra. Texts used were Weibel's [Homological Algebra](https://www.sas.rochester.edu/mth/sites/doug-ravenel/otherpapers/weibel-homv2.pdf) and Mike Hill's lecture notes on [Computational Methods in Algebraic Topology](https://www.math.ucla.edu/~mikehill/Teaching/Math885.html).
 * **Spring 2025**: Homotopy theory

@@ -28,17 +28,6 @@ My [research interests](research.md) are in motivic and chromatic homotopy theor
 
 [AMS Sectional: Computational Homotopy Theory](https://www.ams.org/meetings/sectional/2335_program.html), Arizona State University, Tempe, AZ - November 2026
 
-
-
-
-
-
-
-| ![ASS](/images/ASS.png) |
-| :----------------: |
-| The $\text{E}_\infty$-page of the mod-2 Adams spectral sequence.|
-
-
 <details>
     <summary>Past conferences and seminars attended</summary>
     Instances where talks were given are <strong>in bold</strong>.
@@ -78,3 +67,8 @@ My [research interests](research.md) are in motivic and chromatic homotopy theor
     </ul>
 
 </details>
+
+| ![ASS](/images/ASS.png) |
+| :----------------: |
+| The $\text{E}_\infty$-page of the mod-2 Adams spectral sequence.|
+

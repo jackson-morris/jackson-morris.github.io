@@ -24,8 +24,6 @@ My [research interests](research.md) are in motivic and chromatic homotopy theor
 
 <h2>Upcoming travel</h2>
 
-[Young Topologists Meeting](https://www.math.ku.dk/english/calendar/events/ytm26/), University of Copenhagen, Copenhagen, DK - June/July 2026
-
 [Algebraic Structures in Topology](https://algtoppr.github.io/), San Juan, PR - July 2026
 
 [Motivic Homotopy Theory: Connections and Applications](https://www.slmath.org/programs/384), SLMath, Berkeley, CA - Fall 2026
@@ -36,6 +34,7 @@ My [research interests](research.md) are in motivic and chromatic homotopy theor
     <summary>Past conferences and seminars attended</summary>
     Instances where talks were given are <strong>in bold</strong>.
     <ul>
+    <li> <strong>Young Topologists Meeting</strong> (Copenhagen, DK), June 2026
     <li> <strong>Cascade Topology Seminar</strong> (Portland, OR), May 2026</li>
     <li> FRG workshop on igher categories and geometry (Chicago, IL), March 2026</li>
     <li> <strong>eCHT reading course: Group Actions on Exotic Spheres</strong> (Online), March 2026</li>

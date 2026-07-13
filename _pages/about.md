@@ -35,7 +35,7 @@ My [research interests](research.md) are in motivic and chromatic homotopy theor
     <li> Algebraic Structures in Topology (San Juan, PR), July 2026</li>
     <li> <strong>Young Topologists Meeting</strong> (Copenhagen, DK), June 2026</li>
     <li> <strong>Cascade Topology Seminar</strong> (Portland, OR), May 2026</li>
-    <li> FRG workshop on igher categories and geometry (Chicago, IL), March 2026</li>
+    <li> FRG workshop on higher categories and geometry (Chicago, IL), March 2026</li>
     <li> <strong>eCHT reading course: Group Actions on Exotic Spheres</strong> (Online), March 2026</li>
     <li> <strong>University of Washington Topology Seminar</strong>, February 2026</li>
     <li> <strong>University of Illinois Urbana-Champaign Topology Seminar</strong>, January 2026</li>

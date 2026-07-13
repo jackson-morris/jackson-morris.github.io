@@ -24,9 +24,7 @@ My [research interests](research.md) are in motivic and chromatic homotopy theor
 
 <h2>Upcoming travel</h2>
 
-[Algebraic Structures in Topology](https://algtoppr.github.io/), San Juan, PR - July 2026
-
-[Motivic Homotopy Theory: Connections and Applications](https://www.slmath.org/programs/384), SLMath, Berkeley, CA - Fall 2026
+Theory: Connections and Applications](https://www.slmath.org/programs/384), SLMath, Berkeley, CA - Fall 2026
 
 [AMS Sectional: Computational Homotopy Theory](https://www.ams.org/meetings/sectional/2335_program.html), Arizona State University, Tempe, AZ - November 2026
 
@@ -34,7 +32,8 @@ My [research interests](research.md) are in motivic and chromatic homotopy theor
     <summary>Past conferences and seminars attended</summary>
     Instances where talks were given are <strong>in bold</strong>.
     <ul>
-    <li> <strong>Young Topologists Meeting</strong> (Copenhagen, DK), June 2026
+    <li> Algebraic Structures in Topology (San Juan, PR), July 2026</li>
+    <li> <strong>Young Topologists Meeting</strong> (Copenhagen, DK), June 2026</li>
     <li> <strong>Cascade Topology Seminar</strong> (Portland, OR), May 2026</li>
     <li> FRG workshop on igher categories and geometry (Chicago, IL), March 2026</li>
     <li> <strong>eCHT reading course: Group Actions on Exotic Spheres</strong> (Online), March 2026</li>

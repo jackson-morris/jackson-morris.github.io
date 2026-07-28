@@ -18,12 +18,6 @@ I have written user's guides to some of my papers that you can [check out here](
 
 ## Preprints/publications
 
-3. Third item
-2. Second item
-1. First item
-{:start="3"}
-
-
 |  # | Title | Authors | Links | Status |
 | -|----- | ------- | ----- | ---|
 |8. | **An exotic self-map of periodicity 1**<details>We construct a $\mathbb{C}$-motivic $w_1$-periodic self-map of periodicity 1. We then use recent techniques of Bhattacharya, Bobkova, and Quigley to construct $w_1$-periodic elements in the $\mathbb{C}$-motivic stable stems, and we compare with those previously constructed by Andrews and Isaksen et al.</details>| Jackson Morris | |In preparation|

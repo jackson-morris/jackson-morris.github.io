@@ -13,7 +13,7 @@ My [research interests](research.md) are in motivic and chromatic homotopy theor
 
 <!-- I received my BS from the University of Kentucky in December 2020 and my Master's from UW in June 2023.  -->
 
-[Here is my CV](/files/CV.pdf) (updated June 2026). I can be contacted at jacksonmorris1999 at gmail dot com.
+[Here is my CV](/files/CV.pdf) (updated July 2026). I can be contacted at jacksonmorris1999 at gmail dot com.
 
 | ![ASS](/images/ASS.png) |
 | :----------------: |

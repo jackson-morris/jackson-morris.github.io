@@ -53,6 +53,6 @@ I have written user's guides to some of my papers that you can [check out here](
 * *Splittings and cooperations in motivic homotopy theory*, Duke University Geometry and Topology Seminar, October 2025
 * *Splittings of truncated motivic Brown-Peterson cooperations algebras*, University of Colorado Boulder Homotopy Theory Seminar, September 2025
 
-<h2><span style="color:#2D2F92">Friends</span> and Collaborators</h2>
+<h2><span style="color:#2D2F92">Friends</span> and <span style="color:#ac084a">Collaborators</span></h2>
 
 [Maxine Calle](https://maxinecalle.github.io/), [Sarah Petersen](https://sites.google.com/view/sarahpetersen/home), [Liz Tatum](https://www.sas.rochester.edu/mth/people/faculty/tatum-elizabeth/index.html), [Alex Waugh](https://sites.google.com/view/alex-waugh)

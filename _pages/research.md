@@ -7,11 +7,9 @@ author_profile: true
 
 My research interests are in homotopy theory, motivated from the chromatic perspective, and the tools I use are often computational. Here are some things that I have been interested in recently.
 * periodicity in stable motivic homotopy theory
-* odd primary computations
-* the kq-based Adams spectral sequence
-* blueshift in motivic homotopy theory
+* generalized Adams spectral sequences
+* redshift and blueshift
 * motivic invariants over more general base schemes
-* equivariant analogues of immersion problems
 
 I have written user's guides to some of my papers that you can [check out here](usersguides.md).
 
@@ -54,3 +52,7 @@ I have written user's guides to some of my papers that you can [check out here](
 * *Higher Adams differentials and hidden extensions*, [eCHT Secondary Steenrod Algebra Reading Seminar](https://s.wayne.edu/echt/echt-reading-seminars/echt-secondary-steenrod-algebra-reading-seminar-fall-2025/), November 2025
 * *Splittings and cooperations in motivic homotopy theory*, Duke University Geometry and Topology Seminar, October 2025
 * *Splittings of truncated motivic Brown-Peterson cooperations algebras*, University of Colorado Boulder Homotopy Theory Seminar, September 2025
+
+<h2><span style="color:#2D2F92">Friends</span> and Collaborators</h2>
+
+[Maxine Calle](https://maxinecalle.github.io/), [Sarah Petersen](https://sites.google.com/view/sarahpetersen/home), [Liz Tatum](https://www.sas.rochester.edu/mth/people/faculty/tatum-elizabeth/index.html), [Alex Waugh](https://sites.google.com/view/alex-waugh)

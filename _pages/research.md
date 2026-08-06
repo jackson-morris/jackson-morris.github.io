@@ -55,4 +55,4 @@ I have written user's guides to some of my papers that you can [check out here](
 
 <h2><span style="color:#2D2F92">Friends</span> and <span style="color:#ac084a">Collaborators</span></h2>
 
-[Maxine Calle](https://maxinecalle.github.io/), [Sarah Petersen](https://sites.google.com/view/sarahpetersen/home), [Liz Tatum](https://www.sas.rochester.edu/mth/people/faculty/tatum-elizabeth/index.html), [Alex Waugh](https://sites.google.com/view/alex-waugh)
+[<span style="color:#2D2F92">Maxine Calle</span>](https://maxinecalle.github.io/), [Sarah Petersen](https://sites.google.com/view/sarahpetersen/home), [Liz Tatum](https://www.sas.rochester.edu/mth/people/faculty/tatum-elizabeth/index.html), [Alex Waugh](https://sites.google.com/view/alex-waugh)

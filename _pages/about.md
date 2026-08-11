@@ -7,13 +7,13 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I am a postdoc at the [SLMath semester program on motivic homotopy theory](https://www.slmath.org/programs/384). Starting in January 2027, I will be a postdoc at Vanderbilt University. I recently obtained my Ph.D. in mathematics from the University of Washington, where my advisors were [Kyle Ormsby](https://kyleormsby.github.io/) and [John Palmieri](https://sites.math.washington.edu//~palmieri/).
+Hello! I am a postdoc at the [SLMath semester program on motivic homotopy theory](https://www.slmath.org/programs/384). Starting in January 2027, I will be a postdoc at Vanderbilt University. I received my Ph.D. in 2026 from the University of Washington, where my advisors were [Kyle Ormsby](https://kyleormsby.github.io/) and [John Palmieri](https://sites.math.washington.edu//~palmieri/).
 
 My [research interests](research.md) are in motivic and chromatic homotopy theory. I am generally interested in periodicity in all flavors of stable homotopy theory.
 
 <!-- I received my BS from the University of Kentucky in December 2020 and my Master's from UW in June 2023.  -->
 
-[Here is my CV](/files/CV.pdf) (updated July 2026). I can be contacted at jacksonmorris1999 at gmail dot com.
+[Here is my CV](/files/CV.pdf) (updated August 2026). I can be contacted at jacksonmorris1999 at gmail dot com.
 
 | ![ASS](/images/ASS.png) |
 | :----------------: |

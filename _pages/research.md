@@ -30,15 +30,11 @@ I have written user's guides to some of my papers that you can [check out here](
 
 
 
-<!-- Writings
-=====
-* **Splittings and the algebraic Atiyah-Hirzebruch spectral sequence** Expanded set of notes for  preseminar talk at UW. [PDF](/files/Splittings_and_the_algebraic_Atiyah_Hirzebruch_spectral_sequence%20(2).pdf)
-* **Galois descent and the Picard group of K-theory** Notes for a talk in the [UW Student AG Seminar](https://theprismatic.site/seminars/uwag/). [PDF](/files/Galois_descent_and_the_Picard_group_of_K_theory%20(2).pdf)
-* **The Adams spectral sequence and Hopf algebroids** Notes for a talk in the [DUBTOP seminar](https://sites.google.com/view/jay-reiter/dubtop-fall-2025?authuser=0). [PDF](/files/The_Adams_spectral_sequence_and_Hopf_algebroids%20(2).pdf) -->
+<h2>Notes</h2>
 
-| ![coolchart](/images/coolchart.png) |
-| :--: |
-| The ring of cooperations $\pi_{**}(\text{kq} \otimes \text{kq})$ over $\mathbb{F}_3$. |
+* **[<span style="color:#2D2F92">Splittings and the algebraic Atiyah-Hirzebruch spectral sequence</span>](/files/Splittings_and_the_algebraic_Atiyah_Hirzebruch_spectral_sequence%20(2).pdf)** - Expanded set of notes for  preseminar talk at UW. 
+* **[<span style="color:#2D2F92">Galois descent and the Picard group of K-theory</span>](/files/Galois_descent_and_the_Picard_group_of_K_theory%20(2).pdf)** - Notes for a talk in the [UW Student AG Seminar](https://theprismatic.site/seminars/uwag/). *Notice: Example 3.2 and Example 4.1 are incorrect! It is not true that Galois extensions of number fields induce Galois extensions of their rings of integers. This is precisely why Example 4.1 is so hard; I forgot about ramification.*
+* **[<span style="color:#2D2F92">The Adams spectral sequence and Hopf algebroids</span>]((/files/The_Adams_spectral_sequence_and_Hopf_algebroids%20(2).pdf))** - Notes for a talk in the [DUBTOP seminar](https://sites.google.com/view/jay-reiter/dubtop-fall-2025?authuser=0). 
 
 <h2>Selected recent talks</h2>
 
@@ -56,3 +52,7 @@ I have written user's guides to some of my papers that you can [check out here](
 <h2><span style="color:#2D2F92">Friends</span> and <span style="color:#ac084a">Collaborators</span></h2>
 
 [<span style="color:#2D2F92">Keita Allen</span>](https://ktallen.github.io/), <span style="color:#2D2F92">Frances Baer</span>, [<span style="color:#2D2F92">Julie Bannwart</span>](https://juliebannwart.com/), [<span style="color:#2D2F92">Thomas Brazelton</span>](https://tbrazel.github.io/), [<span style="color:#2D2F92">Maxine Calle</span>](https://maxinecalle.github.io/), [<span style="color:#2D2F92">Preston Cranford</span>](https://prestoncranford.github.io/), [<span style="color:#2D2F92">Natasha Crepeau</span>](https://sites.google.com/view/natasha-crepeau-math/home), [Luca De Paulis](https://expertise.unimi.it/individual?uri=http%3A%2F%2Firises.unimi.it%2Fresource%2Fperson%2F254594), <span style="color:#ac084a">Konstantin Emming</span>, [Andrea Figini](https://www.uni-osnabrueck.de/fb6/mathematik/forschung/ag-topologie-und-geometrie/figini-andrea), [Marco Giustetto](https://unipd.academia.edu/MarcoGiustetto), [Bert Guillou](https://www.ms.uky.edu/~guillou/), [Manyi Guo](https://math.washington.edu/people/manyi-guo), [<span style = "color:#2D2F92">Liam Keenan</span>](https://sites.google.com/view/liam-keenan/home), [<span style = "color:#2D2F92">Jesse Keyes</span>](https://sites.google.com/view/jkeyes/bio), [<span style="color:#2D2F92">Juan Moreno</span>](https://sites.google.com/view/jcmda?usp=sharing), [<span style="color:#2D2F92">Matthew Nimiero</span>](https://www.freeloop.space/), [<span style="color:#2D2F92">Nelson Niu</span>](https://nelsonniu.com/), [<span style="color:#2D2F92">Morgan Opie</span>](https://mpopie.github.io/), [Kyle Ormsby](https://e-infinity.space/), [Sarah Petersen](https://sites.google.com/view/sarahpetersen/home), [<span style="color:#2D2F92">Lucas Piessevaux</span>](https://lucas-piessevaux.github.io/), [<span style = "color:#2D2F92">Azélie Picot</span>](https://azeliepicot.github.io/), [<span style="color:#2D2F92">Prerna</span>](https://sites.google.com/view/prernadhankhar-mathematics/bio), [<span style="color:#2D2F92">J.D. Quigley</span>](https://quigleyjd.github.io/), [<span style="color:#2D2F92">Ryan Quinn</span>](https://ryquinn.github.io/), [<span style="color:#2D2F92">Jay Reiter</span>](https://jay-reiter.github.io/), [<span style="color:#2D2F92">Dominik Schrimpel</span>](https://www.math.univ-paris13.fr/~schrimpel/), [Liz Tatum](https://www.sas.rochester.edu/mth/people/faculty/tatum-elizabeth/index.html), [<span style="color:#2D2F92">Alexander Wang</span>](https://sites.math.washington.edu/~awaw/), [Alex Waugh](https://sites.google.com/view/alex-waugh), [<span style="color:#2D2F92">Lucas Williams</span>](https://lucas-williams.my.canva.site/), [Albert Yang](https://kclo3-naoh.github.io/), [<span style="color:#2D2F92">Qi Zhu</span>](https://qizhumath.wixsite.com/math)
+
+| ![coolchart](/images/coolchart.png) |
+| :--: |
+| The ring of cooperations $\pi_{**}(\text{kq} \otimes \text{kq})$ over $\mathbb{F}_3$. |

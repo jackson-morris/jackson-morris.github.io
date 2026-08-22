@@ -16,56 +16,54 @@ I have written user's guides to some of my papers that you can [check out here](
 
 ## Preprints/publications
 
-## Preprints/publications
+<div class="pub-list">
 
-<div class="pub-list" markdown="1">
-
-<details markdown="1">
+<details>
 <summary><span class="pub-num">8.</span><strong>An exotic self-map of periodicity 1</strong>
 <span class="pub-authors">Jackson Morris &middot; <em>In preparation</em></span></summary>
-<p class="pub-desc">[Add a short description of this paper.]</p>
+<p class="pub-desc">We construct a ℂ-motivic spectrum wY with a w1-self-map of periodicity 1. The construction of wY and its self map is inspired by the Davis and Mahowald v1-self-map on the spectrum Y, and it has similar cohomological properties over the motivic Steenrod algebra. The spectrum wY also participates in various splittings of C-motivic spectra. We conclude with an application of recent techniques of Bhattacharya-Bobkova-Quigley and use wY to produce w1-periodic classes in the ℂ-motivic stable stems.</p>
 </details>
 
-<details markdown="1">
+<details>
 <summary><span class="pub-num">7.</span><strong>Motivic K-theory cooperations over the rationals</strong>
-<span class="pub-authors">Jackson Morris, [Sarah Petersen](https://sites.google.com/view/sarahpetersen/home), [Liz Tatum](https://www.sas.rochester.edu/mth/people/faculty/tatum-elizabeth/index.html) &middot; <em>In preparation</em></span></summary>
-<p class="pub-desc">[Add a short description of this paper.]</p>
+<span class="pub-authors">Jackson Morris, <a href="https://sites.google.com/view/sarahpetersen/home">Sarah Petersen</a>, <a href="https://www.sas.rochester.edu/mth/people/faculty/tatum-elizabeth/index.html">Liz Tatum</a> &middot; <em>In preparation</em></span></summary>
+<p class="pub-desc">We compute the cooperation algebras for motivic integral cohomology, algebraic K-theory, and hermitian K-theory over all p-adic fields and the rationals. We also construct spectrum-level splittings for the motivic integral cohomology and algebraic K-theory cooperations, and provide a partial decomposition of the hermitian K-theory cooperations. </p>
 </details>
 
-<details markdown="1">
+<details>
 <summary><span class="pub-num">6.</span><strong>Periodic phenomena in stable motivic homotopy theory</strong>
-<span class="pub-authors">Jackson Morris &middot; [arXiv](https://arxiv.org/abs/2607.18165) &middot; <em>Submitted</em></span></summary>
-<p class="pub-desc">[Add a short description of this paper.]</p>
+<span class="pub-authors">Jackson Morris &middot; <a href="https://arxiv.org/abs/2607.18165">arXiv</a> &middot; <em>Submitted</em></span></summary>
+<p class="pub-desc">In this survey, we study how tools from stable homotopy theory have manifested and impacted motivic homotopy theory. In particular, we discuss various motivic Adams spectral sequences, periodicity in the motivic stable homotopy groups of spheres, and synthetic spectra. We conclude with many problems for future investigation.</p>
 </details>
 
-<details markdown="1">
-<summary><span class="pub-num">5.</span><strong>Immersions of $\mathrm{C}_2$-projective spaces via $\mathrm{K}\mathbb{R}$-theory</strong>
-<span class="pub-authors">[Manyi Guo](https://math.washington.edu/people/manyi-guo), Jackson Morris, [Alex Waugh](https://sites.google.com/view/alex-waugh/home), [Albert Yang](https://kclo3-naoh.github.io/) &middot; [arXiv](https://arxiv.org/abs/2604.25260) &middot; <em>Submitted</em></span></summary>
-<p class="pub-desc">[Add a short description of this paper.]</p>
+<details>
+<summary><span class="pub-num">5.</span><strong>Immersions of C2-projective spaces via KR-theory</strong>
+<span class="pub-authors"><a href="https://math.washington.edu/people/manyi-guo">Manyi Guo</a>, Jackson Morris, <a href="https://sites.google.com/view/alex-waugh/home">Alex Waugh</a>, <a href="https://kclo3-naoh.github.io/">Albert Yang</a> &middot; <a href="https://arxiv.org/abs/2604.25260">arXiv</a> &middot; <em>Submitted</em></span></summary>
+<p class="pub-desc">We compute the Atiyah Real K-theory of C2-equivariant projective spaces and construct immersions of such spaces into multiples of the regular representation. These computations are made tractable by the recent geometric filtration of equivariant projective spaces due to Bhattacharya-Waugh-Zeng-Zou, together with a variant of the localized slice spectral sequence introduced by Meier-Shi-Zeng. As an immediate corollary of these computations, we obtain an equivariant analogue of James periodicity.</p>
 </details>
 
-<details markdown="1">
+<details>
 <summary><span class="pub-num">4.</span><strong>Splittings of truncated motivic Brown-Peterson cooperations algebras</strong>
-<span class="pub-authors">Jackson Morris, [Sarah Petersen](https://sites.google.com/view/sarahpetersen/home), [Liz Tatum](https://www.sas.rochester.edu/mth/people/faculty/tatum-elizabeth/index.html) &middot; [arXiv](https://arxiv.org/abs/2509.19542) &middot; [User's Guide](guide_bpgl_splittings.md) &middot; <em>Submitted</em></span></summary>
-<p class="pub-desc">[Add a short description of this paper.]</p>
+<span class="pub-authors">Jackson Morris, <a href="https://sites.google.com/view/sarahpetersen/home">Sarah Petersen</a>, <a href="https://www.sas.rochester.edu/mth/people/faculty/tatum-elizabeth/index.html">Liz Tatum</a> &middot; <a href="https://arxiv.org/abs/2509.19542">arXiv</a> &middot; <a href="guide_bpgl_splittings.md">User's Guide</a> &middot; <em>Submitted</em></span></summary>
+<p class="pub-desc">We construct spectrum-level splittings of BPGL⟨1⟩∧BPGL⟨1⟩ at all primes p, where BPGL⟨1⟩ is the first truncated motivic Brown--Peterson spectrum. Classically, BP⟨1⟩∧BP⟨1⟩ was first described by Kane and Mahowald in terms of Brown-Gitler spectra. This splitting was subsequently reinterpreted by Lellman and Davis-Gitler-Mahowald in terms of Adams covers. In this paper, we give motivic lifts of these splittings in terms of Adams covers, over the base fields ℂ,ℝ, and 𝔽q, where 𝔽q≠p. As an application, we compute the E1-page of the BPGL⟨1⟩-based Adams spectral sequence as a module over BPGL⟨1⟩, both in homotopy and in terms of motivic spectra. We also record analogous splittings for BPGL⟨0⟩∧BPGL⟨0⟩.</p>
 </details>
 
-<details markdown="1">
+<details>
 <summary><span class="pub-num">3.</span><strong>Rings of cooperations for hermitian K-theory over finite fields</strong>
-<span class="pub-authors">Jackson Morris &middot; [arXiv](https://arxiv.org/abs/2509.02786) &middot; [User's Guide](guide_finite_kq_coop.md) &middot; Accepted to [*Algebraic & Geometric Topology*](https://msp.org/soon/coming.php?jpath=agt)</span></summary>
-<p class="pub-desc">[Add a short description of this paper.]</p>
+<span class="pub-authors">Jackson Morris &middot; <a href="https://arxiv.org/abs/2509.02786">arXiv</a> &middot; <a href="guide_finite_kq_coop.md">User's Guide</a> &middot; Accepted to <em><a href="https://msp.org/soon/coming.php?jpath=agt">Algebraic & Geometric Topology</a></em></span></summary>
+<p class="pub-desc">We compute the ring of cooperations for the very effective hermitian K-theory over all finite fields 𝔽q where char(𝔽q)≠2. To do this, we use the motivic Adams spectral sequence and show that all differentials are determined by the integral motivic cohomology of 𝔽q. As an application, we compute the E1-page of the kq-resolution.</p>
 </details>
 
-<details markdown="1">
+<details>
 <summary><span class="pub-num">2.</span><strong>On the ring of cooperations for real hermitian K-theory</strong>
-<span class="pub-authors">Jackson Morris &middot; [arXiv](https://arxiv.org/abs/2506.16672) &middot; [User's Guide](guide_real_kq_coop.md) &middot; Accepted to [*Annals of K-theory*](https://msp.org/soon/coming.php?jpath=akt)</span></summary>
-<p class="pub-desc">[Add a short description of this paper.]</p>
+<span class="pub-authors">Jackson Morris &middot; <a href="https://arxiv.org/abs/2506.16672">arXiv</a> &middot; <a href="guide_real_kq_coop.md">User's Guide</a> &middot; Accepted to <em><a href="https://msp.org/soon/coming.php?jpath=akt">Annals of K-theory</a></em></span></summary>
+<p class="pub-desc">Let kq denote the very effective cover of the motivic hermitian K-theory spectrum. We analyze the ring of cooperations for kq in the stable motivic homotopy category SH(ℝ), giving a full description in terms of Brown–Gitler comodules. To do this, we decompose the E2-page of the motivic Adams spectral sequence and show that it must collapse. The description of the E2-page is accomplished by a series of algebraic Atiyah–Hirzebruch spectral sequences which converge to the summands of the E2-page. Along the way, we prove a splitting result for the very effective symplectic K-theory ksp over any base field of characteristic not two.</p>
 </details>
 
-<details markdown="1">
+<details>
 <summary><span class="pub-num">1.</span><strong>Toric double determinantal varieties</strong>
-<span class="pub-authors">Alexander Blose, [Patricia Klein](https://patriciajklein.github.io/), Owen McGrath, Jackson Morris &middot; [arXiv](https://arxiv.org/abs/2006.04191) &middot; [*Communications in Algebra*](https://www.tandfonline.com/doi/pdf/10.1080/00927872.2021.1887882) (2021)</span></summary>
-<p class="pub-desc">[Add a short description of this paper.]</p>
+<span class="pub-authors">Alexander Blose, <a href="https://patriciajklein.github.io/">Patricia Klein</a>, Owen McGrath, Jackson Morris &middot; <a href="https://arxiv.org/abs/2006.04191">arXiv</a> &middot; <em><a href="https://www.tandfonline.com/doi/pdf/10.1080/00927872.2021.1887882">Communications in Algebra</a></em> (2021)</span></summary>
+<p class="pub-desc">We examine Li’s double determinantal varieties in the special case that they are toric. We recover from the general double determinantal varieties case, via a more elementary argument, that they are irreducible and show that toric double determinantal varieties are smooth. We use this framework to give a straighforward formula for their dimension. Finally, we use the smallest nontrivial toric double determinantal variety to provide some empirical evidence concerning an open problem in local algebra.</p>
 </details>
 
 </div>

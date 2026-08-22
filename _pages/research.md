@@ -16,17 +16,59 @@ I have written user's guides to some of my papers that you can [check out here](
 
 ## Preprints/publications
 
-| # | Title | Authors | Links | Status |
-|:-:|-------|---------|-------|--------|
-| 8 | **An exotic self-map of periodicity 1** | Jackson Morris | — | *In preparation* |
-| 7 | **Motivic K-theory cooperations over the rationals** | Jackson Morris, [Sarah Petersen](https://sites.google.com/view/sarahpetersen/home), [Liz Tatum](https://www.sas.rochester.edu/mth/people/faculty/tatum-elizabeth/index.html) | — | *In preparation* |
-| 6 | **Periodic phenomena in stable motivic homotopy theory** | Jackson Morris | [arXiv](https://arxiv.org/abs/2607.18165) | *Submitted* |
-| 5 | **Immersions of $\mathrm{C}_2$-projective spaces via $\mathrm{K}\mathbb{R}$-theory** | [Manyi Guo](https://math.washington.edu/people/manyi-guo), Jackson Morris, [Alex Waugh](https://sites.google.com/view/alex-waugh/home), [Albert Yang](https://kclo3-naoh.github.io/) | [arXiv](https://arxiv.org/abs/2604.25260) | *Submitted* |
-| 4 | **Splittings of truncated motivic Brown-Peterson cooperations algebras** | Jackson Morris, [Sarah Petersen](https://sites.google.com/view/sarahpetersen/home), [Liz Tatum](https://www.sas.rochester.edu/mth/people/faculty/tatum-elizabeth/index.html) | [arXiv](https://arxiv.org/abs/2509.19542) &middot; [User's Guide](guide_bpgl_splittings.md) | *Submitted* |
-| 3 | **Rings of cooperations for hermitian K-theory over finite fields** | Jackson Morris | [arXiv](https://arxiv.org/abs/2509.02786) &middot; [User's Guide](guide_finite_kq_coop.md) | Accepted to [*Algebraic & Geometric Topology*](https://msp.org/soon/coming.php?jpath=agt) |
-| 2 | **On the ring of cooperations for real hermitian K-theory** | Jackson Morris | [arXiv](https://arxiv.org/abs/2506.16672) &middot; [User's Guide](guide_real_kq_coop.md) | Accepted to [*Annals of K-theory*](https://msp.org/soon/coming.php?jpath=akt) |
-| 1 | **Toric double determinantal varieties** | Alexander Blose, [Patricia Klein](https://patriciajklein.github.io/), Owen McGrath, Jackson Morris | [arXiv](https://arxiv.org/abs/2006.04191) | [*Communications in Algebra*](https://www.tandfonline.com/doi/pdf/10.1080/00927872.2021.1887882) (2021) |
-{: .pub-table}
+## Preprints/publications
+
+<div class="pub-list" markdown="1">
+
+<details markdown="1">
+<summary><span class="pub-num">8.</span><strong>An exotic self-map of periodicity 1</strong>
+<span class="pub-authors">Jackson Morris &middot; <em>In preparation</em></span></summary>
+<p class="pub-desc">[Add a short description of this paper.]</p>
+</details>
+
+<details markdown="1">
+<summary><span class="pub-num">7.</span><strong>Motivic K-theory cooperations over the rationals</strong>
+<span class="pub-authors">Jackson Morris, [Sarah Petersen](https://sites.google.com/view/sarahpetersen/home), [Liz Tatum](https://www.sas.rochester.edu/mth/people/faculty/tatum-elizabeth/index.html) &middot; <em>In preparation</em></span></summary>
+<p class="pub-desc">[Add a short description of this paper.]</p>
+</details>
+
+<details markdown="1">
+<summary><span class="pub-num">6.</span><strong>Periodic phenomena in stable motivic homotopy theory</strong>
+<span class="pub-authors">Jackson Morris &middot; [arXiv](https://arxiv.org/abs/2607.18165) &middot; <em>Submitted</em></span></summary>
+<p class="pub-desc">[Add a short description of this paper.]</p>
+</details>
+
+<details markdown="1">
+<summary><span class="pub-num">5.</span><strong>Immersions of $\mathrm{C}_2$-projective spaces via $\mathrm{K}\mathbb{R}$-theory</strong>
+<span class="pub-authors">[Manyi Guo](https://math.washington.edu/people/manyi-guo), Jackson Morris, [Alex Waugh](https://sites.google.com/view/alex-waugh/home), [Albert Yang](https://kclo3-naoh.github.io/) &middot; [arXiv](https://arxiv.org/abs/2604.25260) &middot; <em>Submitted</em></span></summary>
+<p class="pub-desc">[Add a short description of this paper.]</p>
+</details>
+
+<details markdown="1">
+<summary><span class="pub-num">4.</span><strong>Splittings of truncated motivic Brown-Peterson cooperations algebras</strong>
+<span class="pub-authors">Jackson Morris, [Sarah Petersen](https://sites.google.com/view/sarahpetersen/home), [Liz Tatum](https://www.sas.rochester.edu/mth/people/faculty/tatum-elizabeth/index.html) &middot; [arXiv](https://arxiv.org/abs/2509.19542) &middot; [User's Guide](guide_bpgl_splittings.md) &middot; <em>Submitted</em></span></summary>
+<p class="pub-desc">[Add a short description of this paper.]</p>
+</details>
+
+<details markdown="1">
+<summary><span class="pub-num">3.</span><strong>Rings of cooperations for hermitian K-theory over finite fields</strong>
+<span class="pub-authors">Jackson Morris &middot; [arXiv](https://arxiv.org/abs/2509.02786) &middot; [User's Guide](guide_finite_kq_coop.md) &middot; Accepted to [*Algebraic & Geometric Topology*](https://msp.org/soon/coming.php?jpath=agt)</span></summary>
+<p class="pub-desc">[Add a short description of this paper.]</p>
+</details>
+
+<details markdown="1">
+<summary><span class="pub-num">2.</span><strong>On the ring of cooperations for real hermitian K-theory</strong>
+<span class="pub-authors">Jackson Morris &middot; [arXiv](https://arxiv.org/abs/2506.16672) &middot; [User's Guide](guide_real_kq_coop.md) &middot; Accepted to [*Annals of K-theory*](https://msp.org/soon/coming.php?jpath=akt)</span></summary>
+<p class="pub-desc">[Add a short description of this paper.]</p>
+</details>
+
+<details markdown="1">
+<summary><span class="pub-num">1.</span><strong>Toric double determinantal varieties</strong>
+<span class="pub-authors">Alexander Blose, [Patricia Klein](https://patriciajklein.github.io/), Owen McGrath, Jackson Morris &middot; [arXiv](https://arxiv.org/abs/2006.04191) &middot; [*Communications in Algebra*](https://www.tandfonline.com/doi/pdf/10.1080/00927872.2021.1887882) (2021)</span></summary>
+<p class="pub-desc">[Add a short description of this paper.]</p>
+</details>
+
+</div>
 
 
 <h2>Notes</h2>

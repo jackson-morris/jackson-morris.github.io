@@ -68,12 +68,26 @@ I have written user's guides to some of my papers that you can [check out here](
 
 </div>
 
+## Notes
 
-<h2>Notes</h2>
+<div class="pub-list">
 
-* **[<span style="color:#2D2F92">Splittings and the algebraic Atiyah-Hirzebruch spectral sequence</span>](/files/Splittings_and_the_algebraic_Atiyah_Hirzebruch_spectral_sequence%20(2).pdf)** - Expanded set of notes for  preseminar talk at UW.  *Notice: Section 7.1 has an incorrect $E(1)$-comodule structure on the Brown-Gitler comodule.*
-* **[<span style="color:#2D2F92">Galois descent and the Picard group of K-theory</span>](/files/Galois_descent_and_the_Picard_group_of_K_theory%20(2).pdf)** - Notes for a talk in the [UW Student AG Seminar](https://theprismatic.site/seminars/uwag/). *Notice: Example 3.2 and Example 4.1 are incorrect! It is not true that Galois extensions of number fields induce Galois extensions of their rings of integers. This is precisely why Example 4.1 is so hard; I forgot about ramification.*
-* **[<span style="color:#2D2F92">The Adams spectral sequence and Hopf algebroids</span>](/files/The_Adams_spectral_sequence_and_Hopf_algebroids%20(2).pdf)** - Notes for a talk in the [DUBTOP seminar](https://sites.google.com/view/jay-reiter/dubtop-fall-2025?authuser=0). 
+<details>
+<summary><strong><a href="/files/Splittings_and_the_algebraic_Atiyah_Hirzebruch_spectral_sequence%20(2).pdf" style="color:#2D2F92">Splittings and the algebraic Atiyah-Hirzebruch spectral sequence</a></strong></summary>
+<p class="pub-desc">Expanded set of notes for preseminar talk at UW.<br><em>Notice: Section 7.1 has an incorrect E(1)-comodule structure on the Brown-Gitler comodule.</em></p>
+</details>
+
+<details>
+<summary><strong><a href="/files/Galois_descent_and_the_Picard_group_of_K_theory%20(2).pdf" style="color:#2D2F92">Galois descent and the Picard group of K-theory</a></strong></summary>
+<p class="pub-desc">Notes for a talk in the <a href="https://theprismatic.site/seminars/uwag/">UW Student AG Seminar</a>.<br><em>Notice: Example 3.2 and Example 4.1 are incorrect! It is not true that Galois extensions of number fields induce Galois extensions of their rings of integers. This is precisely why Example 4.1 is so hard; I forgot about ramification.</em></p>
+</details>
+
+<details>
+<summary><strong><a href="/files/The_Adams_spectral_sequence_and_Hopf_algebroids%20(2).pdf" style="color:#2D2F92">The Adams spectral sequence and Hopf algebroids</a></strong></summary>
+<p class="pub-desc">Notes for a talk in the <a href="https://sites.google.com/view/jay-reiter/dubtop-fall-2025?authuser=0">DUBTOP seminar</a>.</p>
+</details>
+
+</div>
 
 <h2>Selected recent talks</h2>
 

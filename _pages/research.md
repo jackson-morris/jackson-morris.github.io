@@ -73,6 +73,11 @@ I have written user's guides to some of my papers that you can [check out here](
 <div class="pub-list">
 
 <details>
+<summary><strong><a href="/files/Higher_Real_K_theories__Redshift__and_Blueshift.pdf" style="color:#2D2F92">Higher Real K-theory, redshift, and blueshift</a></strong></summary>
+<p class="pub-desc">Expanded set of notes for DUBTOP seminar talk.</em></p>
+</details>
+
+<details>
 <summary><strong><a href="/files/Splittings_and_the_algebraic_Atiyah_Hirzebruch_spectral_sequence%20(2).pdf" style="color:#2D2F92">Splittings and the algebraic Atiyah-Hirzebruch spectral sequence</a></strong></summary>
 <p class="pub-desc">Expanded set of notes for preseminar talk at UW.<br><em>Notice: Section 7.1 has an incorrect E(1)-comodule structure on the Brown-Gitler comodule.</em></p>
 </details>

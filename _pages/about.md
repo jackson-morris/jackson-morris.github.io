@@ -24,7 +24,9 @@ My [research interests](research.md) are in motivic and chromatic homotopy theor
 
 <h2>Upcoming travel</h2>
 
-[Motivic Homotopy Theory: Connections and Applications](https://www.slmath.org/programs/384), SLMath, Berkeley, CA - Fall 2026
+[NMSU Topology Seminar](https://math.nmsu.edu/activities/geometry-and-topology-calendar.html), Las Cruces, NM - September 2026
+
+[Motivic Homotopy Theory: Connections and Applications](https://www.slmath.org/programs/384), SLMath, Berkeley, CA - October 2026
 
 [AMS Sectional: Computational Homotopy Theory](https://www.ams.org/meetings/sectional/2335_program.html), Arizona State University, Tempe, AZ - November 2026
 

@@ -19,9 +19,9 @@ I have written user's guides to some of my papers that you can [check out here](
 <div class="pub-list">
 
 <details>
-<summary><span class="pub-num">8.</span><strong>An exotic self-map of periodicity 1</strong>
+<summary><span class="pub-num">8.</span><strong>C-motivic periodic self-maps</strong>
 <span class="pub-authors">Jackson Morris &middot; <em>In preparation</em></span></summary>
-<p class="pub-desc">We construct a ℂ-motivic spectrum wY with a w1-self-map of periodicity 1. The construction of wY and its self map is inspired by the Davis and Mahowald v1-self-map on the spectrum Y, and it has similar cohomological properties over the motivic Steenrod algebra. The spectrum wY also participates in various splittings of C-motivic spectra. We conclude with an application of recent techniques of Bhattacharya-Bobkova-Quigley and use wY to produce w1-periodic classes in the ℂ-motivic stable stems.</p>
+<p class="pub-desc">We construct a plethora of finite motivic spectra and identify their minimal periodic self-maps.</p>
 </details>
 
 <details>

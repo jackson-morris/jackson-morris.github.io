@@ -5,11 +5,11 @@ permalink: /research/
 author_profile: true
 ---
 
-My research interests are in homotopy theory, motivated from the chromatic perspective, and the tools I use are often computational. Here are some things that I have been interested in recently.
+My research interests are in homotopy theory and the tools I use are often computational. Here are some things that I have been interested in recently.
 * periodicity in stable motivic homotopy theory
 * generalized Adams spectral sequences
-* redshift and blueshift
-* motivic invariants over more general base schemes
+* stable splittings
+* stunted projective spaces
 
 I have written user's guides to some of my papers that you can [check out here](usersguides.md).
 

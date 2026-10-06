@@ -19,9 +19,9 @@ I have written user's guides to some of my papers that you can [check out here](
 <div class="pub-list">
 
 <details>
-<summary><span class="pub-num">8.</span><strong>C-motivic periodic self-maps</strong>
+<summary><span class="pub-num">8.</span><strong>A C-motivic w1-self-map of periodicity 1</strong>
 <span class="pub-authors">Jackson Morris &middot; <em>In preparation</em></span></summary>
-<p class="pub-desc">We construct a plethora of finite motivic spectra and identify their minimal periodic self-maps.</p>
+<p class="pub-desc">We construct a w1-self-map of periodicity one.</p>
 </details>
 
 <details>

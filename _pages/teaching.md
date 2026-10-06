@@ -4,7 +4,7 @@ title: "Teaching"
 permalink: /teaching/
 author_profile: true
 ---
-I am not currently teaching.
+In Spring 2027, I am teaching Math 2410 - *Methods of linear algebra* and Math 2610/5610 - *Ordinary differential equations*.
 
 <h2>Lead instructor</h2>
 

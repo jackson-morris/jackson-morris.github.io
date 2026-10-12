@@ -96,14 +96,14 @@ I have written user's guides to some of my papers that you can [check out here](
 
 <h2>Selected recent talks</h2>
 
+* *C-motivic periodic self-maps*, [eCHT Research Seminar](https://echtorc.github.io/research-seminar/), September 2026
+* *C-motivic periodic self-maps*, NMSU Topology Seminar, September 2026
 * *Higher Witt K-theories*, [YTM](https://www.math.ku.dk/english/calendar/events/ytm26/), June 2026.
 * *Higher Witt K-theories*, [Cascade Topology Seminar](https://sites.google.com/view/cascadetopologyseminar/cts_spring26), May 2026. [Slides](/files/CASCADE2026.pdf)
-* *Cooperations in motivic homotopy theory*, Thesis defense, May 2026. [Slides](/files/THESISDEFENSE_copy.pdf)
 * *Splittings and periodicity in motivic homotopy theory*, University of Washington Topology Seminar, February 2026
 * *Cooperations in motivic homotopy theory*, [JMM](https://meetings.ams.org/math/jmm2026/meetingapp.cgi/Session/13257), January 2026. [Slides](/files/JMM%202025%20-%20cooperations%20in%20motivic%20homotopy%20theory%20SHORT.pdf)
 * *Splittings and cooperations in motivic homotopy theory*, University of Virginia Topology Seminar, November 2025
 * *Splittings and cooperations in motivic homotopy theory*, University of Kentucky Topology Seminar, November 2025
-* *Higher Adams differentials and hidden extensions*, [eCHT Secondary Steenrod Algebra Reading Seminar](https://s.wayne.edu/echt/echt-reading-seminars/echt-secondary-steenrod-algebra-reading-seminar-fall-2025/), November 2025
 * *Splittings and cooperations in motivic homotopy theory*, Duke University Geometry and Topology Seminar, October 2025
 * *Splittings of truncated motivic Brown-Peterson cooperations algebras*, University of Colorado Boulder Homotopy Theory Seminar, September 2025
 

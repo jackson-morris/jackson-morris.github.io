@@ -21,7 +21,7 @@ I have written user's guides to some of my papers that you can [check out here](
 <details>
 <summary><span class="pub-num">8.</span><strong>A C-motivic w1-self-map of periodicity 1</strong>
 <span class="pub-authors">Jackson Morris &middot; <em>In preparation</em></span></summary>
-<p class="pub-desc">We construct a w1-self-map of periodicity one.</p>
+<p class="pub-desc">We construct a w1-self-map of periodicity one on the C-motivic analogue of double of Davis and Mahowald's spectrum Y, denoted DY. The cofiber of this self-map is a realization of DA(1), the double of the subalgebra A(1) of the C-motivic Steenrod algebra.</p>
 </details>
 
 <details>

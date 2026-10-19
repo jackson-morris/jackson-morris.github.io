@@ -19,15 +19,15 @@ I have written user's guides to some of my papers that you can [check out here](
 <div class="pub-list">
 
 <details>
-<summary><span class="pub-num">8.</span><strong> A C-motivic w1-self-map of periodicity 1</strong>
-<span class="pub-authors">Jackson Morris &middot; <em>In preparation</em></span></summary>
-<p class="pub-desc">We construct a w1-self-map of periodicity one on the C-motivic analogue of double of Davis and Mahowald's spectrum Y, denoted DY. The cofiber of this self-map is a realization of DA(1), the double of the subalgebra A(1) of the C-motivic Steenrod algebra.</p>
+<summary><span class="pub-num">8.</span><strong> Motivic K-theory cooperations over the rationals</strong>
+<span class="pub-authors">Jackson Morris, <a href="https://sites.google.com/view/sarahpetersen/home">Sarah Petersen</a>, <a href="https://www.sas.rochester.edu/mth/people/faculty/tatum-elizabeth/index.html">Liz Tatum</a> &middot; <em>In preparation</em></span></summary>
+<p class="pub-desc">We compute the cooperation algebras for motivic integral cohomology, algebraic K-theory, and hermitian K-theory over all p-adic fields and the rationals. We also construct spectrum-level splittings for the motivic integral cohomology and algebraic K-theory cooperations, and provide a partial decomposition of the hermitian K-theory cooperations. </p>
 </details>
 
 <details>
-<summary><span class="pub-num">7.</span><strong> Motivic K-theory cooperations over the rationals</strong>
-<span class="pub-authors">Jackson Morris, <a href="https://sites.google.com/view/sarahpetersen/home">Sarah Petersen</a>, <a href="https://www.sas.rochester.edu/mth/people/faculty/tatum-elizabeth/index.html">Liz Tatum</a> &middot; <em>In preparation</em></span></summary>
-<p class="pub-desc">We compute the cooperation algebras for motivic integral cohomology, algebraic K-theory, and hermitian K-theory over all p-adic fields and the rationals. We also construct spectrum-level splittings for the motivic integral cohomology and algebraic K-theory cooperations, and provide a partial decomposition of the hermitian K-theory cooperations. </p>
+<summary><span class="pub-num">7.</span><strong> A C-motivic w1-self-map of periodicity 1</strong>
+<span class="pub-authors">Jackson Morris &middot; <a href="https://arxiv.org/abs/2610.22651">arXiv</a> &middot; <em>Submitted</em></span></summary>
+<p class="pub-desc">We construct a w1-self-map of periodicity one on the C-motivic analogue of double of Davis and Mahowald's spectrum Y, denoted DY. The cofiber of this self-map is a realization of DA(1), the double of the subalgebra A(1) of the C-motivic Steenrod algebra.</p>
 </details>
 
 <details>

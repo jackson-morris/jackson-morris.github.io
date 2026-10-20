@@ -96,6 +96,7 @@ I have written user's guides to some of my papers that you can [check out here](
 
 <h2>Selected recent talks</h2>
 
+* *Motivic K-theory cooperations over the rationals*, [Motivic Homotopy Theory: Connections and applications](https://www.slmath.org/workshops/1183), October 2026
 * *C-motivic periodic self-maps*, [eCHT Research Seminar](https://echtorc.github.io/research-seminar/), September 2026
 * *C-motivic periodic self-maps*, NMSU Topology Seminar, September 2026
 * *Higher Witt K-theories*, [YTM](https://www.math.ku.dk/english/calendar/events/ytm26/), June 2026.

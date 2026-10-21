@@ -56,13 +56,13 @@ I have written user's guides to some of my papers that you can [check out here](
 
 <details>
 <summary><span class="pub-num">2.</span><strong> On the ring of cooperations for real hermitian K-theory</strong>
-<span class="pub-authors">Jackson Morris &middot; <a href="https://arxiv.org/abs/2506.16672">arXiv</a> &middot; <a href="guide_real_kq_coop.md">User's Guide</a> &middot; <em><a href="https://msp.org/akt/2026/11-4/p03.xhtml">Annals of K-theory</a></em> (2026)</span></summary>
+<span class="pub-authors">Jackson Morris &middot; <a href="https://arxiv.org/abs/2506.16672">arXiv</a> &middot; <a href="guide_real_kq_coop.md">User's Guide</a> &middot; <em><a href="https://msp.org/akt/2026/11-4/p03.xhtml"style="color:#2D2F92">Annals of K-theory</a></em> (2026)</span></summary>
 <p class="pub-desc">Let kq denote the very effective cover of the motivic hermitian K-theory spectrum. We analyze the ring of cooperations for kq in the stable motivic homotopy category SH(ℝ), giving a full description in terms of Brown–Gitler comodules. To do this, we decompose the E2-page of the motivic Adams spectral sequence and show that it must collapse. The description of the E2-page is accomplished by a series of algebraic Atiyah–Hirzebruch spectral sequences which converge to the summands of the E2-page. Along the way, we prove a splitting result for the very effective symplectic K-theory ksp over any base field of characteristic not two.</p>
 </details>
 
 <details>
 <summary><span class="pub-num">1.</span><strong> Toric double determinantal varieties</strong>
-<span class="pub-authors">Alexander Blose, <a href="https://patriciajklein.github.io/">Patricia Klein</a>, Owen McGrath, Jackson Morris &middot; <a href="https://arxiv.org/abs/2006.04191">arXiv</a> &middot; <em><a href="https://www.tandfonline.com/doi/pdf/10.1080/00927872.2021.1887882">Communications in Algebra</a></em> (2021)</span></summary>
+<span class="pub-authors">Alexander Blose, <a href="https://patriciajklein.github.io/">Patricia Klein</a>, Owen McGrath, Jackson Morris &middot; <a href="https://arxiv.org/abs/2006.04191">arXiv</a> &middot; <em><a href="https://www.tandfonline.com/doi/pdf/10.1080/00927872.2021.1887882"style="color:#2D2F92">Communications in Algebra</a></em> (2021)</span></summary>
 <p class="pub-desc">We examine Li’s double determinantal varieties in the special case that they are toric. We recover from the general double determinantal varieties case, via a more elementary argument, that they are irreducible and show that toric double determinantal varieties are smooth. We use this framework to give a straighforward formula for their dimension. Finally, we use the smallest nontrivial toric double determinantal variety to provide some empirical evidence concerning an open problem in local algebra.</p>
 </details>
 

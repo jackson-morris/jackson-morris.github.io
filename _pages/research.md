@@ -62,7 +62,7 @@ I have written user's guides to some of my papers that you can [check out here](
 
 <details>
 <summary><span class="pub-num">1.</span><strong> Toric double determinantal varieties</strong>
-<span class="pub-authors">Alexander Blose, <a href="https://patriciajklein.github.io/">Patricia Klein</a>, Owen McGrath, Jackson Morris &middot; <a href="https://arxiv.org/abs/2006.04191">arXiv</a> &middot; <em><a href="https://www.tandfonline.com/doi/pdf/10.1080/00927872.2021.1887882">Communications in Algebra</a></em> (2021)</span></summary>
+<span class="pub-authors">Alexander Blose, <a href="https://patriciajklein.github.io/">Patricia Klein</a>, Owen McGrath, Jackson Morris &middot; <a href="https://arxiv.org/abs/2006.04191">arXiv</a> &middot; <em><a href="https://www.tandfonline.com/doi/pdf/10.1080/00927872.2021.1887882"><b style="color:#2D2F92">Communications in Algebra</b></a></em> (2021)</span></summary>
 <p class="pub-desc">We examine Li’s double determinantal varieties in the special case that they are toric. We recover from the general double determinantal varieties case, via a more elementary argument, that they are irreducible and show that toric double determinantal varieties are smooth. We use this framework to give a straighforward formula for their dimension. Finally, we use the smallest nontrivial toric double determinantal variety to provide some empirical evidence concerning an open problem in local algebra.</p>
 </details>
 

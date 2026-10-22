@@ -20,7 +20,7 @@ I have written user's guides to some of my papers that you can [check out here](
 
 <details>
 <summary><span class="pub-num">8.</span><strong> Motivic K-theory cooperations over the rationals</strong>
-<span class="pub-authors">Jackson Morris, <a href="https://sites.google.com/view/sarahpetersen/home">Sarah Petersen</a>, <a href="https://www.sas.rochester.edu/mth/people/faculty/tatum-elizabeth/index.html">Liz Tatum</a> &middot; <em>In preparation</em></span></summary>
+<span class="pub-authors">Jackson Morris, <a href="https://sites.google.com/view/sarahpetersen/home">Sarah Petersen</a>, <a href="https://www.sas.rochester.edu/mth/people/faculty/tatum-elizabeth/index.html">Liz Tatum</a> &middot; <em>In preparation &middot;</em><a href="https://vimeo.com/1238088888?fl=pl&fe=vl">Talk</a></span></summary>
 <p class="pub-desc">We compute the cooperation algebras for motivic integral cohomology, algebraic K-theory, and hermitian K-theory over all p-adic fields and the rationals. We also construct spectrum-level splittings for the motivic integral cohomology and algebraic K-theory cooperations, and provide a partial decomposition of the hermitian K-theory cooperations. </p>
 </details>
 

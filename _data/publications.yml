@@ -27,7 +27,7 @@
     - label: arXiv:2610.22651
       url: https://arxiv.org/abs/2610.22651
   abstract: >-
-    We construct a $w_1$-self-map of periodicity 1 on the $\mathbb{C}$-motivic analogue of double of Davis and Mahowald's spectrum $\mathrm{Y}$, denoted $\mathrm{DY}$. The cofiber of this self-map is a realization of $\mathrm{DA}(1)$, the double of the subalgebra $\mathcal{A}(1)$ of the $\mathbb{C}$-motivic Steenrod algebra.
+    We construct a $w_1$-self-map of periodicity 1 on the $\mathbb{C}$-motivic analogue of double of Davis and Mahowald's spectrum $\mathrm{Y}$, denoted $\mathrm{DY}$. The cofiber of this self-map is a realization of $\mathrm{DA}(1)$, the double of the subalgebra $A(1)$ of the $\mathbb{C}$-motivic Steenrod algebra.
 
 - number: 6
   title: Periodic phenomena in stable motivic homotopy theory

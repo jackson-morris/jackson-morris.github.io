@@ -16,7 +16,9 @@ I have written user's guides to some of my papers that you can [check out here](
 
 ## Preprints/publications
 
-<div class="pub-list">
+{% include publications.html %}
+
+<!-- <div class="pub-list">
 
 <details>
 <summary><span class="pub-num">8.</span><strong> Motivic K-theory cooperations over the rationals</strong>
@@ -66,7 +68,7 @@ I have written user's guides to some of my papers that you can [check out here](
 <p class="pub-desc">We examine Li’s double determinantal varieties in the special case that they are toric. We recover from the general double determinantal varieties case, via a more elementary argument, that they are irreducible and show that toric double determinantal varieties are smooth. We use this framework to give a straighforward formula for their dimension. Finally, we use the smallest nontrivial toric double determinantal variety to provide some empirical evidence concerning an open problem in local algebra.</p>
 </details>
 
-</div>
+</div> -->
 
 ## Notes
 

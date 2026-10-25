@@ -42,7 +42,7 @@
     In this survey, we study how tools from stable homotopy theory have manifested and impacted motivic homotopy theory. In particular, we discuss various motivic Adams spectral sequences, periodicity in the motivic stable homotopy groups of spheres, and synthetic spectra. We conclude with many problems for future investigation.
 
 - number: 5
-  title: Immersions of $C_2$-projective spaces via $\textup{K}\mathbb{R}$-theory
+  title: Immersions of $C_2$-projective spaces via $\mathrm{K}\mathbb{R}$-theory
   kind: preprint
   status: Submitted
   authors:
@@ -57,7 +57,7 @@
     - label: arXiv:2604.25260
       url: https://arxiv.org/abs/2604.25260
   abstract: >-
-    We compute the Atiyah Real K-theory of C2-equivariant projective spaces and construct immersions of such spaces into multiples of the regular representation. These computations are made tractable by the recent geometric filtration of equivariant projective spaces due to Bhattacharya-Waugh-Zeng-Zou, together with a variant of the localized slice spectral sequence introduced by Meier-Shi-Zeng. As an immediate corollary of these computations, we obtain an equivariant analogue of James periodicity.
+    We compute the Atiyah Real K-theory of $C_2$-equivariant projective spaces and construct immersions of such spaces into multiples of the regular representation. These computations are made tractable by the recent geometric filtration of equivariant projective spaces due to Bhattacharya-Waugh-Zeng-Zou, together with a variant of the localized slice spectral sequence introduced by Meier-Shi-Zeng. As an immediate corollary of these computations, we obtain an equivariant analogue of James periodicity.
 
 - number: 4
   title: Splittings of truncated motivic Brown-Peterson cooperations algebras
@@ -75,7 +75,7 @@
     - label: User's Guide
       url: https://jackson-morris.github.io/guides/bpgl1cooperations
   abstract: >-
-    We construct spectrum-level splittings of BPGL⟨1⟩∧BPGL⟨1⟩ at all primes p, where BPGL⟨1⟩ is the first truncated motivic Brown--Peterson spectrum. Classically, BP⟨1⟩∧BP⟨1⟩ was first described by Kane and Mahowald in terms of Brown-Gitler spectra. This splitting was subsequently reinterpreted by Lellman and Davis-Gitler-Mahowald in terms of Adams covers. In this paper, we give motivic lifts of these splittings in terms of Adams covers, over the base fields ℂ,ℝ, and 𝔽q, where 𝔽q≠p. As an application, we compute the E1-page of the BPGL⟨1⟩-based Adams spectral sequence as a module over BPGL⟨1⟩, both in homotopy and in terms of motivic spectra. We also record analogous splittings for BPGL⟨0⟩∧BPGL⟨0⟩.
+    We construct spectrum-level splittings of $\mathrm{BPGL}\langle 1 \rangle \wedge \mathrm{BPGL}\langle 1 \rangle$ at all primes $p$, where $\mathrm{BPGL}\langle 1 \rangle$ is the first truncated motivic Brown--Peterson spectrum. Classically, $\mathrm{BP}\langle 1 \rangle \wedge \mathrm{BP}\langle 1 \rangle$ was first described by Kane and Mahowald in terms of Brown-Gitler spectra. This splitting was subsequently reinterpreted by Lellman and Davis-Gitler-Mahowald in terms of Adams covers. In this paper, we give motivic lifts of these splittings in terms of Adams covers, over the base fields $\mathbb{C}$,$\mathbb{R}$, and $\mathbb{F}_q$, where $\mathrm{char}(\mathbb{F}_q) \neq p$. As an application, we compute the $\mathrm{E}_1$-page of the $\mathrm{BPGL}\langle 1 \rangle$-based Adams spectral sequence as a module over $\mathrm{BPGL}\langle 1 \rangle$, both in homotopy and in terms of motivic spectra. We also record analogous splittings for $\mathrm{BPGL}\langle 0 \rangle \wedge \mathrm{BPGL}\langle 0 \rangle$.
 
 - number: 3
   title: Rings of cooperations for hermitian K-theory over finite fields

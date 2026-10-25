@@ -44,6 +44,13 @@
   }
 }
 
+.pub__status--published {
+  padding: 0.05em 0.6em;
+  color: #fff;
+  background: #000;
+  border-radius: 4px;
+}
+
 .pub__abstract {
   summary {
     display: inline-flex;

@@ -18,7 +18,7 @@
     We compute the cooperation algebras for motivic integral cohomology, algebraic K-theory, and hermitian K-theory over all p-adic fields and the rationals. We also construct spectrum-level splittings for the motivic integral cohomology and algebraic K-theory cooperations, and provide a partial decomposition of the hermitian K-theory cooperations.
 
 - number: 7
-  title: A C-motivic w1-self-map of periodicity 1
+  title: A $\mathbb{C}$-motivic $w_1$-self-map of periodicity 1
   kind: preprint
   status: Submitted
   authors:
@@ -27,7 +27,7 @@
     - label: arXiv:2610.22651
       url: https://arxiv.org/abs/2610.22651
   abstract: >-
-    We construct a w1-self-map of periodicity one on the C-motivic analogue of double of Davis and Mahowald's spectrum Y, denoted DY. The cofiber of this self-map is a realization of DA(1), the double of the subalgebra A(1) of the C-motivic Steenrod algebra.
+    We construct a $w_1$-self-map of periodicity 1 on the $\mathbb{C}$-motivic analogue of double of Davis and Mahowald's spectrum $\mathrm{Y}$, denoted $\mathrm{DY}$. The cofiber of this self-map is a realization of $\mathrm{DA}(1)$, the double of the subalgebra $\mathcal{A}(1)$ of the $\mathbb{C}$-motivic Steenrod algebra.
 
 - number: 6
   title: Periodic phenomena in stable motivic homotopy theory
@@ -91,7 +91,7 @@
     - label: User's Guide
       url: https://jackson-morris.github.io/guides/finitekqcooperations
   abstract: >-
-    We compute the ring of cooperations for the very effective hermitian K-theory over all finite fields 𝔽q where char(𝔽q)≠2. To do this, we use the motivic Adams spectral sequence and show that all differentials are determined by the integral motivic cohomology of 𝔽q. As an application, we compute the E1-page of the kq-resolution.
+    We compute the ring of cooperations for the very effective hermitian K-theory over all finite fields $\mathbb{F}_q$ where $\mathrm{char}(\mathbb{F}_q)\neq 2$. To do this, we use the motivic Adams spectral sequence and show that all differentials are determined by the integral motivic cohomology of $\mathbb{F}_q$. As an application, we compute the $\mathrm{E}_1$-page of the $\mathrm{kq}$-resolution.
 
 - number: 2
   title: On the ring of cooperations for real hermitian K-theory
@@ -108,7 +108,7 @@
     - label: User's Guide
       url: https://jackson-morris.github.io/guides/realkqcooperations
   abstract: >-
-    Let kq denote the very effective cover of the motivic hermitian K-theory spectrum. We analyze the ring of cooperations for kq in the stable motivic homotopy category SH(ℝ), giving a full description in terms of Brown–Gitler comodules. To do this, we decompose the E2-page of the motivic Adams spectral sequence and show that it must collapse. The description of the E2-page is accomplished by a series of algebraic Atiyah–Hirzebruch spectral sequences which converge to the summands of the E2-page. Along the way, we prove a splitting result for the very effective symplectic K-theory ksp over any base field of characteristic not two.
+    Let $\mathrm{kq}$ denote the very effective cover of the motivic hermitian K-theory spectrum. We analyze the ring of cooperations for $\mathrm{kq}$ in the stable motivic homotopy category $\mathrm{SH}(\mathbb{R})$, giving a full description in terms of Brown–Gitler comodules. To do this, we decompose the $\mathrm{E}_2$-page of the motivic Adams spectral sequence and show that it must collapse. The description of the $\mathrm{E}_2$-page is accomplished by a series of algebraic Atiyah–Hirzebruch spectral sequences which converge to the summands of the $\mathrm{E}_2$-page. Along the way, we prove a splitting result for the very effective symplectic K-theory $\mathrm{ksp}$ over any base field of characteristic not two.
 
 - number: 1
   title: Toric double determinantal varieties

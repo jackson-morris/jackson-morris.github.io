@@ -24,7 +24,7 @@
   authors:
     - name: Jackson Morris
   links:
-    - label: arXiv
+    - label: arXiv:2610.22651
       url: https://arxiv.org/abs/2610.22651
   abstract: >-
     We construct a w1-self-map of periodicity one on the C-motivic analogue of double of Davis and Mahowald's spectrum Y, denoted DY. The cofiber of this self-map is a realization of DA(1), the double of the subalgebra A(1) of the C-motivic Steenrod algebra.
@@ -36,7 +36,7 @@
   authors:
     - name: Jackson Morris
   links:
-    - label: arXiv
+    - label: arXiv:2607.18165
       url: https://arxiv.org/abs/2607.18165
   abstract: >-
     In this survey, we study how tools from stable homotopy theory have manifested and impacted motivic homotopy theory. In particular, we discuss various motivic Adams spectral sequences, periodicity in the motivic stable homotopy groups of spheres, and synthetic spectra. We conclude with many problems for future investigation.
@@ -54,7 +54,7 @@
     - name: Albert Yang
       url: https://kclo3-naoh.github.io/
   links:
-    - label: arXiv
+    - label: arXiv:2604.25260
       url: https://arxiv.org/abs/2604.25260
   abstract: >-
     We compute the Atiyah Real K-theory of C2-equivariant projective spaces and construct immersions of such spaces into multiples of the regular representation. These computations are made tractable by the recent geometric filtration of equivariant projective spaces due to Bhattacharya-Waugh-Zeng-Zou, together with a variant of the localized slice spectral sequence introduced by Meier-Shi-Zeng. As an immediate corollary of these computations, we obtain an equivariant analogue of James periodicity.
@@ -70,10 +70,10 @@
     - name: Liz Tatum
       url: https://www.sas.rochester.edu/mth/people/faculty/tatum-elizabeth/index.html
   links:
-    - label: arXiv
+    - label: arXiv:2509.19542
       url: https://arxiv.org/abs/2509.19542
     - label: User's Guide
-      url: https://jackson-morris.github.io/research/guide_bpgl_splittings.md
+      url: https://jackson-morris.github.io/guides/bpgl1cooperations
   abstract: >-
     We construct spectrum-level splittings of BPGL⟨1⟩∧BPGL⟨1⟩ at all primes p, where BPGL⟨1⟩ is the first truncated motivic Brown--Peterson spectrum. Classically, BP⟨1⟩∧BP⟨1⟩ was first described by Kane and Mahowald in terms of Brown-Gitler spectra. This splitting was subsequently reinterpreted by Lellman and Davis-Gitler-Mahowald in terms of Adams covers. In this paper, we give motivic lifts of these splittings in terms of Adams covers, over the base fields ℂ,ℝ, and 𝔽q, where 𝔽q≠p. As an application, we compute the E1-page of the BPGL⟨1⟩-based Adams spectral sequence as a module over BPGL⟨1⟩, both in homotopy and in terms of motivic spectra. We also record analogous splittings for BPGL⟨0⟩∧BPGL⟨0⟩.
 
@@ -86,10 +86,10 @@
   authors:
     - name: Jackson Morris
   links:
-    - label: arXiv
+    - label: arXiv:2509.02786
       url: https://arxiv.org/abs/2509.02786
     - label: User's Guide
-      url: https://jackson-morris.github.io/research/guide_finite_kq_coop.md
+      url: https://jackson-morris.github.io/guides/finitekqcooperations
   abstract: >-
     We compute the ring of cooperations for the very effective hermitian K-theory over all finite fields 𝔽q where char(𝔽q)≠2. To do this, we use the motivic Adams spectral sequence and show that all differentials are determined by the integral motivic cohomology of 𝔽q. As an application, we compute the E1-page of the kq-resolution.
 
@@ -103,10 +103,10 @@
   authors:
     - name: Jackson Morris
   links:
-    - label: arXiv
+    - label: arXiv:2506.16672
       url: https://arxiv.org/abs/2506.16672
     - label: User's Guide
-      url: https://jackson-morris.github.io/research/guide_real_kq_coop.md
+      url: https://jackson-morris.github.io/guides/realkqcooperations
   abstract: >-
     Let kq denote the very effective cover of the motivic hermitian K-theory spectrum. We analyze the ring of cooperations for kq in the stable motivic homotopy category SH(ℝ), giving a full description in terms of Brown–Gitler comodules. To do this, we decompose the E2-page of the motivic Adams spectral sequence and show that it must collapse. The description of the E2-page is accomplished by a series of algebraic Atiyah–Hirzebruch spectral sequences which converge to the summands of the E2-page. Along the way, we prove a splitting result for the very effective symplectic K-theory ksp over any base field of characteristic not two.
 
@@ -124,7 +124,7 @@
     - name: Owen McGrath
     - name: Jackson Morris
   links:
-    - label: arXiv
+    - label: arXiv:2006.04191
       url: https://arxiv.org/abs/2006.04191
   abstract: >-
     We examine Li’s double determinantal varieties in the special case that they are toric. We recover from the general double determinantal varieties case, via a more elementary argument, that they are irreducible and show that toric double determinantal varieties are smooth. We use this framework to give a straighforward formula for their dimension. Finally, we use the smallest nontrivial toric double determinantal variety to provide some empirical evidence concerning an open problem in local algebra.

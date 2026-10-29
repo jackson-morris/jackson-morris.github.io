@@ -11,6 +11,8 @@
 \usepackage{comment}
 \usepackage{tabularx}
 \usepackage[dvipsnames]{xcolor}
+\definecolor{cvgrey}{gray}{0.45}
+\newcommand{\grey}[1]{\textcolor{cvgrey}{#1}}
 
 
 
@@ -34,7 +36,7 @@
 
 \newenvironment{rSection}[1]{ % 1 input argument - section name
   \medskip
-  \MakeUppercase{\bf #1} % Section title
+  {\large\scshape\textcolor{Blue}{#1}} % Section title (small caps: all caps, initial capitals slightly larger)
   \smallskip
   \hrule % Horizontal line
   \begin{list}{}{ % List for each individual item in the section
@@ -48,45 +50,47 @@
 \begin{document}
 \flushleft
 \parindent=0pt 
-\begin{center}
-    \textbf{\LARGE JACKSON
-MORRIS} \normalsize \\
-\vspace{2mm}
-CURRICULUM VITAE\\
-\vspace{5mm}
-% Department of Mathematics\\
-Simon Laufer Mathematical Science Institute\\
-Berkeley, CA 94720 \textbar \ Office 303\\
-\textcolor{Blue}{\href{mailto:jacksonmorris1999@gmail.com}{jacksonmorris1999@gmail.com}}
-\textbar\ 
-\textcolor{purple!90!black}{\url{jackson-morris.github.io}}
-\end{center}\
+\begin{minipage}[b]{0.45\textwidth}
+    \raggedright
+    {\fontsize{26}{30}\selectfont\textcolor{Blue}{Jackson Morris}}\\[2mm]
+    {\large\grey{Curriculum vitae}}
+\end{minipage}%
+\hfill
+\begin{minipage}[b]{0.53\textwidth}
+    \raggedleft
+    \textcolor{Blue}{\href{mailto:jacksonmorris1999@gmail.com}{jacksonmorris1999@gmail.com}}\\
+    \textcolor{purple!90!black}{\url{jackson-morris.github.io}}\\
+    % Department of Mathematics\\
+    Simon Laufer Mathematical Sciences Institute\\
+    Berkeley, CA 94720 \textbar \ Office 303
+\end{minipage}
+\vspace{3mm}
 
 \begin{rSection}{Employment}
 \myarray{
     \textbf{Vanderbilt University} & \footnotesize Nasvhille, TN\\
-    Postdoctoral Scholar & \footnotesize \emph{2027-2029}
+    Postdoctoral Scholar & \footnotesize 2027-2029
 }
 
 \myarray{
     \textbf{Simon Laufer Mathematical Sciences Institute} & \footnotesize Berkeley, CA \\
-    Postdoctoral Scholar & \footnotesize \emph{Fall 2026}\\
-    \emph{-Program}: Motivic Homotopy Theory: Connections and Applications
+    Postdoctoral Scholar & \footnotesize Fall 2026\\
+    \grey{\emph{Program}: Motivic Homotopy Theory: Connections and Applications}
 }
 \end{rSection}
 
 \begin{rSection}{Education}
 \myarray{
     \textbf{University of Washington} & \footnotesize {Seattle, WA}\\
-    Ph.D. in Mathematics & \footnotesize\emph{2021-2026} \\
-    \emph{-Advisors}:\ Kyle Ormsby and John Palmieri\\
-    \emph{-Thesis title}: Cooperations in motivic homotopy theory\\
+    Ph.D. in Mathematics & \footnotesize 2021-2026 \\
+    \grey{\emph{Advisors}:\ Kyle Ormsby and John Palmieri}\\
+    \grey{\emph{Thesis title}: Cooperations in motivic homotopy theory}\\
     M.S. in Mathematics 
 }
 
 \myarray{
     \textbf{University of Kentucky} & \footnotesize {Lexington, KY}\\
-    B.S. in Mathematics \textit{magna cum laude}  &     \footnotesize \textit{2017-2020}\\
+    B.S. in Mathematics \textit{magna cum laude}  &     \footnotesize 2017-2020\\
 }
 \end{rSection}
 
@@ -111,31 +115,31 @@ Berkeley, CA 94720 \textbar \ Office 303\\
     % \item[11.] \emph{Diachromatic blueshift}, joint with Kyle Ormsby. In preparation.
     \item[10.] \textbf{Derived Galois and fracture models for cellular motivic spectra over $\mathbb{Q}_2$.}\\
     Joint with Luca De Paulis, Andrea Figini, Marco Giustetto, and Paul Arne \O stv\ae r.\\
-    In preparation. 
+    \grey{In preparation.}
     \item[9.] \textbf{Algebraic $K$-theory of Stiefel varieties.}\\
     Joint with Sebastian Gant.\\
-    In preparation.
+    \grey{In preparation.}
     \item[8.] \textbf{Motivic K-theory cooperations over the rationals.}\\
     Joint with Sarah Petersen and Elizabeth Tatum.\\
-    In preparation.
+    \grey{In preparation.}
     \item[7.] \textbf{A $\mathbb{C}$-motivic $w_1$-self-map of periodicity 1.}\\
-    Submitted. Available at \textcolor{purple!90!black}{\url{https://arxiv.org/abs/2610.22651}}
+    \grey{Submitted. Available at \textcolor{purple!90!black}{\url{https://arxiv.org/abs/2610.22651}}}
     \item[6.] \textbf{Periodic phenomena in stable motivic homotopy theory.}\\
-    Submitted. Available at \textcolor{purple!90!black}{\url{https://arxiv.org/abs/2607.18165}}
+    \grey{Submitted. Available at \textcolor{purple!90!black}{\url{https://arxiv.org/abs/2607.18165}}}
     \item[5.] \textbf{Immersions of $C_2$-projective spaces via $\textup{K}\mathbb{R}$-theory.}\\
     Joint with Manyi Guo, Alex Waugh, and Albert Jinghui Yang.\\
-    Submitted. Available at \textcolor{purple!90!black}{\url{https://arxiv.org/abs/2604.25260}}.
+    \grey{Submitted. Available at \textcolor{purple!90!black}{\url{https://arxiv.org/abs/2604.25260}}.}
     % \item \emph{Cooperations for regular number rings,} \textbf{Jackson Morris}. In preparation.
     \item[4.] \textbf{Spectrum level splittings of truncated motivic Brown--Peterson cooperations algebras.}\\
     Joint with Sarah Petersen and Elizabeth Tatum. \\
-    Submitted. Available at \textcolor{purple!90!black}{\url{https://arxiv.org/abs/2509.19542}}.
+    \grey{Submitted. Available at \textcolor{purple!90!black}{\url{https://arxiv.org/abs/2509.19542}}.}
     \item[3.] \textbf{Rings of cooperations for hermitian $K$-theory over finite fields.}\\
-    To appear in \emph{Algebraic \& Geometric Topology}. Available at \textcolor{purple!90!black}{\url{https://arxiv.org/abs/2509.02786}}.
+    \grey{To appear in \emph{Algebraic \& Geometric Topology}. Available at \textcolor{purple!90!black}{\url{https://arxiv.org/abs/2509.02786}}.}
     \item[2.] \textbf{On the ring of cooperations for real hermitian $K$-theory.} \\
-    \emph{Annals of K-theory 11 (4)} (2026), 633-708.
+    \grey{\emph{Annals of K-theory 11 (4)} (2026), 633-708.}
     \item[1.] \textbf{Toric Double Determinantal Varieties.}\\
     Joint with Alexander Blose, Patricia Klein, and Owen McGrath. \\
-    \emph{Communications in Algebra 49 (7)} (2020), 3085-3093. 
+    \grey{\emph{Communications in Algebra 49 (7)} (2020), 3085-3093.} 
 \end{itemize}
 \end{rSection}
 
@@ -147,33 +151,34 @@ Berkeley, CA 94720 \textbar \ Office 303\\
 
 \altarray{
     \textbf{Vanderbilt University} \\
-    Math 2410 -- Methods of linear algebra & \footnotesize\emph{Spring 2027}\\
-    Math 2610/5610 -- Ordinary differential equations & \footnotesize \emph{Spring 2027}
+    Math 2410 -- Methods of linear algebra & \footnotesize Spring 2027\\
+    Math 2610/5610 -- Ordinary differential equations & \footnotesize Spring 2027
 }
 
 \altarray{
     \textbf{University of Washington}  \\% \vspace{2mm}
-    Math 480 -- Homotopy theory & \footnotesize \emph{Spring 2026} \\
-    Math 208 -- Linear algebra & \footnotesize \emph{Summer 2023}\\
-    Math 208 -- Linear algebra & \footnotesize \emph{Winter 2023} \\
+    Math 480 -- Homotopy theory & \footnotesize Spring 2026 \\
+    Math 208 -- Linear algebra & \footnotesize Summer 2023\\
+    Math 208 -- Linear algebra & \footnotesize Winter 2023 \\
 }
 
 \underline{Graduate Assistant}
 
 \altarray{
    \textbf{Electronic Computational Homotopy Theory (eCHT)}\\
-   Research Seminar & \footnotesize \textit{2025--2026} \\
-    Quadratic Curve Counting  & \footnotesize \textit{Fall 2024}
+   Research Seminar & \footnotesize 2025--2026 \\
+    \grey{Quadratic Curve Counting}  & \footnotesize Fall 2024
 }
 
 \altarray{ 
-    \textbf{Park City Math Institute (PCMI)} & \footnotesize \emph{Summer 2024}\\
-    Experimental Math Lab 
+    \textbf{Park City Math Institute (PCMI)} \\
+    Experimental Math Lab & \footnotesize Summer 2024
 }
 
 \altarray{
-    \textbf{University of Washington} & \footnotesize \emph{2021--2026}\\
-    Courses included: Precalculus, Differential calculus, Multivariable calculus, Linear algebra, Introduction to proofs, Topology
+    \textbf{University of Washington} \\
+    Teaching Assistant & \footnotesize 2021-2026\\
+    \grey{Precalculus, Differential calculus, Multivariable calculus, Linear algebra, Introduction to proofs, Topology}
 }
     % \footnotesize \textit{Math 441 -- Topology} & \footnotesize \textit{Summer\ 2022, Summer\ 2024}\\  
     % \footnotesize \textit{Math 300 -- Intro to Proofs} & \footnotesize \textit{Spring\ 2023, Winter\ 2024}\\
@@ -187,26 +192,26 @@ Berkeley, CA 94720 \textbar \ Office 303\\
 
 \altarray{
     \textbf{Directed Reading Mentor} & \footnotesize UW\\
-    Topics included: Homotopy theory, Representation theory, Geometric group theory, Homological algebra & \footnotesize \emph{2022--2025}
+    \grey{Homotopy theory, Representation theory, Geometric group theory, Homological algebra} & \footnotesize 2022--2025
 }
 
 \underline{Advising/Menthorship}
 
 \altarray{
     \textbf{Jason Yeung} (University of Toronto) & \footnotesize SLMath\\
-    Program associate mentor during thematic program & \footnotesize \emph {Fall 2026}
+    \grey{Program associate mentor during thematic program} & \footnotesize Fall 2026
 }
 \altarray{
     \textbf{Spencer Catron} (University of Washington) & \footnotesize UW\\
-    Graduate student mentor during first year & \footnotesize
-    \textit{2023-2024}
+    \grey{Graduate student mentor during first year} & \footnotesize
+    2023-2024
 }
 
 \underline{Math Olympiad Judge}
 
 \altarray{
-\textbf{UW Math Hour} & \footnotesize \emph{2023--2024}\\
-Judge for elementary school math competition 
+\textbf{UW Math Hour} \\
+\grey{Judge for elementary school math competition} & \footnotesize 2023-2024
 }
 
 
@@ -214,42 +219,37 @@ Judge for elementary school math competition
 
 %awards
 \begin{rSection}{Honors and Awards}
-\altarray{\textbf{Lee and Cozette McFarlan Travel Fellowship} & \footnotesize \textit{Summer 2025}\\
-University of Washington  & \footnotesize{\emph{\$750}}\\
-For travel to European Talbot in Kolding, DK.
-}
+\altarray{\textbf{Lee and Cozette McFarlan Travel Fellowship} & \footnotesize UW\\
+\grey{For travel to European Talbot in Kolding, DK.} & \footnotesize{Summer 2025}
+} %750
 
-\altarray{\textbf{Research Assistantship} & \footnotesize \textit{Summer 2025}\\
-University of Washington \\
-For good research progress.
-}
+\altarray{\textbf{Research Assistantship} & \footnotesize UW\\
+\grey{For good research progress.} & \footnotesize Summer 2025
+} %?? how much should this be?
 
 \altarray{
-    \textbf{JC Eaves Scholarship} & \footnotesize \textit{2020}\\
-    University of Kentucky& \footnotesize{\emph{\$2000}}\\
-    For continued excellence in mathematics as a Kentuckian.
-}
+    \textbf{JC Eaves Scholarship} & \footnotesize UKY\\
+    \grey{For continued excellence in mathematics as a Kentuckian.} & \footnotesize 2020
+} %2000
 
 
 \altarray{
-    \textbf{Carolyn Bunyan Award} & \footnotesize \textit{2020}\\
-    University of Kentucky  & \footnotesize{\emph{\$2000}}
-    \\
-    For mathematics majors interested in continuing education in mathematics.
-}
+    \textbf{Carolyn Bunyan Award} & \footnotesize UKY\\
+    \grey{For mathematics majors interested in continuing education in mathematics.} & \footnotesize 2020
+} %2000
 
 \end{rSection}
-
+% \newpage
 \begin{rSection}{Service and Professional Activities}
 \underline{Refereeing and Reviewing}
 
     \altarray{
     \textbf{Algebraic and Geometric Topology}
-     & \footnotesize \emph{2025-Present}
+     & \footnotesize 2025-Present
     }
      \altarray{
     \textbf{ZBMath}
-    & \footnotesize \emph{2026-Present}
+    & \footnotesize 2026-Present
     }
 
 % \underline{Conference Organization}
@@ -257,27 +257,27 @@ For good research progress.
 %     \altarray{
 %     \textbf{JMM Special Session: Homotopy Theory} & \footnotesize \textit{January 2025} \\ \footnotesize \textit{Secondary local organizer for satellite session.} \\ \footnotesize \textit{Reserved room on UW campus, set up projector, directed foot traffic.}
 %     }
-
+\newpage
 \underline{Seminar Organization}
 
     \altarray{
         \textbf{Learning Seminar} & \footnotesize SLMath\\
-        \emph{Motivic stable stems and Galois approximations of cellular motivic categories} & \footnotesize\emph{Fall 2026}
+        \grey{Motivic stable stems and Galois approximations of cellular motivic categories} & \footnotesize Fall 2026
     }
 
     \altarray{
     \textbf{DUBTOP Seminar}   & \footnotesize UW\\
-    \emph{Topics included:} Chromatic homotopy theory, stacks, Goodwillie calculus & \footnotesize\emph{2024-2025}
+    \grey{Chromatic homotopy theory, stacks, Goodwillie calculus} & \footnotesize 2024-2025
     }
 
     \altarray{
         \textbf{Back-To-School seminar} & \footnotesize UW\\
-        Student lectures on fun math learned over the summer & \footnotesize \textit{Fall 2024} 
+        \grey{Student lectures on fun math learned over the summer} & \footnotesize Fall 2024 
     }
 
     \altarray{
         \textbf{Reading seminars}   & \footnotesize UW\\ 
-        \emph{Topics included:} Algebraic K-theory, cohomology operations, motivic homotopy theory, vector bundles and topological K-theory, categorical homotopy theory, model categories & \footnotesize \emph{2023-2024}
+        \grey{Algebraic K-theory, cohomology operations, motivic homotopy theory, vector bundles and topological K-theory, categorical homotopy theory, model categories} & \footnotesize 2023-2024
     }
 
 \end{rSection}
@@ -293,107 +293,113 @@ For good research progress.
 
 \altarray{
     \textbf{AMS Sectional: Computational Homotopy Theory} & \footnotesize Tempe, AZ\\
-    \emph{$\mathbb{C}$-motivic periodic self-maps} & \footnotesize\emph{Novermber 2026}
+    \grey{$\mathbb{C}$-motivic periodic self-maps} & \footnotesize Novermber 2026
 }
 \altarray{
     \textbf{Motivic Homtopy Theory: Connections and Applications} & \footnotesize SLMath, Berkeley, CA\\
-    \emph{Motivic K-theory cooperations over the rationals} & \footnotesize\emph{October 2026}
+    \grey{Motivic K-theory cooperations over the rationals} & \footnotesize October 2026
 }
 \altarray{
     \textbf{Young Topologists Meeting} & \footnotesize Copenhagen, DK\\
-    \emph{Higher Witt K-theories} & \footnotesize\emph{July 2026}
+    \grey{Higher Witt K-theories} & \footnotesize July 2026
 }
 \altarray{
     \textbf{Cascade Topology Seminar} & \footnotesize Portland, OR\\
-    \emph{Higher Witt K-theories} & \footnotesize\emph{May 2026}
+    \grey{Higher Witt K-theories} & \footnotesize May 2026
 }
 \altarray{
     \textbf{Joint Mathematics Meetings 2026} & \footnotesize Washington, D.C.\\
-    \emph{Splittings and cooperations in motivic homotopy theory} & \footnotesize\emph{January 2026}
+    \grey{Splittings and cooperations in motivic homotopy theory} & \footnotesize January 2026
 }
 \altarray{
     \textbf{Graduate Student Geometry \& Topology Seminar} & \footnotesize Bloomington, IN \\
-    \emph{On the ring of cooperations for real hermitian K-theory} & \footnotesize\emph{April 2025}
+    \grey{On the ring of cooperations for real hermitian K-theory} & \footnotesize April 2025
 }
 \altarray{
     \textbf{Reed Mathematics Colloquium} & \footnotesize Portland, OR\\
-    \emph{Finding Fixed Points with Invariants}
-     & \footnotesize \emph{February 2025}
+    \grey{Finding Fixed Points with Invariants}
+     & \footnotesize February 2025
 }
 \altarray{
     \textbf{Joint Mathematics Meetings 2025} & \footnotesize Seattle, WA \\
-    \emph{On the ring of cooperations for real hermitian K-theory} & \footnotesize\emph{January 2025}
+    \grey{On the ring of cooperations for real hermitian K-theory} & \footnotesize January 2025
 }
 
 \underline{Seminar Talks}
 
 \altarray{
-    \textbf{New Mexico State University} Topology Seminar & \footnotesize Las Cruces, NM\\
-    \emph{$\mathbb{C}$-motivic periodic self-maps} & \footnotesize\emph{September 2026}
+    \textbf{New Mexico State University} & \footnotesize Las Cruces, NM\\
+    \grey{$\mathbb{C}$-motivic periodic self-maps} & \footnotesize September 2026
 }
 \altarray{
     \textbf{eCHT Research Seminar} & \footnotesize Online\\
-    \emph{$\mathbb{C}$-motivic periodic self-maps} & \footnotesize\emph{September 2026} 
+    \grey{$\mathbb{C}$-motivic periodic self-maps} & \footnotesize September 2026 
 }   
 \altarray{
-    \textbf{University of Washington} Topology Seminar & \footnotesize Seattle, WA\\
-    \emph{Spectrum level splittings of truncated motivic Brown-Peterson cooperations algebras} & \footnotesize \emph{February 2026}
+    \textbf{University of Washington}  & \footnotesize Seattle, WA\\
+    \grey{Spectrum level splittings of truncated motivic Brown-Peterson cooperations algebras} & \footnotesize February 2026
 }
 \altarray{
-    \textbf{University of Illinois Urbana-Champaign} Topology Seminar & \footnotesize Champaign, IL\\
-    \emph{Splittings and cooperations in motivic homotopy theory} & \footnotesize \emph{January 2026}
+    \textbf{University of Illinois Urbana-Champaign} & \footnotesize Champaign, IL\\
+    \grey{Splittings and cooperations in motivic homotopy theory} & \footnotesize January 2026
 }
 \altarray{
-    \textbf{University of Virginia} Topology Seminar & \footnotesize Charlottesville, VA\\
-    \emph{Splittings and cooperations in motivic homotopy theory} & \footnotesize \emph{November 2025}
+    \textbf{University of Virginia}  & \footnotesize Charlottesville, VA\\
+    \grey{Splittings and cooperations in motivic homotopy theory} & \footnotesize November 2025
 }
 \altarray{
-    \textbf{University of Kentucky} Topology Seminar & \footnotesize Lexington, KY\\
-    \emph{Splittings and cooperations in motivic homotopy theory} & \footnotesize \emph{November 2025}
+    \textbf{University of Kentucky}  & \footnotesize Lexington, KY\\
+    \grey{Splittings and cooperations in motivic homotopy theory} & \footnotesize November 2025
 }
 \altarray{
-    \textbf{Duke University} Geometry and Topology Seminar & \footnotesize Durham, NC \\
-    \emph{Splittings and cooperations in motivic homotopy theory} & 
-    \footnotesize \emph{October 2025}
+    \textbf{Duke University}  & \footnotesize Durham, NC \\
+    \grey{Splittings and cooperations in motivic homotopy theory} & 
+    \footnotesize October 2025
 }
 \altarray{
-    \textbf{University of Colorado Boulder} Homotopy Theory Seminar & \footnotesize Boulder, CO \\
-    \emph{Spectrum level splittings of truncated motivic Brown-Peterson cooperations algebras} & \footnotesize \emph{September 2025}
+    \textbf{University of Colorado Boulder}  & \footnotesize Boulder, CO \\
+    \grey{Spectrum level splittings of truncated motivic Brown-Peterson cooperations algebras} & \footnotesize September 2025
 }
 \altarray{
-    \textbf{University of Michigan} Geometry Seminar & \footnotesize Ann Arbor, MI\\
-    \emph{On the ring of cooperations for real hermitian K-theory} & \footnotesize \emph
-    {September 2025} 
+    \textbf{University of Michigan}  & \footnotesize Ann Arbor, MI\\
+    \grey{On the ring of cooperations for real hermitian K-theory} & \footnotesize {September 2025} 
 }
 \altarray{ 
-    \textbf{University of Notre Dame} Topology Seminar & \footnotesize South Bend, IN \\
-    \emph{Splittings and cooperations in motivic homotopy theory} & \footnotesize \emph{September 2025} 
+    \textbf{University of Notre Dame}  & \footnotesize South Bend, IN \\
+    \grey{Splittings and cooperations in motivic homotopy theory} & \footnotesize September 2025 
 }
 \altarray{
-    \textbf{University of Washington} Topology Seminar & \footnotesize Seattle, WA \\
-    \emph{On the ring of cooperations for real hermitian K-theory} & \footnotesize\emph{June 2025}
+    \textbf{University of Washington}  & \footnotesize Seattle, WA \\
+    \grey{On the ring of cooperations for real hermitian K-theory} & \footnotesize June 2025
 }
 
-\underline{Contributed Talks}
-
-\altarray{\textbf{Reading Seminars} \\
-\emph{An upper bound on the degree of symmetry of an exotic sphere} & \footnotesize \emph{March 2026}\\
-\emph{Higher Adams differentials and hidden extensions} & \footnotesize \emph{November 2025}\\
-\emph{Motivic twisted K-theory} & \footnotesize \emph{April 2024}\\
-    \emph{Higher real K-theories, redshift, and blueshift} & \footnotesize \emph{May 2026}\\
-    \emph{Filtered objects, spectral sequences, and $t$-structures} & \footnotesize \emph{January 2026} \\
-    \emph{(A synthetic approach to detecting) $v_1$-periodic families} & \footnotesize \emph{November 2025}\\
-    \emph{Algebraic and Milnor K-theory} & \footnotesize \emph{October 2025}\\
-    \emph{Galois descent and the Picard group of K-theory} & \footnotesize \emph{May 2025}\\
-    \emph{The Adams spectral sequence and Hopf algebroids} & \footnotesize \emph{February 2025}\\
-    \emph{Symplectic orientations} & \footnotesize \emph{August 2024}
-}
+\underline{Workshop Contributed Talks}
 
 \altarray{
-    \textbf{Workshops} \\
-    \emph{$\pi_*\text{THH}(\mathbb{Z}_p^\text{fil})/p$ and $\pi_*\text{THH}(\ell^\text{fil}_p)/(p, v_1)$} (Talbot, Nacogdoches TX) & \footnotesize\emph{August 2024}\\
-    \emph{Hochschild Homology} (European Autumn School in Topology, Utrecht, NL) & \footnotesize \emph{September 2024}
+    \textbf{Talbot} & \footnotesize Nacogdoches, TX\\
+    \grey{$\pi_*\text{THH}(\mathbb{Z}_p^\text{fil})/p$ and $\pi_*\text{THH}(\ell^\text{fil}_p)/(p, v_1)$} & \footnotesize August 2024
 }
+\altarray{
+    \textbf{European Autumn School in Topology (EAST)} & \footnotesize Utrecht, NL\\
+    \grey{Hochschild Homology} & \footnotesize September 2024
+}
+
+
+
+\underline{Reading Seminar Talks}
+\altarray{
+\grey{An upper bound on the degree of symmetry of an exotic sphere} & \footnotesize March 2026\\
+\grey{Higher Adams differentials and hidden extensions} & \footnotesize November 2025\\
+\grey{Motivic twisted K-theory} & \footnotesize April 2024\\
+    \grey{Higher real K-theories, redshift, and blueshift} & \footnotesize May 2026\\
+    \grey{Filtered objects, spectral sequences, and $t$-structures} & \footnotesize January 2026 \\
+    \grey{(A synthetic approach to detecting) $v_1$-periodic families} & \footnotesize November 2025\\
+    \grey{Algebraic and Milnor K-theory} & \footnotesize October 2025\\
+    \grey{Galois descent and the Picard group of K-theory} & \footnotesize May 2025\\
+    \grey{The Adams spectral sequence and Hopf algebroids} & \footnotesize February 2025\\
+    \grey{Symplectic orientations} & \footnotesize August 2024
+}
+
 
 \end{rSection}
 

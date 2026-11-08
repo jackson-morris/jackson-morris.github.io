@@ -98,6 +98,7 @@ I have written user's guides to some of my papers that you can [check out here](
 
 <h2>Selected recent talks</h2>
 
+* *C-motivic periodic self-maps*, [AMS Western Sectional](https://www.ams.org/meetings/sectional/2335_program_ss10.html#title), November 2026
 * *Motivic K-theory cooperations over the rationals*, [Motivic Homotopy Theory: Connections and Applications](https://www.slmath.org/workshops/1183), October 2026
 * *C-motivic periodic self-maps*, [eCHT Research Seminar](https://echtorc.github.io/research-seminar/), September 2026
 * *C-motivic periodic self-maps*, NMSU Topology Seminar, September 2026

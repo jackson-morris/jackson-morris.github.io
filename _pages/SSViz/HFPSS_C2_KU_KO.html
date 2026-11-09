@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Homotopy fixed point spectral sequence for KU with C₂-action</title>
+<style>
+  /* ------------------------------------------------------------------
+     THEME: change these values to match your site. The chart, the SVG
+     export and the SeqSee exports all read their colors from here.
+     ------------------------------------------------------------------ */
+  :root {
+    --bg: #fffddd;
+    --text: #494e52;
+    --muted: #7a8288;
+    --border: #f2f3f3;
+    --border-strong: #d6d9db;
+    --link: #ac084a;        /* site link blue */
+    --link-hover: #2d2f92;
+    --surface: #fafafa;
+    --dot: #000000;         /* Z/2 classes */
+    --zbox: #2d2f92;        /* outline of the Z boxes (site link blue) */
+    --diff: #c9503f;        /* differentials */
+    --grid: #eceeef;        /* chart grid lines */
+    --mult: #b4babe;        /* multiplication lines */
+    --sans: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+  html { font-size: 16px; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: var(--sans); line-height: 1.5; -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { color: var(--link-hover); text-decoration: underline; }
+  .page { max-width: 1040px; margin: 0 auto; padding: 1.5em 1.25em 3em; }
+  h1 { font-size: 1.75em; line-height: 1.2; font-weight: 700; margin: 0 0 .35em; }
+  .lede { margin: 0 0 1.25em; color: var(--muted); font-size: 1.05em; max-width: 46em; }
+  sup, sub { line-height: 0; }
+
+  .controls {
+    display: flex; flex-wrap: wrap; gap: .9em 1.6em; align-items: flex-end;
+    padding: .9em 1em; background: var(--surface);
+    border: 1px solid var(--border-strong); border-radius: 4px; margin-bottom: 1em;
+  }
+  .ctl { display: flex; flex-direction: column; gap: .3em; }
+  .ctl > .lbl { font-size: .8em; color: var(--muted); font-weight: 600; }
+  .seg { display: inline-flex; }
+  .seg button {
+    font: inherit; font-size: .875em; padding: .35em .85em; background: var(--bg); color: var(--text);
+    border: 1px solid var(--muted); margin-left: -1px; cursor: pointer;
+  }
+  .seg button:first-child { margin-left: 0; border-radius: 4px 0 0 4px; }
+  .seg button:last-child { border-radius: 0 4px 4px 0; }
+  .seg button[aria-pressed="true"] { background: var(--link); border-color: var(--link); color: #fff; position: relative; }
+  .seg button:hover:not([aria-pressed="true"]) { background: var(--border); }
+  button:focus-visible, input:focus-visible, .cls:focus-visible { outline: 2px solid var(--link-hover); outline-offset: 2px; }
+  .range { display: flex; gap: .5em; align-items: center; font-size: .875em; }
+  .range input {
+    width: 4.2em; font: inherit; padding: .25em .4em; color: var(--text);
+    border: 1px solid var(--border-strong); border-radius: 4px; background: var(--bg);
+  }
+  .check { display: flex; align-items: center; gap: .4em; font-size: .875em; cursor: pointer; }
+  .btn {
+    font: inherit; font-size: .875em; padding: .4em .9em; cursor: pointer;
+    background: var(--muted); color: #fff; border: 0; border-radius: 4px;
+  }
+  .btn:hover { background: #565a5f; }
+  .btn.alt { background: var(--bg); color: var(--text); border: 1px solid var(--muted); }
+  .btn.alt:hover { background: var(--border); }
+  .actions { display: flex; flex-wrap: wrap; gap: .5em; width: 100%; }
+  .actions .spacer { flex: 1; }
+
+  .chartwrap { border: 1px solid var(--border-strong); border-radius: 4px; padding: .5em; overflow-x: auto; background: #fff; }
+  #chart { display: block; margin: 0 auto; height: auto; }
+  .cls { cursor: pointer; }
+  .legend { display: flex; flex-wrap: wrap; gap: .4em 1.4em; margin: .75em 0 0; font-size: .875em; color: var(--muted); }
+  .legend span { display: inline-flex; align-items: center; gap: .45em; }
+  .legend svg { flex: none; }
+
+  #info {
+    margin-top: 1em; min-height: 8em; padding: .8em 1em; background: var(--surface);
+    border: 1px solid var(--border-strong); border-left: 4px solid var(--link); border-radius: 4px;
+  }
+  #info .nm { font-size: 1.2em; font-weight: 700; margin-bottom: .3em; }
+  #info dl { margin: 0; display: grid; grid-template-columns: 7.5em 1fr; gap: .15em .8em; font-size: .95em; }
+  #info dt { color: var(--muted); }
+  #info dd { margin: 0; }
+  #info .hint { color: var(--muted); margin: 0; }
+
+  @media (max-width: 640px) { h1 { font-size: 1.45em; } .actions .spacer { display: none; } }
+  @media print { .controls, #info .hint { display: none; } .chartwrap { border: 0; } }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <h1>The homotopy fixed point spectral sequence for KU<sup>hC₂</sup></h1>
+  <p class="lede">C₂ acts on complex K-theory KU by complex conjugation. The spectral sequence converges to the homotopy of the fixed points, which is real K-theory KO.</p>
+
+  <div class="controls" role="group" aria-label="Chart controls">
+    <div class="ctl">
+      <span class="lbl" id="lbl-page">Page</span>
+      <div class="seg" id="seg-page" role="group" aria-labelledby="lbl-page">
+        <button type="button" data-page="E2" aria-pressed="false">E₂</button>
+        <button type="button" data-page="E3" aria-pressed="true">E₃ with d₃</button>
+        <button type="button" data-page="E4" aria-pressed="false">E₄ = E<sub>∞</sub></button>
+      </div>
+    </div>
+    <div class="ctl">
+      <span class="lbl">Stem t−s</span>
+      <div class="range">
+        <input type="number" id="x0" aria-label="Smallest stem" step="1"><span>to</span>
+        <input type="number" id="x1" aria-label="Largest stem" step="1">
+      </div>
+    </div>
+    <div class="ctl">
+      <span class="lbl">Filtration s</span>
+      <div class="range">
+        <input type="number" id="y0" aria-label="Smallest filtration" step="1"><span>to</span>
+        <input type="number" id="y1" aria-label="Largest filtration" step="1">
+      </div>
+    </div>
+    <label class="check"><input type="checkbox" id="mult" checked> Show multiplication lines</label>
+
+    <div class="actions">
+      <button type="button" class="btn alt" id="reset">Reset view</button>
+      <span class="spacer"></span>
+      <button type="button" class="btn alt" id="print">Print or save PDF</button>
+      <button type="button" class="btn alt" id="download">Download SVG</button>
+      <button type="button" class="btn alt" id="seqsee-json">Export SeqSee JSON</button>
+      <button type="button" class="btn" id="seqsee-html">Export SeqSee HTML</button>
+    </div>
+  </div>
+
+  <div class="chartwrap"><svg id="chart" role="img" aria-label="Spectral sequence chart"></svg></div>
+
+  <div class="legend" aria-hidden="true">
+    <span><svg width="18" height="18"><rect x="2" y="2" width="14" height="14" style="fill:#fff;stroke:var(--zbox);stroke-width:2"/></svg> ℤ</span>
+    <span><svg width="16" height="16"><circle cx="8" cy="8" r="5.5" style="fill:var(--dot)"/></svg> ℤ/2</span>
+    <span><svg width="28" height="16"><line x1="2" y1="14" x2="26" y2="2" style="stroke:var(--mult);stroke-width:2"/></svg> <span id="legend-mult">multiplication by a</span></span>
+    <span><svg width="28" height="16"><line x1="2" y1="8" x2="22" y2="8" style="stroke:var(--diff);stroke-width:2"/><path d="M22 4 L27 8 L22 12 Z" style="fill:var(--diff)"/></svg> d₃ differential</span>
+  </div>
+
+  <div id="info" aria-live="polite"></div>
+
+</main>
+
+<script>
+(function () {
+  'use strict';
+
+  var NS = 'http://www.w3.org/2000/svg';
+  var $ = function (id) { return document.getElementById(id); };
+  var css = function (name) { return getComputedStyle(document.documentElement).getPropertyValue(name).trim(); };
+  var MINUS = '\u2212';
+  var fmt = function (k) { return String(k).replace('-', MINUS); };
+
+  var DEFAULT = { x0: -12, x1: 12, y0: 0, y1: 8 };
+  var LIMIT = { x: [-60, 60], y: [0, 40] };
+  var state = { page: 'E3', mult: true, x0: DEFAULT.x0, x1: DEFAULT.x1, y0: DEFAULT.y0, y1: DEFAULT.y1, pinned: null };
+  var PAGES = ['E2', 'E3', 'E4'];
+
+  /* ---------------- the mathematics ----------------
+     E2 = Z[a, u^{±2}]/(2a), with a in (t-s, s) = (1, 1) and u^2 in (4, 0).
+     The class a^s u^{2m} sits at stem n = s + 4m, filtration s.
+     d3(a^s u^{2m}) = m a^{s+3} u^{2m-2}.  On E_infinity, a detects eta. */
+
+  function onLattice(n, s) { return ((((n - s) % 4) + 4) % 4) === 0; }
+  function isOdd(m) { return Math.abs(m % 2) === 1; }
+
+  function allClasses(page) {
+    var out = [];
+    for (var s = 0; s <= 44; s++) {
+      for (var n = -80; n <= 80; n++) {
+        if (!onLattice(n, s)) continue;
+        var m = (n - s) / 4, kind = s === 0 ? 'Z' : 'Z2';
+        if (page === 'E4') {
+          if (s <= 2 && !isOdd(m)) { /* survives unchanged */ }
+          else if (s === 0) kind = '2Z';      /* 2u^{2m}, m odd */
+          else continue;
+        }
+        out.push({ n: n, s: s, m: m, kind: kind });
+      }
+    }
+    return out;
+  }
+  function genFor(page) { return page === 'E4' ? '\u03B7' : 'a'; }
+  function genTex(page) { return page === 'E4' ? '\\eta' : 'a'; }
+
+  function nameHTML(s, m, two, page) {
+    var g = genFor(page), out = two ? '2' : '';
+    if (s > 0) out += s === 1 ? g : g + '<sup>' + s + '</sup>';
+    if (m !== 0) out += 'u<sup>' + fmt(2 * m) + '</sup>';
+    return out === '' ? '1' : out;
+  }
+  function nameTex(s, m, two, page) {
+    var g = genTex(page), out = two ? '2' : '';
+    if (s > 0) out += s === 1 ? g : g + '^{' + s + '}';
+    if (m !== 0) out += (out && /[a-z}]$/.test(out) ? ' ' : '') + 'u^{' + (2 * m) + '}';
+    return out === '' ? '1' : out;
+  }
+  function plainName(s, m, two, page) {
+    var g = page === 'E4' ? 'eta' : 'a', out = two ? '2' : '';
+    if (s > 0) out += g + (s > 1 ? '^' + s : '');
+    if (m !== 0) out += 'u^' + (2 * m);
+    return out === '' ? '1' : out;
+  }
+  function groupText(kind) { return kind === 'Z2' ? '\u2124/2' : '\u2124'; }
+  function groupTex(kind) { return kind === 'Z2' ? '\\mathbb{Z}/2' : '\\mathbb{Z}'; }
+
+  /* ---------------- chart ---------------- */
+
+  function el(name, attrs, parent) {
+    var e = document.createElementNS(NS, name);
+    for (var k in attrs) if (Object.prototype.hasOwnProperty.call(attrs, k)) e.setAttribute(k, attrs[k]);
+    if (parent) parent.appendChild(e);
+    return e;
+  }
+
+  var ring = null;
+
+  function render() {
+    var svg = $('chart');
+    while (svg.firstChild) svg.removeChild(svg.firstChild);
+    var col = {
+      dot: css('--dot'), zbox: css('--zbox'), muted: css('--muted'), text: css('--text'),
+      grid: css('--grid'), mult: css('--mult'), diff: css('--diff'), border: css('--border-strong'),
+      ring: css('--link-hover'), font: css('--sans')
+    };
+    var x0 = state.x0, x1 = state.x1, y0 = state.y0, y1 = state.y1;
+    var cols = x1 - x0 + 1, rows = y1 - y0 + 1, cell = 44;
+    var strip = state.page === 'E4';
+    var ml = strip ? 74 : 58, mt = 14, mr = 16, mb = 54 + (strip ? 30 : 0);
+    var W = ml + mr + cols * cell, H = mt + mb + rows * cell;
+
+    svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+    svg.setAttribute('width', W);
+    svg.style.maxWidth = W + 'px';
+    svg.style.width = '100%';
+    svg.setAttribute('font-family', col.font);
+
+    var px = function (x) { return ml + (x - x0 + 0.5) * cell; };
+    var py = function (y) { return mt + (y1 - y + 0.5) * cell; };
+    var inRange = function (c) { return c.n >= x0 && c.n <= x1 && c.s >= y0 && c.s <= y1; };
+
+    var defs = el('defs', {}, svg);
+    var clip = el('clipPath', { id: 'plotclip' }, defs);
+    el('rect', { x: ml, y: mt, width: cols * cell, height: rows * cell }, clip);
+    var marker = el('marker', { id: 'arrow', viewBox: '0 0 10 10', refX: 9, refY: 5, markerWidth: 7, markerHeight: 7, orient: 'auto-start-reverse' }, defs);
+    el('path', { d: 'M0 0 L10 5 L0 10 Z', fill: col.diff }, marker);
+
+    el('rect', { x: 0, y: 0, width: W, height: H, fill: '#ffffff' }, svg);
+    var gGrid = el('g', {}, svg);
+    for (var gx = x0; gx <= x1; gx++) el('line', { x1: px(gx), x2: px(gx), y1: mt, y2: mt + rows * cell, stroke: col.grid, 'stroke-width': 1 }, gGrid);
+    for (var gy = y0; gy <= y1; gy++) el('line', { x1: ml, x2: ml + cols * cell, y1: py(gy), y2: py(gy), stroke: col.grid, 'stroke-width': 1 }, gGrid);
+    el('rect', { x: ml, y: mt, width: cols * cell, height: rows * cell, fill: 'none', stroke: col.border, 'stroke-width': 1 }, svg);
+
+    var xs = Math.max(1, Math.ceil(cols / 26)), ys = Math.max(1, Math.ceil(rows / 26));
+    for (var tx = x0; tx <= x1; tx++) {
+      if (tx % xs !== 0) continue;
+      el('text', { x: px(tx), y: mt + rows * cell + 20, 'text-anchor': 'middle', 'font-size': 14, fill: col.muted }, svg).textContent = fmt(tx);
+    }
+    for (var ty = y0; ty <= y1; ty++) {
+      if (ty % ys !== 0) continue;
+      el('text', { x: ml - 10, y: py(ty) + 5, 'text-anchor': 'end', 'font-size': 14, fill: col.muted }, svg).textContent = fmt(ty);
+    }
+    el('text', { x: ml + cols * cell / 2, y: mt + rows * cell + 42, 'text-anchor': 'middle', 'font-size': 15, 'font-style': 'italic', fill: col.text }, svg).textContent = 't \u2212 s';
+    el('text', { x: 16, y: mt + rows * cell / 2, 'text-anchor': 'middle', 'font-size': 15, 'font-style': 'italic', fill: col.text,
+      transform: 'rotate(-90 16 ' + (mt + rows * cell / 2) + ')' }, svg).textContent = 's';
+
+    var list = allClasses(state.page), byKey = {};
+    list.forEach(function (c) { byKey[c.n + ',' + c.s] = c; });
+    var plot = el('g', { 'clip-path': 'url(#plotclip)' }, svg);
+
+    if (state.mult) {
+      list.forEach(function (c) {
+        var d = byKey[(c.n + 1) + ',' + (c.s + 1)];
+        if (!d || (!inRange(c) && !inRange(d))) return;
+        el('line', { x1: px(c.n), y1: py(c.s), x2: px(d.n), y2: py(d.s), stroke: col.mult, 'stroke-width': 2, 'stroke-linecap': 'round' }, plot);
+      });
+    }
+    if (state.page === 'E3') {
+      list.forEach(function (c) {
+        if (!isOdd(c.m)) return;
+        var t = byKey[(c.n - 1) + ',' + (c.s + 3)];
+        if (!t || (!inRange(c) && !inRange(t))) return;
+        var dx = px(t.n) - px(c.n), dy = py(t.s) - py(c.s), len = Math.sqrt(dx * dx + dy * dy);
+        var ux = dx / len, uy = dy / len;
+        el('line', { x1: px(c.n) + ux * 11, y1: py(c.s) + uy * 11, x2: px(t.n) - ux * 12, y2: py(t.s) - uy * 12,
+          stroke: col.diff, 'stroke-width': 1.8, 'marker-end': 'url(#arrow)' }, plot);
+      });
+    }
+
+    ring = el('circle', { r: 17, fill: 'none', stroke: col.ring, 'stroke-width': 2, visibility: 'hidden', 'pointer-events': 'none' }, svg);
+
+    var gCls = el('g', {}, svg), pinnedStill = null;
+    list.forEach(function (c) {
+      if (!inRange(c)) return;
+      var cx = px(c.n), cy = py(c.s), key = c.n + ',' + c.s;
+      var g = el('g', { 'class': 'cls', tabindex: 0, role: 'button',
+        'aria-label': plainName(c.s, c.m, c.kind === '2Z', state.page) + ', ' + groupText(c.kind) + ', stem ' + c.n + ', filtration ' + c.s }, gCls);
+      el('circle', { cx: cx, cy: cy, r: 17, fill: 'transparent' }, g);
+      if (c.kind === 'Z2') {
+        el('circle', { cx: cx, cy: cy, r: 5.8, fill: col.dot }, g);
+      } else {
+        el('rect', { x: cx - 8, y: cy - 8, width: 16, height: 16, fill: '#ffffff', stroke: col.zbox, 'stroke-width': 2.2 }, g);
+        if (c.kind === '2Z') {
+          el('text', { x: cx, y: cy + 4.6, 'text-anchor': 'middle', 'font-size': 13, 'font-weight': 700, fill: col.zbox }, g).textContent = '2';
+        }
+      }
+      var enter = function () { if (ring) { ring.setAttribute('cx', cx); ring.setAttribute('cy', cy); ring.setAttribute('visibility', 'visible'); } showInfo(c); };
+      g.addEventListener('mouseenter', enter);
+      g.addEventListener('focus', enter);
+      g.addEventListener('mouseleave', restore);
+      g.addEventListener('blur', restore);
+      var toggle = function () { state.pinned = state.pinned === key ? null : key; restore(); };
+      g.addEventListener('click', toggle);
+      g.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });
+      g._cls = c; g._cx = cx; g._cy = cy;
+      if (state.pinned === key) pinnedStill = c;
+    });
+    if (!pinnedStill) state.pinned = null;
+
+    if (strip) {
+      var sy = mt + rows * cell + 66;
+      var lab = el('text', { x: ml - 10, y: sy, 'text-anchor': 'end', 'font-size': 14, fill: col.muted }, svg);
+      lab.appendChild(document.createTextNode('\u03C0'));
+      el('tspan', { dy: 4, 'font-size': 10 }, lab).textContent = 'n';
+      el('tspan', { dy: -4 }, lab).textContent = ' KO';
+      for (var n = x0; n <= x1; n++) {
+        var found = null;
+        for (var s2 = 0; s2 <= 2; s2++) if (byKey[n + ',' + s2]) found = byKey[n + ',' + s2];
+        el('text', { x: px(n), y: sy, 'text-anchor': 'middle', 'font-size': 14,
+          fill: found ? col.text : col.muted, 'font-weight': found ? 700 : 400 }, svg).textContent = found ? groupText(found.kind) : '0';
+      }
+    }
+
+    $('legend-mult').textContent = state.page === 'E4' ? 'multiplication by \u03B7' : 'multiplication by a';
+    svg.setAttribute('aria-label', 'Chart of the ' + (state.page === 'E2' ? 'E2 page' : state.page === 'E3' ? 'E3 page with d3 differentials' : 'E infinity page') +
+      ' of the homotopy fixed point spectral sequence for KU with C2 action');
+    restore();
+  }
+
+  /* ---------------- info panel ---------------- */
+
+  function showInfo(c) {
+    var box = $('info');
+    if (!c) { box.innerHTML = '<p class="hint">Hover over or tap a class to see its name, its group, and what happens to it under the differentials. Tap it again to unpin it.</p>'; return; }
+    var n = c.n, s = c.s, m = c.m, P = state.page;
+    var nm = nameHTML(s, m, c.kind === '2Z', P), grp, fate;
+    if (P === 'E4') {
+      grp = groupText(c.kind) + (c.kind === '2Z' ? ' (the subgroup 2\u2124 of E\u2082)' : '');
+      if (s === 0 && !isOdd(m)) fate = 'Generates \u03C0<sub>' + fmt(n) + '</sub>KO \u2245 \u2124 and maps isomorphically to \u03C0<sub>' + fmt(n) + '</sub>KU.';
+      else if (s === 0) fate = 'Generates \u03C0<sub>' + fmt(n) + '</sub>KO \u2245 \u2124 and maps to twice a generator of \u03C0<sub>' + fmt(n) + '</sub>KU.';
+      else if (s === 1) fate = 'Generates \u03C0<sub>' + fmt(n) + '</sub>KO \u2245 \u2124/2, the product of \u03B7 with the generator of \u03C0<sub>' + fmt(n - 1) + '</sub>KO.';
+      else fate = 'Generates \u03C0<sub>' + fmt(n) + '</sub>KO \u2245 \u2124/2, the product of \u03B7<sup>2</sup> with the generator of \u03C0<sub>' + fmt(n - 2) + '</sub>KO.';
+    } else {
+      grp = groupText(c.kind) + ' = H<sup>' + s + '</sup>(C\u2082; \u03C0<sub>' + fmt(n + s) + '</sub>KU)';
+      if (P === 'E2') fate = 'The d\u2083 differentials appear on the E\u2083 page.';
+      else if (isOdd(m)) fate = 'd\u2083(' + nm + ') = ' + nameHTML(s + 3, m - 1, false, P) +
+        (s === 0 ? '. This map \u2124 \u2192 \u2124/2 is onto, and its kernel 2\u2124 survives to E\u2084.' : '. This class does not survive.');
+      else if (s >= 3) fate = 'Hit by d\u2083 from ' + nameHTML(s - 3, m + 1, false, P) + '. This class does not survive.';
+      else fate = 'A permanent cycle that is never hit. It survives to E\u221E.';
+    }
+    box.innerHTML = '<div class="nm">' + nm + '</div><dl>' +
+      '<dt>Position</dt><dd>(t' + MINUS + 's, s) = (' + fmt(n) + ', ' + s + ')</dd>' +
+      '<dt>Group</dt><dd>' + grp + '</dd>' +
+      '<dt>' + (P === 'E4' ? 'Meaning' : 'Differential') + '</dt><dd>' + fate + '</dd></dl>';
+  }
+
+  function restore() {
+    var gs = $('chart').querySelectorAll('.cls'), hit = null;
+    for (var i = 0; i < gs.length; i++) if (state.pinned && gs[i]._cls && (gs[i]._cls.n + ',' + gs[i]._cls.s) === state.pinned) hit = gs[i];
+    if (ring) {
+      if (hit) { ring.setAttribute('cx', hit._cx); ring.setAttribute('cy', hit._cy); ring.setAttribute('visibility', 'visible'); }
+      else ring.setAttribute('visibility', 'hidden');
+    }
+    showInfo(hit ? hit._cls : null);
+  }
+
+  /* ---------------- SeqSee export ----------------
+     Builds a collection (E2, E3, E_infinity) in the SeqSee JSON schema,
+     https://github.com/JoeyBF/SeqSee, over the current view range. */
+
+  function buildSeqSee() {
+    var colors = { zcolor: css('--zbox'), diffcolor: css('--diff'), multcolor: css('--mult'), dotcolor: css('--dot') };
+    var attributes = {
+      defaultNode: [{ color: 'dotcolor' }],
+      defaultEdge: [{ color: 'multcolor', thickness: 0.02 }],
+      Z: [{ color: 'zcolor' }],
+      twoZ: [{ color: 'zcolor' }],
+      d3: [{ color: 'diffcolor', thickness: 0.025, arrowTip: 'simple' }]
+    };
+    var titles = { E2: '$E_2$', E3: '$E_3$', E4: '$E_4 = E_\\infty$' };
+    var charts = PAGES.map(function (P) {
+      var list = allClasses(P).filter(function (c) { return c.n >= state.x0 && c.n <= state.x1 && c.s >= state.y0 && c.s <= state.y1; });
+      var byKey = {}, nodes = {}, edges = [];
+      list.forEach(function (c) { byKey[c.n + ',' + c.s] = c; });
+      var id = function (c) { return plainName(c.s, c.m, c.kind === '2Z', P); };
+      list.forEach(function (c) {
+        var label = '$' + nameTex(c.s, c.m, c.kind === '2Z', P) + '$ in $' + groupTex(c.kind) + '$';
+        if (P === 'E3' && isOdd(c.m)) label += ', $d_3 = ' + nameTex(c.s + 3, c.m - 1, false, P) + '$';
+        if (P === 'E3' && !isOdd(c.m) && c.s >= 3) label += ', hit by $d_3$';
+        var node = { x: c.n, y: c.s, label: label };
+        if (c.kind === 'Z') node.attributes = ['Z'];
+        if (c.kind === '2Z') node.attributes = ['twoZ'];
+        nodes[id(c)] = node;
+      });
+      list.forEach(function (c) {
+        var d = byKey[(c.n + 1) + ',' + (c.s + 1)];
+        if (d) edges.push({ source: id(c), target: id(d) });
+      });
+      if (P === 'E3') list.forEach(function (c) {
+        if (!isOdd(c.m)) return;
+        var t = byKey[(c.n - 1) + ',' + (c.s + 3)];
+        if (t) edges.push({ source: id(c), target: id(t), attributes: ['d3'] });
+      });
+      return {
+        header: {
+          metadata: { displaytitle: titles[P], id: P === 'E4' ? 4 : Number(P.slice(1)) },
+          chart: { width: { min: state.x0, max: state.x1 }, height: { min: state.y0, max: state.y1 }, scale: 60, nodeSize: 0.07 },
+          aliases: { colors: colors, attributes: attributes }
+        },
+        nodes: nodes, edges: edges
+      };
+    });
+    return {
+      $schema: 'https://raw.githubusercontent.com/JoeyBF/SeqSee/refs/heads/master/seqsee/input_schema.json',
+      header: {
+        metadata: {
+          htmltitle: 'KU^hC2 homotopy fixed point spectral sequence',
+          title: 'The homotopy fixed point spectral sequence for $\\mathrm{KU}^{hC_2}$',
+          source: 'C2 acting on KU by complex conjugation; converges to KO'
+        },
+        aliases: { colors: colors, attributes: attributes }
+      },
+      charts: charts
+    };
+  }
+
+  /* A self-contained SeqSee-style viewer. This function is serialized into
+     the exported HTML file, so it must not use anything from outside itself. */
+  function seqseeRuntime() {
+    var DATA = window.SEQSEE_DATA, NS = 'http://www.w3.org/2000/svg';
+    var charts = DATA.charts ? DATA.charts : [DATA];
+    var topAliases = (DATA.header && DATA.header.aliases) || {};
+    var app = document.getElementById('app');
+    var current = -1, view = null, home = null, svg = null, hoverRaw = '';
+
+    function esc(t) { return t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+    var SYM = { '\\eta': '\u03B7', '\\infty': '\u221E', '\\cong': '\u2245', '\\to': '\u2192', '\\mapsto': '\u21A6', '\\pi': '\u03C0', '\\cdot': '\u00B7', '\\pm': '\u00B1' };
+    var BB = { Z: '\u2124', R: '\u211D', C: '\u2102', Q: '\u211A', N: '\u2115' };
+    function texMath(s) {
+      var out = '', i = 0;
+      function group() {
+        if (s[i] === '{') { var d = 1, j = i + 1; while (j < s.length && d) { if (s[j] === '{') d++; else if (s[j] === '}') d--; j++; } var g = s.slice(i + 1, j - 1); i = j; return g; }
+        if (s[i] === '\\') { var mm = /^\\[a-zA-Z]+/.exec(s.slice(i)); if (mm) { i += mm[0].length; return mm[0]; } }
+        return s[i++] || '';
+      }
+      while (i < s.length) {
+        var c = s[i];
+        if (c === '^' || c === '_') { i++; var g = group(); out += (c === '^' ? '<sup>' : '<sub>') + texMath(g) + (c === '^' ? '</sup>' : '</sub>'); }
+        else if (c === '\\') {
+          var m = /^\\[a-zA-Z]+/.exec(s.slice(i));
+          if (!m) { out += esc(s[i + 1] || ''); i += 2; continue; }
+          i += m[0].length;
+          if (m[0] === '\\mathbb') { var b = group(); out += BB[b] || b; }
+          else if (m[0] === '\\mathrm' || m[0] === '\\text' || m[0] === '\\operatorname') out += '<span class="rm">' + texMath(group()) + '</span>';
+          else out += SYM[m[0]] !== undefined ? SYM[m[0]] : m[0].slice(1);
+        }
+        else if (c === '{' || c === '}') i++;
+        else if (c === '-') { out += '\u2212'; i++; }
+        else if (c === ' ') { i++; }
+        else if (/[a-zA-Z]/.test(c)) { out += '<i>' + c + '</i>'; i++; }
+        else { out += esc(c); i++; }
+      }
+      return out;
+    }
+    function tex(t) {
+      if (!t) return '';
+      return String(t).split('$').map(function (part, k) { return k % 2 ? '<span class="math">' + texMath(part) + '</span>' : esc(part); }).join('');
+    }
+
+    function aliasesFor(chart) {
+      var a = (chart.header && chart.header.aliases) || {};
+      var colors = {}, attrs = {}, k;
+      var tc = topAliases.colors || {}, ta = topAliases.attributes || {};
+      for (k in tc) colors[k] = tc[k];
+      for (k in (a.colors || {})) colors[k] = a.colors[k];
+      for (k in ta) attrs[k] = ta[k];
+      for (k in (a.attributes || {})) attrs[k] = a.attributes[k];
+      if (!colors.backgroundColor) colors.backgroundColor = 'white';
+      if (!colors.borderColor) colors.borderColor = 'black';
+      if (!colors.textColor) colors.textColor = 'black';
+      if (!attrs.grid) attrs.grid = [{ color: '#ccc', thickness: 0.01 }];
+      if (!attrs.defaultNode) attrs.defaultNode = [{ color: 'black' }];
+      if (!attrs.defaultEdge) attrs.defaultEdge = [{ color: 'black', thickness: 0.02 }];
+      return { colors: colors, attrs: attrs };
+    }
+    function resolve(list, al, names, depth) {
+      var out = {};
+      (list || []).forEach(function (e) {
+        var r;
+        if (typeof e === 'string') { names.push(e); r = (depth < 8 && al.attrs[e]) ? resolve(al.attrs[e], al, names, depth + 1) : {}; }
+        else r = e;
+        for (var k in r) out[k] = r[k];
+      });
+      return out;
+    }
+    function color(c, al) { return (c && al.colors[c]) || c || 'black'; }
+    function el(name, attrs, parent) {
+      var e = document.createElementNS(NS, name);
+      for (var k in attrs) e.setAttribute(k, attrs[k]);
+      if (parent) parent.appendChild(e);
+      return e;
+    }
+
+    function showIndex() {
+      current = -1; svg = null;
+      var md = (DATA.header && DATA.header.metadata) || {};
+      var html = '<div class="index"><h1>' + tex(md.title || '') + '</h1><ul>';
+      charts.forEach(function (c, k) {
+        var t = (c.header && c.header.metadata && c.header.metadata.displaytitle) || ('Chart ' + (k + 1));
+        html += '<li><a href="#" data-k="' + k + '">' + tex(t) + '</a></li>';
+      });
+      html += '</ul><p class="keys">Keys: w and s move between charts, Esc returns here. On a chart, + and \u2212 zoom, arrow keys pan, 0 resets, c copies the hover text.</p></div>';
+      app.innerHTML = html;
+      var links = app.querySelectorAll('a[data-k]');
+      for (var i = 0; i < links.length; i++) links[i].addEventListener('click', function (e) { e.preventDefault(); showChart(+this.getAttribute('data-k')); });
+      if (charts.length === 1) showChart(0);
+    }
+
+    function showChart(k) {
+      current = k;
+      var chart = charts[k], h = chart.header || {}, ch = h.chart || {}, md = h.metadata || {};
+      var al = aliasesFor(chart);
+      var scale = ch.scale || 60, nodeSize = ch.nodeSize != null ? ch.nodeSize : 0.04;
+      var nodes = chart.nodes || {}, edges = chart.edges || [];
+      var ids = Object.keys(nodes);
+      var xsAll = ids.map(function (i) { return nodes[i].x != null ? nodes[i].x : nodes[i].absoluteX; });
+      var ysAll = ids.map(function (i) { return nodes[i].y != null ? nodes[i].y : nodes[i].absoluteY; });
+      var w = ch.width || {}, hh = ch.height || {};
+      var xmin = w.min != null ? w.min : Math.min.apply(null, xsAll.concat([0]));
+      var xmax = w.max != null ? w.max : Math.max.apply(null, xsAll.concat([1]));
+      var ymin = hh.min != null ? hh.min : Math.min.apply(null, ysAll.concat([0]));
+      var ymax = hh.max != null ? hh.max : Math.max.apply(null, ysAll.concat([1]));
+      var X = function (x) { return (x - xmin) * scale; }, Y = function (y) { return (ymax - y) * scale; };
+
+      app.innerHTML = '<div class="top"><div class="title">' + tex(md.displaytitle || '') + '</div><div class="hover" id="hover"></div></div>';
+      svg = el('svg', { 'class': 'chart' }, app);
+      svg.style.background = color('backgroundColor', al);
+      var defs = el('defs', {}, svg);
+      var root = el('g', {}, svg);
+
+      var gridA = resolve(['grid'], al, [], 0);
+      var gw = (gridA.thickness || 0.01) * scale;
+      for (var gx = Math.ceil(xmin); gx <= xmax; gx++) el('line', { x1: X(gx), x2: X(gx), y1: Y(ymin), y2: Y(ymax), stroke: color(gridA.color, al), 'stroke-width': gw }, root);
+      for (var gy = Math.ceil(ymin); gy <= ymax; gy++) el('line', { x1: X(xmin), x2: X(xmax), y1: Y(gy), y2: Y(gy), stroke: color(gridA.color, al), 'stroke-width': gw }, root);
+      var fs = 0.28 * scale, tc = color('textColor', al);
+      for (var lx = Math.ceil(xmin); lx <= xmax; lx++) el('text', { x: X(lx), y: Y(ymin) + 0.55 * scale, 'text-anchor': 'middle', 'font-size': fs, fill: tc, 'class': 'axis' }, root).textContent = String(lx).replace('-', '\u2212');
+      for (var ly = Math.ceil(ymin); ly <= ymax; ly++) el('text', { x: X(xmin) - 0.4 * scale, y: Y(ly) + fs * 0.35, 'text-anchor': 'end', 'font-size': fs, fill: tc, 'class': 'axis' }, root).textContent = String(ly).replace('-', '\u2212');
+
+      var pos = {}, rad = {};
+      ids.forEach(function (i) {
+        var n = nodes[i];
+        pos[i] = { x: n.x != null ? X(n.x) : X(n.absoluteX), y: n.y != null ? Y(n.y) : Y(n.absoluteY) };
+        var a = resolve(['defaultNode'].concat(n.attributes || []), al, [], 0);
+        rad[i] = (a.size != null ? a.size : nodeSize) * scale;
+      });
+
+      var markers = {};
+      function markerFor(c) {
+        if (markers[c]) return markers[c];
+        var idm = 'm' + Object.keys(markers).length;
+        var m = el('marker', { id: idm, viewBox: '0 0 10 10', refX: 9, refY: 5, markerWidth: 6, markerHeight: 6, orient: 'auto-start-reverse', markerUnits: 'strokeWidth' }, defs);
+        el('path', { d: 'M0 0 L10 5 L0 10 Z', fill: c }, m);
+        markers[c] = idm; return idm;
+      }
+      edges.forEach(function (e) {
+        var a = resolve(['defaultEdge'].concat(e.attributes || []), al, [], 0);
+        var p = pos[e.source]; if (!p) return;
+        var q = e.target != null ? pos[e.target] : (e.offset ? { x: p.x + e.offset.x * scale, y: p.y - e.offset.y * scale } : null);
+        if (!q) return;
+        var dx = q.x - p.x, dy = q.y - p.y, L = Math.sqrt(dx * dx + dy * dy) || 1, ux = dx / L, uy = dy / L;
+        var r0 = rad[e.source] || 0, r1 = e.target != null ? (rad[e.target] || 0) * 1.4 : 0;
+        var c = color(a.color, al), attrs = { x1: p.x + ux * r0, y1: p.y + uy * r0, x2: q.x - ux * r1, y2: q.y - uy * r1, stroke: c, 'stroke-width': (a.thickness != null ? a.thickness : 0.02) * scale, 'stroke-linecap': 'round' };
+        if (a.pattern === 'dashed') attrs['stroke-dasharray'] = '6 4';
+        if (a.pattern === 'dotted') attrs['stroke-dasharray'] = '1 4';
+        if (a.arrowTip === 'simple') attrs['marker-end'] = 'url(#' + markerFor(c) + ')';
+        el('line', attrs, root);
+      });
+
+      var hover = document.getElementById('hover');
+      ids.forEach(function (i) {
+        var n = nodes[i], names = [];
+        var a = resolve(['defaultNode'].concat(n.attributes || []), al, names, 0);
+        var p = pos[i], r = rad[i], c = color(a.color, al);
+        var g = el('g', { 'class': 'node' }, root);
+        el('circle', { cx: p.x, cy: p.y, r: Math.max(r * 2.6, 9), fill: 'transparent' }, g);
+        if (names.indexOf('Z') >= 0 || names.indexOf('twoZ') >= 0) {
+          var sd = r * 2.5;
+          el('rect', { x: p.x - sd / 2, y: p.y - sd / 2, width: sd, height: sd, fill: color('backgroundColor', al), stroke: c, 'stroke-width': r * 0.45 }, g);
+          if (names.indexOf('twoZ') >= 0) el('text', { x: p.x, y: p.y + sd * 0.27, 'text-anchor': 'middle', 'font-size': sd * 0.78, 'font-weight': 700, fill: c }, g).textContent = '2';
+        } else {
+          el('circle', { cx: p.x, cy: p.y, r: r, fill: c, stroke: c, 'stroke-width': (a.thickness || 0) * scale }, g);
+        }
+        g.addEventListener('mouseenter', function () { hoverRaw = n.label || ''; hover.innerHTML = tex(n.label || ''); hover.style.visibility = n.label ? 'visible' : 'hidden'; });
+      });
+
+      var pad = 0.9 * scale;
+      home = { x: X(xmin) - pad * 1.2, y: Y(ymax) - pad, w: (xmax - xmin) * scale + pad * 2.2, h: (ymax - ymin) * scale + pad * 2 };
+      view = { x: home.x, y: home.y, w: home.w, h: home.h };
+      apply();
+      attachPanZoom();
+    }
+
+    function apply() { if (svg) svg.setAttribute('viewBox', view.x + ' ' + view.y + ' ' + view.w + ' ' + view.h); }
+    function zoom(f, cx, cy) {
+      if (cx == null) { cx = view.x + view.w / 2; cy = view.y + view.h / 2; }
+      view.x = cx - (cx - view.x) / f; view.y = cy - (cy - view.y) / f; view.w /= f; view.h /= f; apply();
+    }
+    function toSvg(e) {
+      var r = svg.getBoundingClientRect(), s = Math.max(view.w / r.width, view.h / r.height);
+      var ox = (r.width * s - view.w) / 2, oy = (r.height * s - view.h) / 2;
+      return { x: view.x - ox + (e.clientX - r.left) * s, y: view.y - oy + (e.clientY - r.top) * s, s: s };
+    }
+    function attachPanZoom() {
+      var drag = null;
+      svg.addEventListener('wheel', function (e) { e.preventDefault(); var p = toSvg(e); zoom(e.deltaY < 0 ? 1.15 : 1 / 1.15, p.x, p.y); }, { passive: false });
+      svg.addEventListener('pointerdown', function (e) { drag = { x: e.clientX, y: e.clientY, vx: view.x, vy: view.y, s: toSvg(e).s }; svg.setPointerCapture(e.pointerId); });
+      svg.addEventListener('pointermove', function (e) { if (!drag) return; view.x = drag.vx - (e.clientX - drag.x) * drag.s; view.y = drag.vy - (e.clientY - drag.y) * drag.s; apply(); });
+      svg.addEventListener('pointerup', function () { drag = null; });
+      svg.addEventListener('pointercancel', function () { drag = null; });
+    }
+
+    document.addEventListener('keydown', function (e) {
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+      var k = e.key;
+      if (k === 'Escape' && charts.length > 1) { showIndex(); return; }
+      if (k === 'w' || k === 'W') { if (current > 0) showChart(current - 1); else if (current < 0) showChart(0); return; }
+      if (k === 's' || k === 'S') { if (current < charts.length - 1) showChart(current + 1); return; }
+      if (!svg) return;
+      var step = 0.1;
+      if (k === '+' || k === '=') zoom(1.2);
+      else if (k === '-' || k === '_') zoom(1 / 1.2);
+      else if (k === '0' || k === 'Backspace') { view = { x: home.x, y: home.y, w: home.w, h: home.h }; apply(); }
+      else if (k === 'ArrowLeft') { view.x -= view.w * step; apply(); }
+      else if (k === 'ArrowRight') { view.x += view.w * step; apply(); }
+      else if (k === 'ArrowUp') { view.y -= view.h * step; apply(); }
+      else if (k === 'ArrowDown') { view.y += view.h * step; apply(); }
+      else if (k === 'c' || k === 'C') { try { navigator.clipboard.writeText(hoverRaw); } catch (err) { /* ignore */ } }
+      else return;
+      e.preventDefault();
+    });
+
+    showIndex();
+  }
+
+  function seqseeHTML(json) {
+    var title = (json.header.metadata.htmltitle || 'SeqSee chart').replace(/</g, '&lt;');
+    var data = JSON.stringify(json).replace(/</g, '\\u003c');
+    return '<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n' +
+      '<title>' + title + '</title>\n<style>\n' +
+      'html,body{margin:0;height:100%;background:#fff;color:#000;font-family:"Latin Modern Roman","CMU Serif","Computer Modern",Georgia,"Times New Roman",serif;}\n' +
+      '#app{position:fixed;inset:0;}\n' +
+      '.chart{position:absolute;inset:0;width:100%;height:100%;cursor:grab;touch-action:none;}\n' +
+      '.chart:active{cursor:grabbing;}\n' +
+      '.top{position:absolute;top:12px;left:16px;z-index:2;pointer-events:none;}\n' +
+      '.title{font-size:22px;}\n' +
+      '.hover{visibility:hidden;margin-top:6px;padding:4px 8px;border:1px solid #000;background:#fff;font-size:17px;}\n' +
+      '.math i{font-style:italic;} .rm{font-style:normal;} .rm i{font-style:normal;}\n' +
+      '.index{max-width:40em;margin:3em auto;padding:0 1.25em;}\n' +
+      '.index h1{font-weight:400;font-size:28px;} .index li{font-size:20px;margin:.4em 0;}\n' +
+      '.index a{color:#000;} .keys{color:#555;font-size:15px;margin-top:2em;}\n' +
+      '</style>\n</head>\n<body>\n<div id="app"></div>\n<script>\nwindow.SEQSEE_DATA = ' + data + ';\n(' + seqseeRuntime.toString() + ')();\n<\/script>\n</body>\n</html>\n';
+  }
+
+  function save(text, type, name) {
+    var blob = new Blob([text], { type: type });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob); a.download = name;
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+  }
+
+  /* ---------------- controls ---------------- */
+
+  function syncInputs() { $('x0').value = state.x0; $('x1').value = state.x1; $('y0').value = state.y0; $('y1').value = state.y1; }
+  function readInputs() {
+    var clamp = function (v, lo, hi, fb) { v = parseInt(v, 10); return isNaN(v) ? fb : Math.max(lo, Math.min(hi, v)); };
+    var a = clamp($('x0').value, LIMIT.x[0], LIMIT.x[1], state.x0), b = clamp($('x1').value, LIMIT.x[0], LIMIT.x[1], state.x1);
+    var c = clamp($('y0').value, LIMIT.y[0], LIMIT.y[1], state.y0), d = clamp($('y1').value, LIMIT.y[0], LIMIT.y[1], state.y1);
+    if (a > b) { var t = a; a = b; b = t; }
+    if (c > d) { var u = c; c = d; d = u; }
+    state.x0 = a; state.x1 = b; state.y0 = c; state.y1 = d;
+    syncInputs(); render();
+  }
+
+  $('seg-page').addEventListener('click', function (e) {
+    var b = e.target.closest('button'); if (!b) return;
+    state.page = b.getAttribute('data-page');
+    var bs = this.querySelectorAll('button');
+    for (var i = 0; i < bs.length; i++) bs[i].setAttribute('aria-pressed', bs[i] === b ? 'true' : 'false');
+    render();
+  });
+  ['x0', 'x1', 'y0', 'y1'].forEach(function (id) { $(id).addEventListener('change', readInputs); });
+  $('mult').addEventListener('change', function () { state.mult = this.checked; render(); });
+  $('reset').addEventListener('click', function () {
+    state.x0 = DEFAULT.x0; state.x1 = DEFAULT.x1; state.y0 = DEFAULT.y0; state.y1 = DEFAULT.y1; state.pinned = null;
+    syncInputs(); render();
+  });
+  $('print').addEventListener('click', function () { window.print(); });
+  $('download').addEventListener('click', function () {
+    var svg = $('chart').cloneNode(true);
+    svg.setAttribute('xmlns', NS);
+    var vb = svg.getAttribute('viewBox').split(' ');
+    svg.setAttribute('width', vb[2]); svg.setAttribute('height', vb[3]);
+    svg.removeAttribute('style');
+    var hidden = svg.querySelectorAll('[visibility="hidden"]');
+    for (var i = 0; i < hidden.length; i++) hidden[i].parentNode.removeChild(hidden[i]);
+    save('<?xml version="1.0" encoding="UTF-8"?>\n' + new XMLSerializer().serializeToString(svg), 'image/svg+xml', 'KU-hC2-HFPSS-' + state.page + '.svg');
+  });
+  $('seqsee-json').addEventListener('click', function () {
+    save(JSON.stringify(buildSeqSee(), null, 2) + '\n', 'application/json', 'KU-hC2-HFPSS-seqsee.json');
+  });
+  $('seqsee-html').addEventListener('click', function () {
+    save(seqseeHTML(buildSeqSee()), 'text/html', 'KU-hC2-HFPSS-seqsee.html');
+  });
+
+  /* exposed for testing */
+  window.__ssv = { buildSeqSee: buildSeqSee, seqseeHTML: seqseeHTML };
+
+  syncInputs();
+  render();
+})();
+</script>
+</body>
+</html>

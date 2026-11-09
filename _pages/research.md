@@ -13,7 +13,7 @@ My research interests are in homotopy theory and the tools I use are often compu
 * equivariance in motivic homotopy theory
 * synthetic spectra
 
-I have written user's guides to some of my papers that you can [check out here](usersguides.md).
+I have written user's guides to some of my papers that you can [check out here](usersguides.md). [Test](SSViz/HFPSS_C2_KU_KO.html)
 
 
 ## Preprints/publications

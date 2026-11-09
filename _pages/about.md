@@ -1,5 +1,6 @@
 ---
 permalink: /
+layout: archive
 title: "Jackson Morris"
 author_profile: true
 redirect_from: 

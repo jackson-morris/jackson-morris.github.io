@@ -15,9 +15,11 @@ My [research interests](research.md) are in motivic and chromatic homotopy theor
 
 [Here is my CV](/files/CV.pdf) (updated October 2026). I can be contacted at jacksonmorris1999 at gmail dot com.
 
-| ![ASS](/images/ASS.png) |
+<!-- | ![ASS](/images/ASS.png) |
 | :----------------: |
-| The $\text{E}_\infty$-page of the mod-2 Adams spectral sequence.|
+| The $\text{E}_\infty$-page of the mod-2 Adams spectral sequence.| -->
+
+<iframe src="/SSViz/Adams_classical_Einfty.html" width="100%" height="1150" style="border:none;"></iframe>
 
 
 <!-- I try to collect resources which I have found useful on various topics. Feel free to email me if you have anything to contribute! -->

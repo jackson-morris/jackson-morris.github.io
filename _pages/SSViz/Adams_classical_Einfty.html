@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The E∞-page of the classical Adams spectral sequence</title>
+<style>
+  :root {
+    --bg: #fffddd;
+    --text: #494e52;
+    --muted: #7a8288;
+    --border: #f2f3f3;
+    --border-strong: #d6d9db;
+    --link: #ac084a;        /* site link blue */
+    --link-hover: #2d2f92;
+    --surface: #fafafa;
+    --dot: #000000;         /* Z/2 classes */
+    --zbox: #2d2f92;        /* outline of the Z boxes (site link blue) */
+    --diff: #c9503f;        /* differentials */
+    --grid: #eceeef;        /* chart grid lines */
+    --mult: #b4babe;        /* multiplication lines */
+    --hidden2: #d00000;     /* hidden 2-extensions */
+    --hiddeneta: #0057d9;   /* hidden eta-extensions */
+    --hiddennu: #008a2e;    /* hidden nu-extensions */
+    --sans: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+  html { font-size: 16px; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--sans); line-height: 1.5; -webkit-font-smoothing: antialiased; }
+  .page { max-width: 1240px; margin: 0 auto; padding: 1.25em 1.25em 2em; }
+  h1 { font-size: 1.6em; line-height: 1.2; font-weight: 700; margin: 0 0 .8em; }
+  sup, sub { line-height: 0; }
+
+  .toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: .5em; margin-bottom: .6em; }
+  .toolbar .hint { font-size: .85em; color: var(--muted); margin-left: .4em; }
+  .btn {
+    font: inherit; font-size: .875em; padding: .35em .85em; cursor: pointer;
+    background: var(--bg); color: var(--text); border: 1px solid var(--muted); border-radius: 4px;
+  }
+  .btn:hover { background: var(--border); }
+  .btn.icon { min-width: 2.3em; font-weight: 700; }
+  .btn.primary { background: var(--muted); color: #fff; border-color: var(--muted); }
+  .btn.primary:hover { background: #565a5f; }
+  button:focus-visible, input:focus-visible, #chart:focus-visible, .cls:focus-visible { outline: 2px solid var(--link-hover); outline-offset: 2px; }
+
+  .chartwrap { border: 1px solid var(--border-strong); border-radius: 4px; background: #fff; overflow: hidden; }
+  #chart { display: block; width: 100%; height: auto; cursor: grab; user-select: none; -webkit-user-select: none; }
+  #chart.dragging { cursor: grabbing; }
+  .cls { cursor: pointer; }
+
+  .below { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1em; margin-top: 1em; }
+  .panel { background: var(--surface); border: 1px solid var(--border-strong); border-radius: 4px; padding: .8em 1em; }
+  .key h2 { font-size: .8em; font-weight: 600; color: var(--muted); margin: 0 0 .35em; }
+  .key .grp + .grp { margin-top: .7em; }
+  .key label { display: flex; align-items: center; gap: .55em; font-size: .9em; cursor: pointer; padding: .1em 0; }
+  .key svg { flex: none; }
+  .exports { display: flex; flex-wrap: wrap; gap: .5em; margin-top: 1em; }
+
+  #info { border-left: 4px solid var(--link); min-height: 7em; }
+  #info .nm { font-size: 1.2em; font-weight: 700; margin-bottom: .3em; }
+  #info dl { margin: 0; display: grid; grid-template-columns: 6.5em 1fr; gap: .15em .8em; font-size: .95em; }
+  #info dt { color: var(--muted); }
+  #info dd { margin: 0; }
+  #info .hint { color: var(--muted); margin: 0; }
+
+  @media (max-width: 760px) { .below { grid-template-columns: 1fr; } h1 { font-size: 1.35em; } }
+  @media print { .toolbar, .exports, #info .hint { display: none; } .chartwrap { border: 0; } }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <h1>The E<sub>∞</sub>-page of the classical Adams spectral sequence</h1>
+
+  <div class="toolbar">
+    <button type="button" class="btn icon" id="zoom-in" aria-label="Zoom in">+</button>
+    <button type="button" class="btn icon" id="zoom-out" aria-label="Zoom out">&minus;</button>
+    <button type="button" class="btn" id="zoom-reset">Reset zoom</button>
+    <span class="hint">Drag to move around. Zoom with the buttons, the + and &minus; keys, pinching, or Ctrl + scroll.</span>
+  </div>
+
+  <div class="chartwrap">
+    <svg id="chart" tabindex="0" role="img" aria-label="Chart of the E-infinity page of the classical Adams spectral sequence through stem 43"></svg>
+  </div>
+
+  <div class="below">
+    <div class="panel key">
+      <div class="grp">
+        <h2>Multiplication</h2>
+        <label><input type="checkbox" data-kind="h0" checked><svg width="22" height="22"><line x1="11" y1="20" x2="11" y2="2" style="stroke:var(--mult);stroke-width:2"/></svg><span>h<sub>0</sub></span></label>
+        <label><input type="checkbox" data-kind="h1" checked><svg width="22" height="22"><line x1="3" y1="19" x2="19" y2="3" style="stroke:var(--mult);stroke-width:2"/></svg><span>h<sub>1</sub></span></label>
+        <label><input type="checkbox" data-kind="h2" checked><svg width="22" height="22"><line x1="1" y1="15" x2="21" y2="8" style="stroke:var(--mult);stroke-width:2"/></svg><span>h<sub>2</sub></span></label>
+      </div>
+      <div class="grp">
+        <h2>Hidden extensions</h2>
+        <label><input type="checkbox" data-kind="xh0" checked><svg width="22" height="22"><line x1="11" y1="20" x2="11" y2="2" style="stroke:var(--hidden2);stroke-width:2"/></svg><span>hidden 2-extension</span></label>
+        <label><input type="checkbox" data-kind="xh1" checked><svg width="22" height="22"><line x1="3" y1="19" x2="19" y2="3" style="stroke:var(--hiddeneta);stroke-width:2"/></svg><span>hidden η-extension</span></label>
+        <label><input type="checkbox" data-kind="xh2" checked><svg width="22" height="22"><line x1="1" y1="15" x2="21" y2="8" style="stroke:var(--hiddennu);stroke-width:2"/></svg><span>hidden ν-extension</span></label>
+      </div>
+      <div class="exports">
+        <button type="button" class="btn" id="print">Print or save PDF</button>
+        <button type="button" class="btn" id="download">Download SVG</button>
+        <button type="button" class="btn" id="seqsee-json">Export SeqSee JSON</button>
+        <button type="button" class="btn primary" id="seqsee-html">Export SeqSee HTML</button>
+      </div>
+    </div>
+    <div class="panel" id="info" aria-live="polite"></div>
+  </div>
+
+</main>
+
+<script>
+(function () {
+  'use strict';
+
+  /* Classes through stem 43, from Adams-classical-Einfty.csv (SeqSee format).
+     [name, stem, filtration, shift, h0 target, h0 hidden, h1 target, h1 hidden,
+      h2 target, h2 hidden, infinite h0-tower]                                 */
+  var ROWS = [["1",0,0,0,"h0",false,"h1",false,"h2",false,false],["h0",0,1,0,"h0^2",false,null,false,"h0 h2",false,false],["h0^2",0,2,0,"h0^3",false,null,false,"h1^3",false,false],["h0^3",0,3,0,"h0^4",false,null,false,null,false,false],["h0^4",0,4,0,"h0^5",false,null,false,null,false,false],["h0^5",0,5,0,"h0^6",false,null,false,null,false,false],["h0^6",0,6,0,"h0^7",false,null,false,null,false,false],["h0^7",0,7,0,"h0^8",false,null,false,null,false,false],["h0^8",0,8,0,"h0^9",false,null,false,null,false,false],["h0^9",0,9,0,"h0^10",false,null,false,null,false,false],["h0^10",0,10,0,"h0^11",false,null,false,null,false,false],["h0^11",0,11,0,"h0^12",false,null,false,null,false,false],["h0^12",0,12,0,"h0^13",false,null,false,null,false,false],["h0^13",0,13,0,"h0^14",false,null,false,null,false,false],["h0^14",0,14,0,"h0^15",false,null,false,null,false,false],["h0^15",0,15,0,"h0^16",false,null,false,null,false,false],["h0^16",0,16,0,"h0^17",false,null,false,null,false,false],["h0^17",0,17,0,"h0^18",false,null,false,null,false,false],["h0^18",0,18,0,"h0^19",false,null,false,null,false,false],["h0^19",0,19,0,"h0^20",false,null,false,null,false,false],["h0^20",0,20,0,"h0^21",false,null,false,null,false,false],["h0^21",0,21,0,"h0^22",false,null,false,null,false,false],["h0^22",0,22,0,"h0^23",false,null,false,null,false,false],["h0^23",0,23,0,null,false,null,false,null,false,true],["h1",1,1,0,null,false,"h1^2",false,null,false,false],["h1^2",2,2,0,null,false,"h1^3",false,null,false,false],["h2",3,1,0,"h0 h2",false,null,false,"h2^2",false,false],["h0 h2",3,2,0,"h1^3",false,null,false,null,false,false],["h1^3",3,3,0,null,false,null,false,null,false,false],["h2^2",6,2,0,null,false,null,false,"h1^2 h3",false,false],["h3",7,1,0,"h0 h3",false,"h1 h3",false,null,false,false],["h0 h3",7,2,0,"h0^2 h3",false,null,false,null,false,false],["h0^2 h3",7,3,0,"h0^3 h3",false,null,false,null,false,false],["h0^3 h3",7,4,0,null,false,null,false,null,false,false],["h1 h3",8,2,0,null,false,"h1^2 h3",false,null,false,false],["c0",8,3,0,null,false,"h1 c0",false,null,false,false],["h1^2 h3",9,3,0,null,false,null,false,null,false,false],["h1 c0",9,4,0,null,false,null,false,null,false,false],["P h1",9,5,0,null,false,"P h1^2",false,null,false,false],["P h1^2",10,6,0,null,false,"P h1^3",false,null,false,false],["P h2",11,5,0,"P h0 h2",false,null,false,null,false,false],["P h0 h2",11,6,0,"P h1^3",false,null,false,null,false,false],["P h1^3",11,7,0,null,false,null,false,null,false,false],["h3^2",14,2,0,null,false,null,false,null,false,false],["d0",14,4,0,null,false,"h1 d0",false,"h0 e0",false,false],["h0^3 h4",15,4,0,"h0^4 h4",false,"P c0",true,null,false,false],["h1 d0",15,5,-1,null,false,null,false,null,false,false],["h0^4 h4",15,5,1,"h0^5 h4",false,null,false,null,false,false],["h0^5 h4",15,6,0,"h0^6 h4",false,null,false,null,false,false],["h0^6 h4",15,7,0,"h0^7 h4",false,null,false,null,false,false],["h0^7 h4",15,8,0,null,false,null,false,null,false,false],["h1 h4",16,2,0,null,false,"h1^2 h4",false,null,false,false],["P c0",16,7,0,null,false,"P h1 c0",false,null,false,false],["h1^2 h4",17,3,0,null,false,"h1^3 h4",false,null,false,false],["h0 e0",17,5,0,null,false,null,false,"h0 h2 e0",false,false],["P h1 c0",17,8,0,null,false,null,false,null,false,false],["P^2 h1",17,9,0,null,false,"P^2 h1^2",false,null,false,false],["h2 h4",18,2,0,"h0 h2 h4",false,null,false,"h2^2 h4",false,false],["h0 h2 h4",18,3,0,"h1^3 h4",false,null,false,null,false,false],["h1^3 h4",18,4,0,null,false,null,false,null,false,false],["P^2 h1^2",18,10,0,null,false,"P^2 h1^3",false,null,false,false],["c1",19,3,0,null,false,null,false,"h2 c1",false,false],["P^2 h2",19,9,0,"P^2 h0 h2",false,null,false,null,false,false],["P^2 h0 h2",19,10,0,"P^2 h1^3",false,null,false,null,false,false],["P^2 h1^3",19,11,0,null,false,null,false,null,false,false],["g",20,4,0,"h2 e0",false,"h1 g",false,"h2 g",false,false],["h2 e0",20,5,0,"h0 h2 e0",false,null,false,"h0 h2 g",false,false],["h0 h2 e0",20,6,0,null,false,null,false,"P h1 d0",true,false],["h2^2 h4",21,3,0,null,false,null,false,null,false,false],["h1 g",21,5,0,null,false,"P d0",true,null,false,false],["h2 c1",22,4,0,null,false,null,false,null,false,false],["P d0",22,8,0,null,false,"P h1 d0",false,null,false,false],["h4 c0",23,4,0,null,false,"h1 h4 c0",false,null,false,false],["h2 g",23,5,0,"h0 h2 g",false,null,false,"h2^2 g",false,false],["h0 h2 g",23,6,0,"P h1 d0",true,null,false,null,false,false],["h0^2 i",23,9,1,"h0^3 i",false,"P^2 c0",true,null,false,false],["P h1 d0",23,9,-1,null,false,null,false,null,false,false],["h0^3 i",23,10,0,"h0^4 i",false,null,false,null,false,false],["h0^4 i",23,11,0,"h0^5 i",false,null,false,null,false,false],["h0^5 i",23,12,0,null,false,null,false,null,false,false],["h1 h4 c0",24,5,0,null,false,null,false,null,false,false],["P^2 c0",24,11,0,null,false,"P^2 h1 c0",false,null,false,false],["P^2 h1 c0",25,12,0,null,false,null,false,null,false,false],["P^3 h1",25,13,0,null,false,"P^3 h1^2",false,null,false,false],["h2^2 g",26,6,0,null,false,null,false,null,false,false],["P^3 h1^2",26,14,0,null,false,"P^3 h1^3",false,null,false,false],["P^3 h2",27,13,0,"P^3 h0 h2",false,null,false,null,false,false],["P^3 h0 h2",27,14,0,"P^3 h1^3",false,null,false,null,false,false],["P^3 h1^3",27,15,0,null,false,null,false,null,false,false],["d0^2",28,8,0,null,false,null,false,null,false,false],["h4^2",30,2,0,null,false,"h1 h4^2",false,"p",true,false],["h1 h4^2",31,3,0,null,false,null,false,null,false,false],["n",31,5,0,null,false,null,false,"h2 n",false,false],["h0^10 h5",31,11,0,"h0^11 h5",false,"P^3 c0",true,null,false,false],["h0^11 h5",31,12,0,"h0^12 h5",false,null,false,null,false,false],["h0^12 h5",31,13,0,"h0^13 h5",false,null,false,null,false,false],["h0^13 h5",31,14,0,"h0^14 h5",false,null,false,null,false,false],["h0^14 h5",31,15,0,"h0^15 h5",false,null,false,null,false,false],["h0^15 h5",31,16,0,null,false,null,false,null,false,false],["h1 h5",32,2,0,null,false,"h1^2 h5",false,null,false,false],["d1",32,4,0,null,false,null,false,"h2 d1",false,false],["q",32,6,0,null,false,"h1 q",false,"h1 e0^2",true,false],["P^3 c0",32,15,0,null,false,"P^3 h1 c0",false,null,false,false],["h1^2 h5",33,3,0,null,false,"h1^3 h5",false,null,false,false],["p",33,4,0,null,false,null,false,null,false,false],["h1 q",33,7,0,null,false,null,false,null,false,false],["P^3 h1 c0",33,16,0,null,false,null,false,null,false,false],["P^4 h1",33,17,0,null,false,"P^4 h1^2",false,null,false,false],["h0 h2 h5",34,3,0,"h1^3 h5",false,null,false,null,false,false],["h1^3 h5",34,4,0,null,false,null,false,null,false,false],["h2 n",34,6,0,null,false,null,false,null,false,false],["e0^2",34,8,0,null,false,"h1 e0^2",false,null,false,false],["P^4 h1^2",34,18,0,null,false,"P^4 h1^3",false,null,false,false],["h2 d1",35,5,0,null,false,null,false,"h2^2 d1",false,false],["h1 e0^2",35,9,0,null,false,null,false,null,false,false],["P^4 h2",35,17,0,"P^4 h0 h2",false,null,false,null,false,false],["P^4 h0 h2",35,18,0,"P^4 h1^3",false,null,false,null,false,false],["P^4 h1^3",35,19,0,null,false,null,false,null,false,false],["T",36,6,0,null,false,null,false,"c1 g",false,false],["h2^2 h5",37,3,0,null,false,null,false,"h1^2 h3 h5",false,false],["x",37,5,0,null,false,"h2^2 d1",false,null,false,false],["h0^2 h3 h5",38,4,0,"h0^3 h3 h5",false,"c1 g",true,null,false,false],["h0^3 h3 h5",38,5,0,null,false,null,false,null,false,false],["h2^2 d1",38,6,0,null,false,null,false,null,false,false],["h1 h3 h5",39,3,0,null,false,"h1^2 h3 h5",false,null,false,false],["h5 c0",39,4,0,null,false,"h1 h5 c0",false,null,false,false],["h1 e1",39,5,0,null,false,null,false,null,false,false],["c1 g",39,7,0,null,false,null,false,null,false,false],["u",39,9,0,null,false,"h1 u",false,"d0^3",true,false],["P^2 h0^2 i",39,17,0,"P^2 h0^3 i",false,"P^4 c0",true,null,false,false],["P^2 h0^3 i",39,18,0,"P^2 h0^4 i",false,null,false,null,false,false],["P^2 h0^4 i",39,19,0,"P^2 h0^5 i",false,null,false,null,false,false],["P^2 h0^5 i",39,20,0,null,false,null,false,null,false,false],["h1^2 h3 h5",40,4,-1,null,false,null,false,null,false,false],["f1",40,4,1,null,false,"h1 f1",false,null,false,false],["h1 h5 c0",40,5,0,null,false,null,false,null,false,false],["P h1 h5",40,6,0,"P h1^2 h5",false,null,false,null,false,false],["g^2",40,8,0,"h1 u",true,"z",true,null,false,false],["h1 u",40,10,0,null,false,null,false,null,false,false],["P^4 c0",40,19,0,null,false,"P^4 h1 c0",false,null,false,false],["h1 f1",41,5,0,null,false,null,false,null,false,false],["P h1^2 h5",41,7,0,"P h1^3 h5",false,null,false,null,false,false],["z",41,10,0,null,false,"d0^3",true,null,false,false],["P^4 h1 c0",41,20,0,null,false,null,false,null,false,false],["P^5 h1",41,21,0,null,false,"P^5 h1^2",false,null,false,false],["P h2 h5",42,6,0,"P h0 h2 h5",false,null,false,"h0^2 h5 d0",false,false],["P h0 h2 h5",42,7,0,"P h1^3 h5",false,null,false,null,false,false],["P h1^3 h5",42,8,0,null,false,null,false,null,false,false],["d0^3",42,12,0,null,false,null,false,null,false,false],["P^5 h1^2",42,22,0,null,false,"P^5 h1^3",false,null,false,false],["P^5 h2",43,21,0,"P^5 h0 h2",false,null,false,null,false,false],["P^5 h0 h2",43,22,0,"P^5 h1^3",false,null,false,null,false,false],["P^5 h1^3",43,23,0,null,false,null,false,null,false,false]];
+
+  var NS = 'http://www.w3.org/2000/svg';
+  var $ = function (id) { return document.getElementById(id); };
+  var css = function (name) { return getComputedStyle(document.documentElement).getPropertyValue(name).trim(); };
+  var MINUS = '\u2212';
+  var fmt = function (k) { return String(k).replace('-', MINUS); };
+  function esc(t) { return String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+
+  var classes = ROWS.map(function (r) {
+    return { name: r[0], n: r[1], s: r[2], shift: r[3],
+      h0: r[4], xh0: r[5], h1: r[6], xh1: r[7], h2: r[8], xh2: r[9], loc: r[10] };
+  });
+  var byName = {};
+  classes.forEach(function (c) { byName[c.name] = c; });
+
+  var KINDS = ['h0', 'h1', 'h2', 'xh0', 'xh1', 'xh2'];
+  var show = { h0: true, h1: true, h2: true, xh0: true, xh1: true, xh2: true };
+  var edges = [];
+  classes.forEach(function (c) {
+    ['h0', 'h1', 'h2'].forEach(function (h) {
+      if (!c[h]) return;
+      var t = byName[c[h]];
+      if (t) edges.push({ from: c, to: t, kind: c['x' + h] ? 'x' + h : h });
+    });
+  });
+
+  /* ---------------- names ---------------- */
+
+  function tokens(name) { return name.split(/\s+/).filter(Boolean); }
+  function nameHTML(name) {
+    return tokens(name).map(function (tok) {
+      var m = /^([A-Za-z]+)(\d*)('*)(?:\^(\d+))?$/.exec(tok);
+      if (!m) return esc(tok);
+      return m[1] + (m[2] ? '<sub>' + m[2] + '</sub>' : '') + m[3].replace(/'/g, '\u2032') + (m[4] ? '<sup>' + m[4] + '</sup>' : '');
+    }).join('');
+  }
+  function nameTex(name) {
+    return tokens(name).map(function (tok) {
+      var m = /^([A-Za-z]+)(\d*)('*)(?:\^(\d+))?$/.exec(tok);
+      if (!m) return tok;
+      return m[1] + (m[2] ? '_{' + m[2] + '}' : '') + m[3] + (m[4] ? '^{' + m[4] + '}' : '');
+    }).join(' ');
+  }
+
+  /* ---------------- geometry ---------------- */
+
+  var XMIN = 0, XMAX = 43, YMIN = 0;
+  var YMAX = Math.max.apply(null, classes.map(function (c) { return c.s; }));
+  var CELL = 26, R = 3.4, SHIFT = 8.2;
+  var ML = 46, MT = 10, MR = 12, MB = 46;
+  var PW = (XMAX - XMIN + 1) * CELL, HEAD = 0.6 * CELL, PH = (YMAX - YMIN + 1) * CELL + HEAD;  /* HEAD: room above the top row for the tower arrow */
+  var W = ML + PW + MR, H = MT + PH + MB;
+  var X = function (c) { return (c.n - XMIN + 0.5) * CELL + c.shift * SHIFT; };
+  var Y = function (c) { return HEAD + (YMAX - c.s + 0.5) * CELL; };
+  var view = { k: 1, tx: 0, ty: 0 };
+  var KMAX = 8;
+
+  function el(name, attrs, parent) {
+    var e = document.createElementNS(NS, name);
+    for (var key in attrs) if (Object.prototype.hasOwnProperty.call(attrs, key)) e.setAttribute(key, attrs[key]);
+    if (parent) parent.appendChild(e);
+    return e;
+  }
+  function colors() {
+    return { dot: css('--dot'), mult: css('--mult'), xh0: css('--hidden2'), xh1: css('--hiddeneta'), xh2: css('--hiddennu'), grid: css('--grid'),
+      border: css('--border-strong'), muted: css('--muted'), text: css('--text'), ring: css('--link-hover'), font: css('--sans') };
+  }
+
+  /* Draws the chart into svg. With interactive = false (for export) it draws
+     the whole chart unzoomed and without hover handlers. */
+  var ring = null, viewG = null, ticksG = null, dotEls = [];
+
+  function draw(svg, interactive) {
+    while (svg.firstChild) svg.removeChild(svg.firstChild);
+    var col = colors();
+    svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+    svg.setAttribute('font-family', col.font);
+    var defs = el('defs', {}, svg);
+    var clip = el('clipPath', { id: 'plotclip' }, defs);
+    el('rect', { x: 0, y: 0, width: PW, height: PH }, clip);
+    var mk = el('marker', { id: 'towerarrow', viewBox: '0 0 10 10', refX: 9, refY: 5, markerWidth: 7, markerHeight: 7, orient: 'auto-start-reverse' }, defs);
+    el('path', { d: 'M0 0 L10 5 L0 10 Z', fill: col.mult }, mk);
+
+    el('rect', { x: 0, y: 0, width: W, height: H, fill: '#ffffff' }, svg);
+    var outer = el('g', { transform: 'translate(' + ML + ' ' + MT + ')' }, svg);
+    var clipped = el('g', { 'clip-path': 'url(#plotclip)' }, outer);
+    var vg = el('g', {}, clipped);
+
+    var ns = { 'vector-effect': 'non-scaling-stroke' };
+    var grid = el('g', {}, vg);
+    for (var gx = XMIN; gx <= XMAX; gx++) el('line', Object.assign({ x1: (gx - XMIN + 0.5) * CELL, x2: (gx - XMIN + 0.5) * CELL, y1: 0, y2: PH, stroke: col.grid, 'stroke-width': 1 }, ns), grid);
+    for (var gy = YMIN; gy <= YMAX; gy++) el('line', Object.assign({ x1: 0, x2: PW, y1: HEAD + (YMAX - gy + 0.5) * CELL, y2: HEAD + (YMAX - gy + 0.5) * CELL, stroke: col.grid, 'stroke-width': 1 }, ns), grid);
+
+    var lines = el('g', {}, vg);
+    edges.forEach(function (e) {
+      if (!show[e.kind]) return;
+      el('line', Object.assign({ x1: X(e.from), y1: Y(e.from), x2: X(e.to), y2: Y(e.to),
+        stroke: e.kind.charAt(0) === 'x' ? col[e.kind] : col.mult, 'stroke-width': e.kind.charAt(0) === 'x' ? 1.6 : 1.4, 'stroke-linecap': 'round' }, ns), lines);
+    });
+    if (show.h0) classes.forEach(function (c) {
+      if (!c.loc) return;
+      el('line', Object.assign({ x1: X(c), y1: Y(c), x2: X(c), y2: 1, stroke: col.mult, 'stroke-width': 1.4, 'marker-end': 'url(#towerarrow)' }, ns), lines);
+    });
+
+    if (interactive) dotEls = [];
+    if (interactive) ring = el('circle', Object.assign({ r: 7.5, fill: 'none', stroke: col.ring, 'stroke-width': 2, visibility: 'hidden', 'pointer-events': 'none' }, ns), vg);
+
+    var dots = el('g', {}, vg);
+    classes.forEach(function (c) {
+      var g = el('g', interactive ? { 'class': 'cls', tabindex: -1, 'data-name': c.name } : {}, dots);
+      var hit = interactive ? el('circle', { cx: X(c), cy: Y(c), r: 6.5, fill: 'transparent' }, g) : null;
+      var dot = el('circle', { cx: X(c), cy: Y(c), r: R, fill: col.dot }, g);
+      if (interactive) dotEls.push([dot, hit]);
+      if (interactive) {
+        g.addEventListener('mouseenter', function () { hover(c); });
+        g.addEventListener('mouseleave', restore);
+        g.addEventListener('click', function () {
+          if (dragMoved) return;
+          pinned = pinned === c ? null : c; restore();
+        });
+      }
+    });
+
+    el('rect', { x: ML, y: MT, width: PW, height: PH, fill: 'none', stroke: col.border, 'stroke-width': 1 }, svg);
+    var tg = el('g', {}, svg);
+    el('text', { x: ML + PW / 2, y: MT + PH + 40, 'text-anchor': 'middle', 'font-size': 14, 'font-style': 'italic', fill: col.text }, svg).textContent = 't \u2212 s';
+    el('text', { x: 14, y: MT + PH / 2, 'text-anchor': 'middle', 'font-size': 14, 'font-style': 'italic', fill: col.text,
+      transform: 'rotate(-90 14 ' + (MT + PH / 2) + ')' }, svg).textContent = 's';
+
+    if (interactive) { viewG = vg; ticksG = tg; applyView(); }
+    else drawTicks(tg, { k: 1, tx: 0, ty: 0 }, col);
+  }
+
+  function drawTicks(tg, v, col) {
+    while (tg.firstChild) tg.removeChild(tg.firstChild);
+    var cs = CELL * v.k, step = cs >= 18 ? 1 : cs >= 9 ? 2 : 5;
+    for (var x = XMIN; x <= XMAX; x++) {
+      if (x % step) continue;
+      var sx = ML + v.tx + (x - XMIN + 0.5) * CELL * v.k;
+      if (sx < ML - 1 || sx > ML + PW + 1) continue;
+      el('text', { x: sx, y: MT + PH + 18, 'text-anchor': 'middle', 'font-size': 12.5, fill: col.muted }, tg).textContent = fmt(x);
+    }
+    for (var y = YMIN; y <= YMAX; y++) {
+      if (y % step) continue;
+      var sy = MT + v.ty + (HEAD + (YMAX - y + 0.5) * CELL) * v.k;
+      if (sy < MT - 1 || sy > MT + PH + 1) continue;
+      el('text', { x: ML - 8, y: sy + 4.5, 'text-anchor': 'end', 'font-size': 12.5, fill: col.muted }, tg).textContent = fmt(y);
+    }
+  }
+
+  /* ---------------- zoom and pan ---------------- */
+
+  function clampView() {
+    view.k = Math.max(1, Math.min(KMAX, view.k));
+    view.tx = Math.min(0, Math.max(PW - PW * view.k, view.tx));
+    view.ty = Math.min(0, Math.max(PH - PH * view.k, view.ty));
+  }
+  function applyView() {
+    clampView();
+    viewG.setAttribute('transform', 'translate(' + view.tx + ' ' + view.ty + ') scale(' + view.k + ')');
+    drawTicks(ticksG, view, colors());
+    var f = 1 / Math.sqrt(view.k);
+    dotEls.forEach(function (d) { d[0].setAttribute('r', R * f); d[1].setAttribute('r', 6.5 * f); });
+    if (ring) ring.setAttribute('r', 7.5 * f);
+    $('chart').style.touchAction = view.k > 1.001 ? 'none' : 'pan-y';
+  }
+  function zoomAt(f, px, py) {
+    if (px == null) { px = PW / 2; py = PH / 2; }
+    var k2 = Math.max(1, Math.min(KMAX, view.k * f)), r = k2 / view.k;
+    view.tx = px - (px - view.tx) * r; view.ty = py - (py - view.ty) * r; view.k = k2;
+    applyView();
+  }
+  function toPlot(e) {
+    var svg = $('chart'), pt = svg.createSVGPoint();
+    pt.x = e.clientX; pt.y = e.clientY;
+    var p = pt.matrixTransform(svg.getScreenCTM().inverse());
+    return { x: p.x - ML, y: p.y - MT };
+  }
+
+  var pointers = {}, drag = null, pinch = null, dragMoved = false;
+  function setupPanZoom() {
+    var svg = $('chart');
+    svg.addEventListener('wheel', function (e) {
+      if (!(e.ctrlKey || e.metaKey)) return;
+      e.preventDefault();
+      var p = toPlot(e);
+      zoomAt(Math.exp(-e.deltaY * 0.004), p.x, p.y);
+    }, { passive: false });
+    svg.addEventListener('pointerdown', function (e) {
+      if (e.pointerType === 'mouse' && e.button !== 0) return;
+      pointers[e.pointerId] = toPlot(e);
+      var ids = Object.keys(pointers);
+      if (ids.length === 1) { drag = { p: pointers[ids[0]], tx: view.tx, ty: view.ty }; dragMoved = false; }
+      if (ids.length === 2) {
+        var a = pointers[ids[0]], b = pointers[ids[1]];
+        pinch = { d: Math.hypot(a.x - b.x, a.y - b.y) || 1, mid: { x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 }, k: view.k, tx: view.tx, ty: view.ty };
+        drag = null; dragMoved = true;
+      }
+    });
+    svg.addEventListener('pointermove', function (e) {
+      if (!pointers[e.pointerId]) return;
+      pointers[e.pointerId] = toPlot(e);
+      var ids = Object.keys(pointers);
+      if (pinch && ids.length >= 2) {
+        var a = pointers[ids[0]], b = pointers[ids[1]];
+        var d = Math.hypot(a.x - b.x, a.y - b.y), mid = { x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 };
+        var k2 = Math.max(1, Math.min(KMAX, pinch.k * d / pinch.d));
+        var dx = (pinch.mid.x - pinch.tx) / pinch.k, dy = (pinch.mid.y - pinch.ty) / pinch.k;
+        view.k = k2; view.tx = mid.x - dx * k2; view.ty = mid.y - dy * k2;
+        applyView();
+      } else if (drag) {
+        var p = pointers[e.pointerId], mx = p.x - drag.p.x, my = p.y - drag.p.y;
+        if (!dragMoved && Math.hypot(mx, my) > 4) { dragMoved = true; svg.classList.add('dragging'); try { svg.setPointerCapture(e.pointerId); } catch (err) { /* ignore */ } }
+        if (dragMoved) { view.tx = drag.tx + mx; view.ty = drag.ty + my; applyView(); }
+      }
+    });
+    var end = function (e) {
+      delete pointers[e.pointerId];
+      if (Object.keys(pointers).length < 2) pinch = null;
+      if (Object.keys(pointers).length === 0) { drag = null; svg.classList.remove('dragging'); setTimeout(function () { dragMoved = false; }, 0); }
+    };
+    svg.addEventListener('pointerup', end);
+    svg.addEventListener('pointercancel', end);
+    svg.addEventListener('keydown', function (e) {
+      var k = e.key, step = 0.1;
+      if (k === '+' || k === '=') zoomAt(1.25);
+      else if (k === '-' || k === '_') zoomAt(0.8);
+      else if (k === '0') { view = { k: 1, tx: 0, ty: 0 }; applyView(); }
+      else if (k === 'ArrowLeft') { view.tx += PW * step; applyView(); }
+      else if (k === 'ArrowRight') { view.tx -= PW * step; applyView(); }
+      else if (k === 'ArrowUp') { view.ty += PH * step; applyView(); }
+      else if (k === 'ArrowDown') { view.ty -= PH * step; applyView(); }
+      else return;
+      e.preventDefault();
+    });
+    $('zoom-in').addEventListener('click', function () { zoomAt(1.5); });
+    $('zoom-out').addEventListener('click', function () { zoomAt(1 / 1.5); });
+    $('zoom-reset').addEventListener('click', function () { view = { k: 1, tx: 0, ty: 0 }; applyView(); });
+  }
+
+  /* ---------------- hover panel ---------------- */
+
+  var pinned = null;
+  var LABEL = { h0: 'h<sub>0</sub>', h1: 'h<sub>1</sub>', h2: 'h<sub>2</sub>' };
+  var HIDDEN = { h0: 'Hidden 2-extension to ', h1: 'Hidden \u03B7-extension to ', h2: 'Hidden \u03BD-extension to ' };
+
+  function showInfo(c) {
+    var box = $('info');
+    if (!c) { box.innerHTML = '<p class="hint">Hover over or tap a class to see its name. Tap it again to unpin it.</p>'; return; }
+    var prods = [];
+    ['h0', 'h1', 'h2'].forEach(function (h) {
+      if (!c[h]) return;
+      prods.push(c['x' + h] ? HIDDEN[h] + nameHTML(c[h]) : LABEL[h] + ' \u00B7 ' + nameHTML(c.name) + ' = ' + nameHTML(c[h]));
+    });
+    if (c.loc) prods.push('Supports an infinite h<sub>0</sub>-tower');
+    box.innerHTML = '<div class="nm">' + nameHTML(c.name) + '</div><dl>' +
+      '<dt>Position</dt><dd>(t' + MINUS + 's, s) = (' + fmt(c.n) + ', ' + c.s + ')</dd>' +
+      (prods.length ? '<dt>Products</dt><dd>' + prods.join('<br>') + '</dd>' : '') + '</dl>';
+  }
+  function placeRing(c) {
+    if (!ring) return;
+    if (c) { ring.setAttribute('cx', X(c)); ring.setAttribute('cy', Y(c)); ring.setAttribute('visibility', 'visible'); }
+    else ring.setAttribute('visibility', 'hidden');
+  }
+  function hover(c) { if (drag && dragMoved) return; placeRing(c); showInfo(c); }
+  function restore() { placeRing(pinned); showInfo(pinned); }
+
+  /* ---------------- key ---------------- */
+
+  var boxes = document.querySelectorAll('.key input[data-kind]');
+  for (var i = 0; i < boxes.length; i++) boxes[i].addEventListener('change', function () {
+    show[this.getAttribute('data-kind')] = this.checked;
+    var saved = view; draw($('chart'), true); view = saved; applyView(); restore();
+  });
+
+  /* ---------------- exports ---------------- */
+
+  function buildSeqSee() {
+    var colorsAlias = { dotcolor: css('--dot'), multcolor: css('--mult'), hidden2color: css('--hidden2'), hiddenetacolor: css('--hiddeneta'), hiddennucolor: css('--hiddennu') };
+    var nodes = {}, out = [];
+    classes.forEach(function (c) {
+      var node = { x: c.n, y: c.s, label: '$' + nameTex(c.name) + '$' };
+      if (c.shift) node.position = c.shift;
+      nodes[c.name] = node;
+    });
+    edges.forEach(function (e) {
+      if (!show[e.kind]) return;
+      var ed = { source: e.from.name, target: e.to.name };
+      if (e.kind.charAt(0) === 'x') ed.attributes = [{ xh0: 'hidden2', xh1: 'hiddeneta', xh2: 'hiddennu' }[e.kind]];
+      out.push(ed);
+    });
+    if (show.h0) classes.forEach(function (c) {
+      if (c.loc) out.push({ source: c.name, offset: { x: 0, y: 0.5 }, attributes: [{ arrowTip: 'simple' }] });
+    });
+    return {
+      $schema: 'https://raw.githubusercontent.com/JoeyBF/SeqSee/refs/heads/master/seqsee/input_schema.json',
+      header: {
+        metadata: { htmltitle: 'Classical Adams spectral sequence, E-infinity page', displaytitle: 'The $E_\\infty$-page of the classical Adams spectral sequence', source: 'Adams-classical-Einfty.csv, stems 0 to 43' },
+        chart: { width: { min: XMIN, max: XMAX }, height: { min: YMIN, max: YMAX }, scale: 60, nodeSize: 0.06, nodeSpacing: 0.03 },
+        aliases: {
+          colors: colorsAlias,
+          attributes: {
+            defaultNode: [{ color: 'dotcolor' }],
+            defaultEdge: [{ color: 'multcolor', thickness: 0.02 }],
+            hidden2: [{ color: 'hidden2color', thickness: 0.025 }],
+            hiddeneta: [{ color: 'hiddenetacolor', thickness: 0.025 }],
+            hiddennu: [{ color: 'hiddennucolor', thickness: 0.025 }]
+          }
+        }
+      },
+      nodes: nodes, edges: out
+    };
+  }
+
+  function seqseeRuntime() {
+    var DATA = window.SEQSEE_DATA, NS = 'http://www.w3.org/2000/svg';
+    var charts = DATA.charts ? DATA.charts : [DATA];
+    var topAliases = (DATA.header && DATA.header.aliases) || {};
+    var app = document.getElementById('app');
+    var current = -1, view = null, home = null, svg = null, hoverRaw = '';
+
+    function esc(t) { return t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+    var SYM = { '\\eta': '\u03B7', '\\infty': '\u221E', '\\cong': '\u2245', '\\to': '\u2192', '\\mapsto': '\u21A6', '\\pi': '\u03C0', '\\cdot': '\u00B7', '\\pm': '\u00B1' };
+    var BB = { Z: '\u2124', R: '\u211D', C: '\u2102', Q: '\u211A', N: '\u2115' };
+    function texMath(s) {
+      var out = '', i = 0;
+      function group() {
+        if (s[i] === '{') { var d = 1, j = i + 1; while (j < s.length && d) { if (s[j] === '{') d++; else if (s[j] === '}') d--; j++; } var g = s.slice(i + 1, j - 1); i = j; return g; }
+        if (s[i] === '\\') { var mm = /^\\[a-zA-Z]+/.exec(s.slice(i)); if (mm) { i += mm[0].length; return mm[0]; } }
+        return s[i++] || '';
+      }
+      while (i < s.length) {
+        var c = s[i];
+        if (c === '^' || c === '_') { i++; var g = group(); out += (c === '^' ? '<sup>' : '<sub>') + texMath(g) + (c === '^' ? '</sup>' : '</sub>'); }
+        else if (c === '\\') {
+          var m = /^\\[a-zA-Z]+/.exec(s.slice(i));
+          if (!m) { out += esc(s[i + 1] || ''); i += 2; continue; }
+          i += m[0].length;
+          if (m[0] === '\\mathbb') { var b = group(); out += BB[b] || b; }
+          else if (m[0] === '\\mathrm' || m[0] === '\\text' || m[0] === '\\operatorname') out += '<span class="rm">' + texMath(group()) + '</span>';
+          else out += SYM[m[0]] !== undefined ? SYM[m[0]] : m[0].slice(1);
+        }
+        else if (c === '{' || c === '}') i++;
+        else if (c === '-') { out += '\u2212'; i++; }
+        else if (c === ' ') { i++; }
+        else if (/[a-zA-Z]/.test(c)) { out += '<i>' + c + '</i>'; i++; }
+        else { out += esc(c); i++; }
+      }
+      return out;
+    }
+    function tex(t) {
+      if (!t) return '';
+      return String(t).split('$').map(function (part, k) { return k % 2 ? '<span class="math">' + texMath(part) + '</span>' : esc(part); }).join('');
+    }
+
+    function aliasesFor(chart) {
+      var a = (chart.header && chart.header.aliases) || {};
+      var colors = {}, attrs = {}, k;
+      var tc = topAliases.colors || {}, ta = topAliases.attributes || {};
+      for (k in tc) colors[k] = tc[k];
+      for (k in (a.colors || {})) colors[k] = a.colors[k];
+      for (k in ta) attrs[k] = ta[k];
+      for (k in (a.attributes || {})) attrs[k] = a.attributes[k];
+      if (!colors.backgroundColor) colors.backgroundColor = 'white';
+      if (!colors.borderColor) colors.borderColor = 'black';
+      if (!colors.textColor) colors.textColor = 'black';
+      if (!attrs.grid) attrs.grid = [{ color: '#ccc', thickness: 0.01 }];
+      if (!attrs.defaultNode) attrs.defaultNode = [{ color: 'black' }];
+      if (!attrs.defaultEdge) attrs.defaultEdge = [{ color: 'black', thickness: 0.02 }];
+      return { colors: colors, attrs: attrs };
+    }
+    function resolve(list, al, names, depth) {
+      var out = {};
+      (list || []).forEach(function (e) {
+        var r;
+        if (typeof e === 'string') { names.push(e); r = (depth < 8 && al.attrs[e]) ? resolve(al.attrs[e], al, names, depth + 1) : {}; }
+        else r = e;
+        for (var k in r) out[k] = r[k];
+      });
+      return out;
+    }
+    function color(c, al) { return (c && al.colors[c]) || c || 'black'; }
+    function el(name, attrs, parent) {
+      var e = document.createElementNS(NS, name);
+      for (var k in attrs) e.setAttribute(k, attrs[k]);
+      if (parent) parent.appendChild(e);
+      return e;
+    }
+
+    function showIndex() {
+      current = -1; svg = null;
+      var md = (DATA.header && DATA.header.metadata) || {};
+      var html = '<div class="index"><h1>' + tex(md.title || '') + '</h1><ul>';
+      charts.forEach(function (c, k) {
+        var t = (c.header && c.header.metadata && c.header.metadata.displaytitle) || ('Chart ' + (k + 1));
+        html += '<li><a href="#" data-k="' + k + '">' + tex(t) + '</a></li>';
+      });
+      html += '</ul><p class="keys">Keys: w and s move between charts, Esc returns here. On a chart, + and \u2212 zoom, arrow keys pan, 0 resets, c copies the hover text.</p></div>';
+      app.innerHTML = html;
+      var links = app.querySelectorAll('a[data-k]');
+      for (var i = 0; i < links.length; i++) links[i].addEventListener('click', function (e) { e.preventDefault(); showChart(+this.getAttribute('data-k')); });
+      if (charts.length === 1) showChart(0);
+    }
+
+    function showChart(k) {
+      current = k;
+      var chart = charts[k], h = chart.header || {}, ch = h.chart || {}, md = h.metadata || {};
+      var al = aliasesFor(chart);
+      var scale = ch.scale || 60, nodeSize = ch.nodeSize != null ? ch.nodeSize : 0.04;
+      var nodes = chart.nodes || {}, edges = chart.edges || [];
+      var ids = Object.keys(nodes);
+      var xsAll = ids.map(function (i) { return nodes[i].x != null ? nodes[i].x : nodes[i].absoluteX; });
+      var ysAll = ids.map(function (i) { return nodes[i].y != null ? nodes[i].y : nodes[i].absoluteY; });
+      var w = ch.width || {}, hh = ch.height || {};
+      var xmin = w.min != null ? w.min : Math.min.apply(null, xsAll.concat([0]));
+      var xmax = w.max != null ? w.max : Math.max.apply(null, xsAll.concat([1]));
+      var ymin = hh.min != null ? hh.min : Math.min.apply(null, ysAll.concat([0]));
+      var ymax = hh.max != null ? hh.max : Math.max.apply(null, ysAll.concat([1]));
+      var X = function (x) { return (x - xmin) * scale; }, Y = function (y) { return (ymax - y) * scale; };
+
+      app.innerHTML = '<div class="top"><div class="title">' + tex(md.displaytitle || '') + '</div><div class="hover" id="hover"></div></div>';
+      svg = el('svg', { 'class': 'chart' }, app);
+      svg.style.background = color('backgroundColor', al);
+      var defs = el('defs', {}, svg);
+      var root = el('g', {}, svg);
+
+      var gridA = resolve(['grid'], al, [], 0);
+      var gw = (gridA.thickness || 0.01) * scale;
+      for (var gx = Math.ceil(xmin); gx <= xmax; gx++) el('line', { x1: X(gx), x2: X(gx), y1: Y(ymin), y2: Y(ymax), stroke: color(gridA.color, al), 'stroke-width': gw }, root);
+      for (var gy = Math.ceil(ymin); gy <= ymax; gy++) el('line', { x1: X(xmin), x2: X(xmax), y1: Y(gy), y2: Y(gy), stroke: color(gridA.color, al), 'stroke-width': gw }, root);
+      var fs = 0.28 * scale, tc = color('textColor', al);
+      for (var lx = Math.ceil(xmin); lx <= xmax; lx++) el('text', { x: X(lx), y: Y(ymin) + 0.55 * scale, 'text-anchor': 'middle', 'font-size': fs, fill: tc, 'class': 'axis' }, root).textContent = String(lx).replace('-', '\u2212');
+      for (var ly = Math.ceil(ymin); ly <= ymax; ly++) el('text', { x: X(xmin) - 0.4 * scale, y: Y(ly) + fs * 0.35, 'text-anchor': 'end', 'font-size': fs, fill: tc, 'class': 'axis' }, root).textContent = String(ly).replace('-', '\u2212');
+
+      var pos = {}, rad = {};
+      ids.forEach(function (i) {
+        var n = nodes[i];
+        pos[i] = { x: n.x != null ? X(n.x) : X(n.absoluteX), y: n.y != null ? Y(n.y) : Y(n.absoluteY) };
+        var a = resolve(['defaultNode'].concat(n.attributes || []), al, [], 0);
+        rad[i] = (a.size != null ? a.size : nodeSize) * scale;
+        if (n.x != null && n.position) pos[i].x += n.position * (2 * rad[i] + (ch.nodeSpacing != null ? ch.nodeSpacing : 0.02) * scale);
+      });
+
+      var markers = {};
+      function markerFor(c) {
+        if (markers[c]) return markers[c];
+        var idm = 'm' + Object.keys(markers).length;
+        var m = el('marker', { id: idm, viewBox: '0 0 10 10', refX: 9, refY: 5, markerWidth: 6, markerHeight: 6, orient: 'auto-start-reverse', markerUnits: 'strokeWidth' }, defs);
+        el('path', { d: 'M0 0 L10 5 L0 10 Z', fill: c }, m);
+        markers[c] = idm; return idm;
+      }
+      edges.forEach(function (e) {
+        var a = resolve(['defaultEdge'].concat(e.attributes || []), al, [], 0);
+        var p = pos[e.source]; if (!p) return;
+        var q = e.target != null ? pos[e.target] : (e.offset ? { x: p.x + e.offset.x * scale, y: p.y - e.offset.y * scale } : null);
+        if (!q) return;
+        var dx = q.x - p.x, dy = q.y - p.y, L = Math.sqrt(dx * dx + dy * dy) || 1, ux = dx / L, uy = dy / L;
+        var r0 = rad[e.source] || 0, r1 = e.target != null ? (rad[e.target] || 0) * 1.4 : 0;
+        var c = color(a.color, al), attrs = { x1: p.x + ux * r0, y1: p.y + uy * r0, x2: q.x - ux * r1, y2: q.y - uy * r1, stroke: c, 'stroke-width': (a.thickness != null ? a.thickness : 0.02) * scale, 'stroke-linecap': 'round' };
+        if (a.pattern === 'dashed') attrs['stroke-dasharray'] = '6 4';
+        if (a.pattern === 'dotted') attrs['stroke-dasharray'] = '1 4';
+        if (a.arrowTip === 'simple') attrs['marker-end'] = 'url(#' + markerFor(c) + ')';
+        el('line', attrs, root);
+      });
+
+      var hover = document.getElementById('hover');
+      ids.forEach(function (i) {
+        var n = nodes[i], names = [];
+        var a = resolve(['defaultNode'].concat(n.attributes || []), al, names, 0);
+        var p = pos[i], r = rad[i], c = color(a.color, al);
+        var g = el('g', { 'class': 'node' }, root);
+        el('circle', { cx: p.x, cy: p.y, r: Math.max(r * 2.6, 9), fill: 'transparent' }, g);
+        if (names.indexOf('Z') >= 0 || names.indexOf('twoZ') >= 0) {
+          var sd = r * 2.5;
+          el('rect', { x: p.x - sd / 2, y: p.y - sd / 2, width: sd, height: sd, fill: color('backgroundColor', al), stroke: c, 'stroke-width': r * 0.45 }, g);
+          if (names.indexOf('twoZ') >= 0) el('text', { x: p.x, y: p.y + sd * 0.27, 'text-anchor': 'middle', 'font-size': sd * 0.78, 'font-weight': 700, fill: c }, g).textContent = '2';
+        } else {
+          el('circle', { cx: p.x, cy: p.y, r: r, fill: c, stroke: c, 'stroke-width': (a.thickness || 0) * scale }, g);
+        }
+        g.addEventListener('mouseenter', function () { hoverRaw = n.label || ''; hover.innerHTML = tex(n.label || ''); hover.style.visibility = n.label ? 'visible' : 'hidden'; });
+      });
+
+      var pad = 0.9 * scale;
+      home = { x: X(xmin) - pad * 1.2, y: Y(ymax) - pad, w: (xmax - xmin) * scale + pad * 2.2, h: (ymax - ymin) * scale + pad * 2 };
+      view = { x: home.x, y: home.y, w: home.w, h: home.h };
+      apply();
+      attachPanZoom();
+    }
+
+    function apply() { if (svg) svg.setAttribute('viewBox', view.x + ' ' + view.y + ' ' + view.w + ' ' + view.h); }
+    function zoom(f, cx, cy) {
+      if (cx == null) { cx = view.x + view.w / 2; cy = view.y + view.h / 2; }
+      view.x = cx - (cx - view.x) / f; view.y = cy - (cy - view.y) / f; view.w /= f; view.h /= f; apply();
+    }
+    function toSvg(e) {
+      var r = svg.getBoundingClientRect(), s = Math.max(view.w / r.width, view.h / r.height);
+      var ox = (r.width * s - view.w) / 2, oy = (r.height * s - view.h) / 2;
+      return { x: view.x - ox + (e.clientX - r.left) * s, y: view.y - oy + (e.clientY - r.top) * s, s: s };
+    }
+    function attachPanZoom() {
+      var drag = null;
+      svg.addEventListener('wheel', function (e) { e.preventDefault(); var p = toSvg(e); zoom(e.deltaY < 0 ? 1.15 : 1 / 1.15, p.x, p.y); }, { passive: false });
+      svg.addEventListener('pointerdown', function (e) { drag = { x: e.clientX, y: e.clientY, vx: view.x, vy: view.y, s: toSvg(e).s }; svg.setPointerCapture(e.pointerId); });
+      svg.addEventListener('pointermove', function (e) { if (!drag) return; view.x = drag.vx - (e.clientX - drag.x) * drag.s; view.y = drag.vy - (e.clientY - drag.y) * drag.s; apply(); });
+      svg.addEventListener('pointerup', function () { drag = null; });
+      svg.addEventListener('pointercancel', function () { drag = null; });
+    }
+
+    document.addEventListener('keydown', function (e) {
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+      var k = e.key;
+      if (k === 'Escape' && charts.length > 1) { showIndex(); return; }
+      if (k === 'w' || k === 'W') { if (current > 0) showChart(current - 1); else if (current < 0) showChart(0); return; }
+      if (k === 's' || k === 'S') { if (current < charts.length - 1) showChart(current + 1); return; }
+      if (!svg) return;
+      var step = 0.1;
+      if (k === '+' || k === '=') zoom(1.2);
+      else if (k === '-' || k === '_') zoom(1 / 1.2);
+      else if (k === '0' || k === 'Backspace') { view = { x: home.x, y: home.y, w: home.w, h: home.h }; apply(); }
+      else if (k === 'ArrowLeft') { view.x -= view.w * step; apply(); }
+      else if (k === 'ArrowRight') { view.x += view.w * step; apply(); }
+      else if (k === 'ArrowUp') { view.y -= view.h * step; apply(); }
+      else if (k === 'ArrowDown') { view.y += view.h * step; apply(); }
+      else if (k === 'c' || k === 'C') { try { navigator.clipboard.writeText(hoverRaw); } catch (err) { /* ignore */ } }
+      else return;
+      e.preventDefault();
+    });
+
+    showIndex();
+  }
+
+  function seqseeHTML(json) {
+    var title = (json.header.metadata.htmltitle || 'SeqSee chart').replace(/</g, '&lt;');
+    var data = JSON.stringify(json).replace(/</g, '\\u003c');
+    return '<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n' +
+      '<title>' + title + '</title>\n<style>\n' +
+      'html,body{margin:0;height:100%;background:#fff;color:#000;font-family:"Latin Modern Roman","CMU Serif","Computer Modern",Georgia,"Times New Roman",serif;}\n' +
+      '#app{position:fixed;inset:0;}\n' +
+      '.chart{position:absolute;inset:0;width:100%;height:100%;cursor:grab;touch-action:none;}\n' +
+      '.chart:active{cursor:grabbing;}\n' +
+      '.top{position:absolute;top:12px;left:16px;z-index:2;pointer-events:none;}\n' +
+      '.title{font-size:22px;}\n' +
+      '.hover{visibility:hidden;display:inline-block;margin-top:6px;padding:4px 8px;border:1px solid #000;background:#fff;font-size:17px;}\n' +
+      '.math i{font-style:italic;} .rm{font-style:normal;} .rm i{font-style:normal;}\n' +
+      '.index{max-width:40em;margin:3em auto;padding:0 1.25em;}\n' +
+      '.index h1{font-weight:400;font-size:28px;} .index li{font-size:20px;margin:.4em 0;}\n' +
+      '.index a{color:#000;} .keys{color:#555;font-size:15px;margin-top:2em;}\n' +
+      '</style>\n</head>\n<body>\n<div id="app"></div>\n<script>\nwindow.SEQSEE_DATA = ' + data + ';\n(' + seqseeRuntime.toString() + ')();\n<\/script>\n</body>\n</html>\n';
+  }
+
+  function save(text, type, name) {
+    var blob = new Blob([text], { type: type });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob); a.download = name;
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+  }
+
+  $('print').addEventListener('click', function () { window.print(); });
+  $('download').addEventListener('click', function () {
+    var svg = document.createElementNS(NS, 'svg');
+    draw(svg, false);
+    svg.setAttribute('xmlns', NS);
+    svg.setAttribute('width', W); svg.setAttribute('height', H);
+    save('<?xml version="1.0" encoding="UTF-8"?>\n' + new XMLSerializer().serializeToString(svg), 'image/svg+xml', 'Adams-classical-Einfty.svg');
+  });
+  $('seqsee-json').addEventListener('click', function () {
+    save(JSON.stringify(buildSeqSee(), null, 2) + '\n', 'application/json', 'Adams-classical-Einfty-seqsee.json');
+  });
+  $('seqsee-html').addEventListener('click', function () {
+    save(seqseeHTML(buildSeqSee()), 'text/html', 'Adams-classical-Einfty-seqsee.html');
+  });
+
+  window.__ssv = { buildSeqSee: buildSeqSee, seqseeHTML: seqseeHTML };
+
+  draw($('chart'), true);
+  setupPanZoom();
+  showInfo(null);
+})();
+</script>
+</body>
+</html>

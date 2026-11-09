@@ -40,3 +40,14 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 @import "publications";
+
+.author__urls-wrapper button {
+  display: none;
+}
+
+.author__urls {
+  display: block !important;
+  position: static;
+  box-shadow: none;
+  border: 0;
+}

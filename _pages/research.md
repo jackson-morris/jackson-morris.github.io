@@ -10,6 +10,8 @@ My research interests are in homotopy theory and the tools I use are often compu
 * generalized Adams spectral sequences
 * stable splittings
 * stunted projective spaces
+* equivariance in motivic homotopy theory
+* synthetic spectra
 
 I have written user's guides to some of my papers that you can [check out here](usersguides.md).
 

@@ -20,7 +20,7 @@ My [research interests](research.md) are in motivic and chromatic homotopy theor
 | :----------------: |
 | The $\text{E}_\infty$-page of the mod-2 Adams spectral sequence.| -->
 
-<iframe src="/_pages/SSViz/Adams_classical_Einfty.html" width="100%" height="1150" style="border:none;"></iframe>
+<iframe src="/_pages/SSViz/Adams_classical_E2_Einfty.html" width="100%" height="1150" style="border:none;"></iframe>
 
 
 <!-- I try to collect resources which I have found useful on various topics. Feel free to email me if you have anything to contribute! -->
